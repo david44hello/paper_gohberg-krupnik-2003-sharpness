@@ -1,0 +1,5 @@
+# omega_negative.py md5 6d78c107dd07fe0d26efeb57ee3d06cf, prec 120 bits
+CLAIM Gamma < 0 on [1.001, 1.2336025]: PROVED (141 cells)
+CONTROL Gamma < 0 on [1.2336027 - 1e-9, 1.2336027] (must FAIL): refused (good) (2001 cells)
+Gamma(1.2336027) = [1.018694486e-7 +/- 7.71e-18]
+# md5 at end 6d78c107dd07fe0d26efeb57ee3d06cf

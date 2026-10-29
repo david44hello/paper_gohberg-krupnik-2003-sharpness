@@ -1,0 +1,25 @@
+{
+  "name": "positive_omega_root",
+  "script": "programs/omega_positive.py",
+  "arguments": [],
+  "markers": [
+    "CLAIM Omega' > 0 .*: PROVED",
+    "CLAIM Omega > 0 .*: PROVED",
+    "CONTROL 1 .*: refused \\(good\\)",
+    "CONTROL 2 .*: refused \\(good\\)",
+    "^RESULT: both claims PROVED, controls refused$"
+  ],
+  "argv": [
+    "python",
+    "-u",
+    "-B",
+    "programs/omega_positive.py"
+  ],
+  "cwd": ".",
+  "started": "2026-10-28T12:22:55.308611+00:00",
+  "status": "PASS",
+  "returncode": 0,
+  "ended": "2026-10-28T12:22:55.773046+00:00",
+  "stdout": "replays/release_primary/positive_omega_root.stdout.log",
+  "stderr": "replays/release_primary/positive_omega_root.stderr.log"
+}

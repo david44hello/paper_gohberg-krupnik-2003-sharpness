@@ -1,0 +1,34 @@
+{
+  "name": "strip_bulk_main",
+  "script": "programs/strip_bulk.py",
+  "arguments": [
+    "--corner",
+    "main",
+    "--max-boxes",
+    "3000000"
+  ],
+  "markers": [
+    "^REGION A .*s-tails PROVED .*middle .* PROVED",
+    "^REGION B .*s-tails PROVED .*middle .* PROVED",
+    "CONTROL 1 .*: refused \\(good\\)",
+    "CONTROL 2 .*: refused \\(good\\)",
+    "^CLAIM g > 0 .*corner 'main'.*: PROVED; controls good$"
+  ],
+  "argv": [
+    "python",
+    "-u",
+    "-B",
+    "programs/strip_bulk.py",
+    "--corner",
+    "main",
+    "--max-boxes",
+    "3000000"
+  ],
+  "cwd": ".",
+  "started": "2026-10-28T12:25:49.971695+00:00",
+  "status": "PASS",
+  "returncode": 0,
+  "ended": "2026-10-28T12:26:43.797833+00:00",
+  "stdout": "replays/release_primary/strip_bulk_main.stdout.log",
+  "stderr": "replays/release_primary/strip_bulk_main.stderr.log"
+}

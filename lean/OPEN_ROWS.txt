@@ -1,0 +1,3 @@
+# GKSharp OPEN rows for the FINAL freeze gate (scripts/check.sh --final; decision 20261028_1517).
+# One Statements row name per line. Each listed row must audit OPEN (sorryAx); its placeholder, if it has one, must be
+# its whole body. Every row that audits OPEN must be listed. The work gate (check.sh, no flag) ignores this file.

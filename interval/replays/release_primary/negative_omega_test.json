@@ -1,0 +1,24 @@
+{
+  "name": "negative_omega_test",
+  "script": "programs/omega_negative.py",
+  "arguments": [
+    "--test"
+  ],
+  "markers": [
+    "^tests passed$"
+  ],
+  "argv": [
+    "python",
+    "-u",
+    "-B",
+    "programs/omega_negative.py",
+    "--test"
+  ],
+  "cwd": ".",
+  "started": "2026-10-28T12:22:53.032317+00:00",
+  "status": "PASS",
+  "returncode": 0,
+  "ended": "2026-10-28T12:22:53.105408+00:00",
+  "stdout": "replays/release_primary/negative_omega_test.stdout.log",
+  "stderr": "replays/release_primary/negative_omega_test.stderr.log"
+}

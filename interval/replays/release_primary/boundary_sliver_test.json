@@ -1,0 +1,24 @@
+{
+  "name": "boundary_sliver_test",
+  "script": "programs/boundary_sliver.py",
+  "arguments": [
+    "--test"
+  ],
+  "markers": [
+    "^tests passed$"
+  ],
+  "argv": [
+    "python",
+    "-u",
+    "-B",
+    "programs/boundary_sliver.py",
+    "--test"
+  ],
+  "cwd": ".",
+  "started": "2026-10-28T12:22:53.974380+00:00",
+  "status": "PASS",
+  "returncode": 0,
+  "ended": "2026-10-28T12:22:54.102953+00:00",
+  "stdout": "replays/release_primary/boundary_sliver_test.stdout.log",
+  "stderr": "replays/release_primary/boundary_sliver_test.stderr.log"
+}

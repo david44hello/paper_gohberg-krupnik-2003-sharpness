@@ -1,0 +1,30 @@
+{
+  "name": "corner_control_c2",
+  "script": "programs/strip_corner.py",
+  "arguments": [
+    "--mode",
+    "control_c2",
+    "--max-depth",
+    "24"
+  ],
+  "markers": [
+    "CONTROL control_c2: .* -> REFUSED \\(good\\)"
+  ],
+  "argv": [
+    "python",
+    "-u",
+    "-B",
+    "programs/strip_corner.py",
+    "--mode",
+    "control_c2",
+    "--max-depth",
+    "24"
+  ],
+  "cwd": ".",
+  "started": "2026-10-28T12:23:08.173158+00:00",
+  "status": "PASS",
+  "returncode": 0,
+  "ended": "2026-10-28T12:23:38.313979+00:00",
+  "stdout": "replays/release_primary/corner_control_c2.stdout.log",
+  "stderr": "replays/release_primary/corner_control_c2.stderr.log"
+}

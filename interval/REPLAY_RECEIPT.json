@@ -1,0 +1,15 @@
+{
+  "version": "1.00",
+  "status": "PASS",
+  "primary_coverage_complete": true,
+  "jobs": 18,
+  "frozen_inputs": 20,
+  "summary": "replays/release_primary/SUMMARY.json",
+  "summary_sha256": "d8b7da39917392ce0ebf2f0fa4343bf7a0eca4242d091d28c42be6c95d115cb6",
+  "evidence_manifest": "replays/release_primary/EVIDENCE_MANIFEST.json",
+  "evidence_manifest_sha256": "2b865f5ee054fc9e224f2a08d0f81c19595c9a68cea76abffc9be21458eb1545",
+  "runner_sha256": "c95cede87267541807771861412b678a1a9beb054128a96c66334159a34c26f5",
+  "started_utc": "2026-10-28T12:22:52.512601+00:00",
+  "ended_utc": "2026-10-28T12:26:43.819983+00:00",
+  "scope": "Clean primary numerical replay under the printed analytic assumptions; alternate programs not rerun; no Lean formalization."
+}

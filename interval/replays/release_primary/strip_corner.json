@@ -1,0 +1,32 @@
+{
+  "name": "strip_corner",
+  "script": "programs/strip_corner.py",
+  "arguments": [
+    "--mode",
+    "certify",
+    "--max-depth",
+    "24"
+  ],
+  "markers": [
+    "^EDGES \\(certified lower ends\\):",
+    "^MIDDLE: .*'refused': 0",
+    "^CORNER CLAIM: PROVED$"
+  ],
+  "argv": [
+    "python",
+    "-u",
+    "-B",
+    "programs/strip_corner.py",
+    "--mode",
+    "certify",
+    "--max-depth",
+    "24"
+  ],
+  "cwd": ".",
+  "started": "2026-10-28T12:23:38.357710+00:00",
+  "status": "PASS",
+  "returncode": 0,
+  "ended": "2026-10-28T12:25:49.946455+00:00",
+  "stdout": "replays/release_primary/strip_corner.stdout.log",
+  "stderr": "replays/release_primary/strip_corner.stderr.log"
+}

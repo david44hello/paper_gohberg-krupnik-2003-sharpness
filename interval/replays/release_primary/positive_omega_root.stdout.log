@@ -1,0 +1,8 @@
+# omega_positive.py md5 485984e3dcfcc21c00afb22793c8c5fd; imports omega_negative.py md5 6d78c107dd07fe0d26efeb57ee3d06cf; prec 120
+CLAIM Omega' > 0 on [1.2336025, 1.2336027]: PROVED (1 cells)
+CLAIM Omega > 0 on [1.2336027, 1.268]: PROVED (35 cells)
+CONTROL 1  Omega > 0 on [1.2336025, 1.2336027] (contains p_0; must FAIL): refused (good) (3001 cells)
+CONTROL 2  Omega' < 0 on [1.2336025, 1.2336027] (must FAIL): refused (good) (3001 cells)
+Omega(1.2336025) = [-1.100074750e-7 +/- 4.53e-17], Omega(1.2336027) = [1.018694486e-7 +/- 7.71e-18], Omega(5/4) = [0.01565442189276 +/- 7.48e-16]
+# md5 at end 485984e3dcfcc21c00afb22793c8c5fd
+RESULT: both claims PROVED, controls refused

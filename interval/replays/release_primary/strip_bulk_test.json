@@ -1,0 +1,24 @@
+{
+  "name": "strip_bulk_test",
+  "script": "programs/strip_bulk.py",
+  "arguments": [
+    "--test"
+  ],
+  "markers": [
+    "^tests passed$"
+  ],
+  "argv": [
+    "python",
+    "-u",
+    "-B",
+    "programs/strip_bulk.py",
+    "--test"
+  ],
+  "cwd": ".",
+  "started": "2026-10-28T12:22:54.305698+00:00",
+  "status": "PASS",
+  "returncode": 0,
+  "ended": "2026-10-28T12:22:54.672672+00:00",
+  "stdout": "replays/release_primary/strip_bulk_test.stdout.log",
+  "stderr": "replays/release_primary/strip_bulk_test.stderr.log"
+}

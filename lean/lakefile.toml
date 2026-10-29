@@ -1,0 +1,15 @@
+# Gohberg-Krupnik sharpness. Version 0.01, 20261028. Lean 4 v4.35.0 + Mathlib (shared packages).
+name = "GKSharpLean"
+version = "0.1.0"
+defaultTargets = ["GKSharp"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.35.0"
+
+[[lean_lib]]
+name = "GKSharp"
+globs = ["GKSharp", "GKSharp.+"]
+leanOptions = { autoImplicit = false, relaxedAutoImplicit = false }
+weakLeanArgs = ["-j1"]

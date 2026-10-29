@@ -1,0 +1,1 @@
+(ii) on p in [1.000001, 1.00001] = [1000001/1000000, 100001/100000]: PROVED h(lam_loc(p), p) < 0; 8153 certified cells; worst upper bound -3.242e-05

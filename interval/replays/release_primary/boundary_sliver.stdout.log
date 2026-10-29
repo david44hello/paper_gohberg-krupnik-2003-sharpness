@@ -1,0 +1,6 @@
+# boundary_sliver.py md5 0722de62419b386d5545935f00cd2aa7, prec 160, DELTA_HI 3/100, s 1371/5000
+CLAIM g < 0 on [1.2134, 1.2134904] x [0, 3/100]: PROVED (1023 cells)
+CLAIM 1 - lam_loc(p) <= 3/100 on [1.2134, 1.2134904] (200 p-cells): PROVED
+CONTROL s = 1/50 (far from s*) must FAIL: refused (good) (3001 cells)
+CONTROL p in [1.25, 1.2501] (Gamma > 0 there) must FAIL: refused (good) (3001 cells)
+# md5 at end 0722de62419b386d5545935f00cd2aa7

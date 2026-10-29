@@ -1,0 +1,25 @@
+{
+  "name": "wide_chord_witnesses",
+  "script": "certify_wide_chord.py",
+  "arguments": [
+    "--verify"
+  ],
+  "markers": [
+    "\"both_strict_bounds_certified\": true",
+    "\"precision_bits\": 160"
+  ],
+  "argv": [
+    "python",
+    "-u",
+    "-B",
+    "certify_wide_chord.py",
+    "--verify"
+  ],
+  "cwd": ".",
+  "started": "2026-10-28T12:22:52.949275+00:00",
+  "status": "PASS",
+  "returncode": 0,
+  "ended": "2026-10-28T12:22:53.019950+00:00",
+  "stdout": "replays/release_primary/wide_chord_witnesses.stdout.log",
+  "stderr": "replays/release_primary/wide_chord_witnesses.stderr.log"
+}

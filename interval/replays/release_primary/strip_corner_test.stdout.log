@@ -1,0 +1,1 @@
+TEST Et0 = closed form: True; odd coefficients at 0 vanish (c1 = [+/- 6.21e-37], c3 = [+/- 3.36e-36]): True; Et(eps) inside Et0 + eps^2 (e2 +- tau) at 3 points: True (e2 = [0.13321676 +/- 3.71e-9], tau = [0.002344 +/- 8.59e-8])

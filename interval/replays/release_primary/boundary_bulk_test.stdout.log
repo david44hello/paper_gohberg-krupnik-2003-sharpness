@@ -1,0 +1,3 @@
+control +: p = 21/20: U = [-0.251619785065599767956083990759881608974651067480651508 +/- 6.36e-55] (float h(lam_loc) = -0.2516); lam = [0.55451149307704095666962885549973412441672886534352651076 +/- 6.71e-57]; K overlap True
+control -: p = 21/20, lam = 1/5: min over theta grid of the upper bound minus K = +4.0413e-01 (must be > 0)
+tests done

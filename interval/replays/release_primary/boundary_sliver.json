@@ -1,0 +1,24 @@
+{
+  "name": "boundary_sliver",
+  "script": "programs/boundary_sliver.py",
+  "arguments": [],
+  "markers": [
+    "CLAIM g < 0 .*: PROVED",
+    "CLAIM 1 - lam_loc.*: PROVED",
+    "CONTROL s = 1/50 .*: refused \\(good\\)",
+    "CONTROL p in .*: refused \\(good\\)"
+  ],
+  "argv": [
+    "python",
+    "-u",
+    "-B",
+    "programs/boundary_sliver.py"
+  ],
+  "cwd": ".",
+  "started": "2026-10-28T12:23:05.455227+00:00",
+  "status": "PASS",
+  "returncode": 0,
+  "ended": "2026-10-28T12:23:05.773147+00:00",
+  "stdout": "replays/release_primary/boundary_sliver.stdout.log",
+  "stderr": "replays/release_primary/boundary_sliver.stderr.log"
+}

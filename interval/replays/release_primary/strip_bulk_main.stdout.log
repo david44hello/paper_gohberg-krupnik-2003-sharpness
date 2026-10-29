@@ -1,0 +1,7 @@
+# strip_bulk.py md5 f46fe61366d9303e618874b44d223028, prec 120 bits, corner 'main': delta1 = 1/20, eta = 1/2000
+REGION A [[1.2336025, 1.268], [0.05, 1.0]]: s-tails PROVED (707 rects); middle s in [0.05, 0.95] PROVED (11903 boxes, smallest lower bound 6.570e-07)
+REGION B [[1.2341027, 1.268], [0.0, 0.05]]: s-tails PROVED (7 rects); middle s in [0.05, 0.95] PROVED (1265 boxes, smallest lower bound 5.825e-06)
+CONTROL 1  g > 0 on [1.2330, 1.2336] x [0, 0.01] (Omega < 0 there; must FAIL): refused (good) (20001 boxes)
+CONTROL 2  g > 3e-4 on [1.2336025, 1.2337] x [0.05, 0.06] (float min 2.93e-4; must FAIL): refused (good) (20001 boxes)
+CLAIM g > 0 on REGION A u REGION B (corner 'main'), all s in (0,1): PROVED; controls good
+# md5 at end f46fe61366d9303e618874b44d223028

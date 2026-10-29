@@ -1,0 +1,642 @@
+{
+  "version": "0.20",
+  "project": "gohberg-krupnik-2003-sharpness",
+  "started": "2026-10-28T12:22:52.512601+00:00",
+  "status": "PASS",
+  "mode": "replay",
+  "jobs": [
+    {
+      "name": "wide_chord_controls",
+      "script": "certify_wide_chord.py",
+      "arguments": [
+        "--test"
+      ],
+      "markers": [
+        "Both false-claim controls rejected\\."
+      ],
+      "argv": [
+        "python",
+        "-u",
+        "-B",
+        "certify_wide_chord.py",
+        "--test"
+      ],
+      "cwd": ".",
+      "started": "2026-10-28T12:22:52.850934+00:00",
+      "status": "PASS",
+      "returncode": 0,
+      "ended": "2026-10-28T12:22:52.938567+00:00",
+      "stdout": "replays/release_primary/wide_chord_controls.stdout.log",
+      "stderr": "replays/release_primary/wide_chord_controls.stderr.log"
+    },
+    {
+      "name": "wide_chord_witnesses",
+      "script": "certify_wide_chord.py",
+      "arguments": [
+        "--verify"
+      ],
+      "markers": [
+        "\"both_strict_bounds_certified\": true",
+        "\"precision_bits\": 160"
+      ],
+      "argv": [
+        "python",
+        "-u",
+        "-B",
+        "certify_wide_chord.py",
+        "--verify"
+      ],
+      "cwd": ".",
+      "started": "2026-10-28T12:22:52.949275+00:00",
+      "status": "PASS",
+      "returncode": 0,
+      "ended": "2026-10-28T12:22:53.019950+00:00",
+      "stdout": "replays/release_primary/wide_chord_witnesses.stdout.log",
+      "stderr": "replays/release_primary/wide_chord_witnesses.stderr.log"
+    },
+    {
+      "name": "negative_omega_test",
+      "script": "programs/omega_negative.py",
+      "arguments": [
+        "--test"
+      ],
+      "markers": [
+        "^tests passed$"
+      ],
+      "argv": [
+        "python",
+        "-u",
+        "-B",
+        "programs/omega_negative.py",
+        "--test"
+      ],
+      "cwd": ".",
+      "started": "2026-10-28T12:22:53.032317+00:00",
+      "status": "PASS",
+      "returncode": 0,
+      "ended": "2026-10-28T12:22:53.105408+00:00",
+      "stdout": "replays/release_primary/negative_omega_test.stdout.log",
+      "stderr": "replays/release_primary/negative_omega_test.stderr.log"
+    },
+    {
+      "name": "boundary_bulk_test",
+      "script": "programs/boundary_bulk.py",
+      "arguments": [
+        "--test"
+      ],
+      "markers": [
+        "^tests done$"
+      ],
+      "argv": [
+        "python",
+        "-u",
+        "-B",
+        "programs/boundary_bulk.py",
+        "--test"
+      ],
+      "cwd": ".",
+      "started": "2026-10-28T12:22:53.126675+00:00",
+      "status": "PASS",
+      "returncode": 0,
+      "ended": "2026-10-28T12:22:53.945702+00:00",
+      "stdout": "replays/release_primary/boundary_bulk_test.stdout.log",
+      "stderr": "replays/release_primary/boundary_bulk_test.stderr.log"
+    },
+    {
+      "name": "boundary_sliver_test",
+      "script": "programs/boundary_sliver.py",
+      "arguments": [
+        "--test"
+      ],
+      "markers": [
+        "^tests passed$"
+      ],
+      "argv": [
+        "python",
+        "-u",
+        "-B",
+        "programs/boundary_sliver.py",
+        "--test"
+      ],
+      "cwd": ".",
+      "started": "2026-10-28T12:22:53.974380+00:00",
+      "status": "PASS",
+      "returncode": 0,
+      "ended": "2026-10-28T12:22:54.102953+00:00",
+      "stdout": "replays/release_primary/boundary_sliver_test.stdout.log",
+      "stderr": "replays/release_primary/boundary_sliver_test.stderr.log"
+    },
+    {
+      "name": "strip_corner_test",
+      "script": "programs/strip_corner.py",
+      "arguments": [
+        "--mode",
+        "test"
+      ],
+      "markers": [
+        "TEST Et0 = closed form: True;",
+        "vanish .*: True;",
+        "at 3 points: True"
+      ],
+      "argv": [
+        "python",
+        "-u",
+        "-B",
+        "programs/strip_corner.py",
+        "--mode",
+        "test"
+      ],
+      "cwd": ".",
+      "started": "2026-10-28T12:22:54.133489+00:00",
+      "status": "PASS",
+      "returncode": 0,
+      "ended": "2026-10-28T12:22:54.287508+00:00",
+      "stdout": "replays/release_primary/strip_corner_test.stdout.log",
+      "stderr": "replays/release_primary/strip_corner_test.stderr.log"
+    },
+    {
+      "name": "strip_bulk_test",
+      "script": "programs/strip_bulk.py",
+      "arguments": [
+        "--test"
+      ],
+      "markers": [
+        "^tests passed$"
+      ],
+      "argv": [
+        "python",
+        "-u",
+        "-B",
+        "programs/strip_bulk.py",
+        "--test"
+      ],
+      "cwd": ".",
+      "started": "2026-10-28T12:22:54.305698+00:00",
+      "status": "PASS",
+      "returncode": 0,
+      "ended": "2026-10-28T12:22:54.672672+00:00",
+      "stdout": "replays/release_primary/strip_bulk_test.stdout.log",
+      "stderr": "replays/release_primary/strip_bulk_test.stderr.log"
+    },
+    {
+      "name": "negative_omega",
+      "script": "programs/omega_negative.py",
+      "arguments": [],
+      "markers": [
+        "CLAIM Gamma < 0 on \\[1\\.001, 1\\.2336025\\]: PROVED",
+        "CONTROL Gamma .*: refused \\(good\\)"
+      ],
+      "argv": [
+        "python",
+        "-u",
+        "-B",
+        "programs/omega_negative.py"
+      ],
+      "cwd": ".",
+      "started": "2026-10-28T12:22:54.695496+00:00",
+      "status": "PASS",
+      "returncode": 0,
+      "ended": "2026-10-28T12:22:55.290975+00:00",
+      "stdout": "replays/release_primary/negative_omega.stdout.log",
+      "stderr": "replays/release_primary/negative_omega.stderr.log"
+    },
+    {
+      "name": "positive_omega_root",
+      "script": "programs/omega_positive.py",
+      "arguments": [],
+      "markers": [
+        "CLAIM Omega' > 0 .*: PROVED",
+        "CLAIM Omega > 0 .*: PROVED",
+        "CONTROL 1 .*: refused \\(good\\)",
+        "CONTROL 2 .*: refused \\(good\\)",
+        "^RESULT: both claims PROVED, controls refused$"
+      ],
+      "argv": [
+        "python",
+        "-u",
+        "-B",
+        "programs/omega_positive.py"
+      ],
+      "cwd": ".",
+      "started": "2026-10-28T12:22:55.308611+00:00",
+      "status": "PASS",
+      "returncode": 0,
+      "ended": "2026-10-28T12:22:55.773046+00:00",
+      "stdout": "replays/release_primary/positive_omega_root.stdout.log",
+      "stderr": "replays/release_primary/positive_omega_root.stderr.log"
+    },
+    {
+      "name": "local_threshold_root",
+      "script": "programs/local_threshold.py",
+      "arguments": [],
+      "markers": [
+        "unique simple root p_c in \\[9480393/7812500, 242698061/200000000\\]",
+        "^LEMMA P_c: PROVED$"
+      ],
+      "argv": [
+        "python",
+        "-u",
+        "-B",
+        "programs/local_threshold.py"
+      ],
+      "cwd": ".",
+      "started": "2026-10-28T12:22:55.805202+00:00",
+      "status": "PASS",
+      "returncode": 0,
+      "ended": "2026-10-28T12:22:55.897307+00:00",
+      "stdout": "replays/release_primary/local_threshold_root.stdout.log",
+      "stderr": "replays/release_primary/local_threshold_root.stderr.log"
+    },
+    {
+      "name": "boundary_bulk_1",
+      "script": "programs/boundary_bulk.py",
+      "arguments": [
+        "--p-lo",
+        "1.000001",
+        "--p-hi",
+        "1.00001",
+        "--cells",
+        "100",
+        "--max-depth",
+        "24"
+      ],
+      "markers": [
+        "^\\(ii\\) on p in \\[1\\.000001, 1\\.00001\\].*: PROVED h"
+      ],
+      "argv": [
+        "python",
+        "-u",
+        "-B",
+        "programs/boundary_bulk.py",
+        "--p-lo",
+        "1.000001",
+        "--p-hi",
+        "1.00001",
+        "--cells",
+        "100",
+        "--max-depth",
+        "24"
+      ],
+      "cwd": ".",
+      "started": "2026-10-28T12:22:55.932464+00:00",
+      "status": "PASS",
+      "returncode": 0,
+      "ended": "2026-10-28T12:22:59.283269+00:00",
+      "stdout": "replays/release_primary/boundary_bulk_1.stdout.log",
+      "stderr": "replays/release_primary/boundary_bulk_1.stderr.log"
+    },
+    {
+      "name": "boundary_bulk_2",
+      "script": "programs/boundary_bulk.py",
+      "arguments": [
+        "--p-lo",
+        "1.00001",
+        "--p-hi",
+        "1.0001",
+        "--cells",
+        "100",
+        "--max-depth",
+        "24"
+      ],
+      "markers": [
+        "^\\(ii\\) on p in \\[1\\.00001, 1\\.0001\\].*: PROVED h"
+      ],
+      "argv": [
+        "python",
+        "-u",
+        "-B",
+        "programs/boundary_bulk.py",
+        "--p-lo",
+        "1.00001",
+        "--p-hi",
+        "1.0001",
+        "--cells",
+        "100",
+        "--max-depth",
+        "24"
+      ],
+      "cwd": ".",
+      "started": "2026-10-28T12:22:59.320048+00:00",
+      "status": "PASS",
+      "returncode": 0,
+      "ended": "2026-10-28T12:23:01.536943+00:00",
+      "stdout": "replays/release_primary/boundary_bulk_2.stdout.log",
+      "stderr": "replays/release_primary/boundary_bulk_2.stderr.log"
+    },
+    {
+      "name": "boundary_bulk_3",
+      "script": "programs/boundary_bulk.py",
+      "arguments": [
+        "--p-lo",
+        "1.0001",
+        "--p-hi",
+        "1.2134",
+        "--cells",
+        "100",
+        "--max-depth",
+        "24"
+      ],
+      "markers": [
+        "^\\(ii\\) on p in \\[1\\.0001, 1\\.2134\\].*: PROVED h"
+      ],
+      "argv": [
+        "python",
+        "-u",
+        "-B",
+        "programs/boundary_bulk.py",
+        "--p-lo",
+        "1.0001",
+        "--p-hi",
+        "1.2134",
+        "--cells",
+        "100",
+        "--max-depth",
+        "24"
+      ],
+      "cwd": ".",
+      "started": "2026-10-28T12:23:01.582083+00:00",
+      "status": "PASS",
+      "returncode": 0,
+      "ended": "2026-10-28T12:23:05.415760+00:00",
+      "stdout": "replays/release_primary/boundary_bulk_3.stdout.log",
+      "stderr": "replays/release_primary/boundary_bulk_3.stderr.log"
+    },
+    {
+      "name": "boundary_sliver",
+      "script": "programs/boundary_sliver.py",
+      "arguments": [],
+      "markers": [
+        "CLAIM g < 0 .*: PROVED",
+        "CLAIM 1 - lam_loc.*: PROVED",
+        "CONTROL s = 1/50 .*: refused \\(good\\)",
+        "CONTROL p in .*: refused \\(good\\)"
+      ],
+      "argv": [
+        "python",
+        "-u",
+        "-B",
+        "programs/boundary_sliver.py"
+      ],
+      "cwd": ".",
+      "started": "2026-10-28T12:23:05.455227+00:00",
+      "status": "PASS",
+      "returncode": 0,
+      "ended": "2026-10-28T12:23:05.773147+00:00",
+      "stdout": "replays/release_primary/boundary_sliver.stdout.log",
+      "stderr": "replays/release_primary/boundary_sliver.stderr.log"
+    },
+    {
+      "name": "corner_control_c1",
+      "script": "programs/strip_corner.py",
+      "arguments": [
+        "--mode",
+        "control_c1",
+        "--max-depth",
+        "24"
+      ],
+      "markers": [
+        "CONTROL control_c1: .* -> REFUSED \\(good\\)"
+      ],
+      "argv": [
+        "python",
+        "-u",
+        "-B",
+        "programs/strip_corner.py",
+        "--mode",
+        "control_c1",
+        "--max-depth",
+        "24"
+      ],
+      "cwd": ".",
+      "started": "2026-10-28T12:23:05.811849+00:00",
+      "status": "PASS",
+      "returncode": 0,
+      "ended": "2026-10-28T12:23:08.129462+00:00",
+      "stdout": "replays/release_primary/corner_control_c1.stdout.log",
+      "stderr": "replays/release_primary/corner_control_c1.stderr.log"
+    },
+    {
+      "name": "corner_control_c2",
+      "script": "programs/strip_corner.py",
+      "arguments": [
+        "--mode",
+        "control_c2",
+        "--max-depth",
+        "24"
+      ],
+      "markers": [
+        "CONTROL control_c2: .* -> REFUSED \\(good\\)"
+      ],
+      "argv": [
+        "python",
+        "-u",
+        "-B",
+        "programs/strip_corner.py",
+        "--mode",
+        "control_c2",
+        "--max-depth",
+        "24"
+      ],
+      "cwd": ".",
+      "started": "2026-10-28T12:23:08.173158+00:00",
+      "status": "PASS",
+      "returncode": 0,
+      "ended": "2026-10-28T12:23:38.313979+00:00",
+      "stdout": "replays/release_primary/corner_control_c2.stdout.log",
+      "stderr": "replays/release_primary/corner_control_c2.stderr.log"
+    },
+    {
+      "name": "strip_corner",
+      "script": "programs/strip_corner.py",
+      "arguments": [
+        "--mode",
+        "certify",
+        "--max-depth",
+        "24"
+      ],
+      "markers": [
+        "^EDGES \\(certified lower ends\\):",
+        "^MIDDLE: .*'refused': 0",
+        "^CORNER CLAIM: PROVED$"
+      ],
+      "argv": [
+        "python",
+        "-u",
+        "-B",
+        "programs/strip_corner.py",
+        "--mode",
+        "certify",
+        "--max-depth",
+        "24"
+      ],
+      "cwd": ".",
+      "started": "2026-10-28T12:23:38.357710+00:00",
+      "status": "PASS",
+      "returncode": 0,
+      "ended": "2026-10-28T12:25:49.946455+00:00",
+      "stdout": "replays/release_primary/strip_corner.stdout.log",
+      "stderr": "replays/release_primary/strip_corner.stderr.log"
+    },
+    {
+      "name": "strip_bulk_main",
+      "script": "programs/strip_bulk.py",
+      "arguments": [
+        "--corner",
+        "main",
+        "--max-boxes",
+        "3000000"
+      ],
+      "markers": [
+        "^REGION A .*s-tails PROVED .*middle .* PROVED",
+        "^REGION B .*s-tails PROVED .*middle .* PROVED",
+        "CONTROL 1 .*: refused \\(good\\)",
+        "CONTROL 2 .*: refused \\(good\\)",
+        "^CLAIM g > 0 .*corner 'main'.*: PROVED; controls good$"
+      ],
+      "argv": [
+        "python",
+        "-u",
+        "-B",
+        "programs/strip_bulk.py",
+        "--corner",
+        "main",
+        "--max-boxes",
+        "3000000"
+      ],
+      "cwd": ".",
+      "started": "2026-10-28T12:25:49.971695+00:00",
+      "status": "PASS",
+      "returncode": 0,
+      "ended": "2026-10-28T12:26:43.797833+00:00",
+      "stdout": "replays/release_primary/strip_bulk_main.stdout.log",
+      "stderr": "replays/release_primary/strip_bulk_main.stderr.log"
+    }
+  ],
+  "runner_sha256": "c95cede87267541807771861412b678a1a9beb054128a96c66334159a34c26f5",
+  "environment": {
+    "versions": {
+      "python": "3.12.3",
+      "python-flint": "0.9.0",
+      "FLINT": "3.6.0",
+      "mpmath": "1.4.1",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1"
+    },
+    "executable": "python",
+    "assertions_enabled": true,
+    "module_paths": {
+      "flint": "python-environment/flint",
+      "numpy": "python-environment/numpy",
+      "scipy": "python-environment/scipy",
+      "mpmath": "python-environment/mpmath"
+    }
+  },
+  "frozen_files": [
+    {
+      "file": "programs/arch_search.py",
+      "sha256": "c001c75423e8e2b91b01b6b2e047cb192238df194c0efc29041848be319102ab"
+    },
+    {
+      "file": "programs/corner_comparison.py",
+      "sha256": "605ff7191f5a98a0befbe801150e2fbe61b1d85e1e32a3b424884dc0e10b7e47"
+    },
+    {
+      "file": "programs/omega_positive_independent.py",
+      "sha256": "303655a20831a2582468f4c0088b8930f5573f592d4b6c1e5cc7a164e3f8bf26"
+    },
+    {
+      "file": "programs/pencil_search.py",
+      "sha256": "f48b3c38995ee329fc203492d59d869e4d78d336b475d02bf2a3896c56726531"
+    },
+    {
+      "file": "programs/strip_bulk_independent.py",
+      "sha256": "8e21ed1fcb72b94f97077087e0b0d23fe326c3c37e9ef93ab58ae30e85e4229c"
+    },
+    {
+      "file": "programs/wide_chord_independent.py",
+      "sha256": "21c6d99e18be3f0bb735bbd3b473572988f92ac1450e9ece3c2bc4a430cb86cd"
+    },
+    {
+      "file": "programs/strip_corner.py",
+      "sha256": "dbf3c961b6d3ba33613f5e33b96f2a9a57aa513545f473eea82ce254bd4d1199"
+    },
+    {
+      "file": "programs/omega_negative_alternate.py",
+      "sha256": "31e351bdbbf6f620483d2823936f5062d3deb1793f8cd76c9769613e2c423911"
+    },
+    {
+      "file": "programs/omega_positive_alternate.py",
+      "sha256": "975e1e536ba1fb39df1398bc3866311d0290673caa15f0a04755d2d8f089e383"
+    },
+    {
+      "file": "programs/strip_corner_independent.py",
+      "sha256": "b78927622208ce050749a1104f3103094cc4f7fb9de50b7ec85b590979b3d549"
+    },
+    {
+      "file": "programs/boundary_sliver.py",
+      "sha256": "238d1dd8a20ba406d41114826f5dfd4810c663efc9e60c0b528b45b1183047f3"
+    },
+    {
+      "file": "programs/omega_negative.py",
+      "sha256": "3062875f5de991f48932a7de27aa09519be640473f1892e6215b9c2bcb26ed7b"
+    },
+    {
+      "file": "programs/boundary_bulk_extended.py",
+      "sha256": "6f9c45efaadd6d566e5ab6d9c4e98bbc49cbc4732a1384b6fdaabb1027df744e"
+    },
+    {
+      "file": "programs/omega_positive.py",
+      "sha256": "79616e8fb82d1cfb29baea485cf8268a36180ed89946e6fe8be0e11af58407bd"
+    },
+    {
+      "file": "programs/local_threshold.py",
+      "sha256": "31d6481e269c040d6b56d258760574ad2c4d4b2e3dbd2b7ef284ef8353097d93"
+    },
+    {
+      "file": "programs/spline_certificate.py",
+      "sha256": "ed3ea8a2ecea421918581d8021447c471683901fdbed5eb7c96954ce0ad635c8"
+    },
+    {
+      "file": "programs/strip_bulk.py",
+      "sha256": "a45015ce62fbe0da64d5ececd5d1d47b2fa0908d4882afe31db2c66f9b269f73"
+    },
+    {
+      "file": "programs/wide_chord_comparison.py",
+      "sha256": "e2c860f776b614111ea6f0781f1092c04aad93d1a377184d5acf8a476b88c5ed"
+    },
+    {
+      "file": "programs/boundary_bulk.py",
+      "sha256": "0dccc82bf3b991345beb3298fb11579c2cc0d136a46d2b3f0d3fa710435756a5"
+    },
+    {
+      "file": "certify_wide_chord.py",
+      "sha256": "dcd73dd834e8e6cf99f5feb5666d7fd1feaf3bf040aa4fa2ac5e2106e3823b79"
+    }
+  ],
+  "support_hashes": {
+    "MANIFEST.json": "2cd2ebae3d608acbedc18a782560d11c79cc07c49b71c667a5d4c4a872db7f09",
+    "SUPPLEMENTAL_MANIFEST.json": "5f7853d9578df7108e2382ddc09a379202c22853bbc7d80564c830d7d16f350b",
+    "REPLAY_DEPENDENCIES.json": "6a23c60aa049001bdd5f0c025fceaa8e78e60c0d391f1f9ea6ea9caa0d863f3c",
+    "certify_wide_chord.py": "dcd73dd834e8e6cf99f5feb5666d7fd1feaf3bf040aa4fa2ac5e2106e3823b79"
+  },
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "analytic_inputs": [
+    "The printed negative-Omega estimate on 1 < p <= 1.001.",
+    "The corrected Proposition 4.3 endpoint estimate on 1 < p <= 1.000001.",
+    "The contact, envelope, involution and corner-minimum identities in the mathematical paper.",
+    "Omega is nonnegative for p >= p0, deduced from the root and sign certificates."
+  ],
+  "runner_tests": {
+    "false_success_cases_rejected": 4,
+    "expected_control_refusal_accepted": true
+  },
+  "primary_coverage_complete": true,
+  "ended": "2026-10-28T12:26:43.819983+00:00"
+}

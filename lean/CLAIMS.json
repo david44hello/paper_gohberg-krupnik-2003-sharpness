@@ -1,0 +1,4976 @@
+{
+  "version": "0.30",
+  "project": "019",
+  "namespace": "GKSharp.Paper",
+  "counts": {
+    "PROVED": 286,
+    "PROVED-FROM-CITED": 14,
+    "PROVED-GIVEN GKSharp.ComputerChecked.CheckStripBulkMiddle, GKSharp.ComputerChecked.CheckStripBulkTails": 1,
+    "PROVED-GIVEN GKSharp.ComputerChecked.CheckLocalF": 5,
+    "PROVED-GIVEN GKSharp.ComputerChecked.CheckBoundarySliver, GKSharp.ComputerChecked.CheckLocalF": 1,
+    "PROVED-GIVEN GKSharp.ComputerChecked.CheckBoundaryBulk": 1,
+    "PROVED-GIVEN GKSharp.ComputerChecked.CheckCornerDerivatives, GKSharp.ComputerChecked.CheckCornerTails": 1,
+    "CITED": 1,
+    "PROVED-GIVEN GKSharp.ComputerChecked.CheckOmegaNeg, GKSharp.ComputerChecked.CheckOmegaRoot": 2,
+    "PROVED-GIVEN GKSharp.ComputerChecked.CheckCornerDerivatives, GKSharp.ComputerChecked.CheckCornerTails, GKSharp.ComputerChecked.CheckOmegaNeg, GKSharp.ComputerChecked.CheckOmegaRoot, GKSharp.ComputerChecked.CheckStripBulkMiddle, GKSharp.ComputerChecked.CheckStripBulkTails": 1,
+    "PROVED-GIVEN GKSharp.ComputerChecked.CheckLocalF, GKSharp.ComputerChecked.CheckOmegaNeg, GKSharp.ComputerChecked.CheckOmegaRoot": 1,
+    "PROVED-GIVEN GKSharp.ComputerChecked.CheckBoundaryBulk, GKSharp.ComputerChecked.CheckBoundarySliver, GKSharp.ComputerChecked.CheckLocalF": 2,
+    "PROVED-GIVEN GKSharp.ComputerChecked.CheckCornerDerivatives, GKSharp.ComputerChecked.CheckCornerTails, GKSharp.ComputerChecked.CheckLocalF, GKSharp.ComputerChecked.CheckOmegaNeg, GKSharp.ComputerChecked.CheckOmegaRoot, GKSharp.ComputerChecked.CheckStripBulkMiddle, GKSharp.ComputerChecked.CheckStripBulkTails": 3,
+    "PROVED-GIVEN GKSharp.ComputerChecked.CheckBoundaryBulk, GKSharp.ComputerChecked.CheckBoundarySliver, GKSharp.ComputerChecked.CheckCornerDerivatives, GKSharp.ComputerChecked.CheckCornerTails, GKSharp.ComputerChecked.CheckLocalF, GKSharp.ComputerChecked.CheckOmegaNeg, GKSharp.ComputerChecked.CheckOmegaRoot, GKSharp.ComputerChecked.CheckStripBulkMiddle, GKSharp.ComputerChecked.CheckStripBulkTails": 1
+  },
+  "claims": [
+    {
+      "name": "sec2_gk_homogeneous",
+      "doc": "sec2_obstacle.tex l.19: \"GK_p(\u03b1,\u03b2) = |\u03b1| GK_p(\u03b2/\u03b1) when \u03b1 \u2260 0\".",
+      "line": 159,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec2_gk_homogeneous",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec2_gk_pure_minus",
+      "doc": "sec2_obstacle.tex l.20: \"GK_p(0,\u03b2) = |\u03b2|/sin(\u03c0/p)\".",
+      "line": 164,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec2_gk_pure_minus",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec2_gk_two",
+      "doc": "sec2_obstacle.tex l.20: \"GK_2(\u03b1,\u03b2) = max(|\u03b1|,|\u03b2|)\".",
+      "line": 169,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec2_gk_two",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "eq_GK",
+      "doc": "eq:GK, sec2_obstacle.tex l.32: \"GK_p(\u03c1)\u00b2 = the larger root of X\u00b2 \u2212 (1 + |\u03c1|\u00b2 + |1\u2212\u03c1|\u00b2 cot\u00b2\u03b8\u2080) X + |\u03c1|\u00b2 = 0\", \u03b8\u2080 = \u03c0/p.",
+      "line": 174,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.eq_GK",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec2_gk_dual",
+      "doc": "sec2_obstacle.tex l.36: \"The value is invariant under p \u21a6 p\u2032\".",
+      "line": 179,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec2_gk_dual",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec2_gk_at_zero",
+      "doc": "sec2_obstacle.tex l.36: \"GK_p(0) = 1/sin(\u03c0/p)\".",
+      "line": 183,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec2_gk_at_zero",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec2_gk_at_minus_one",
+      "doc": "sec2_obstacle.tex l.37: \"for 1 < p < 2, GK_p(\u22121) = tan(\u03c0/(2p))\".",
+      "line": 187,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec2_gk_at_minus_one",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "eq_GKreal",
+      "doc": "eq:GKreal, sec2_obstacle.tex l.37-42: for real \u03bb (stated for \u03bb \u2208 [-1,1), 1 < p < 2; proved for every \u03bb < 1, 1 < p), C = GK_p(\u03bb) satisfies (1 \u2212 \u03bb) C = s\u2080 (C\u00b2 \u2212 \u03bb), s\u2080 = sin \u03b8\u2080, and C is the larger root.",
+      "line": 193,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.eq_GKreal",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec3_gk_gt_max",
+      "doc": "sec3_nonreal.tex l.10-11 (Section 3: 1 < p, p \u2260 2): \"If \u03c1 \u2260 1, then GK > max(1, |\u03c1|)\".",
+      "line": 199,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec3_gk_gt_max",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec3_disk",
+      "doc": "sec3_nonreal.tex l.18-21: for C > max(1,|\u03c1|), D_C = {G_C < 0} = {|\u03b6 + \u03c1| > C|\u03b6 + 1|} is the open disk with centre c = \u2212(C\u00b2 \u2212 \u03c1)/(C\u00b2 \u2212 1) and radius R, R\u00b2 = |c|\u00b2 \u2212 (C\u00b2 \u2212 |\u03c1|\u00b2)/(C\u00b2 \u2212 1); it contains \u22121 (\u03c1 \u2260 1) and does not contain 0 (here: 0 is not even in its closure).",
+      "line": 205,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec3_disk",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "eq_3_3",
+      "doc": "(3.3), sec3_nonreal.tex l.23-25: \u03c8 = \u03c8(C) \u2208 (0, \u03c0/2) is half the angle that D_C subtends at 0, sin \u03c8 = R/|c|, and cos\u00b2 \u03c8(C) = (C\u00b2 \u2212 |\u03c1|\u00b2)(C\u00b2 \u2212 1)/|C\u00b2 \u2212 \u03c1|\u00b2.",
+      "line": 214,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.eq_3_3",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "lemma_W",
+      "doc": "Lemma W, sec3_nonreal.tex l.27-29 (Section 3: 1 < p, p \u2260 2): \"Let \u03c1 \u2260 1. Then C = GK_p(\u03c1) is the unique C > max(1, |\u03c1|) at which the window has width 2\u03c8(C) = 2\u03c0/max(p, p\u2032)\" (existence: `sec3_gk_gt_max`).",
+      "line": 221,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.lemma_W",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "lemma_I",
+      "doc": "Lemma I, sec5_sharp_inequality.tex l.124-134 (0 < \u03bb < 1, q = p/2, z' = 1/(\u03bb z\u0304); any C \u2265 0 and any K): \"D_C(z) \u2212 \u03bb^q|z|^p D_C(z') = (C^p + \u03bb^q)(|1+z|^p \u2212 \u03bb^{-q}|1+\u03bbz|^p), which is positive exactly when |z| > 1/\u221a\u03bb, i.e. when |w| < \u221a\u03bb. So D_C \u2265 0 on {|z| \u2264 1/\u221a\u03bb} implies D_C > 0 on {|z| > 1/\u221a\u03bb}. In the w-plane, z \u21a6 z' is w \u21a6 \u03bb/w\u0304.\"",
+      "line": 229,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.lemma_I",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "eq_K",
+      "doc": "eq:K, sec2_obstacle.tex l.135-137 (1 < p < 2, real \u03bb < 1, C = GK_p(\u03bb), q = p/2, s\u2080 = sin \u03b8\u2080, c\u2080 = \u2212cos \u03b8\u2080): the two closed forms of K agree, \"K = 2(1 \u2212 \u03bb) C s\u2080^{p\u22122} c\u2080^{1\u2212q} (C\u00b2 + \u03bb)^{q\u22121} = 2(1 \u2212 \u03bb)^p C^p (C\u00b2 + \u03bb)^{q\u22121} / (s\u2080 c\u2080^{q\u22121} (C\u00b2 \u2212 \u03bb)^{p\u22121})\" (`kConst` is the first form).",
+      "line": 245,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.eq_K",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "intro_minus_mask",
+      "doc": "P019_paper.tex l.46: \"P\u208b = I \u2212 P\u208a retains frequencies n < 0\" (`P.plus` keeps n \u2265 0, including constants).",
+      "line": 256,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.intro_minus_mask",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "intro_hilbert_convention",
+      "doc": "P019_paper.tex l.47-48: \"H = \u2212i(P\u208a \u2212 P\u208b), so H1 = \u2212i\"; \"aI + bH = (a \u2212 ib)P\u208a + (a + ib)P\u208b\".",
+      "line": 261,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.intro_hilbert_convention",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "intro_pencil_homogeneous",
+      "doc": "P019_paper.tex l.50: \"For \u03b1 \u2260 0, homogeneity gives \u2016\u03b1P\u208a + \u03b2P\u208b\u2016_p = |\u03b1| N_p(\u03b2/\u03b1)\".",
+      "line": 268,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.intro_pencil_homogeneous",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "intro_isometry_U",
+      "doc": "P019_paper.tex l.51: \"The isometry Uf(e^{it}) = e^{\u2212it} f(e^{\u2212it}) interchanges P\u208a and P\u208b\".",
+      "line": 273,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.intro_isometry_U",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "intro_isometry_J",
+      "doc": "P019_paper.tex l.52: \"The conjugate-linear isometry Jf(e^{it}) = conj f(e^{\u2212it}) preserves both frequency spaces and conjugates scalar coefficients\".",
+      "line": 283,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.intro_isometry_J",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "intro_norm_conj",
+      "doc": "P019_paper.tex l.55 (first identity): \"N_p(\u03c1) = N_p(\u03c1\u0304)\".",
+      "line": 292,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.intro_norm_conj",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "intro_norm_inv",
+      "doc": "P019_paper.tex l.55 (second identity): \"N_p(\u03c1) = |\u03c1| N_p(1/\u03c1) (\u03c1 \u2260 0)\".",
+      "line": 296,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.intro_norm_inv",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "intro_pencil_zero_left",
+      "doc": "P019_paper.tex l.58: \"If \u03b1 = 0, the norm is |\u03b2|/sin(\u03c0/p), since P\u208b is isometrically conjugate to P\u208a; this includes the zero operator\" (uses the cited norm of P\u208a, Hollenbeck-Verbitsky 2000).",
+      "line": 302,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.intro_pencil_zero_left",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hv2000_riesz_norm",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED-FROM-CITED"
+    },
+    {
+      "name": "intro_pencil_two",
+      "doc": "P019_paper.tex l.59: \"At p = 2, orthogonality gives \u2016\u03b1P\u208a + \u03b2P\u208b\u2016\u2082 = max(|\u03b1|, |\u03b2|)\".",
+      "line": 307,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.intro_pencil_two",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec2_norm_ge_max",
+      "doc": "sec2_obstacle.tex l.57-58: \"Testing (eq:pairs) with z \u2261 1, w \u2261 0, and with z \u2261 0, w(\u03b6) = \u03b6, respectively, shows that N_p(\u03c1) \u2265 max(1, |\u03c1|)\".",
+      "line": 312,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec2_norm_ge_max",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "intro_selfadjoint",
+      "doc": "P019_paper.tex l.53: \"Both projections are self-adjoint for the complex L^p\u2013L^{p\u2032} pairing\" (`\u222b f \u1e21`).",
+      "line": 316,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.intro_selfadjoint",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "intro_norm_dual",
+      "doc": "P019_paper.tex l.55 (third identity): \"N_p(\u03c1) = N_{p\u2032}(\u03c1\u0304)\", `p\u2032 = p/(p \u2212 1)`.",
+      "line": 325,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.intro_norm_dual",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "normcorr_ratio_unimodular",
+      "doc": "norm_correspondence.tex l.56: \"For real a, b with a \u2212 ib \u2260 0, the ratio (a + ib)/(a \u2212 ib) has modulus one\".",
+      "line": 332,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.normcorr_ratio_unimodular",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "eq_pairs",
+      "doc": "sec2_obstacle.tex l.47-51: \"by density, N_p(\u03c1) \u2264 C if and only if \u222b_T G_C(z, w) d\u03b8/2\u03c0 \u2265 0, G_C(z, w) := C^p |z + w\u0304|^p \u2212 |z + \u03c1w\u0304|^p, for all polynomials z, w with w(0) = 0\" (eq:pairs; the positive factor 1/2\u03c0 omitted).",
+      "line": 338,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.eq_pairs",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_local_factor_strictMono",
+      "doc": "sec4b_failure.tex l.75: \"4\u03bb/(1+\u03bb)\u00b2 increases on (0,1)\".",
+      "line": 343,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_local_factor_strictMono",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_local_threshold_algebra",
+      "doc": "sec4b_failure.tex l.74-75, 15: \"Solving this inequality for \u03bb gives the stated threshold\": for `0 < \u03bb < 1`, `d > 0`, \"1 \u2212 d\u00b2 < 4\u03bb/(1+\u03bb)\u00b2\" holds exactly when \"\u03bb > (1 \u2212 d)/(1 + d)\" (for every `d > 0`, in particular the paper's `d`).",
+      "line": 349,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_local_threshold_algebra",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_local_threshold_gap",
+      "doc": "sec4b_failure.tex l.134: \"1 \u2212 \u03bb_loc(p) \u2264 2d\" with `\u03bb_loc = (1 \u2212 d)/(1 + d)`, `d \u2265 0`: `1 \u2212 (1 \u2212 d)/(1 + d) = 2d/(1 + d) \u2264 2d`.",
+      "line": 355,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_local_threshold_gap",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_corner_taylor_inference",
+      "doc": "sec5f_strip.tex l.51-52: with `\u1ebc(\u03b7) = \u1ebc(0) + e\u2082\u03b7\u00b2 + c\u2084\u03b7\u2074`, `\u1ebc(0) \u2265 0`, `0 < \u03b7 \u2264 \u03b7\u2081` and `\u03c4 \u2265 \u03b7\u2081\u00b2 sup|c\u2084|`: \"either e\u2082 > \u03c4 ... or \u1ebc(0,\u03c3) > \u03b7\u2081\u00b2(max(0, \u2212e\u2082) + \u03c4) (then \u1ebc > 0)\" (the polynomial inference, for any such reals).",
+      "line": 361,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_corner_taylor_inference",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_strip_endpoint",
+      "doc": "sec5f_strip.tex l.39, 67: the strip `p \u2208 [p\u2080, 1.268]` reaches past `3 \u2212 \u221a3`, where Theorem B(a) takes over: `3 \u2212 \u221a3 < 1.268`.",
+      "line": 370,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_strip_endpoint",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_mobius",
+      "doc": "sec5_sharp_inequality.tex l.20-21: \"w = (1 + \u03bbz)/(1 + z), a bijection of \u2102 \\ {\u22121} onto \u2102 \\ {\u03bb} with Im w = \u2212(1\u2212\u03bb) Im z/|1+z|\u00b2. From w \u2212 \u03bb = (1\u2212\u03bb)/(1+z) and 1 \u2212 w = (1\u2212\u03bb)z/(1+z)\".",
+      "line": 375,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_mobius",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "eq_5_1",
+      "doc": "(5.1), sec5_sharp_inequality.tex l.23-25 (`\u03bb < 1`, `z \u2260 \u22121`, `q = p/2`): \"Q := (w \u2212 \u03bb)(1 \u2212 w\u0304) = (1\u2212\u03bb)\u00b2 z\u0304/|1+z|\u00b2, Re Q^q = (1\u2212\u03bb)^p Re z^q/|1+z|^p, \ud835\udc9f_C(z) = |1+z|^p/(1\u2212\u03bb)^p \u03a6(w)\", `\u03a6(w) = (1\u2212\u03bb)^p(C^p \u2212 |w|^p) \u2212 K Re Q(w)^q`.",
+      "line": 383,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.eq_5_1",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_ellipse",
+      "doc": "sec5_sharp_inequality.tex l.26-29: \"For w = \u03c1e^{i\u03c6}, Q = \u2212(\u03c1\u00b2 + \u03bb) + (1+\u03bb)\u03c1 cos \u03c6 + i(1\u2212\u03bb)\u03c1 sin \u03c6 runs over an ellipse E_\u03c1\"; \"Q(w\u0304) = conj Q(w)\".",
+      "line": 391,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_ellipse",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "eq_5_3_cross",
+      "doc": "(5.3), sec5_sharp_inequality.tex l.33-38, algebraic part: for `z = r e^{\u2212i\u03b8}` and `v = e^{i\u03b4} + \u03bbe^{\u2212i\u03b4}`, `\u03b4 = (1\u2212q)\u03b8`: \"Im(v\u0304 w) = (1\u2212\u03bb) D(\u03b8, r)/|1+z|\u00b2\", `D(\u03b8, r) = (1+\u03bb) r s\u2082 \u2212 (1 + \u03bbr\u00b2) s\u2081`.",
+      "line": 399,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.eq_5_3_cross",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_critical_iff",
+      "doc": "sec5_sharp_inequality.tex l.39-40 (`0 < \u03b8 < \u03c0`, `r > 0`, `\u03bb < 1`): \"w = \u03c4v with \u03c4 = \u03c1/|v| > 0, if and only if D(\u03b8, r) = 0\".",
+      "line": 406,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_critical_iff",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "eq_5_4",
+      "doc": "(5.4), sec5_sharp_inequality.tex l.40-42: at `w = \u03c4v` (`\u03c4 \u2265 0`): `v = (1+\u03bb) cos \u03b4 + i(1\u2212\u03bb) sin \u03b4`, `|v|\u00b2 = 1 + \u03bb\u00b2 + 2\u03bb cos 2\u03b4`, \"|Q| sin \u03b8 = (1\u2212\u03bb) Im w = (1\u2212\u03bb)\u00b2\u03c4 sin \u03b4, \u03c1 = \u03c4|v|, w \u2212 \u03bbw\u0304 = (1\u2212\u03bb\u00b2)\u03c4e^{i\u03b4}, Re[e^{\u2212i\u03b4}(w + \u03bbw\u0304)] = \u03c4|v|\u00b2\" (\u03b8 = arg Q).",
+      "line": 415,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.eq_5_4",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_sines",
+      "doc": "sec5_sharp_inequality.tex l.45 (`1 < p < 2`, `0 < \u03b8 < \u03c0`): \"0 < s\u2081 < s\u2082, as s\u2082 \u2212 s\u2081 = 2 cos(\u03b8/2) sin(\u03b5\u03b8/2)\", `s\u2081 = sin((1\u2212q)\u03b8)`, `s\u2082 = sin(q\u03b8)`, `\u03b5 = p \u2212 1`.",
+      "line": 431,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_sines",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_critical_root",
+      "doc": "sec5_sharp_inequality.tex l.45-47 (`\u22121 < \u03bb < 1`): \"D(\u03b8, 0) = \u2212s\u2081 < 0 < (1+\u03bb)(s\u2082 \u2212 s\u2081) = D(\u03b8, 1) and \u2202_r D = (1+\u03bb)s\u2082 \u2212 2\u03bbrs\u2081 > 0 on [0, 1], so D(\u03b8, \u00b7) has exactly one zero R(\u03b8) \u2208 (0, 1)\".",
+      "line": 438,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_critical_root",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_critical_root_minus_one",
+      "doc": "sec5_sharp_inequality.tex l.47 (`\u03bb = \u22121`): \"D = \u2212(1 \u2212 r\u00b2)s\u2081\" (and the root formula gives `R = 1`).",
+      "line": 452,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_critical_root_minus_one",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_critical_root_formula",
+      "doc": "sec5_sharp_inequality.tex l.47-48 (`\u22121 \u2264 \u03bb < 1`): \"In both cases R = 2s\u2081/((1+\u03bb)s\u2082 + \u221a((1+\u03bb)\u00b2s\u2082\u00b2 \u2212 4\u03bbs\u2081\u00b2)), with discriminant \u2265 (1\u2212\u03bb)\u00b2s\u2081\u00b2 > 0\" (the formula is a zero of `D(\u03b8, \u00b7)` in `(0, 1]`).",
+      "line": 458,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_critical_root_formula",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_critical_root_regular",
+      "doc": "sec5_sharp_inequality.tex l.48-49 (`\u22121 \u2264 \u03bb < 1`): \"so R is real-analytic, R(\u03c0\u207b) = 1, and r\u2080 := R(0\u207a) \u2208 (0, 1]\" (`r\u2080` is the root formula at `s\u2081 = 1 \u2212 q`, `s\u2082 = q`).",
+      "line": 468,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_critical_root_regular",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_critical_zero_product",
+      "doc": "sec5_sharp_inequality.tex l.49-51 (`\u22121 \u2264 \u03bb < 1`, `\u03bb \u2260 0`): \"the zeros of D(\u03b8, \u00b7) have product 1/\u03bb: for \u03bb \u2264 0 there is no other positive zero; for \u03bb > 0 the other one, 1/(\u03bbR), gives the image of Re^{\u2212i\u03b8} under the inversion z \u21a6 1/(\u03bbz\u0304)\".",
+      "line": 478,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_critical_zero_product",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "eq_5_5",
+      "doc": "(5.5), sec5_sharp_inequality.tex l.53-56 (`\u22121 \u2264 \u03bb < 1`, `0 < \u03b8 < \u03c0`): \"On the critical curve, with r = R(\u03b8), A := |1 + z_\u03b8|\u00b2 = 1 + 2r cos \u03b8 + r\u00b2 and B := |1 + \u03bbz_\u03b8|\u00b2, |Q| = (1\u2212\u03bb)\u00b2r/A, \u03c1\u00b2 = B/A, \u03c4 = r sin \u03b8/(A s\u2081), 2\u03c4 cos \u03b4 \u2212 1 = Y/(A s\u2081), Y := 2rs\u2082 \u2212 (1 + r\u00b2)s\u2081 = (1\u2212\u03bb) r (s\u2082 \u2212 rs\u2081) > 0\" (with `w = \u03c4v`).",
+      "line": 491,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.eq_5_5",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec2_gk_conj",
+      "doc": "Used at P019_paper.tex l.55-57 and sec5f_strip.tex l.67-68 (the text uses it without a statement): \"GK_p(\u03c1\u0304) = GK_p(\u03c1)\".",
+      "line": 512,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec2_gk_conj",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_gk_inv",
+      "doc": "sec5_sharp_inequality.tex l.177-178: \"GK_p(\u03bb) = |\u03bb| GK_p(1/\u03bb) (in eq:GK, \u03bb \u21a6 1/\u03bb amounts to X \u21a6 X/\u03bb\u00b2)\" (stated for every complex `\u03c1 \u2260 0`).",
+      "line": 517,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_gk_inv",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_lambda_one",
+      "doc": "sec5_sharp_inequality.tex l.177: \"\u03bb = 1 is trivial (P\u208a + P\u208b = I, GK_p(1) = 1)\": `N_p(1) = 1 = GK_p(1)`.",
+      "line": 521,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_lambda_one",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "eq_5_7",
+      "doc": "(5.7), sec5_sharp_inequality.tex l.99-101 (`\u22121 \u2264 \u03bb < 1`, `0 < \u03b8 < \u03c0`): \"K_f(\u03b8) := 2(1\u2212\u03bb)^p \u03c1^{p\u22122} \u03c4 |Q|^{1\u2212q}/(2\u03c4 cos \u03b4 \u2212 1) = 2(1\u2212\u03bb)\u00b2 sin \u03b8 r^{2\u2212q} B^{q\u22121}/Y (r = R(\u03b8))\"; `curveKf` is the first form.",
+      "line": 528,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.eq_5_7",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "thmC1_Kf_minus_one",
+      "doc": "Proof of Theorem C1, sec5_sharp_inequality.tex l.169-171 (`\u03bb = \u22121`, `\u03b5 = p \u2212 1`): \"R \u2261 1, B = 4 sin\u00b2(\u03b8/2), Y = 4 cos(\u03b8/2) sin(\u03b5\u03b8/2), and (5.7) gives K_f = 2^p sin^\u03b5(\u03b8/2)/sin(\u03b5\u03b8/2)\".",
+      "line": 538,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.thmC1_Kf_minus_one",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "thmC1_Kf_minus_one_decreasing",
+      "doc": "Proof of Theorem C1, sec5_sharp_inequality.tex l.171 (`\u03bb = \u22121`): \"(ln K_f)\u2032 = (\u03b5/2)[cot(\u03b8/2) \u2212 cot(\u03b5\u03b8/2)] < 0\"; hence `K_f` is strictly decreasing on `(0, \u03c0)`.",
+      "line": 548,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.thmC1_Kf_minus_one_decreasing",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "lemmaA_bracket",
+      "doc": "Lemma A / A\u207a, sec5_sharp_inequality.tex l.60-63, the bracket of (5.6) (`1 < p < 2`, `\u22121 \u2264 \u03bb < 1`, `0 < \u03b8 < \u03c0`): \"(1\u2212q)(1+\u03bb)\u00b2 cos(q\u03b8) \u2212 |v|\u00b2 sin \u03b4/sin \u03b8 < 0\", `q = p/2`, `\u03b4 = (1\u2212q)\u03b8`, `v = e^{i\u03b4} + \u03bbe^{\u2212i\u03b4}`.",
+      "line": 558,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.lemmaA_bracket",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "intro_norm_reduce",
+      "doc": "P019_paper.tex l.55-57: \"These identities reduce nontrivial cases to |\u03c1| \u2264 1 and 1 < p < 2\": with `q \u2208 {p, p\u2032}`, `1 < q \u2264 2`, `r \u2208 {\u03c1, \u03c1\u0304, 1/\u03c1, 1/\u03c1\u0304}`, `|r| \u2264 1` and `s = max(1, |\u03c1|)`, both `N_p(\u03c1) = s N_q(r)` and `GK_p(\u03c1) = s GK_q(r)` (uses the cited `P\u208a` on `L^{p\u2032}` when `p > 2`).",
+      "line": 567,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.intro_norm_reduce",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hv2000_riesz_norm",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED-FROM-CITED"
+    },
+    {
+      "name": "lemmaA_tan_div_increasing",
+      "doc": "Lemma A, sec5_sharp_inequality.tex l.72: \"tan y/y increases\" (on `(0, \u03c0/2)`).",
+      "line": 576,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.lemmaA_tan_div_increasing",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "lemmaA_tan_step",
+      "doc": "Lemma A, sec5_sharp_inequality.tex l.71-72 (`0 < q < 1`, `0 < \u03b8 < \u03c0/2`): \"tan(q\u03b8)/(q\u03b8) < tan \u03b8/\u03b8\".",
+      "line": 580,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.lemmaA_tan_step",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec2_gk_matrix_invariants",
+      "doc": "sec2_obstacle.tex l.21-22: \"The squared Frobenius norm and the squared modulus of the determinant of this matrix are |\u03b1|\u00b2 + |\u03b2|\u00b2 + |\u03b2 \u2212 \u03b1|\u00b2 cot\u00b2(\u03c0/p) and |\u03b1\u03b2|\u00b2\".",
+      "line": 586,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec2_gk_matrix_invariants",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec2_gk_swap_conj",
+      "doc": "sec2_obstacle.tex l.23: the invariants \"are unchanged by interchanging \u03b1, \u03b2, conjugating both coefficients\", so `GK_p(\u03b1, \u03b2) = GK_p(\u03b2, \u03b1) = GK_p(\u1fb1, \u03b2\u0304)` (`1 < p`).",
+      "line": 593,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec2_gk_swap_conj",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "endpoint_threshold_radicand",
+      "doc": "endpoint_estimate.tex:9\u201314 and sec4b_failure.tex:15\u201316: the endpoint D equals the square root of the global local-threshold radicand.",
+      "line": 602,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.endpoint_threshold_radicand",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_localF_endpoint",
+      "doc": "sec4b_failure.tex:95: F>0 on the explicit interval (1, 1 + 10^{\u22126}].",
+      "line": 607,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_localF_endpoint",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "endpoint_threshold_identification",
+      "doc": "endpoint_estimate.tex:9\u201314 and sec4b_failure.tex:15\u201316: the endpoint formula denotes the global lambda_loc on the entire endpoint interval.",
+      "line": 612,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.endpoint_threshold_identification",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "endpoint_K_identification",
+      "doc": "sec2_obstacle.tex:145 and endpoint_estimate.tex:39\u201348: the absolute-cosine contact constant is the shared K constant for 1 < p < 2.",
+      "line": 617,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.endpoint_K_identification",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_local_gap_squared",
+      "doc": "sec4b_failure.tex:134,calculation_certificates.tex:31: the clipped square-root upper bound is exactly the rational radicand bound. This proves the reduction, not the remaining bound on localD2 over the compact interval.",
+      "line": 623,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_local_gap_squared",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_localF_bracket_lower",
+      "doc": "sec4b_failure.tex:90,97\u201398;calculation_certificates.tex:21: the lower pc bracket endpoint has positive F.",
+      "line": 629,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_localF_bracket_lower",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_localF_bracket_upper",
+      "doc": "sec4b_failure.tex:90,97\u201398;calculation_certificates.tex:21: the upper pc bracket endpoint has negative F.",
+      "line": 634,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_localF_bracket_upper",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_O09",
+      "doc": "sec2_obstacle.tex:51\u201355; both squared bases and exact pair factorization.",
+      "line": 642,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_O09",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_O13",
+      "doc": "sec2_obstacle.tex:60; real ratio gives an even obstacle.",
+      "line": 652,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_O13",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_O14",
+      "doc": "sec2_obstacle.tex:60\u201361; radial expression and actual infimum.",
+      "line": 656,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_O14",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_O36",
+      "doc": "sec2_obstacle.tex:144\u2013152; K closed form and positive-base derivative.",
+      "line": 663,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_O36",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_O37",
+      "doc": "sec2_obstacle.tex:153; projection endpoint K simplification.",
+      "line": 676,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_O37",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_E02",
+      "doc": "endpoint_estimate.tex:8,14; full angular range and inversion.",
+      "line": 681,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_E02",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_E05",
+      "doc": "endpoint_estimate.tex:19\u201322; four enclosure ingredients.",
+      "line": 687,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_E05",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "phi_ge_one",
+      "doc": "sec5f_strip.tex l.59-60: \"g \u2265 (T\u2081 + 0.95)/0.05^q \u2212 \u03ba (as \u03c6 \u2265 1)\", where \u03c6(x) = (1 \u2212 (1\u2212x)^p)/x (l.18); here for 1 \u2264 p and 0 \u2264 x \u2264 1.",
+      "line": 701,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.phi_ge_one",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "strip_cover",
+      "doc": "calculation_certificates.tex l.28: \"The primary corner and bulk cover the required strip; boundaries overlap\". The two domains are table rows l.24-25: Primary corner p\u2208[p\u2080,b\u2081], 0<\u03b4\u22640.05; Primary bulk [a\u2080,1.268]\u00d7[0.05,1] \u222a [b\u2081,1.268]\u00d7[0,0.05] in (p,\u03b4). (The row covers p \u2208 [p\u2080, 1.268], 0 < \u03b4 < 1, with the corner taken from a\u2080.)",
+      "line": 708,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.strip_cover",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "exprel_coordinate_identities",
+      "doc": "sec5f_strip.tex l.56-58: \"The quotients are evaluated without division by \u03b7 through the entire function E(z) = (1 \u2212 e^{\u2212z})/z: \u03b4 = \u03b7E(\u03b7), s = \u03c3E(\u03c3\u03b7)/E(\u03b7), 1 \u2212 s = e^{\u2212\u03c3\u03b7}(1\u2212\u03c3)E((1\u2212\u03c3)\u03b7)/E(\u03b7), s\u03c6(s\u03b4) = p\u03c3E(p\u03c3\u03b7)/E(\u03b7)\" (`exprel` is E).",
+      "line": 716,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.exprel_coordinate_identities",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "g_zero",
+      "doc": "sec5f_strip.tex l.20-21: \"At \u03b4 = 0, g(0, s) = p(A + s)/(s(1\u2212s))^q \u2212 2^q s\u2080^{p\u22122} c\u2080^{1\u2212q}\".",
+      "line": 726,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.g_zero",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "cDelta_eq_gk",
+      "doc": "sec5f_strip.tex l.19: \"C = C(\u03b4) is the root near 1 of s\u2080C\u00b2 \u2212 \u03b4C \u2212 s\u2080(1 \u2212 \u03b4) = 0\"; for \u03bb = 1 \u2212 \u03b4 this is C = GK_p(\u03bb) (sec4a_criterion.tex l.45-46: \"The quadratic for C gives the exact relations s\u2080(C\u00b2 \u2212 1) = \u03b4(C \u2212 s\u2080)\"). `cDelta` is this root, continued also to \u03b4 < 0; the row is the side 0 \u2264 \u03b4 < 1.",
+      "line": 733,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.cDelta_eq_gk",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "g_tail_bounds",
+      "doc": "sec5f_strip.tex l.59-60: \"Near the ends s \u2264 0.05 and s \u2265 0.95: g \u2265 T\u2081/0.05^q \u2212 \u03ba and g \u2265 (T\u2081 + 0.95)/0.05^q \u2212 \u03ba (as \u03c6 \u2265 1)\" (`lowTail` and `highTail` are the two right sides).",
+      "line": 739,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.g_tail_bounds",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "bulk_positive",
+      "doc": "Proposition S, proof, \"The rest\", sec5f_strip.tex l.62-64: \"interval arithmetic on boxes in (p, \u03b4, s) ... A mean value form on boxes of [0.05, 0.95] in s (13168 boxes) and s-tail rectangles (714) prove g > 0\"; calculation_certificates.tex l.25 (Primary bulk: \"g>0 for every 0<s<1\").",
+      "line": 748,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.bulk_positive",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [
+        "GKSharp.ComputerChecked.CheckStripBulkMiddle",
+        "GKSharp.ComputerChecked.CheckStripBulkTails"
+      ],
+      "status": "PROVED-GIVEN GKSharp.ComputerChecked.CheckStripBulkMiddle, GKSharp.ComputerChecked.CheckStripBulkTails"
+    },
+    {
+      "name": "sigma_core_cover",
+      "doc": "sec5f_strip.tex l.54-55: \"\u03c3 \u2208 [0.045, 0.95], which covers s \u2208 [0.05, 0.95] since sE(\u03b7) \u2264 \u03c3 \u2264 s\".",
+      "line": 753,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sigma_core_cover",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "involution",
+      "doc": "Lemma J, sec5f_strip.tex l.24-25: \"Let \u03b4\u2032 = \u2212\u03b4/(1\u2212\u03b4) (so 1 \u2212 \u03b4\u2032 = 1/\u03bb), s\u2032 = s(1\u2212\u03b4)/(1 \u2212 s\u03b4) and W(\u03b4) = (1\u2212\u03b4)^{q\u22121}C(\u03b4)^p. Then C(\u03b4)C(\u03b4\u2032) = 1 and g(\u03b4, s) = W(\u03b4) g(\u03b4\u2032, s\u2032)\" (proof l.29-33). (For \u03b4\u2032 < 0, C(\u03b4\u2032) is the continued root `cDelta`.)",
+      "line": 762,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.involution",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "etilde_even",
+      "doc": "Lemma J, sec5f_strip.tex l.25-26: \"the function \u1ebc(\u03b7, \u03c3) := g/V, V := e^{(1\u2212q)\u03b7/2}C^{p/2}, is even in \u03b7 for each \u03c3 \u2208 (0,1)\" (proof l.34-35).",
+      "line": 772,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.etilde_even",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "etilde_odd_derivatives",
+      "doc": "sec5f_strip.tex l.46: \"By Lemma J, \u1ebc\u2032(0) = \u1ebc\u2034(0) = 0\".",
+      "line": 777,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.etilde_odd_derivatives",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_Lambda",
+      "doc": "sec5_sharp_inequality.tex:95\u201396; normalized critical-curve Lambda dictionary.",
+      "line": 787,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_Lambda",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "reduction_real_segment",
+      "doc": "sec5_sharp_inequality.tex:148\u2013152; actual real-segment derivative, factorization and logarithmic derivative.",
+      "line": 797,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.reduction_real_segment",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "eq_5_2",
+      "doc": "sec5_sharp_inequality.tex:26\u201330, equation (5.2); attained full-circle extrema for positive radius.",
+      "line": 813,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.eq_5_2",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_coordinate_dictionary",
+      "doc": "sec5d_monotone.tex l.38, 56: \"\u03b1 = (1\u2212q)\u03b8 \u2208 (0, \u03c0/(m+1)) with m := q/(1\u2212q) = p/(2\u2212p) > 1\"; \"With \u03b8 = (m+1)\u03b1, \u03b5\u03b8 = (m\u22121)\u03b1, (1\u2212\u03b5)\u03b8 = 2\u03b1\" (\u03b5 = p \u2212 1).",
+      "line": 825,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_coordinate_dictionary",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_gamma_denominators",
+      "doc": "sec5d_monotone.tex l.9-10: \"the radius r = R(\u03b8) \u2208 (0,1) is written as r = sin(\u03b3 \u2212 b)/sin(\u03b3 + b) with \u03b3 \u2208 (b, \u03c0/2)\"; the denominators of (5.10), l.12, are positive (0 < b < a < \u03c0/2).",
+      "line": 836,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_gamma_denominators",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_eq_5_10",
+      "doc": "(5.10), sec5d_monotone.tex l.9-12: \"the radius r = R(\u03b8) \u2208 (0,1) is written as r = sin(\u03b3 \u2212 b)/sin(\u03b3 + b)\"; \"A product-to-sum computation turns D = 0 into \u03bc = \u2212\u03bb = sin(\u03b3 \u2212 a) sin(\u03b3 + b)/(sin(\u03b3 + a) sin(\u03b3 \u2212 b))\".",
+      "line": 845,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_eq_5_10",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_trig_dictionary",
+      "doc": "sec5d_monotone.tex l.48-49: \"D = cos \u03b1 > 0\"; \"Using D\u00b2 \u2212 C\u00b2 = sin \u03b8 sin(\u03b5\u03b8) and sin u\u2083 C/D = sin u\u2081 \u2212 sin u\u2082\" (C = cos(q\u03b8); the two identities used by (5.11)).",
+      "line": 855,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_trig_dictionary",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_eq_5_11",
+      "doc": "sec5d_monotone.tex:48-50, (5.11). The identity is valid for every real X, hence also X=cos(2 gamma).",
+      "line": 865,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_eq_5_11",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_sine_product",
+      "doc": "sec5d_monotone.tex l.56-57: \"sin((m+1)\u03b1) sin((m\u22121)\u03b1) = sin\u00b2(m\u03b1) \u2212 sin\u00b2\u03b1\".",
+      "line": 875,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_sine_product",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_W_Psi_identity",
+      "doc": "sec5d_monotone.tex l.56-57: \"one finds W/(4\u03b5 sin\u2074\u03b1) = 1 \u2212 \u03a8_m(\u03b1)/(m\u00b2 \u2212 1)\".",
+      "line": 880,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_W_Psi_identity",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_sine_comparison",
+      "doc": "sec5d_monotone.tex l.65-66 (proof of Lemma B): \"we have 0 < sin(m\u03b1) < m sin \u03b1\". The hypotheses are slightly more general than the paper's \u03b1 interval.",
+      "line": 888,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_sine_comparison",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_Psi_pos",
+      "doc": "sec5d_monotone.tex l.65-66 (proof of Lemma B): \"while \u03a8_m(\u03b1) > 0\", on the printed domain \u03b1 \u2208 (0, \u03c0/(m+1)) (l.38). This does not assert strict monotonicity of K_f.",
+      "line": 894,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_Psi_pos",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_sinc_strictAntiOn",
+      "doc": "sec5d_monotone.tex l.65: \"since sin x / x decreases on (0, \u03c0)\".",
+      "line": 898,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_sinc_strictAntiOn",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "reQPow_continuous",
+      "doc": "sec4a_criterion.tex:11\u201312; continuity of the real part of the fractional power, including zero.",
+      "line": 906,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.reQPow_continuous",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "reQPow_inv",
+      "doc": "sec4a_criterion.tex:20\u201321; inversion identity.",
+      "line": 910,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.reQPow_inv",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "quadratic_identities",
+      "doc": "sec4a_criterion.tex:46; exact GK quadratic identities.",
+      "line": 915,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.quadratic_identities",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "strict_jordan_pp",
+      "doc": "sec4b_failure.tex:84\u201385 (proof of Corollary L0, \"which is Jordan's inequality\"); strict Jordan consequence.",
+      "line": 922,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.strict_jordan_pp",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "h_le_axisUpper",
+      "doc": "sec4a_criterion.tex:44\u201345; sec4b_failure.tex:115\u2013117 (4.7); actual infimum bounded by axis witness.",
+      "line": 927,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.h_le_axisUpper",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "h_le_delta_g",
+      "doc": "sec4b_failure.tex:127\u2013128; axis rescaling: \"With \u03c1 = 1 \u2212 s\u03b4 (s \u2208 (0,1) fixed), (4.7) gives h \u2264 \u03b4 g(\u03b4, p, s)\".",
+      "line": 933,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.h_le_delta_g",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sStar_spec",
+      "doc": "sec4a_criterion.tex:38,51\u201352; unique interior quadratic root and unique global minimum.",
+      "line": 939,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sStar_spec",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "omega_midpoint_bound",
+      "doc": "sec4a_criterion.tex:54; compare the minimum with its midpoint value.",
+      "line": 947,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.omega_midpoint_bound",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "contact_rational_identities",
+      "doc": "sec4b_failure.tex:47\u201351 (Step 6, \"the contact identities give\"); all three rational identities at the actual chosen contact.",
+      "line": 952,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.contact_rational_identities",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "contact_root_scalar_properties",
+      "doc": "sec4b_failure.tex:26,40 (\"r > 1 the larger root\"; \"v = r \u2212 \u03bb/r > 0\"); scalar contact root inequalities and quadratic identity only.",
+      "line": 961,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.contact_root_scalar_properties",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "contact_bZero_positive",
+      "doc": "sec4b_failure.tex:70 (\"B\u2080 = (1\u2212\u03bb)(1+\u03bb)\u00b2/(c\u2080\u00b3s\u2080\u00b2v\u00b3) > 0\"); positive scalar prefactor.",
+      "line": 968,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.contact_bZero_positive",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "contact_scalar_sign_test",
+      "doc": "sec4b_failure.tex:66\u201373 (\"Thus \u03bc\u2033(\u03b8\u2080) < 0 if and only if (pp\u2032/4)s\u2080\u00b2 + 4\u03bbc\u2080\u2074/(1+\u03bb)\u00b2 > 1\"); scalar sign equivalence; Schur/envelope identification is separate.",
+      "line": 973,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.contact_scalar_sign_test",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "local_threshold_iff",
+      "doc": "sec4b_failure.tex:15,74\u201375 (\"Equivalently, \u03bb > \u03bb_loc(p) := (1 \u2212 d)/(1 + d)\"); the exact local threshold comparison.",
+      "line": 984,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.local_threshold_iff",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "local_witness_iff",
+      "doc": "sec4b_failure.tex:89,93\u201394 (\"Some \u03bb \u2208 (0, 1) satisfies (4.5) iff F(p) ... > 0\"); existence of a local witness iff F is positive.",
+      "line": 990,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.local_witness_iff",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "localF_stable",
+      "doc": "sec4b_failure.tex:94 (\"For the zero set, write F = (p \u2212 2)\u00b2/(p\u22121) \u2212 4 sin\u00b2(\u03c0(p \u2212 2)/(2p))\"); stable expression for F.",
+      "line": 995,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.localF_stable",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "localF_endpoint_one",
+      "doc": "sec4b_failure.tex:95 (\"On (1, 1 + 10^{\u22126}], F \u2265 1/(p\u22121) \u2212 8 > 0\"); lower bound and positivity near1.",
+      "line": 1001,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.localF_endpoint_one",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "localF_endpoint_two",
+      "doc": "sec4b_failure.tex:95\u201396 (\"On [3/2, 2) ... F/\u03b7\u00b2 \u2264 ... < \u22120.24\"); explicit upper bound and negativity near2.",
+      "line": 1006,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.localF_endpoint_two",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "omegaFirst_endpoints",
+      "doc": "sec4a_criterion.tex:51\u201352; divergence at both endpoints.",
+      "line": 1012,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.omegaFirst_endpoints",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "first_axis_zero_of",
+      "doc": "sec4b_failure.tex:111 (\"Consequently a first zero \u03bb\u2080(p) of h(\u00b7,p) exists in (0, \u03bb_loc(p))\"); first interior zero from explicit continuity and endpoint signs.",
+      "line": 1018,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.first_axis_zero_of",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "pc_spec",
+      "doc": "Lemma P_c, sec4b_failure.tex l.89-90: \"p_c \u2208 [1.213490304, 1.213490305] is the only zero of F in (1, 2)\"; proof l.97-98: \"on [1.2134, 1.2136], F\u2032 < 0 and F changes sign within the stated bracket\"; calculation_certificates.tex l.20-21 (root enclosure).",
+      "line": 1026,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.pc_spec",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [
+        "GKSharp.ComputerChecked.CheckLocalF"
+      ],
+      "status": "PROVED-GIVEN GKSharp.ComputerChecked.CheckLocalF"
+    },
+    {
+      "name": "lambdaLoc_spec",
+      "doc": "sec4b_failure.tex l.15-16: \"\u03bb_loc(p) := (1 \u2212 d)/(1 + d), where d > 0, d\u00b2 = sin\u00b2(\u03c0/p)(pp\u2032/4 \u2212 1 \u2212 cos\u00b2(\u03c0/p))/cos\u2074(\u03c0/p), whenever this is positive\"; Lemma P_c, l.89: \"Some \u03bb \u2208 (0, 1) satisfies (4.5) iff F(p) ... > 0, iff p < p_c\"; sec5f_strip.tex l.12: \"for p \u2265 p_c (where \u03bb_loc = 1)\". (`localD2` is d\u00b2.)",
+      "line": 1037,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.lambdaLoc_spec",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [
+        "GKSharp.ComputerChecked.CheckLocalF"
+      ],
+      "status": "PROVED-GIVEN GKSharp.ComputerChecked.CheckLocalF"
+    },
+    {
+      "name": "deltaLoc_gap",
+      "doc": "sec4b_failure.tex l.134: \"1 \u2212 \u03bb_loc(p) \u2264 2d \u2264 0.03 for 1.2134 \u2264 p < p_c\"; calculation_certificates.tex l.31: \"For 1.2134\u2264p<p_c, the sliver program also proves 0<\u03b4_loc(p)=1\u2212\u03bb_loc(p)\u22640.03\".",
+      "line": 1044,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.deltaLoc_gap",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [
+        "GKSharp.ComputerChecked.CheckLocalF"
+      ],
+      "status": "PROVED-GIVEN GKSharp.ComputerChecked.CheckLocalF"
+    },
+    {
+      "name": "boundary_sliver",
+      "doc": "Proposition \"Failure at the local threshold\" (sec4b_failure.tex l.111: \"For every 1 < p < p_c, h(\u03bb_loc(p), p) < 0\"), case (c), l.127-133: \"p \u2208 [1.2134, p_c): here \u03bb_loc \u2192 1 and h \u2192 0, so we rescale\"; \"Interval arithmetic gives g < 0 on [1.2134, 1.2134904] \u00d7 [0, 0.03]\"; calculation_certificates.tex l.31-32: \"h(\u03bb_loc(p),p) \u2264 \u03b4_loc(p) g_f(p,\u03b4_loc(p)) < 0\".",
+      "line": 1053,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.boundary_sliver",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [
+        "GKSharp.ComputerChecked.CheckBoundarySliver",
+        "GKSharp.ComputerChecked.CheckLocalF"
+      ],
+      "status": "PROVED-GIVEN GKSharp.ComputerChecked.CheckBoundarySliver, GKSharp.ComputerChecked.CheckLocalF"
+    },
+    {
+      "name": "boundary_bulk",
+      "doc": "Proposition \"Failure at the local threshold\", case (a), sec4b_failure.tex l.120-122: \"p \u2208 [1 + 10^{\u22126}, 1.2134]: interval arithmetic (Arb) on p-cells ... every cell gives an upper bound < 0\"; calculation_certificates.tex l.22 (Axis boundary: \"h(\u03bb_loc(p),p)<0\").",
+      "line": 1061,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.boundary_bulk",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [
+        "GKSharp.ComputerChecked.CheckBoundaryBulk"
+      ],
+      "status": "PROVED-GIVEN GKSharp.ComputerChecked.CheckBoundaryBulk"
+    },
+    {
+      "name": "etilde_zero_minimum",
+      "doc": "sec5f_strip.tex l.51: \"Also \u1ebc(0, \u03c3) = g(0, \u03c3) \u2265 \u03a9(p) \u2265 0\" (the row: the first two relations, for 1 < p < 2).",
+      "line": 1067,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.etilde_zero_minimum",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "contact_local_log",
+      "doc": "sec4b_failure.tex:24 (\"With \u2113 = log w as a holomorphic function of u = y + it\"); genuine local analytic logarithm and its derivative.",
+      "line": 1079,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.contact_local_log",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "gamma_even",
+      "doc": "sec4b_failure.tex:19 (\"Since \u03bb is real, \u0393_C(y, \u2212t) = \u0393_C(y, t)\"); real-ratio Gamma is even in the angle.",
+      "line": 1089,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.gamma_even",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "obstacle_even",
+      "doc": "sec4b_failure.tex:19 (\"Since \u03bb is real, \u0393_C(y, \u2212t) = \u0393_C(y, t), so m_C is even\"); evenness of the actual infimum.",
+      "line": 1094,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.obstacle_even",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "gamma_coordinate_bridge",
+      "doc": "sec2_obstacle.tex:60\u201361; exact exponential-coordinate bridge.",
+      "line": 1099,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.gamma_coordinate_bridge",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_local_gap_kernel",
+      "doc": "sec4b_failure.tex:134 (\"1 \u2212 \u03bb_loc(p) \u2264 2d \u2264 0.03 for 1.2134 \u2264 p < p_c\"); calculation_certificates.tex:31. Here on [1.2134, 1.2134904].",
+      "line": 1105,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_local_gap_kernel",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "g_analytic_zero",
+      "doc": "sec5f_strip.tex l.20: \"All of these are real-analytic in \u03b4 near 0, of both signs\" (here g(\u00b7, s), 0 < s < 1).",
+      "line": 1110,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.g_analytic_zero",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "etilde_taylor",
+      "doc": "sec5f_strip.tex l.46-49: \"for 0 < \u03b7 \u2264 \u03b7\u2081 := \u2212ln 0.95, \u1ebc(\u03b7, \u03c3) = \u1ebc(0, \u03c3) + e\u2082(\u03c3)\u03b7\u00b2 + c\u2084(\u03be, \u03c3)\u03b7\u2074, \u03be \u2208 (0, \u03b7)\"; \"Here e\u2082(\u03c3) = \u00bd\u2202\u00b2_\u03b7\u1ebc(0,\u03c3) and c\u2084 = (1/24)\u2202\u2074_\u03b7\u1ebc\".",
+      "line": 1116,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.etilde_taylor",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "corner_positive",
+      "doc": "Proposition S, proof, sec5f_strip.tex l.46-60: \"The corner p \u2208 [p\u2080, 1.2341027], 0 < \u03b4 \u2264 0.05\"; calculation_certificates.tex l.24 (Primary corner: \"g>0, using \u03a9(p)\u22650\") and l.35: \"The corner programs enclose derivatives on rectangles beginning at the rational a\u2080<p\u2080; positivity of the corner conclusion is invoked only for p\u2265p\u2080, where the separately proved root/sign facts give \u03a9(p)\u22650\".",
+      "line": 1126,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.corner_positive",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [
+        "GKSharp.ComputerChecked.CheckCornerDerivatives",
+        "GKSharp.ComputerChecked.CheckCornerTails"
+      ],
+      "status": "PROVED-GIVEN GKSharp.ComputerChecked.CheckCornerDerivatives, GKSharp.ComputerChecked.CheckCornerTails"
+    },
+    {
+      "name": "slice_O25",
+      "doc": "sec2_obstacle.tex:96; HKV2003 Theorem2.1,p242, existence direction, REFEREED. Bare cited restatement.",
+      "line": 1135,
+      "direct_cited_input": "GKSharp.Cited.hkv_thm21",
+      "qualified_name": "GKSharp.Paper.slice_O25",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "CITED"
+    },
+    {
+      "name": "slice_O26",
+      "doc": "sec2_obstacle.tex:97\u201399; largest homogeneous minorant, internal envelope/dilation proof from the exact cited existence input.",
+      "line": 1143,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_O26",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED-FROM-CITED"
+    },
+    {
+      "name": "symmetric_taylor_four",
+      "doc": "sec4b_failure.tex:31 (\"The odd terms cancel, so m_C(\u03b8\u2080 \u2212 s) + m_C(\u03b8\u2080 + s) \u2264 \u03bc\u2033(\u03b8\u2080)s\u00b2 + O(s\u2074)\"); symmetric fourth-order remainder from genuine local C4 regularity.",
+      "line": 1157,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.symmetric_taylor_four",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec2_homogeneous_obstacle_scaling",
+      "doc": "sec2_obstacle.tex:95\u201398; dilation of the actual homogeneous obstacle for positive spatial scale.",
+      "line": 1164,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec2_homogeneous_obstacle_scaling",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec2_homogeneous_obstacle_zero",
+      "doc": "sec2_obstacle.tex:95; the actual positive-degree homogeneous obstacle vanishes at0.",
+      "line": 1169,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec2_homogeneous_obstacle_zero",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec2_uniform_coercivity",
+      "doc": "sec2_obstacle.tex:58\u201359; actual asymmetric complex-ratio Gamma is coercive uniformly in angle. The separate leading-asymptotic equalities remain separate claims.",
+      "line": 1178,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec2_uniform_coercivity",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_O12",
+      "doc": "sec2_obstacle.tex:59\u201360; one compact radial interval, attained actual infimum, explicit boundedness below and angular continuity.",
+      "line": 1183,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_O12",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec2_homogeneous_obstacle_continuous",
+      "doc": "sec2_obstacle.tex:95; the actual homogeneous obstacle is continuous on the whole complex plane.",
+      "line": 1190,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec2_homogeneous_obstacle_continuous",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "omega_endpoint_factors",
+      "doc": "sec4a_criterion.tex:55\u201356; both explicit endpoint factors: \"s\u2080 \u2265 2(p\u22121)/p (Jordan) and c\u2080 \u2265 cos(0.001\u03c0)\".",
+      "line": 1201,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.omega_endpoint_factors",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "omega_endpoint",
+      "doc": "sec4a_criterion.tex:54\u201356; analytic endpoint negativity on (1, 1.001].",
+      "line": 1207,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.omega_endpoint",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "p0_spec",
+      "doc": "Proposition F, sec4a_criterion.tex l.40-41: \"\u03a9 < 0 on (1, p\u2080), where p\u2080 \u2248 1.2336026 is the least zero of \u03a9; the certified enclosure 1.2336025 < p\u2080 < 1.2336027\"; sec5f_strip.tex l.44: \"So p\u2080 is the only zero of \u03a9 in (1, 1.268], and \u03a9 \u2265 0 on [p\u2080, 1.268]\".",
+      "line": 1213,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.p0_spec",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [
+        "GKSharp.ComputerChecked.CheckOmegaNeg",
+        "GKSharp.ComputerChecked.CheckOmegaRoot"
+      ],
+      "status": "PROVED-GIVEN GKSharp.ComputerChecked.CheckOmegaNeg, GKSharp.ComputerChecked.CheckOmegaRoot"
+    },
+    {
+      "name": "near_identity_limits",
+      "doc": "sec4a_criterion.tex:46\u201347; all three actual GK/K near-identity limits.",
+      "line": 1221,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.near_identity_limits",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "omega_negative_eventual_h",
+      "doc": "sec4a_criterion.tex:48\u201350; negative Omega supplies an explicit eventual negative axis gap.",
+      "line": 1230,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.omega_negative_eventual_h",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "localF_derivative",
+      "doc": "sec4b_failure.tex:94,97 (F of l.94; \"F\u2032 < 0\" on [1.2134, 1.2136]); exact derivative of the actual F.",
+      "line": 1235,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.localF_derivative",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "fixed_s_quadratic_error",
+      "doc": "sec4b_failure.tex:133\u2013134 (\"at \u03b4 = 0, g = \u03a9(p) of Proposition F up to O((s \u2212 s_*)\u00b2)\"); genuine quadratic error around the actual minimizing root.",
+      "line": 1242,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.fixed_s_quadratic_error",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "cosine_kink_derivatives",
+      "doc": "sec4a_criterion.tex:22\u201323; exact two one-sided cosine branch derivatives.",
+      "line": 1248,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.cosine_kink_derivatives",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "rescaled_minimum",
+      "doc": "sec5f_strip.tex l.15-16: \"Put \u03b4 = 1 \u2212 \u03bb and \u03c1 = 1 \u2212 s\u03b4 with s \u2208 (0,1)\"; \"h = \u03b4 min_{0<s<1} g(\u03b4, s)\" (the minimum is attained).",
+      "line": 1256,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.rescaled_minimum",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "h_positive_of_g",
+      "doc": "sec5f_strip.tex l.16: \"h = \u03b4 min_{0<s<1} g(\u03b4, s)\": positivity of g for every s \u2208 (0,1) gives h > 0 (Proposition S, l.39).",
+      "line": 1264,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.h_positive_of_g",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "strip_h_positive",
+      "doc": "Proposition S, sec5f_strip.tex l.39: \"Let p\u2080 \u2264 p \u2264 1.268 and 0 < \u03bb < 1. Then h(\u03bb, p) > 0.\"",
+      "line": 1270,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.strip_h_positive",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [
+        "GKSharp.ComputerChecked.CheckCornerDerivatives",
+        "GKSharp.ComputerChecked.CheckCornerTails",
+        "GKSharp.ComputerChecked.CheckOmegaNeg",
+        "GKSharp.ComputerChecked.CheckOmegaRoot",
+        "GKSharp.ComputerChecked.CheckStripBulkMiddle",
+        "GKSharp.ComputerChecked.CheckStripBulkTails"
+      ],
+      "status": "PROVED-GIVEN GKSharp.ComputerChecked.CheckCornerDerivatives, GKSharp.ComputerChecked.CheckCornerTails, GKSharp.ComputerChecked.CheckOmegaNeg, GKSharp.ComputerChecked.CheckOmegaRoot, GKSharp.ComputerChecked.CheckStripBulkMiddle, GKSharp.ComputerChecked.CheckStripBulkTails"
+    },
+    {
+      "name": "pc_lt_p0",
+      "doc": "sec5f_strip.tex l.68: \"Theorem C* with \u03bb_loc = 1 (p\u2080 > p_c)\".",
+      "line": 1278,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.pc_lt_p0",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [
+        "GKSharp.ComputerChecked.CheckLocalF",
+        "GKSharp.ComputerChecked.CheckOmegaNeg",
+        "GKSharp.ComputerChecked.CheckOmegaRoot"
+      ],
+      "status": "PROVED-GIVEN GKSharp.ComputerChecked.CheckLocalF, GKSharp.ComputerChecked.CheckOmegaNeg, GKSharp.ComputerChecked.CheckOmegaRoot"
+    },
+    {
+      "name": "contact_gk_radius",
+      "doc": "sec4b_failure.tex:23\u201326 (\"C = GK is the maximum of |w| on this ray\"; contact radius r); the actual matrix norm and chosen contact radius.",
+      "line": 1287,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.contact_gk_radius",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "contact_ray_squared_gap",
+      "doc": "sec4b_failure.tex:23\u201324 (\"C = GK is the maximum of |w| on this ray (Lemma W)\"); squared gap identity supporting the ray maximum.",
+      "line": 1294,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.contact_ray_squared_gap",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "contact_ray_max",
+      "doc": "sec4b_failure.tex:23\u201324 (\"On the ray t = \u03b8\u2080, G \u2265 0 iff |w| \u2264 C, and C = GK is the maximum of |w| on this ray\"); the equivalence is inside the positive-radius implication.",
+      "line": 1302,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.contact_ray_max",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "wrapped_cosine_trigconvex",
+      "doc": "sec4a_criterion.tex:22\u201323; actual wrapped cosine, including continuity and periodicity.",
+      "line": 1312,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.wrapped_cosine_trigconvex",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "arch_sinusoid",
+      "doc": "sec4a_criterion.tex:26\u201327; actual obstacle contact forces the sinusoidal arch.",
+      "line": 1318,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.arch_sinusoid",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "negative_contact_unique",
+      "doc": "sec4b_failure.tex:82 (\"For \u03bb \u2264 0 the map r \u21a6 r + \u03bb/r increases on (0, \u221e)\"); negative-lambda radial monotonicity.",
+      "line": 1327,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.negative_contact_unique",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "contact_expanded_factorization",
+      "doc": "sec4b_failure.tex:53\u201370 (\"Using the three contact identities to collect these rational terms gives\"); scalar collection only, before the analytic Schur identity.",
+      "line": 1332,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.contact_expanded_factorization",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "disc_rescale",
+      "doc": "Alternative lift-route support (route R4): a negative disc integral of a continuous M with M(0) = 0 stays negative on a smaller root-free circle. It supports the lift step of sec2_obstacle.tex l.82-85 (\"write g = \u03b6^k B h with k \u2265 1, B a finite Blaschke product and h zero-free in the open disc\"); it does not assert that printed Blaschke/square-root step.",
+      "line": 1349,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.disc_rescale",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "exists_trig_near_min",
+      "doc": "Alternative lift-route support (route R4): trigonometric near-minimizers for a continuous F whose minimum \u03bc is attained in a bounded range. It supports sec2_obstacle.tex l.90-94 (\"Fix \u03b5 > 0. For each t choose y_t \u2208 [\u2212Y, Y] with \u0393_C(y_t, t) < m_C(t) + \u03b5\"); it does not assert the printed Fej\u00e9r construction or the full polynomial-disc bound.",
+      "line": 1358,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.exists_trig_near_min",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_O11",
+      "doc": "sec2_obstacle.tex l.58-60: \"\u0393_C(y, t) \u2265 (C^p \u2212 1 + o(1)) e^{qy} as y \u2192 +\u221e and \u0393_C(y,t) \u2265 (C^p \u2212 |\u03c1|^p + o(1)) e^{\u2212qy} as y \u2192 \u2212\u221e, uniformly in t; so the infimum is attained in a fixed interval [\u2212Y, Y]\". The row states both limits, uniformly in every real angle, for C > max(1, |\u03c1|).",
+      "line": 1372,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_O11",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "contact_harmonic_derivatives",
+      "doc": "sec4b_failure.tex:34\u201337 (\"Both \u03c7 and L are harmonic in (y, t), so L_tt = \u2212L_yy\"); actual contact harmonicity and G derivatives.",
+      "line": 1384,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.contact_harmonic_derivatives",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "contact_derivative_values",
+      "doc": "sec4b_failure.tex:42\u201345 (\"In particular \u2202\u00b2_y\u0393_C = e^{\u2212qy}pP L_yy > 0\"); actual partial derivative values and strictly positive Gamma_yy.",
+      "line": 1400,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.contact_derivative_values",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_cDelta_quadratic",
+      "doc": "sec5f_strip.tex:19 (\"C = C(\u03b4) is the root near 1 of s\u2080C\u00b2 \u2212 \u03b4C \u2212 s\u2080(1 \u2212 \u03b4) = 0\"); the positive root, for both signs of \u03b4.",
+      "line": 1414,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_cDelta_quadratic",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_powSlope_exprel",
+      "doc": "sec5f_strip.tex:59 (\"(C^p \u2212 1)/(C \u2212 1) = pE(\u2212pL)/E(\u2212L) with L = ln C\"); removable values at x = 1 and p = 0 included.",
+      "line": 1419,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_powSlope_exprel",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_O24",
+      "doc": "Theorem R, \"Only if\", Steps 1-2, sec2_obstacle.tex l.82-95; conclusion l.94-95: \"Thus \u222b_T M(g) d\u03b8/2\u03c0 \u2265 0 for every polynomial g with g(0) = 0, where M(\u03b6) = |\u03b6|^q m_C(arg \u03b6), M(0) = 0, is continuous on \u2102\". The Lean proof takes the alternative lift (route R4), not the printed Blaschke/square-root/Fej\u00e9r steps.",
+      "line": 1426,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_O24",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec2_qsub_iff_trigconvex",
+      "doc": "sec2_obstacle.tex l.67-68: \"\u03c6 is q-subtrigonometric if and only if \u03c6 is continuous and \u03c6'' + q\u00b2\u03c6 \u2265 0\" (chord form of trigonometric q-convexity, Levin Lecture 8). Throughout sec2, q = p/2 > 1/2 (l.10).",
+      "line": 1437,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec2_qsub_iff_trigconvex",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "trigconvex_iff_QTrigConvex",
+      "doc": "The chord form `TrigConvex q f` is the shared `Threshold.QTrigConvex q f` (q > 0). Bridge for route R10 (Lemma chord, sec2_obstacle.tex l.108-110: \"Let \u03c6 be q-subtrigonometric, c \u2208 \u211d and 0 < s \u2264 \u03c0/q. Then \u03c6(c \u2212 s) + \u03c6(c + s) \u2265 2 cos(qs) \u03c6(c)\").",
+      "line": 1444,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.trigconvex_iff_QTrigConvex",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "qsub_continuous_trigconvex",
+      "doc": "sec2_obstacle.tex l.67-69: \"\u03c6 is q-subtrigonometric if and only if \u03c6 is continuous and \u03c6\u2033 + q\u00b2\u03c6 \u2265 0 in the sense of distributions on \u211d (\u201ctrigonometrically q-convex\u201d functions, Levin, Lecture 8)\". This row is the \"only if\" half, with q-convexity in its three-point sine form `Threshold.QTrigConvex`, for q > 1/2 (q = p/2, l.10); used in sec4a_criterion.tex l.25-33.",
+      "line": 1451,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.qsub_continuous_trigconvex",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_cosine_qsub",
+      "doc": "sec4a_criterion.tex l.22-23: \"t \u21a6 K cos(q|t|) is 2\u03c0-periodic and q-subtrigonometric: it solves \u03c6\u2033 + q\u00b2\u03c6 = 0 off t = \u03c0, and at t = \u03c0 its derivative jumps from \u2212Kq sin(q\u03c0) to +Kq sin(q\u03c0), a convex kink\" (K \u2265 0, 1 < p < 2; the row writes the function as K cos(q arg e^{it})).",
+      "line": 1458,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_cosine_qsub",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_O19",
+      "doc": "sec2_obstacle.tex l.76-77: \"S(\u03b6) = |\u03b6|^q \u03c6(arg \u03b6) is subharmonic on \u2102 \\ {0} and tends to 0 at 0 (\u03c6 is bounded), so it extends subharmonically to \u2102 with S(0) = 0\". Range q > 1/2: sec2_obstacle.tex l.10 \"q = p/2\", 1 < p < \u221e.",
+      "line": 1466,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_O19",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_O20",
+      "doc": "sec2_obstacle.tex l.77-80: \"\u03a8(z, w) = S(zw) is plurisubharmonic and \u03a8 \u2264 G_C ... where zw = 0, \u03a8 = 0 \u2264 G_C ... For polynomials with w(0) = 0 the sub-mean value property ... gives \u222b_T G_C(z, w) \u2265 \u222b_T \u03a8(z, w) \u2265 \u03a8(z(0), 0) = 0\".",
+      "line": 1473,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_O20",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "thmR_if",
+      "doc": "Theorem R, sec2_obstacle.tex l.72-73: \"N_p(\u03c1) \u2264 C if and only if there is a q-subtrigonometric \u03c6 with \u03c6 \u2264 m_C on \u211d\". This row is the \"if\" direction (proof l.76-80), for 1 < p < \u221e, \u03c1 \u2208 \u2102, C > max(1, |\u03c1|), q = p/2.",
+      "line": 1482,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.thmR_if",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_O27",
+      "doc": "Theorem R, \"Only if\", Step 3, sec2_obstacle.tex l.98-101: \"PM(\u03c4\u03b6) = \u03c4^q PM(\u03b6). Hence PM(\u03b6) = |\u03b6|^q \u03c6(arg \u03b6)\"; \"If \u03c6(t\u2080) = \u2212\u221e, then PM = \u2212\u221e on a ray, which is not polar; impossible\"; \"A finite angular function of a homogeneous subharmonic function is continuous by the angular-convexity criterion stated above. Thus \u03c6 is q-subtrigonometric\". The row: any q-homogeneous subharmonic V with V(0) \u2265 0, q > 1/2 (q = p/2, l.10).",
+      "line": 1491,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_O27",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "thmR_only_if",
+      "doc": "sec2_obstacle.tex:82\u2013101 (proof of Theorem R, \"Only if\", Steps 1-3); Step 3 uses the cited [HKV, Theorem 2.1], l.96.",
+      "line": 1499,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.thmR_only_if",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED-FROM-CITED"
+    },
+    {
+      "name": "slice_O28",
+      "doc": "sec2_obstacle.tex:73\u201374 (\"Hence N_p(\u03c1) = inf{C : such a \u03c6 exists}\"); exact infimum assembly including the norm=max boundary.",
+      "line": 1505,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_O28",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_O18",
+      "doc": "Theorem R, sec2_obstacle.tex:71\u201374 (proof l.75\u2013101): \"Then N_p(\u03c1) \u2264 C if and only if there is a q-subtrigonometric \u03c6 with \u03c6 \u2264 m_C on \u211d. Hence N_p(\u03c1) = inf{C : such a \u03c6 exists}\" (all 1 < p < \u221e, all complex \u03c1). Step 3 of the proof uses the cited [HKV, Theorem 2.1], l.96.",
+      "line": 1516,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_O18",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED-FROM-CITED"
+    },
+    {
+      "name": "reduction_phi_neg_below_mid",
+      "doc": "Reduction, Step 2, sec5_sharp_inequality.tex l.149-151: \"\u03a6\u2032(\u03c1) = \u2212(1\u2212\u03bb)^p p\u03c1^{p\u22121} \u2212 KqQ_\u211d^{q\u22121}(1 + \u03bb \u2212 2\u03c1)\"; \"For \u03c1 \u2264 \u03c1\u2081 := (1+\u03bb)/2 both terms of the middle expression are \u2264 0, the first < 0\" (K \u2265 0, Q_\u211d = (\u03c1\u2212\u03bb)(1\u2212\u03c1) > 0).",
+      "line": 1530,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.reduction_phi_neg_below_mid",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "eq_5_3",
+      "doc": "(5.3), sec5_sharp_inequality.tex l.33-37 (`1 < p < 2`, `\u22121 \u2264 \u03bb < 1`, `\u03c1 > 0`, `0 < \u03c6 < \u03c0`): \"Im Q > 0 and f_\u03c1 is smooth\"; \"f_\u03c1\u2032(\u03c6) = \u2212q|Q|^{q\u22121} Im(v\u0304 w)\", `\u03b8 = arg Q`, `v = e^{i\u03b4} + \u03bbe^{\u2212i\u03b4}`, `\u03b4 = (1\u2212q)\u03b8`. (The second form of (5.3) and \"f\u2032 = 0 iff D = 0\" are the row `eq_5_3_second`.)",
+      "line": 1541,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.eq_5_3",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "eq_5_6",
+      "doc": "Lemma A (5.6), sec5_sharp_inequality.tex l.60-63: at every critical point of `f_\u03c1` in `(0, \u03c0)`, \"f_\u03c1\u2033 = q|Q|^{q\u22122}\u03c4\u00b2(1\u2212\u03bb)\u00b2[(1\u2212q)(1+\u03bb)\u00b2 cos(q\u03b8) \u2212 |v|\u00b2 sin \u03b4/sin \u03b8] < 0\", `\u03c4 = \u03c1/|v|`. (The bracket is `lemmaA_bracket`.)",
+      "line": 1554,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.eq_5_6",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_lambda_threshold_lt_one",
+      "doc": "sec5d_monotone.tex l.74 (proof of Lemma B\u207a): \"and 4\u03bb/(1+\u03bb)\u00b2 < 1 it suffices that \u03a8_m \u2265 m\u00b2 \u2212 1\".",
+      "line": 1570,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_lambda_threshold_lt_one",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_Bplus_first_bracket",
+      "doc": "sec5d_monotone.tex l.79-80 (proof of Lemma B\u207a): \"The k = 1 bracket is \u2212(\u03b5\u00b2 \u2212 4\u03b5 + 1) \u2265 0 for \u03b5 \u2265 2 \u2212 \u221a3\".",
+      "line": 1575,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_Bplus_first_bracket",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_Bplus_higher_bracket",
+      "doc": "sec5d_monotone.tex l.80 (proof of Lemma B\u207a): \"for k \u2265 2, 2(1\u2212\u03b5)^{2k} \u2264 2(4 \u2212 2\u221a3)\u00b2 < 0.58\".",
+      "line": 1581,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_Bplus_higher_bracket",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_log_series",
+      "doc": "sec5d_monotone.tex l.75 (proof of Lemma B\u207a): \"ln(1\u2212u) = \u2212\u2211_k u^k/k\".",
+      "line": 1588,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_log_series",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_euler_sine_product",
+      "doc": "sec5d_monotone.tex l.75 (proof of Lemma B\u207a): \"by sin y = y\u220f_n (1 \u2212 y\u00b2/(n\u03c0)\u00b2)\", as a convergent product for sin x / x.",
+      "line": 1594,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_euler_sine_product",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_arch_interval_length",
+      "doc": "sec4a_criterion.tex l.31-32: \"the tangent sinusoid at \u03b8\u2080 is K cos(qt), and [\u03b8\u2080, \u03c0] has length \u03c0 \u2212 \u03c0/p < \u03c0/q\".",
+      "line": 1600,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_arch_interval_length",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_omegaFirst_unique_critical",
+      "doc": "sec4a_criterion.tex l.51: \"The value s_* minimises s \u21a6 (A+s)/(s(1\u2212s))^q, which tends to +\u221e at both ends and has one critical point\".",
+      "line": 1606,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_omegaFirst_unique_critical",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_contact_ray_real_part",
+      "doc": "sec4b_failure.tex l.24-25 (on the ray t = \u03b8\u2080, \u03b6 = re^{i\u03b8\u2080}, every r > 0): \"Re[(\u03b6 + \u03bb)(\u03b6 + 1)/\u03b6] = 1 + \u03bb \u2212 c\u2080(r + \u03bb/r)\".",
+      "line": 1612,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_contact_ray_real_part",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_localF_endpoint_constant",
+      "doc": "sec4b_failure.tex l.95-96 (proof of Lemma P_c, the range [3/2, 2)): \"F/\u03b7\u00b2 \u2264 1/(p\u22121) \u2212 (\u03c0/p)\u00b2(1 \u2212 x\u00b2/6)\u00b2 \u2264 2 \u2212 (\u03c0\u00b2/4)(1 \u2212 \u03c0\u00b2/216)\u00b2 < \u22120.24\" (the last numerical inequality).",
+      "line": 1621,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_localF_endpoint_constant",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_gk_kconst_continuous",
+      "doc": "sec4b_failure.tex l.106: \"For fixed 1 < p < 2, the functions \u03bb \u21a6 GK_p(\u03bb) and \u03bb \u21a6 K are continuous on (\u22121, 1).\"",
+      "line": 1627,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_gk_kconst_continuous",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_limsup_axis",
+      "doc": "sec4a_criterion.tex l.47-49: \"At the single point \u03c1_* = 1 \u2212 s_*\u03b4 we have Q(\u03c1_*) = s_*(1\u2212s_*)\u03b4\u00b2 exactly and (C^p \u2212 \u03c1_*^p)/\u03b4 \u2192 p(A + s_*), so limsup_{\u03b4\u21920} m_GK(0)/\u03b4 \u2264 p(A + s_*)/(s_*(1\u2212s_*))^q\" (stated in \u03b5 form). The direct witness route is route difference R3.",
+      "line": 1635,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_limsup_axis",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_reQPow_monotone",
+      "doc": "sec5_sharp_inequality.tex l.16-17 (`1 < p < 2`, `q = p/2`): \"x \u21a6 Re x^q = |x|^q cos(q arg x) is ... nondecreasing on \u211d (cos q\u03c0 < 0)\". (Continuity on \u2102 is `reQPow_continuous`.)",
+      "line": 1642,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_reQPow_monotone",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_Q_ends",
+      "doc": "(A3), sec5_sharp_inequality.tex l.90-91 (`Q(\u03c6) = Q(\u03c1e^{i\u03c6})`): \"Q(0) \u2212 Q(\u03c0) = 2(1+\u03bb)\u03c1 \u2265 0 (both real) gives max f_\u03c1 = f_\u03c1(0)\" (with `sec5_reQPow_monotone`: `f_\u03c1(\u03c0) \u2264 f_\u03c1(0)`).",
+      "line": 1648,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_Q_ends",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "lemma_contact",
+      "doc": "Lemma (the contact point), sec5_sharp_inequality.tex l.106-108 (`1 < p < 2`, `\u22121 \u2264 \u03bb < 1`, `C = GK_p(\u03bb)`, `K` of eq:K, `\u03b8\u2080 = \u03c0/p`): \"\u03c1(\u03b8\u2080) = C, \u039b(\u03b8\u2080) = 0, K_f(\u03b8\u2080) = K, and z_* := z_{\u03b8\u2080} = 1/\u03b6_*; so |z_*| = 1/r_*\" (`r_*` = contactRadius, `\u03b6_* = r_* e^{i\u03b8\u2080}`).",
+      "line": 1659,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.lemma_contact",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "contact_spec",
+      "doc": "sec4b_failure.tex l.26-29: \"So the contact point is \u03b6_* = re^{i\u03b8\u2080} with r + \u03bb/r = \u03c3 := (1+\u03bb)/c\u2080, r > 1 the larger root, and \u0393_C = \u2202_y\u0393_C = 0 at (y_*, \u03b8\u2080), y_* = log r\"; \"\u2202\u00b2_y\u0393_C(y_*, \u03b8\u2080) > 0\".",
+      "line": 1679,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.contact_spec",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_contact_gamma_scaling",
+      "doc": "sec4b_failure.tex l.36-37: \"Since also G = G_y = 0 there, e^{qy}\u2202\u00b2_t\u0393_C = G_tt, e^{qy}\u2202\u00b2_y\u0393_C = G_yy and e^{qy}\u2202_t\u2202_y\u0393_C = G_ty \u2212 qG_t\".",
+      "line": 1690,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_contact_gamma_scaling",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "contact_schur_identity",
+      "doc": "sec4b_failure.tex l.31-38: \"\u03bc\u2033 = \u2202\u00b2_t\u0393_C \u2212 (\u2202_t\u2202_y\u0393_C)\u00b2/\u2202\u00b2_y\u0393_C\" and, from the exponential scaling, (4.6): \"e^{qy_*}\u03bc\u2033(\u03b8\u2080)/(pP) = [L_yy(2p\u03c7_tL_t + pL_t\u00b2) \u2212 L_yy\u00b2 \u2212 (L_ty + L_t(p\u03c7_y \u2212 q))\u00b2]/L_yy\".",
+      "line": 1702,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.contact_schur_identity",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "contact_schur_expanded",
+      "doc": "sec4b_failure.tex l.53-61: \"Substituting Step 5 into (4.6) first yields\" the displayed expansion of e^{qy_*}\u03bc\u2033(\u03b8\u2080)/(pP).",
+      "line": 1715,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.contact_schur_expanded",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "contact_sign_factorization",
+      "doc": "sec4b_failure.tex l.64-73: \"Using the three contact identities to collect these rational terms gives e^{qy_*}\u03bc\u2033(\u03b8\u2080)/(pP) = B\u2080[(p\u22121)(1 \u2212 4\u03bbc\u2080\u2074/(1+\u03bb)\u00b2) \u2212 p\u00b2s\u2080\u00b2/4], B\u2080 = (1\u2212\u03bb)(1+\u03bb)\u00b2/(c\u2080\u00b3s\u2080\u00b2v\u00b3) > 0\"; \"Thus \u03bc\u2033(\u03b8\u2080) < 0 if and only if (pp\u2032/4)s\u2080\u00b2 + 4\u03bbc\u2080\u2074/(1+\u03bb)\u00b2 > 1\" (also for \u22121 < \u03bb \u2264 0, l.82-83).",
+      "line": 1730,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.contact_sign_factorization",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "corollary_L0",
+      "doc": "Corollary L0, sec4b_failure.tex l.78-79: \"For 1 < p < 2 and \u22121 < \u03bb \u2264 0, \u03bc\u2033(\u03b8\u2080) > 0.\" (proof l.82-85).",
+      "line": 1739,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.corollary_L0",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "contact_envelope",
+      "doc": "sec4b_failure.tex l.29-31: \"By the implicit function theorem there is a smooth branch y_*(t) of \u2202_y\u0393_C = 0 near \u03b8\u2080, and m_C(t) \u2264 \u03bc(t) := \u0393_C(y_*(t), t) with \u03bc(\u03b8\u2080) = 0\".",
+      "line": 1745,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.contact_envelope",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "negative_pair_of_muSecond",
+      "doc": "sec4b_failure.tex l.31-32: \"The odd terms cancel, so m_C(\u03b8\u2080 \u2212 s) + m_C(\u03b8\u2080 + s) \u2264 \u03bc\u2033(\u03b8\u2080)s\u00b2 + O(s\u2074). It therefore suffices to prove: (4.5) implies \u03bc\u2033(\u03b8\u2080) < 0.\" (Lean: \u03bc\u2033(\u03b8\u2080) < 0 gives a small s \u2260 0 with a negative pair, from the smooth branch.)",
+      "line": 1759,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.negative_pair_of_muSecond",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_coercive_local_uniform",
+      "doc": "sec4b_failure.tex l.107: \"The coercivity in Section 2.2 is locally uniform in \u03bb with C = GK_p(\u03bb) > max(1, |\u03bb|), so the infimum defining m_GK(0) can locally be restricted to a common compact interval in y.\"",
+      "line": 1767,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_coercive_local_uniform",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_mGK0_h_continuous",
+      "doc": "sec4b_failure.tex l.108: \"Joint continuity of \u0393_C(y, 0) then implies that \u03bb \u21a6 m_GK(0), and hence \u03bb \u21a6 h(\u03bb, p), is continuous.\"",
+      "line": 1779,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_mGK0_h_continuous",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_h_continuousOn",
+      "doc": "sec4b_failure.tex l.108: \"\u03bb \u21a6 h(\u03bb, p), is continuous\" (on (\u22121, 1); used for the first zero \u03bb\u2080(p), l.111).",
+      "line": 1785,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_h_continuousOn",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_contact_G_factor",
+      "doc": "sec4b_failure.tex l.34: \"Write G = P(e^{pL} \u2212 1) with P = e^{p\u03c7}, \u03c7 = log|\u03b6 + \u03bb|, L = log C \u2212 log|w|.\"",
+      "line": 1790,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_contact_G_factor",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_contact_complex_values",
+      "doc": "sec4b_failure.tex l.40-41: \"At \u03b6_*, (\u03b6 + \u03bb)(\u03b6 + 1)/\u03b6 = is\u2080v, so \u2113\u2032 = \u2212i(1 \u2212 \u03bb)/(s\u2080v) and \u2113\u2033 = (1 \u2212 \u03bb)(\u03b6 \u2212 \u03bb/\u03b6)/(s\u2080v)\u00b2 with \u03b6_* \u2212 \u03bb/\u03b6_* = \u2212c\u2080v + is\u2080\u03c3\" (\u2113\u2032 is the printed local-log derivative of l.24; no global log branch is used).",
+      "line": 1800,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_contact_complex_values",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_A1",
+      "doc": "Consequence (A1), sec5_sharp_inequality.tex l.83: \"For each \u03c1 > 0, f_\u03c1 has at most one critical point in (0, \u03c0)\".",
+      "line": 1817,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_A1",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_O30",
+      "doc": "Chord inequality, sec2_obstacle.tex:108\u2013110; q=p/2>1/2. Route R10 records the elementary trig-convex proof.",
+      "line": 1830,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_O30",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec3_window",
+      "doc": "The window, sec3_nonreal.tex l.21-24 (`C > max(1, |\u03c1|)`, `\u03c1 \u2260 1`): \"m_C(t) < 0 exactly when the ray arg \u03b6 = t meets D_C, and m_C(t) = 0 when the ray is tangent to \u2202D_C (the infimum is then attained at the tangent point). So {t : m_C(t) < 0} is the open window (arg c \u2212 \u03c8, arg c + \u03c8)\". (The cosine form is the window mod 2\u03c0; `\u03c8 \u2208 (0, \u03c0/2)` is `eq_3_3`.)",
+      "line": 1839,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec3_window",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec3_radial_limits",
+      "doc": "sec3_nonreal.tex l.21: \"G_C(re^{it})/r^q \u2192 +\u221e as r \u2192 0 and as r \u2192 \u221e\" (`C > max(1, |\u03c1|)`, every complex `\u03c1` and every angle `t`).",
+      "line": 1850,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec3_radial_limits",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "thmA_step1",
+      "doc": "Theorem A, Step 1, sec3_nonreal.tex l.48-51 (`C = GK_p(\u03c1)`, `\u03c1 \u2260 1`): \"The two tangent lines from 0 to \u2202D_C touch it at \u03b6\u2081, \u03b6\u2082. These points have the same modulus r = (|c|\u00b2 \u2212 R\u00b2)^{1/2} and the arguments arg c \u2213 \u03c8 ... After a relabelling ... t\u2082 \u2261 t\u2081 + 2\u03c0/p (mod 2\u03c0) ... m_C(t\u2081) = m_C(t\u2082) = 0, attained at radius r\".",
+      "line": 1858,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.thmA_step1",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "thmA_step2",
+      "doc": "Theorem A, Step 2, sec3_nonreal.tex l.53-55 (data of Step 1, `\u03bc(t) = G_C(re^{it})/r^q`; the paper's `\u03bc\u2081 = \u03bc\u2082 = \u03bc`): \"m_C \u2264 \u03bc_k and \u03bc_k(t_k) = m_C(t_k) = 0, so M(t) := m_C(t) + m_C(t + 2\u03c0/p) \u2264 M\u0303(t) := \u03bc\u2081(t) + \u03bc\u2082(t + 2\u03c0/p), M\u0303(t\u2081) = 0\" (`t\u2081` after the relabelling of Step 1).",
+      "line": 1872,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.thmA_step2",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "thmA_step3",
+      "doc": "Theorem A, Step 3, sec3_nonreal.tex l.57-65 (data of Step 1, `\u03b6_k = r e^{it_k}`): \"|\u03bc_k\u2032(t_k)| = p|1 \u2212 \u03c1| r^{1\u2212q} C^{p\u22121} |\u03b6_k + 1|^{p\u22122} > 0. The two signs are opposite ... Hence M\u0303\u2032(t\u2081) = \u00b1p|1 \u2212 \u03c1| r^{1\u2212q} C^{p\u22121}(|\u03b6\u2081 + 1|^{p\u22122} \u2212 |\u03b6\u2082 + 1|^{p\u22122})\" (`M\u0303(t) = \u03bc(t) + \u03bc(t + 2\u03c0/p)` at the relabelled `t\u2081`; `\u03bc` is 2\u03c0-periodic, so `M\u0303\u2032(t\u2081) = \u03bc\u2032(t\u2081) + \u03bc\u2032(t\u2082)`).",
+      "line": 1890,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.thmA_step3",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "thmA_step4",
+      "doc": "Theorem A, Step 4, sec3_nonreal.tex l.67-70 (data of Step 1): \"|\u03b6\u2081 + 1| = |\u03b6\u2082 + 1| ... if and only if c \u2208 \u211d, that is C\u00b2 \u2212 \u03c1 \u2208 \u211d, that is \u03c1 \u2208 \u211d\".",
+      "line": 1911,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.thmA_step4",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "thmA_remark_real",
+      "doc": "Remark (real ratios), sec3_nonreal.tex l.76-78: \"For real \u03c1 = \u03bb the configuration is symmetric about the real axis, M\u0303\u2032(t\u2081) = 0\" (data of Step 1 at `\u03c1 = \u03bb \u2260 1`; `t\u2081` after the relabelling).",
+      "line": 1921,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.thmA_remark_real",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec3_arch",
+      "doc": "The arch test, sec3_nonreal.tex l.13-14: \"A 2\u03c0-periodic q-subtrigonometric function \u03c6 satisfies \u03c6(t) + \u03c6(t + \u03c0/q) \u2265 0 for all t [HKV, Prop. 3.4(1)] (it is also Lemma chord with s = \u03c0/(2q))\". (`QSubtrig` includes 2\u03c0-periodicity; Lemma chord, sec2_obstacle.tex l.108-110, allows every `0 < s \u2264 \u03c0/q`. The range `q > 1/2` is the section's standing `q = p/2`, `p > 1`, sec3_nonreal.tex l.7.)",
+      "line": 1936,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec3_arch",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "eq_3_2",
+      "doc": "(3.2), sec3_nonreal.tex l.14-15: \"With Theorem R this gives, for every C > max(1, |\u03c1|): m_C(t\u2081) + m_C(t\u2081 + 2\u03c0/p) < 0 for some t\u2081 \u27f9 \u2016P\u208a + \u03c1P\u208b\u2016_p > C\". (`hC` stays: `obstacle` is a real `sInf`.)",
+      "line": 1942,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.eq_3_2",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED-FROM-CITED"
+    },
+    {
+      "name": "thm_A",
+      "doc": "Theorem A, sec3_nonreal.tex l.42-44 (Section 3: `1 < p`): \"Let p \u2260 2 and \u03c1 \u2208 \u2102 \u2216 \u211d. Then \u2016P\u208a + \u03c1P\u208b\u2016_p > GK_p(\u03c1)\".",
+      "line": 1950,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.thm_A",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED-FROM-CITED"
+    },
+    {
+      "name": "sec5d_cot_difference",
+      "doc": "sec5d_monotone.tex l.29: \"From cot x \u2212 cot y = sin(y \u2212 x)/(sin x sin y)\".",
+      "line": 1960,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_cot_difference",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_cos_sum_difference",
+      "doc": "sec5d_monotone.tex l.31: \"Finally cos(a \u2212 b) \u00b1 cos(a + b) \u2208 {2 cos a cos b, 2 sin a sin b} are positive\".",
+      "line": 1965,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_cos_sum_difference",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_denominator_positive",
+      "doc": "sec5d_monotone.tex l.23 (sign formula): \"and the denominator is positive\"; l.31-32: \"cos(a \u2212 b) \u2212 X cos(a + b) > 0 for |X| \u2264 1\".",
+      "line": 1974,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_denominator_positive",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_gamma_ratio_derivative",
+      "doc": "sec5d_monotone.tex l.34: \"the derivative of sin(\u03b3\u2212b)/sin(\u03b3+b) with respect to \u03b3 is sin(2b)/sin\u00b2(\u03b3+b) > 0\".",
+      "line": 1981,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_gamma_ratio_derivative",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_sigma_cosine",
+      "doc": "sec5d_monotone.tex l.51: \"Let \u03c3 = \u221a(1 \u2212 X\u00b2) sin \u03b1 and \u03bd = C \u2212 XD. Since cos(2\u03b3 \u2213 \u03b1) = XD \u00b1 \u03c3\".",
+      "line": 1990,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_sigma_cosine",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_B_angle_threshold",
+      "doc": "sec5d_monotone.tex l.65-66 (proof of Lemma B, \u22121 < \u03bb \u2264 0): \"The right side in Lemma ... is \u2264 0\"; \"\u03b1 < m\u03b1 < \u03c0 \u2212 \u03b1\".",
+      "line": 2001,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_B_angle_threshold",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_gamma_spec",
+      "doc": "sec5d_monotone.tex l.9-10: \"the radius r = R(\u03b8) \u2208 (0,1) is written as r = sin(\u03b3 \u2212 b)/sin(\u03b3 + b) with \u03b3 \u2208 (b, \u03c0/2)\" (and \u03b3 is unique there).",
+      "line": 2009,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_gamma_spec",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_lambda_gamma_sign",
+      "doc": "sec5d_monotone.tex l.13: \"so \u03bb < 0 for \u03b3 > a, \u03bb = 0 at \u03b3 = a, and \u03bb > 0 for \u03b3 < a\".",
+      "line": 2020,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_lambda_gamma_sign",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_nu_sigma_relation",
+      "doc": "sec5d_monotone.tex l.51-53: \"(5.10) reads \u03bc = (\u03bd \u2212 \u03c3)/(\u03bd + \u03c3), i.e. \u03bd = (1 \u2212 \u03bb)/(1 + \u03bb) \u03c3; here \u03bd + \u03c3 = 2 sin(\u03b3 + a) sin(\u03b3 \u2212 b) > 0\".",
+      "line": 2029,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_nu_sigma_relation",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_factorization_dictionary",
+      "doc": "sec5d_monotone.tex l.53-54: \"Then C\u00b2 + D\u00b2 \u2212 2CDX = \u03bd\u00b2 + \u03c3\u00b2cot\u00b2\u03b1, C/D \u2212 X = \u03bd/D and a\u2082 \u2212 W = \u03b5 sin\u00b2 2\u03b1\".",
+      "line": 2040,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_factorization_dictionary",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_Pi_factorization",
+      "doc": "sec5d_monotone.tex l.54-55: \"so (5.11) becomes \u03a0(X) = \u03c3\u00b2cot\u00b2\u03b1/D\u00b2 [W \u2212 4\u03b5((1\u2212\u03bb)/(1+\u03bb))\u00b2 sin\u2074\u03b1]\", with a positive prefactor.",
+      "line": 2054,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_Pi_factorization",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_M_level",
+      "doc": "sec5d_monotone.tex l.26: \"Let M = ln|sin(\u03b3 \u2212 a)| + ln sin(\u03b3 + b) \u2212 ln sin(\u03b3 + a) \u2212 ln sin(\u03b3 \u2212 b), so the level set is M = ln|\u03bc|\" (\u03bc = \u2212\u03bb).",
+      "line": 2064,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_M_level",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_M_gamma_formula",
+      "doc": "sec5d_monotone.tex l.29-30 (proof of the sign formula): \"M_\u03b3 = sin(a \u2212 b)[sin(\u03b3 + a) sin(\u03b3 + b) + sin(\u03b3 \u2212 a) sin(\u03b3 \u2212 b)]/S = sin(a \u2212 b)[cos(a\u2212b) \u2212 X cos(a+b)]/S\".",
+      "line": 2071,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_M_gamma_formula",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_positive_lambda_signs",
+      "doc": "sec5d_monotone.tex l.32: \"(For \u03bb > 0 both S and M_\u03b3 are negative; the formula is sign-safe.)\".",
+      "line": 2084,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_positive_lambda_signs",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_Pi_Psi_sign",
+      "doc": "sec5d_monotone.tex l.57-58: \"Since 1 \u2212 (1\u2212\u03bb)\u00b2/(1+\u03bb)\u00b2 = 4\u03bb/(1+\u03bb)\u00b2, the sign of \u03a0 is the sign of 4(m\u00b2\u22121)\u03bb/(1+\u03bb)\u00b2 \u2212 \u03a8_m(\u03b1)\".",
+      "line": 2092,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_Pi_Psi_sign",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_Kf_log_form",
+      "doc": "sec5d_monotone.tex l.13-14: \"Inserting r and \u03bc in the z-form of K_f gives K_f = 2(1 + \u03bc) exp L(a, \u03b3)\" (\u03bc = \u2212\u03bb, a = \u03b8/2); in particular K_f > 0.",
+      "line": 2102,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_Kf_log_form",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "eq_5_3_second",
+      "doc": "(5.3) second form and l.39-40, sec5_sharp_inequality.tex l.35-40 (`w = \u03c1e^{i\u03c6}`, `\u03b8 = arg Q`; `z` is the inverse of the M\u00f6bius map, `z = (1 \u2212 w)/(w \u2212 \u03bb)`): \"z = re^{\u2212i\u03b8} by (5.1)\"; \"f_\u03c1\u2032(\u03c6) = \u2212q(1\u2212\u03bb)|Q|^{q\u22121}/|1+z|\u00b2 \u00b7 D(\u03b8, r)\"; \"f_\u03c1\u2032(\u03c6) = 0 if and only if w = \u03c4v with \u03c4 = \u03c1/|v| > 0, if and only if D(\u03b8, r) = 0\".",
+      "line": 2118,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.eq_5_3_second",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_grad_parts",
+      "doc": "sec5_sharp_inequality.tex l.96-97 (`Im w > 0`, `\u03b8 = arg Q(w)`, `\u03b4 = (1\u2212q)\u03b8`, `v = e^{i\u03b4} + \u03bbe^{\u2212i\u03b4}`; real gradients on `\u2102 = \u211d\u00b2` as vectors, `dF(h) = \u27ea\u2207F, h\u27eb_\u211d`): \"(\u2202\u2093 + i\u2202\u1d67) Re Q^q = q[Q^{q\u22121}(\u03bb \u2212 w) + conj(Q^{q\u22121})(1 \u2212 w)] = q|Q|^{q\u22121}(v \u2212 2w cos \u03b4), and the gradient of |w|^p is p|w|^{p\u22122}w\".",
+      "line": 2133,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_grad_parts",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_critical_points",
+      "doc": "sec5_sharp_inequality.tex l.52-53: \"So the critical points of f_\u03c1 in (0, \u03c0) are the points w(\u03b8) with \u03c1(\u03b8) = \u03c1 and, for \u03bb > 0, their inversion images \u03bb/w\u0304(\u03b8) with \u03bb/\u03c1(\u03b8) = \u03c1\" (the moduli conditions follow from the equalities of points).",
+      "line": 2145,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_critical_points",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_conditions_dual",
+      "doc": "sec4b_failure.tex l.7: \"the case p > 2 follows by duality; every condition below is invariant under p \u2194 p\u2032\".",
+      "line": 2155,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_conditions_dual",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_lemma_Pc_full",
+      "doc": "Lemma P_c, sec4b_failure.tex l.89-90: \"Some \u03bb \u2208 (0, 1) satisfies (4.5) iff F(p) := pp\u2032 \u2212 4(1 + cos\u00b2(\u03c0/p)) > 0, iff p < p_c or p > p_c\u2032\".",
+      "line": 2162,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_lemma_Pc_full",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [
+        "GKSharp.ComputerChecked.CheckLocalF"
+      ],
+      "status": "PROVED-GIVEN GKSharp.ComputerChecked.CheckLocalF"
+    },
+    {
+      "name": "sec5d_Bplus_double_series",
+      "doc": "sec5d_monotone.tex l.75-78: \"by sin y = y\u220f\u2099(1 \u2212 y\u00b2/(n\u03c0)\u00b2) and ln(1\u2212u) = \u2212\u03a3\u2096 u\u1d4f/k, with \u03be = \u03b8/(n\u03c0) \u2208 (0,1),\" \"ln \u03b5 sin\u00b2((1\u2212\u03b5)\u03b8)/((1\u2212\u03b5)\u00b2 sin \u03b8 sin(\u03b5\u03b8)) = \u03a3_{n\u22651} \u03a3_{k\u22651} \u03be^{2k}/k [1 + \u03b5^{2k} \u2212 2(1\u2212\u03b5)^{2k}]\" (both summation levels summable).",
+      "line": 2174,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_Bplus_double_series",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_Bplus_W_negative",
+      "doc": "sec5d_monotone.tex l.79-80: \"The k = 1 bracket is \u2212(\u03b5\u00b2 \u2212 4\u03b5 + 1) \u2265 0 for \u03b5 \u2265 2 \u2212 \u221a3; for k \u2265 2, 2(1\u2212\u03b5)^{2k} \u2264 2(4 \u2212 2\u221a3)\u00b2 < 0.58. So the logarithm is positive and W < 0.\"",
+      "line": 2183,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_Bplus_W_negative",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_Bplus_scalar_criterion",
+      "doc": "sec5d_monotone.tex l.74-75: \"it suffices that \u03a8_m \u2265 m\u00b2 \u2212 1, i.e. W \u2264 0 on (0, \u03c0). All of \u03b8, \u03b5\u03b8, (1\u2212\u03b5)\u03b8 lie in (0, \u03c0)\".",
+      "line": 2190,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_Bplus_scalar_criterion",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_t_derivatives",
+      "doc": "sec5d_monotone.tex l.89: \"Let t = sin\u00b2\u03b1 ... Since (dt/d\u03b1)\u00b2 = 4t(1\u2212t) and d\u00b2t/d\u03b1\u00b2 = 2 \u2212 4t\".",
+      "line": 2197,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_t_derivatives",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_coefficient_recurrence",
+      "doc": "sec5d_monotone.tex l.93-95: \"Writing Y = \u03a3_{n\u22650} a\u2099t\u207f gives a\u2080 = 1 and a_{n+1} = (n\u00b2 \u2212 m\u00b2)/((n+1)(n+\u00bd)) a\u2099\" (the recurrence and the initial coefficient as identities of the defined coefficients).",
+      "line": 2205,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_coefficient_recurrence",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_beta_positive",
+      "doc": "sec5d_monotone.tex l.103-104: \"\u03b2_n = 2^{2n+3} m\u00b2(m\u00b2 \u2212 1) \u220f_{j=2}^{n+1}(j\u00b2 \u2212 m\u00b2)/(2n+4)!\"; \"For 1 < m < 2 every factor is positive\".",
+      "line": 2213,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_beta_positive",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_sin_square_strictMono",
+      "doc": "sec5d_monotone.tex l.104-105: \"t increases on (0, \u03c0/2) \u2283 (0, \u03c0/(m+1))\".",
+      "line": 2218,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_sin_square_strictMono",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_U_endpoint",
+      "doc": "sec5d_monotone.tex l.106-108: \"At \u03b1_e = \u03c0/(m+1), sin(m\u03b1_e) = sin \u03b1_e, so \u03a8_m(\u03b1_e) = (m\u00b2 \u2212 1)/sin\u00b2\u03b1_e > m\u00b2 \u2212 1 > 4(m\u00b2 \u2212 1)\u03bb/(1+\u03bb)\u00b2\".",
+      "line": 2224,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_U_endpoint",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_Y_coordinate",
+      "doc": "sec5d_monotone.tex l.89: \"Let t = sin\u00b2\u03b1 and Y(t) = cos(2m\u03b1)\" (on the printed \u03b1 interval).",
+      "line": 2232,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_Y_coordinate",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_Y_ode",
+      "doc": "sec5d_monotone.tex l.89-91: \"the equation d\u00b2Y/d\u03b1\u00b2 + 4m\u00b2Y = 0 becomes t(1\u2212t)Y\u2033 + (\u00bd \u2212 t)Y\u2032 + m\u00b2Y = 0\".",
+      "line": 2237,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_Y_ode",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_Y_series_convergence",
+      "doc": "sec5d_monotone.tex l.97: \"This recurrence has radius of convergence at least 1\" (with absolute summability).",
+      "line": 2243,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_Y_series_convergence",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_Y_series",
+      "doc": "sec5d_monotone.tex l.93-97: \"Writing Y = \u03a3_{n\u22650} a\u2099t\u207f gives a\u2080 = 1 and\" the recurrence; \"This recurrence has radius of convergence at least 1\" (Y equals the series on the actual t interval).",
+      "line": 2249,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_Y_series",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_sine_square_series",
+      "doc": "sec5d_monotone.tex l.97-99: \"and yields sin\u00b2(m\u03b1) = \u00bd(1 \u2212 Y(t)) = \u03a3_{n\u22651} 2^{2n\u22121} m\u00b2 \u220f_{j=1}^{n\u22121}(j\u00b2 \u2212 m\u00b2)/(2n)! t\u207f\".",
+      "line": 2255,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_sine_square_series",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_Psi_beta_series",
+      "doc": "sec5d_monotone.tex l.101-103: \"Consequently \u03a8_m(\u03b1) = (m\u00b2t \u2212 sin\u00b2(m\u03b1))/t\u00b2 = \u03a3_{n\u22650} \u03b2\u2099t\u207f\" (with convergence).",
+      "line": 2261,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_Psi_beta_series",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "obstacle_cos_iff_critD",
+      "doc": "short_v0.70/sec4a_criterion.tex:16\u201321. \u201cThe second equivalence is the definition of $m_C$ after $z \\mapsto 1/z$\u201d.",
+      "line": 2274,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.obstacle_cos_iff_critD",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "obstacle_smooth_contact",
+      "doc": "short_v0.70/sec4a_criterion.tex:28. \u201cThe function $m_{\\GK}$ is smooth at $\\theta_0$ (a unique non-degenerate minimiser in $r$).\u201d",
+      "line": 2282,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.obstacle_smooth_contact",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_angular_tangency",
+      "doc": "short_v0.70/sec4a_criterion.tex:29\u201330. \u201chence $A = K$ and $\\varphi'(\\theta_0^+) = -Kq$.\u201d",
+      "line": 2290,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_angular_tangency",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_prop_Q",
+      "doc": "short_v0.70/sec4a_criterion.tex:15\u201318. \u201c$\\|\\Pp + \\lambda \\Pm\\|_p = \\GK_p(\\lambda)$ if and only if $m_{\\GK}(t) \\ge K \\cos(q|t|)$ for all $|t| \\le \\pi$\u201d, with the second equivalence to nonnegative $\\mathcal{D}_C$ on $\\mathbb{C}$.",
+      "line": 2299,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_prop_Q",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED-FROM-CITED"
+    },
+    {
+      "name": "slice_O04",
+      "doc": "short_v0.70/sec2_obstacle.tex:35\u201336. \u201cGohberg and Krupnik proved $N_p(\\rho) \\ge \\GK_p(\\rho)$\u201d. Route R11 uses the proved HKV criterion and the existing HV2000 input for conjugate-exponent transport.",
+      "line": 2309,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_O04",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "GKSharp.Cited.hv2000_riesz_norm",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED-FROM-CITED"
+    },
+    {
+      "name": "slice_O33",
+      "doc": "short_v0.70/sec2_obstacle.tex:126\u2013128, Lemma E. \u201c$m_C(\\pm\\theta_0) \\ge 0$ if and only if $C \\ge \\GK_p(\\lambda)$\u201d; at equality the zero is attained only at the stated contact radius.",
+      "line": 2314,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_O33",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_O35",
+      "doc": "short_v0.70/sec2_obstacle.tex:142\u2013143. \u201cAt $C = \\GK_p(\\lambda)$ put $y_* = \\log r_*$ and $K := -\\frac1q\\, \\partial_t \\Gamma_C(y_*, \\theta_0)$.\u201d The envelope identity is $K=-m_C'(\\theta_0)/q$.",
+      "line": 2328,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_O35",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_E_identity",
+      "doc": "short_v0.70/sec5d_monotone.tex:28. \"$2 \\sin u_1 \\sin u_2\\, E\\, S = \\Pi(X)$\".",
+      "line": 2344,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_E_identity",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_lambda_zero_analytic",
+      "doc": "short_v0.70/sec5d_monotone.tex:33. \"The explicit root $R(\\theta)$ in Section~5.1 is real-analytic in $\\lambda$ near zero, and $K_f$ is positive and real-analytic there\".",
+      "line": 2352,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_lambda_zero_analytic",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_lambda_zero_continuity",
+      "doc": "short_v0.70/sec5d_monotone.tex:34\u201335. \"The coordinate $\\gamma$ also varies smoothly\"; \"both sides of the displayed formula extend continuously to $\\lambda=0$\".",
+      "line": 2359,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_lambda_zero_continuity",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_level_derivative",
+      "doc": "short_v0.70/sec5d_monotone.tex:27. \"$d\\ln K_f/da = E/M_\\gamma$ with $E = L_a M_\\gamma - L_\\gamma M_a$\".",
+      "line": 2368,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_level_derivative",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "lemma_signformula",
+      "doc": "short_v0.70/sec5d_monotone.tex:20\u201323, Lemma sign formula. \"and the denominator is positive\", with the displayed actual logarithmic derivative.",
+      "line": 2377,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.lemma_signformula",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "lemma_onevar",
+      "doc": "short_v0.70/sec5d_monotone.tex:43\u201345, Lemma one-variable form. \"$K_f$ increases at $\\theta$ if and only if\" the displayed strict Psi inequality.",
+      "line": 2386,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.lemma_onevar",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_Pi_increase_iff",
+      "doc": "short_v0.70/sec5d_monotone.tex:23. \"Hence $K_f$ increases exactly where $\\Pi(X) > 0$.\"",
+      "line": 2395,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_Pi_increase_iff",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_onevar_increase_iff",
+      "doc": "short_v0.70/sec5d_monotone.tex:44\u201345. \"$K_f$ increases at $\\theta$ if and only if\" the displayed Psi threshold inequality.",
+      "line": 2401,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_onevar_increase_iff",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "lemma_B",
+      "doc": "short_v0.70/sec5d_monotone.tex:61\u201362, Lemma B. \"For every $1 < p < 2$ and $\\lambda \\in (-1, 0]$, $K_f$ is strictly decreasing on $(0, \\pi)$.\"",
+      "line": 2408,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.lemma_B",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "lemma_Bplus",
+      "doc": "short_v0.70/sec5d_monotone.tex:70\u201371, Lemma B+. The printed threshold implies \"$K_f$ is strictly decreasing on $(0,\\pi)$\".",
+      "line": 2413,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.lemma_Bplus",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "lemma_U",
+      "doc": "short_v0.70/sec5d_monotone.tex:84\u201386, Lemma U. \"$\\Psi_m$ is strictly increasing on $(0, \\pi/2)$\"; \"$K_f$ is either strictly decreasing\" or has the stated single turning point.",
+      "line": 2418,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.lemma_U",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_U_initial_interval",
+      "doc": "short_v0.70/sec5d_monotone.tex:105. \"By Lemma~\\ref{lem:onevar}, the set on which $K_f$ increases is an initial interval.\"",
+      "line": 2426,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_U_initial_interval",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5d_U_terminal_decrease",
+      "doc": "short_v0.70/sec5d_monotone.tex:110. \"Thus $K_f$ decreases near $\\theta=\\pi$\".",
+      "line": 2433,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5d_U_terminal_decrease",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_A2",
+      "doc": "short_v0.70; Consequence (A2), sec5_sharp_inequality.tex l.84-89: \"\u03c1(\u03b8) is continuous, injective, \u03c1 \u2192 \u221e as \u03b8 \u2192 \u03c0; so \u03c1 increases strictly from \u03c1\u2080 := \u03c1(0\u207a) = (1 + \u03bbr\u2080)/(1 + r\u2080) \u2208 [0, 1) to \u221e, and \u03c1\u2032 > 0\"; \"If \u03bb > 0, \u03c1\u2080 \u2265 (1+\u03bb)/2 > \u221a\u03bb\".",
+      "line": 2446,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_A2",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_A2_injective",
+      "doc": "short_v0.70; (A2), the text's own step, sec5_sharp_inequality.tex l.84-85: \"\u03c1(\u03b8) is continuous, injective by (A1)\" (two angles with the same `\u03c1(\u03b8)` give two critical points of `f_\u03c1` in `(0, \u03c0)`).",
+      "line": 2458,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_A2_injective",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_A3",
+      "doc": "short_v0.70; Consequence (A3), sec5_sharp_inequality.tex l.88-91: \"If \u03c1 > \u03c1\u2080, f_\u03c1 has exactly one critical point \u03c6_c \u2208 (0, \u03c0), at w(\u03b8) with \u03c1(\u03b8) = \u03c1; f_\u03c1\u2032 > 0 on (0, \u03c6_c), f_\u03c1\u2032 < 0 on (\u03c6_c, \u03c0), and max_{[0,\u03c0]} f_\u03c1 is attained only at \u03c6_c. If \u03c1 \u2264 \u03c1\u2080 (and \u03c1 \u2265 \u221a\u03bb when \u03bb > 0), f_\u03c1 is monotone on [0, \u03c0] and max f_\u03c1 = f_\u03c1(0), at w = \u03c1\".",
+      "line": 2465,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_A3",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_grad_Phi",
+      "doc": "short_v0.70; sec5_sharp_inequality.tex l.97-98: \"On the critical curve w = \u03c4v, so \u2207\u03a6(w(\u03b8)) = q|Q|^{q\u22121}(2\u03c4 cos \u03b4 \u2212 1) (K \u2212 K_f(\u03b8)) v\" (real gradient on `\u2102`, `\u03c4 = \u03c1/|v|`, any `C` and `K`).",
+      "line": 2481,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_grad_Phi",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_re_vbar_wprime",
+      "doc": "short_v0.70; sec5_sharp_inequality.tex l.101: \"Re(v\u0304 w\u2032) = (\u03c1\u00b2)\u2032/(2\u03c4)\" on the critical curve (`w = w(\u03b8)`, `\u03c1 = \u03c1(\u03b8)`, `\u03c4 = \u03c1/|v|`).",
+      "line": 2492,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_re_vbar_wprime",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "eq_5_8",
+      "doc": "short_v0.70; sec5_sharp_inequality.tex l.101-104 (any `C`, `K`: `C^p` is constant): \"d/d\u03b8 \u03a6(w(\u03b8)) = Re(conj(\u2207\u03a6) w\u2032) = q|Q|^{q\u22121}(2\u03c4 cos \u03b4 \u2212 1)(\u03c1\u03c1\u2032/\u03c4)(K \u2212 K_f(\u03b8))\", and \"by (5.5) and (A2), \u039b\u2032(\u03b8) = (positive)(K \u2212 K_f(\u03b8))\" (`\u039b = \u03a6(w(\u03b8))/(1\u2212\u03bb)^p`; the positive factor is `F/(1\u2212\u03bb)^p`, `F` the factor of (5.8)).",
+      "line": 2503,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.eq_5_8",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "prop_reduction",
+      "doc": "short_v0.70; Proposition (Reduction), sec5_sharp_inequality.tex l.139-141: \"Let 1 < p < 2 and \u03bb \u2208 [\u22121, 1). If K_f is strictly decreasing on (0, \u03c0), then \ud835\udc9f_C \u2265 0 on \u2102, with equality only at z_* and z\u0304_*\".",
+      "line": 2516,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.prop_reduction",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "thm_C1",
+      "doc": "short_v0.70; sec5_sharp_inequality.tex l.167-174 with Theorem C1, P019_paper.tex l.126-128: for `1 < p < \u221e` and `\u03bb \u2208 [\u22121, 0]`, \"\u2016P\u208a + \u03bbP\u208b\u2016_p = GK_p(\u03bb)\".",
+      "line": 2525,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.thm_C1",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "GKSharp.Cited.hv2000_riesz_norm",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED-FROM-CITED"
+    },
+    {
+      "name": "thm_C1_equality",
+      "doc": "short_v0.70; Theorem C1, equality case, sec5_sharp_inequality.tex l.172 (`1 < p < 2`, `\u03bb \u2208 [\u22121, 0]`): \"with equality in (*) only at z_* and z\u0304_*\".",
+      "line": 2531,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.thm_C1_equality",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_thm_L",
+      "doc": "short_v0.70/sec4b_failure.tex:12\u201317, Theorem L. Under (4.5), \"then $\\|\\Pp + \\lambda \\Pm\\|_p > \\GK_p(\\lambda)$\".",
+      "line": 2543,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_thm_L",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED-FROM-CITED"
+    },
+    {
+      "name": "sec4_thm_L_dual",
+      "doc": "short_v0.70/sec4b_failure.tex:7. \"the case $p > 2$ follows by duality; every condition below is invariant under $p \\leftrightarrow p'$\".",
+      "line": 2549,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_thm_L_dual",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "GKSharp.Cited.hv2000_riesz_norm",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED-FROM-CITED"
+    },
+    {
+      "name": "sec4_axis_negative_fails",
+      "doc": "short_v0.70/sec4b_failure.tex:104. \"$h(\\lambda, p) < 0$ implies $\\|\\Pp + \\lambda\\Pm\\|_p > \\GK_p(\\lambda)$.\"",
+      "line": 2555,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_axis_negative_fails",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED-FROM-CITED"
+    },
+    {
+      "name": "sec4_prop_F",
+      "doc": "short_v0.70; sec4a_criterion.tex:40. \"If $\\Omega(p) < 0$, then $\\|\\Pp + \\lambda\\Pm\\|_p > \\GK_p(\\lambda)$ for all $\\lambda < 1$ close enough to $1$.\"",
+      "line": 2561,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_prop_F",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED-FROM-CITED"
+    },
+    {
+      "name": "sec5e_mGK_eq_mu",
+      "doc": "short_v0.70; sec5e_cstar.tex l.13-14 (`1 < p < 2`, `0 < \u03bb < 1`, `C = GK_p(\u03bb)`, `\u03b8\u2080 = \u03c0/p`): \"m_GK = \u03bc near \u03b8\u2080, since the minimiser is unique (Lemma E) and non-degenerate (Step 5 in the proof of Theorem L)\". Here \u03bc(t) := \u0393_C(y_*(t), t) for the smooth branch y_*(t) of \u2202_y\u0393_C = 0 near \u03b8\u2080 with y_*(\u03b8\u2080) = log r (sec4b_failure.tex l.26-30).",
+      "line": 2574,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5e_mGK_eq_mu",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5e_Lambda_zero",
+      "doc": "short_v0.70; sec5e_cstar.tex l.19-20: \"\u039b(0\u207a) = \u03a6(\u03c1\u2080)/(1\u2212\u03bb)^p with \u03c1\u2080 real, i.e. a value of \ud835\udc9f_C/|1+z|^p on the positive axis, which is \u2265 0 because h \u2265 0\" (`\u03c1\u2080 = (1 + \u03bbr\u2080)/(1 + r\u2080)` as in `sec5_A2`).",
+      "line": 2582,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5e_Lambda_zero",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5e_Lambda_second",
+      "doc": "short_v0.70; sec5e_cstar.tex l.15 (`1 < p < 2`, `0 < \u03bb < 1`, `C = GK_p(\u03bb)`, `K` of eq:K, `\u03b8\u2080 = \u03c0/p`): \"\u039b\u2033(\u03b8\u2080) = (positive)(\u2212K_f\u2032(\u03b8\u2080))\" (the positive factor is the one of `eq_5_8` at `\u03b8\u2080`, since `K_f(\u03b8\u2080) = K`).",
+      "line": 2592,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5e_Lambda_second",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_cosine_exterior_support",
+      "doc": "short_v0.70; sec4a_criterion.tex l.30-32 (proof of Proposition Q, \"\u21d2\", after `A = K`): \"A q-trigonometrically convex function lies above its tangent sinusoid on any interval of length < \u03c0/q [HKV, Lemma 3.2]; the tangent sinusoid at \u03b8\u2080 is K cos(qt), and [\u03b8\u2080, \u03c0] has length \u03c0 \u2212 \u03c0/p < \u03c0/q. So m_GK \u2265 \u03c6 \u2265 K cos(qt) on [\u03b8\u2080, \u03c0]\". Here \u03c6 is the q-subtrigonometric minorant of Theorem R, equal to A cos(qt) on the arch [\u2212\u03b8\u2080, \u03b8\u2080] (l.27) with A = K (l.30).",
+      "line": 2606,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_cosine_exterior_support",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "thm_B_b",
+      "doc": "short_v0.70; Theorem B (b), P019_paper.tex l.134: \"If p < p\u2080 or p > p\u2080\u2032, then \u2016P\u208a + \u03bbP\u208b\u2016_p > GK_p(\u03bb) for every \u03bb < 1 close enough to 1\". Its hypotheses are the computer checks of its proof (Proposition F and duality, sec5_sharp_inequality.tex l.180): `\u03a9 < 0` on `(1, p\u2080)` is `p0_spec` (`CheckOmegaNeg`, `CheckOmegaRoot`).",
+      "line": 2618,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.thm_B_b",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "GKSharp.Cited.hv2000_riesz_norm",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [
+        "GKSharp.ComputerChecked.CheckOmegaNeg",
+        "GKSharp.ComputerChecked.CheckOmegaRoot"
+      ],
+      "status": "PROVED-GIVEN GKSharp.ComputerChecked.CheckOmegaNeg, GKSharp.ComputerChecked.CheckOmegaRoot"
+    },
+    {
+      "name": "axis_zero_positive",
+      "doc": "short_v0.70/sec4b_failure.tex:102\u2013104. \"We have $h(0, p) > 0$\" from C1's equality classification and an attained actual axis minimum.",
+      "line": 2625,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.axis_zero_positive",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5e_Kf_slope",
+      "doc": "short_v0.70; sec5e_cstar.tex l.12-15 (\"If\" part: `h(\u03bb, p) \u2265 0`, `\u03bb < \u03bb_loc(p)`): \"\u03bb < \u03bb_loc(p) gives \u03bc\u2033(\u03b8\u2080) > 0 ... Hence the Hessian of \ud835\udc9f_C at z_* is positive definite, and \u039b\u2033(\u03b8\u2080) > 0 ... we get K_f\u2032(\u03b8\u2080) < 0\".",
+      "line": 2630,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5e_Kf_slope",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5e_Kf_below",
+      "doc": "short_v0.70; sec5e_cstar.tex l.15-17 (\"If\" part): \"By Lemmas B\u207a and U, K_f is either decreasing, or increasing on (0, \u03b8_\u03bb] and decreasing afterwards; in the second case \u03b8_\u03bb < \u03b8\u2080. Hence {K_f < K} = (0, \u03b8_a) \u222a (\u03b8\u2080, \u03c0) for some \u03b8_a \u2208 [0, \u03b8\u2080)\".",
+      "line": 2639,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5e_Kf_below",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5e_Lambda_pos",
+      "doc": "short_v0.70; sec5e_cstar.tex l.18-19 (\"If\" part: `h(\u03bb, p) \u2265 0`, `\u03bb < \u03bb_loc(p)`): \"Thus \u039b \u2265 min(\u039b(0\u207a), 0) and \u039b > 0 away from \u03b8\u2080 unless \u039b(0\u207a) < 0\" (here `\u039b(0\u207a) \u2265 0`, l.19-20).",
+      "line": 2651,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5e_Lambda_pos",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_E01",
+      "doc": "short_v0.70/endpoint_estimate.tex:4\u20136. \"For $1<p\\le1+10^{-6}$, $h(\\lambda_{\\mathrm{loc}}(p),p)<-1.88<0$.\"",
+      "line": 2667,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_E01",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_E03",
+      "doc": "short_v0.70/endpoint_estimate.tex:9\u201314. \"d^2=\\frac{s^2}{c^4}\\left(\\frac{p\\pi}{4a}-1-c^2\\right),\\qquad \\lambda=\\frac{1-d}{1+d},\\qquad \\varepsilon=1-\\lambda=\\frac{2d}{1+d},\\qquad Q=\\frac{\\varepsilon}{s}.\"",
+      "line": 2672,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_E03",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_E04",
+      "doc": "short_v0.70/endpoint_estimate.tex:16\u201318. \"p-1\\le a/3,\\quad a-a^3/6\\le s\\le a,\\quad 1-a^2/2\\le c\\le1, \\quad \\frac{\\pi a}{4}(1-3a)\\le d^2\\le\\frac{\\pi a}{4}(1+a).\"",
+      "line": 2685,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_E04",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_E06",
+      "doc": "short_v0.70/endpoint_estimate.tex:23\u201325. \"\\sqrt a\\le \\varepsilon\\le1.8\\sqrt a,\\qquad a^{-1/2}\\le Q\\le2a^{-1/2},\\qquad 2d\\le1.8\\sqrt a.\"",
+      "line": 2697,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_E06",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_E07",
+      "doc": "short_v0.70/endpoint_estimate.tex:27\u201328. \"$C=(Q+\\sqrt{Q^2+4\\lambda})/2$, hence $C^2\\le Q^2+2$ and $C\\le Q+Q^{-1}\\le2Q$.\"",
+      "line": 2707,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_E07",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_E08",
+      "doc": "short_v0.70/endpoint_estimate.tex:29\u201332. \"h(\\lambda,p)\\le T_1-T_2-K,\\qquad T_1=(2C)^p,\\qquad T_2=(2w)^p.\"",
+      "line": 2716,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_E08",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_E09",
+      "doc": "short_v0.70/endpoint_estimate.tex:33\u201334. \"With $x=(p-1)\\log(2C)$, we have $0\\le x\\le(a/3)\\log(8/\\sqrt a)<1$. The estimate $e^x\\le1+2x$ therefore yields\"",
+      "line": 2724,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_E09",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_E10",
+      "doc": "short_v0.70/endpoint_estimate.tex:35\u201338. \"T_1\\le2Q+\\frac2Q+\\frac83Qa\\log\\frac8{\\sqrt a},\\qquad T_2\\ge2w=\\frac2{1+d}\\ge2-2d.\"",
+      "line": 2733,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_E10",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_E11",
+      "doc": "short_v0.70/endpoint_estimate.tex:39\u201345. \"$v=r-\\lambda/r=\\sqrt{\\varepsilon^2+4\\lambda s^2}/c$. The contact equation $r+\\lambda/r=(1+\\lambda)/c$ implies \\frac1c\\le r\\le\\frac{1+s^2/\\varepsilon}{c},\\qquad v\\le\\frac{\\varepsilon(1+2s^2/\\varepsilon^2)}c,\\qquad |re^{i\\pi/p}+\\lambda|\\ge r-\\lambda\\ge \\varepsilon.\"",
+      "line": 2745,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_E11",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_E12",
+      "doc": "short_v0.70/endpoint_estimate.tex:46\u201350. \"K=2Q\\,r^{-q}\\frac{|re^{i\\pi/p}+\\lambda|^p}{v} \\ge2Q\\frac{c^2\\varepsilon^{p-1}}{(1+s^2/\\varepsilon)(1+2s^2/\\varepsilon^2)} \\ge2Q(1-E_K),\"",
+      "line": 2759,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_E12",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_E13",
+      "doc": "short_v0.70/endpoint_estimate.tex:52\u201358. \"E_K=(p-1)\\log(1/\\varepsilon)+a^2+\\frac{s^2}{\\varepsilon}+\\frac{2s^2}{\\varepsilon^2} \\le\\frac a6\\log\\frac1a+a^2+a^{3/2}+2a.\"",
+      "line": 2777,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_E13",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_E14",
+      "doc": "short_v0.70/endpoint_estimate.tex:59\u201363. \"h(\\lambda_{\\mathrm{loc}}(p),p)\\le-2+R(a),\\qquad R(a)=\\sqrt a\\left[2+\\frac{16}3\\log\\frac8{\\sqrt a}+1.8+\\frac23\\log\\frac1a+8+4\\sqrt a+4a\\right].\"",
+      "line": 2788,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_E14",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_E15",
+      "doc": "short_v0.70/endpoint_estimate.tex:64\u201364. \"Every term in $R$ is increasing on $(0,a_1]$: in particular $\\sqrt a\\log(1/a)$ increases for $a<e^{-2}$.\"",
+      "line": 2793,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_E15",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "slice_E16",
+      "doc": "short_v0.70/endpoint_estimate.tex:65\u201365. \"Finally $\\sqrt{a_1}<0.001789$, $\\log(8/\\sqrt{a_1})<8.5$, and $\\log(1/a_1)<12.66$ give $R(a_1)<0.12$.\"",
+      "line": 2799,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.slice_E16",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec4_prop_edge",
+      "doc": "short_v0.70/sec4b_failure.tex:111\u2013114. \"For every $1 < p < p_c$, $h(\\lambda_{\\mathrm{loc}}(p), p) < 0$.\" The actual first positive axis zero and strict norm failure at the local threshold are included. The three named checks stay explicit.",
+      "line": 2806,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec4_prop_edge",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [
+        "GKSharp.ComputerChecked.CheckBoundaryBulk",
+        "GKSharp.ComputerChecked.CheckBoundarySliver",
+        "GKSharp.ComputerChecked.CheckLocalF"
+      ],
+      "status": "PROVED-GIVEN GKSharp.ComputerChecked.CheckBoundaryBulk, GKSharp.ComputerChecked.CheckBoundarySliver, GKSharp.ComputerChecked.CheckLocalF"
+    },
+    {
+      "name": "sec5_prop_S",
+      "doc": "short_v0.70/sec5f_strip.tex:38\u201340. \"Let $p_0 \\le p \\le 1.268$ and $0 < \\lambda < 1$. Then $h(\\lambda, p) > 0$.\" The operator conclusion for every real ratio on the stated exponent strip is included, with its seven named checks.",
+      "line": 2814,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_prop_S",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [
+        "GKSharp.ComputerChecked.CheckCornerDerivatives",
+        "GKSharp.ComputerChecked.CheckCornerTails",
+        "GKSharp.ComputerChecked.CheckLocalF",
+        "GKSharp.ComputerChecked.CheckOmegaNeg",
+        "GKSharp.ComputerChecked.CheckOmegaRoot",
+        "GKSharp.ComputerChecked.CheckStripBulkMiddle",
+        "GKSharp.ComputerChecked.CheckStripBulkTails"
+      ],
+      "status": "PROVED-GIVEN GKSharp.ComputerChecked.CheckCornerDerivatives, GKSharp.ComputerChecked.CheckCornerTails, GKSharp.ComputerChecked.CheckLocalF, GKSharp.ComputerChecked.CheckOmegaNeg, GKSharp.ComputerChecked.CheckOmegaRoot, GKSharp.ComputerChecked.CheckStripBulkMiddle, GKSharp.ComputerChecked.CheckStripBulkTails"
+    },
+    {
+      "name": "thm_Cstar",
+      "doc": "short_v0.70; Theorem C*, P019_paper.tex l.137-140 (proof sec5e_cstar.tex l.7-26): \"Let 1 < p < 2 and 0 < \u03bb < 1. Then \u2016P\u208a + \u03bbP\u208b\u2016_p = GK_p(\u03bb) if and only if m_GK(0) \u2265 K and \u03bb < \u03bb_loc(p) (Theorem L's threshold; \u03bb_loc := 1 for p \u2265 p_c)\". (`m_GK(0) \u2265 K` is `0 \u2264 axisGap p lam`, i.e. h(\u03bb, p) \u2265 0; `\u03bb_loc` is the shared `Threshold.lambdaLoc`, whose clamp to 1 is `lambdaLoc_spec`.) Its hypotheses are the computer checks of its proof: the case `\u03bb = \u03bb_loc(p)` uses Proposition edge (`CheckLocalF`, `CheckBoundaryBulk`, `CheckBoundarySliver`), and the description of `\u03bb_loc` uses `CheckLocalF`.",
+      "line": 2827,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.thm_Cstar",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [
+        "GKSharp.ComputerChecked.CheckBoundaryBulk",
+        "GKSharp.ComputerChecked.CheckBoundarySliver",
+        "GKSharp.ComputerChecked.CheckLocalF"
+      ],
+      "status": "PROVED-GIVEN GKSharp.ComputerChecked.CheckBoundaryBulk, GKSharp.ComputerChecked.CheckBoundarySliver, GKSharp.ComputerChecked.CheckLocalF"
+    },
+    {
+      "name": "thm_B_a",
+      "doc": "Theorem B (a), P019_paper.tex l.131-133: \"Let p\u2080 \u2248 1.2336026 be the least zero of ... \u03a9 ..., and p\u2080\u2032 = p\u2080/(p\u2080 \u2212 1) ... (a) If p\u2080 \u2264 p \u2264 p\u2080\u2032, then \u2016P\u208a + \u03bbP\u208b\u2016_p = GK_p(\u03bb) for every \u03bb \u2208 \u211d\". Its hypotheses are the computer checks of its proof (sec5_sharp_inequality.tex l.175-180, sec5f_strip.tex l.38-40 and l.67-68): the six checks of Proposition S, and `CheckLocalF` for `p_c < p\u2080` (`pc_lt_p0`), which gives `\u03bb_loc = 1` in Theorem C*.",
+      "line": 2845,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.thm_B_a",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "GKSharp.Cited.hv2000_riesz_norm",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [
+        "GKSharp.ComputerChecked.CheckCornerDerivatives",
+        "GKSharp.ComputerChecked.CheckCornerTails",
+        "GKSharp.ComputerChecked.CheckLocalF",
+        "GKSharp.ComputerChecked.CheckOmegaNeg",
+        "GKSharp.ComputerChecked.CheckOmegaRoot",
+        "GKSharp.ComputerChecked.CheckStripBulkMiddle",
+        "GKSharp.ComputerChecked.CheckStripBulkTails"
+      ],
+      "status": "PROVED-GIVEN GKSharp.ComputerChecked.CheckCornerDerivatives, GKSharp.ComputerChecked.CheckCornerTails, GKSharp.ComputerChecked.CheckLocalF, GKSharp.ComputerChecked.CheckOmegaNeg, GKSharp.ComputerChecked.CheckOmegaRoot, GKSharp.ComputerChecked.CheckStripBulkMiddle, GKSharp.ComputerChecked.CheckStripBulkTails"
+    },
+    {
+      "name": "thm_B_pair",
+      "doc": "Theorem B, last sentence, P019_paper.tex l.135: \"With Theorem A: for p\u2080 \u2264 p \u2264 p\u2080\u2032, p \u2260 2 and \u03b1 \u2260 0, \u2016\u03b1P\u208a + \u03b2P\u208b\u2016_p = GK_p(\u03b1, \u03b2) if and only if \u03b2/\u03b1 \u2208 \u211d. If \u03b1 = 0, the bound is always sharp\" (\"always\": every `p > 1`, so the `\u03b1 = 0` clause is outside the range hypotheses). Its hypotheses are the computer checks of Theorem B (a) (`thm_B_a`), used for the \"if\" direction; the \"only if\" direction (Theorem A) and the `\u03b1 = 0` clause use no computer check.",
+      "line": 2858,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.thm_B_pair",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "GKSharp.Cited.hv2000_riesz_norm",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [
+        "GKSharp.ComputerChecked.CheckCornerDerivatives",
+        "GKSharp.ComputerChecked.CheckCornerTails",
+        "GKSharp.ComputerChecked.CheckLocalF",
+        "GKSharp.ComputerChecked.CheckOmegaNeg",
+        "GKSharp.ComputerChecked.CheckOmegaRoot",
+        "GKSharp.ComputerChecked.CheckStripBulkMiddle",
+        "GKSharp.ComputerChecked.CheckStripBulkTails"
+      ],
+      "status": "PROVED-GIVEN GKSharp.ComputerChecked.CheckCornerDerivatives, GKSharp.ComputerChecked.CheckCornerTails, GKSharp.ComputerChecked.CheckLocalF, GKSharp.ComputerChecked.CheckOmegaNeg, GKSharp.ComputerChecked.CheckOmegaRoot, GKSharp.ComputerChecked.CheckStripBulkMiddle, GKSharp.ComputerChecked.CheckStripBulkTails"
+    },
+    {
+      "name": "thm_classification",
+      "doc": "Sharpness classification, P019_paper.tex l.84-90: \"Let 1 < p < \u221e and let p\u2080 be the least zero of \u03a9 ..., with p\u2080\u2032 = p\u2080/(p\u2080 \u2212 1). For p \u2260 2 and \u03c1 \u2209 \u211d, N_p(\u03c1) > GK_p(\u03c1). For every \u03bb \u2208 [\u22121, 0], N_p(\u03bb) = GK_p(\u03bb). Equality holds for every real \u03bb if and only if p\u2080 \u2264 p \u2264 p\u2080\u2032; outside that exponent interval it fails for all \u03bb < 1 sufficiently close to 1. For normalized positive ratios, the exact criterion is Theorem C*, together with duality; at p = 2 the bound is always sharp.\" Each clause is its own conjunct; the C* clause is stated for `1 < p < 2` (C* itself) and for `p > 2` (C* at `p\u2032 = p/(p\u22121)`, duality). Its hypotheses are the union of the computer checks of Theorems B and C* (`thm_B_a`, `thm_B_b`, `thm_Cstar`); the clauses for `\u03c1 \u2209 \u211d`, `\u03bb \u2208 [\u22121, 0]` and `p = 2` use none (they are also the rows `thm_A`, `thm_C1`).",
+      "line": 2875,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.thm_classification",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "GKSharp.Cited.hv2000_riesz_norm",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [
+        "GKSharp.ComputerChecked.CheckBoundaryBulk",
+        "GKSharp.ComputerChecked.CheckBoundarySliver",
+        "GKSharp.ComputerChecked.CheckCornerDerivatives",
+        "GKSharp.ComputerChecked.CheckCornerTails",
+        "GKSharp.ComputerChecked.CheckLocalF",
+        "GKSharp.ComputerChecked.CheckOmegaNeg",
+        "GKSharp.ComputerChecked.CheckOmegaRoot",
+        "GKSharp.ComputerChecked.CheckStripBulkMiddle",
+        "GKSharp.ComputerChecked.CheckStripBulkTails"
+      ],
+      "status": "PROVED-GIVEN GKSharp.ComputerChecked.CheckBoundaryBulk, GKSharp.ComputerChecked.CheckBoundarySliver, GKSharp.ComputerChecked.CheckCornerDerivatives, GKSharp.ComputerChecked.CheckCornerTails, GKSharp.ComputerChecked.CheckLocalF, GKSharp.ComputerChecked.CheckOmegaNeg, GKSharp.ComputerChecked.CheckOmegaRoot, GKSharp.ComputerChecked.CheckStripBulkMiddle, GKSharp.ComputerChecked.CheckStripBulkTails"
+    },
+    {
+      "name": "sec5_A2_ift",
+      "doc": "short_v0.70/sec5_sharp_inequality.tex:84\u201389. \"\u03b8 is a smooth function of \u03c1\"; local inverse conclusion (route R8(ii)).",
+      "line": 2897,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_A2_ift",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec2_gk_from_invariants",
+      "doc": "short_v0.70/sec2_obstacle.tex:21\u201329. \"They determine its singular values and are unchanged\" by the listed symmetries, including conjugate exponents.",
+      "line": 2905,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec2_gk_from_invariants",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec2_gkPair_dual",
+      "doc": "short_v0.70/sec2_obstacle.tex:21\u201329. \"They determine its singular values and are unchanged\" by the listed symmetries, including conjugate exponents.",
+      "line": 2911,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec2_gkPair_dual",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "angular_contact_determines_cos",
+      "doc": "short_v0.70/sec4a_criterion.tex:26\u201333. \"hence A = K\" and \"So m_GK \u2265 \u03c6 \u2265 K cos(qt)\"; the full interval follows by evenness.",
+      "line": 2915,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.angular_contact_determines_cos",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "obstacle_joint_continuous",
+      "doc": "short_v0.70/sec2_obstacle.tex:57\u201360 \"m_C is finite and continuous\"; sec4b_failure.tex:108 \"Joint continuity of \u0393_C(y,0)\"; joint parameter version used by the axis restriction.",
+      "line": 2924,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.obstacle_joint_continuous",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [],
+      "status": "PROVED"
+    },
+    {
+      "name": "sec5_strip_criterion",
+      "doc": "short_v0.70/sec5f_strip.tex:12\u201313. \"the bound is sharp at \u03bb \u2208 (0,1) exactly when h(\u03bb, p) = m_GK(0) \u2212 K \u2265 0\".",
+      "line": 2929,
+      "direct_cited_input": null,
+      "qualified_name": "GKSharp.Paper.sec5_strip_criterion",
+      "file": "GKSharp/Paper/Statements.lean",
+      "axioms": [
+        "Classical.choice",
+        "GKSharp.Cited.hkv_thm21",
+        "Quot.sound",
+        "propext"
+      ],
+      "checks": [
+        "GKSharp.ComputerChecked.CheckLocalF"
+      ],
+      "status": "PROVED-GIVEN GKSharp.ComputerChecked.CheckLocalF"
+    }
+  ],
+  "computer_checks": [
+    {
+      "name": "GKSharp.ComputerChecked.CheckOmegaNeg",
+      "doc": "COMPUTER-CHECKED, NOT proved in Lean. A:53,V:18. omega_negative.py, negative_omega.stdout.log. 120-bit external balls; exact rational endpoints."
+    },
+    {
+      "name": "GKSharp.ComputerChecked.CheckOmegaRoot",
+      "doc": "COMPUTER-CHECKED, NOT proved in Lean. S:43\u201344,V:19. omega_positive.py / positive_omega_root.stdout.log, importing omega_negative.py."
+    },
+    {
+      "name": "GKSharp.ComputerChecked.CheckLocalF",
+      "doc": "COMPUTER-CHECKED, NOT proved in Lean. B:102\u2013103,V:20\u201321. local_threshold.py / local_threshold_root.stdout.log. Derivative means actual deriv. The bracket endpoint signs are proved by localF_bracket_lower/upper, not hypotheses."
+    },
+    {
+      "name": "GKSharp.ComputerChecked.CheckBoundaryBulk",
+      "doc": "COMPUTER-CHECKED, NOT proved in Lean. B:121\u2013123,V:22. boundary_bulk.py / boundary_bulk_1,2,3.stdout.log. Arithmetic witness only; the infimum/axis upper bound is a separate internal theorem."
+    },
+    {
+      "name": "GKSharp.ComputerChecked.CheckBoundarySliver",
+      "doc": "COMPUTER-CHECKED, NOT proved in Lean. B:134,V:23. boundary_sliver.py / boundary_sliver.stdout.log; includes the exact removable value."
+    },
+    {
+      "name": "GKSharp.ComputerChecked.CheckLocalGap",
+      "doc": "COMPUTER-CHECKED history: sec4b_failure.tex:135,calculation_certificates.tex:31. Formerly NOT proved in Lean. NOW KERNEL-PROVED by GKSharp.checkLocalGap_proved in Proofs/LocalGapCertificate.lean; public mathematical certificate GKSharp.Paper.sec4_local_gap_kernel is audited as PROVED. boundary_sliver.py / boundary_sliver.stdout.log is historical external evidence; the final public rows discharge this premise."
+    },
+    {
+      "name": "GKSharp.ComputerChecked.CheckCornerDerivatives",
+      "doc": "COMPUTER-CHECKED, NOT proved in Lean. S:51\u201355,V:24. strip_corner.py / strip_corner.stdout.log. Only compact derivative/margin enclosures: Taylor, evenness and Omega-minimum facts are NOT assumed here."
+    },
+    {
+      "name": "GKSharp.ComputerChecked.CheckCornerTails",
+      "doc": "COMPUTER-CHECKED, NOT proved in Lean. S:60,V:35. strip_corner.py / strip_corner.stdout.log; analytic s-tail reductions are separate."
+    },
+    {
+      "name": "GKSharp.ComputerChecked.CheckStripBulkMiddle",
+      "doc": "COMPUTER-CHECKED, NOT proved in Lean. S:62\u201366,V:25. strip_bulk.py --corner main / strip_bulk_main.stdout.log; closed s-core."
+    },
+    {
+      "name": "GKSharp.ComputerChecked.CheckStripBulkTails",
+      "doc": "COMPUTER-CHECKED, NOT proved in Lean. S:62\u201364,V:25. strip_bulk.py --corner main / strip_bulk_main.stdout.log; only tail lower expressions."
+    }
+  ],
+  "not_formalized": []
+}

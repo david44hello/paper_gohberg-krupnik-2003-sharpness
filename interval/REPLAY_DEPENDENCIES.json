@@ -1,0 +1,29 @@
+{
+  "version": "0.10",
+  "project": "gohberg-krupnik-2003-sharpness",
+  "recorded_by": "Dave Goel",
+  "recorded_at": "2026-10-28 07:19 ET",
+  "scope": "Pinned environment for the release replay; not reconstructed historical environments.",
+  "versions": {
+    "python": "3.12.3",
+    "python-flint": "0.9.0",
+    "FLINT": "3.6.0",
+    "mpmath": "1.4.1",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "analytic_inputs": [
+    "The printed negative-Omega estimate on 1 < p <= 1.001.",
+    "The corrected Proposition 4.3 endpoint estimate on 1 < p <= 1.000001.",
+    "The contact, envelope, involution and corner-minimum identities in the mathematical paper.",
+    "Omega is nonnegative for p >= p0, deduced from the root and sign certificates."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "version": "0.40",
+  "project": "019",
+  "note": "The lead adds only exact OTHER-paper axioms after source review. Each item needs name, source, review, and status (refereed or UNREFEREED). This file is a review allowlist, not a proof of source fidelity.",
+  "inputs": [
+    {
+      "name": "GKSharp.Cited.hv2000_riesz_norm",
+      "source": "B. Hollenbeck, I. E. Verbitsky, Best constants for the Riesz projection, J. Funct. Anal. 175 (2000), 370-392; abstract and (1.1), p. 370-371 (continuity via M. Riesz quoted p. 370; lower estimate of Gohberg-Krupnik quoted p. 371)",
+      "review": "Lead read of the journal text (local copy HV2000.txt, lines 7-80, 2026-10-28 10:46): P+ keeps k >= 0 (constants included), same mask as RieszProjection.coeff_plus; norm is L^p -> L^p; measure normalization does not change operator norms. Independent source check PASS 2026-10-28 10:52 (HV2000.txt l.42-45, l.66, l.73-75).",
+      "status": "refereed"
+    },
+    {
+      "name": "GKSharp.Cited.hkv_thm21",
+      "source": "B. Hollenbeck, N.J. Kalton, I.E. Verbitsky, Best constants for some operators associated with the Fourier and Hilbert transforms, Studia Mathematica157(3)(2003),237-278, Theorem2.1,p242; necessary direction; https://kaltonmemorial.missouri.edu/assets/docs/sm2003a.pdf",
+      "review": "Fresh math-lead source/type/definition review PASS 2026-10-28. Independent original-PDF page242/source/type/definition review MATCH, 0 MUST, 2026-10-28. Both verify arbitrary nonempty center set, lower-truncation encoding, normalized submean, no homogeneity/reduction conclusion. Original PDF SHA256 8ab845bc160dfe1c7a0425c1e59f1037ecef6e0c25378de916f512b7c7758623.",
+      "status": "refereed"
+    },
+    {
+      "name": "GKSharp.Cited.hv2000_thm31_schwartz",
+      "source": "B. Hollenbeck, I. E. Verbitsky, Best constants for the Riesz projection, J. Funct. Anal. 175 (2000), 370-392; Theorem 3.1, p. 386 (the real-line bound (3.1)) and definition (1.2), p. 371",
+      "review": "Independent source read on the original PDF page images (printed p. 386 = PDF p. 17, and p. 371), 2026-10-28 19:18: the docstring quotes of Theorem 3.1 and (1.2) are exact; the axiom is stated only for Schwartz inputs, where the inverse Fourier integral of the half-line-masked transform is the L^2 multiplier P+ f, so it is no stronger than (3.1); (3.1) bounds both P+ and P-, so the Fourier sign convention is covered; the statement uses plain Mathlib objects only.",
+      "status": "refereed"
+    }
+  ]
+}

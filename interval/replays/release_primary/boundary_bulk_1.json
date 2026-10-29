@@ -1,0 +1,38 @@
+{
+  "name": "boundary_bulk_1",
+  "script": "programs/boundary_bulk.py",
+  "arguments": [
+    "--p-lo",
+    "1.000001",
+    "--p-hi",
+    "1.00001",
+    "--cells",
+    "100",
+    "--max-depth",
+    "24"
+  ],
+  "markers": [
+    "^\\(ii\\) on p in \\[1\\.000001, 1\\.00001\\].*: PROVED h"
+  ],
+  "argv": [
+    "python",
+    "-u",
+    "-B",
+    "programs/boundary_bulk.py",
+    "--p-lo",
+    "1.000001",
+    "--p-hi",
+    "1.00001",
+    "--cells",
+    "100",
+    "--max-depth",
+    "24"
+  ],
+  "cwd": ".",
+  "started": "2026-10-28T12:22:55.932464+00:00",
+  "status": "PASS",
+  "returncode": 0,
+  "ended": "2026-10-28T12:22:59.283269+00:00",
+  "stdout": "replays/release_primary/boundary_bulk_1.stdout.log",
+  "stderr": "replays/release_primary/boundary_bulk_1.stderr.log"
+}

@@ -1,0 +1,4 @@
+corner box: p in [[1.233602500 +/- 3e-14], [1.234102700 +/- 3e-14]], delta in [0, [0.05000 +/- 1e-10]] (eps1 = [0.051293294 +/- 3.88e-10]), mode = certify
+EDGES (certified lower ends): s <= 0.05: g >= [0.292063 +/- 3.83e-7];  s >= 0.95: g >= [6.32044 +/- 1.38e-6]  (balls [+/- 1.49], [7e+0 +/- 0.680])
+MIDDLE: {'cells': 3410, 'pass_I': 1929, 'pass_II': 800, 'refused': 0, 'max_tau': 0.01907082936928859}
+CORNER CLAIM: PROVED

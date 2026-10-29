@@ -1,0 +1,178 @@
+{
+  "version": "0.10",
+  "status": "PASS",
+  "self_test": {
+    "mathematical_and_control_mutations_rejected": 4
+  },
+  "files": [
+    {
+      "id": "source01",
+      "release": "interval/programs/arch_search.py",
+      "normalized_ast_sha256": "c5471553832f75b290b89aef01f5ade0c082c23c5e7ba3044cbf27b0adf2a26a",
+      "numeric_literals": 85,
+      "numeric_literals_sha256": "6303a4228226093c191e0d295c9170f38b3495fade58acde416ec2dce9dcb059",
+      "status": "PASS"
+    },
+    {
+      "id": "source02",
+      "release": "interval/programs/corner_comparison.py",
+      "normalized_ast_sha256": "3643b6b45771a8684206d21b1e982b5b3f236d247883c8acffe57a8ea23b25ed",
+      "numeric_literals": 84,
+      "numeric_literals_sha256": "edf7d955372371add1a4a4c9aa5666a042e4ce62cf3d98d31a46f74e655960f3",
+      "status": "PASS"
+    },
+    {
+      "id": "source03",
+      "release": "interval/programs/omega_positive_independent.py",
+      "normalized_ast_sha256": "91d9d47a7d52489441a9d203c5321f8d8e1ec8c5d5d3e8bd15a4fa714d0180cc",
+      "numeric_literals": 60,
+      "numeric_literals_sha256": "8f6d792c92f7f0eefbe91dd5444874c46ea6c45979c293aa2b3afd364bd6a05c",
+      "status": "PASS"
+    },
+    {
+      "id": "source04",
+      "release": "interval/programs/pencil_search.py",
+      "normalized_ast_sha256": "9678513b6f5272a45ac57195d0d0d52ff3d3ae64b85d50ed89ec4044da2343be",
+      "numeric_literals": 148,
+      "numeric_literals_sha256": "9d22ec13ffbef4969f2677cc12586c3c8fde7bcc0ca85b2b5b6090ec33aaf72d",
+      "status": "PASS"
+    },
+    {
+      "id": "source05",
+      "release": "interval/programs/strip_bulk_independent.py",
+      "normalized_ast_sha256": "e88eb22e3d07cda3e07955cbee85e79b1299eb39cf876f27fc6af3f65831642d",
+      "numeric_literals": 226,
+      "numeric_literals_sha256": "4f1e1cbb48f626a70de4f5aee3216ddde306bf6c1b76ac07e91d7654bc696f9f",
+      "status": "PASS"
+    },
+    {
+      "id": "source06",
+      "release": "interval/programs/wide_chord_independent.py",
+      "normalized_ast_sha256": "d4ab0bf9bd963203775eaebbf534c94de85fa86713d13a749a330e21603b07c0",
+      "numeric_literals": 73,
+      "numeric_literals_sha256": "9cc5871dc032798b66228e0c9ee935cd06f7fa5665d4ec45ac14e6750e7a6129",
+      "status": "PASS"
+    },
+    {
+      "id": "source07",
+      "release": "interval/programs/strip_corner.py",
+      "normalized_ast_sha256": "bc91116acb4c0023cff0fc227e7a9b66a3f970181ac20b96601a4584208de76e",
+      "numeric_literals": 144,
+      "numeric_literals_sha256": "c3c553af1c206d5a2a7ed6df2c23c449fa2e1d9fbc88d0bc5baf9edf23647496",
+      "status": "PASS"
+    },
+    {
+      "id": "source08",
+      "release": "interval/programs/omega_negative_alternate.py",
+      "normalized_ast_sha256": "c548e04f4c0c25b4f088e25889cbc6abb66c9f811c0c2e266d666879f8635f63",
+      "numeric_literals": 39,
+      "numeric_literals_sha256": "3120254db7579348a015ed97c84b54dd2327eb71fe0f9081bc544214a69a4583",
+      "status": "PASS"
+    },
+    {
+      "id": "source09",
+      "release": "interval/programs/omega_positive_alternate.py",
+      "normalized_ast_sha256": "ac13d785a676db61f02f81fa85a5fe9b59291178ec5ab795ee7a115950bc74e7",
+      "numeric_literals": 53,
+      "numeric_literals_sha256": "43440068f508a9a7c56f41809fb0e254d057a3b797005a7524f07844e0087560",
+      "status": "PASS"
+    },
+    {
+      "id": "source10",
+      "release": "interval/programs/strip_corner_independent.py",
+      "normalized_ast_sha256": "e7521c505daca313cf9408a10386d8d838af5359c1f8d6dba7a7556c29c7ef90",
+      "numeric_literals": 298,
+      "numeric_literals_sha256": "03a9a272cd1a37c3dc189f4a9fc74b27676641efdefd69c3d8cb45e0dc40cf36",
+      "status": "PASS"
+    },
+    {
+      "id": "source11",
+      "release": "interval/programs/boundary_sliver.py",
+      "normalized_ast_sha256": "cb4ff2645e0b375a360ba83c9986e0a6a4d03df764b63b8ce05b05b8cccf128c",
+      "numeric_literals": 71,
+      "numeric_literals_sha256": "fbd528206cc02c568e0226fac31a13963c1de759f02bcfcd1bb0d2d7bdd2c0a1",
+      "status": "PASS"
+    },
+    {
+      "id": "source12",
+      "release": "interval/programs/omega_negative.py",
+      "normalized_ast_sha256": "e05b961008158a3f88b55a10358e4f5b076aac78e8da80dacc943c70c81d1014",
+      "numeric_literals": 45,
+      "numeric_literals_sha256": "26770506ab2c6b01a3de8e599d49793ef1dfd5e7cfcbef18029838fbbc996853",
+      "status": "PASS"
+    },
+    {
+      "id": "source13",
+      "release": "interval/programs/boundary_bulk_extended.py",
+      "normalized_ast_sha256": "ee63b7c784b9cae231136a8b5b8f93a133a5bf89a8457675ac27a00d868f6cff",
+      "numeric_literals": 188,
+      "numeric_literals_sha256": "06fe47fede7c870c9c3ee2d7f2260460738b803c9953944f3e422258bd50b933",
+      "status": "PASS"
+    },
+    {
+      "id": "source14",
+      "release": "interval/programs/omega_positive.py",
+      "normalized_ast_sha256": "e829d88d74c31e12e55bea43770c5ddaca33676ea87eba39dcd6967c3a4f9cb7",
+      "numeric_literals": 46,
+      "numeric_literals_sha256": "5c85dfc44b5b0df0f655d00587d9c13d47b7e06fb200598b3ea707d8006e3e4c",
+      "status": "PASS"
+    },
+    {
+      "id": "source15",
+      "release": "interval/programs/local_threshold.py",
+      "normalized_ast_sha256": "4318c7bc4c4db0be9ff473b8923964578b1d077e110d0ad234c63fbbff141157",
+      "numeric_literals": 57,
+      "numeric_literals_sha256": "b51158ac775828f22155926eb4a8f09d6ee33dc8ef5204580bae21d6c9a4d673",
+      "status": "PASS"
+    },
+    {
+      "id": "source16",
+      "release": "interval/programs/spline_certificate.py",
+      "normalized_ast_sha256": "61d9b692a3c5579fab9ff781dbbe1a988a921281a11200e6901d64d00399805f",
+      "numeric_literals": 81,
+      "numeric_literals_sha256": "49e321d6af72fe8067fd4f4f9197c0bd4a95609f14ba89bc53df108a9aeacc6c",
+      "status": "PASS"
+    },
+    {
+      "id": "source17",
+      "release": "interval/programs/strip_bulk.py",
+      "normalized_ast_sha256": "ac7f17f534a7468064e10a7f8795aae763b15124534eaa9051ca0bdc8c2494e6",
+      "numeric_literals": 264,
+      "numeric_literals_sha256": "8097046d756db2a9ca3949e9b1260947b113410748f1a296f3ca5b47ba095db5",
+      "status": "PASS"
+    },
+    {
+      "id": "source18",
+      "release": "interval/programs/wide_chord_comparison.py",
+      "normalized_ast_sha256": "9b0b7c8434f01fd47bf9a084fc362c275d33af9cd6479974f373729cb62faeb3",
+      "numeric_literals": 16,
+      "numeric_literals_sha256": "776712f7651e6ede07e9c1e0068341a62aa045d8339f11c5862dfbd26f9ea1a8",
+      "status": "PASS"
+    },
+    {
+      "id": "source19",
+      "release": "interval/programs/boundary_bulk.py",
+      "normalized_ast_sha256": "e4867a14032591cae10a4d929c7d64722b3464e00b312af78c57ace0f10f02db",
+      "numeric_literals": 123,
+      "numeric_literals_sha256": "60f938b31e7e4e77df1b44db76aa207ddd68dddbf4d82736194a2964c7d38def",
+      "status": "PASS"
+    },
+    {
+      "id": "source20",
+      "release": "interval/certify_wide_chord.py",
+      "normalized_ast_sha256": "d9c9d9346eef13296d20d6722a2753814903349576f57f7c4274a3336aaf7813",
+      "numeric_literals": 51,
+      "numeric_literals_sha256": "66ab96c29bb286bdf147c820b49737e5e563021b6d1b4ea31b00fc1cc20f59c2",
+      "status": "PASS"
+    },
+    {
+      "id": "source21",
+      "release": "interval/replay_primary.py",
+      "normalized_ast_sha256": "519e10a7df88c823f08786a802473f9ed7e65db6c5f5e99273feacd4efe10949",
+      "numeric_literals": 29,
+      "numeric_literals_sha256": "f2000e878ef73f8fcdc3a6d6c09afe91a7882766e4f15a32a7be3ace13ef9024",
+      "status": "PASS"
+    }
+  ],
+  "scope": "Exact naming/import/path/output-label replacements and the explicitly hashed metadata serializer; all remaining AST nodes equal."
+}

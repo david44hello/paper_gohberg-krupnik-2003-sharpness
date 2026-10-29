@@ -1,0 +1,24 @@
+{
+  "name": "wide_chord_controls",
+  "script": "certify_wide_chord.py",
+  "arguments": [
+    "--test"
+  ],
+  "markers": [
+    "Both false-claim controls rejected\\."
+  ],
+  "argv": [
+    "python",
+    "-u",
+    "-B",
+    "certify_wide_chord.py",
+    "--test"
+  ],
+  "cwd": ".",
+  "started": "2026-10-28T12:22:52.850934+00:00",
+  "status": "PASS",
+  "returncode": 0,
+  "ended": "2026-10-28T12:22:52.938567+00:00",
+  "stdout": "replays/release_primary/wide_chord_controls.stdout.log",
+  "stderr": "replays/release_primary/wide_chord_controls.stderr.log"
+}

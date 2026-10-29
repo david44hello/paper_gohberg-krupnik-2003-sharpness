@@ -1,0 +1,131 @@
+{
+  "version": "1.00",
+  "files": [
+    {
+      "id": "source01",
+      "release": "interval/programs/arch_search.py",
+      "original_sha256": "1b57572f4c673fa2d084da09344662c202c9128357233e7702f25300aec7ddf9",
+      "release_sha256": "c001c75423e8e2b91b01b6b2e047cb192238df194c0efc29041848be319102ab"
+    },
+    {
+      "id": "source02",
+      "release": "interval/programs/corner_comparison.py",
+      "original_sha256": "5b1e9be44a03c0d81203cae7a3d884149183a374ab9a7be33383455e1b46b778",
+      "release_sha256": "605ff7191f5a98a0befbe801150e2fbe61b1d85e1e32a3b424884dc0e10b7e47"
+    },
+    {
+      "id": "source03",
+      "release": "interval/programs/omega_positive_independent.py",
+      "original_sha256": "b1dd13193587c50f74546cd5dc8a0351246cf7ac126b86b8c116f75a530d8d2b",
+      "release_sha256": "303655a20831a2582468f4c0088b8930f5573f592d4b6c1e5cc7a164e3f8bf26"
+    },
+    {
+      "id": "source04",
+      "release": "interval/programs/pencil_search.py",
+      "original_sha256": "dd68cd86b6dc8875dd7ed06d577b22f90de97646686b8d517d7aa6d0ef2226e4",
+      "release_sha256": "f48b3c38995ee329fc203492d59d869e4d78d336b475d02bf2a3896c56726531"
+    },
+    {
+      "id": "source05",
+      "release": "interval/programs/strip_bulk_independent.py",
+      "original_sha256": "f45726d49c50dacf9d8d8e00569d2ac29aa760a2a3e7bce37151328e2df7b60e",
+      "release_sha256": "8e21ed1fcb72b94f97077087e0b0d23fe326c3c37e9ef93ab58ae30e85e4229c"
+    },
+    {
+      "id": "source06",
+      "release": "interval/programs/wide_chord_independent.py",
+      "original_sha256": "f603c529eab3d734489c293121b3bee86688c27f42c6d16bd771bec914f89481",
+      "release_sha256": "21c6d99e18be3f0bb735bbd3b473572988f92ac1450e9ece3c2bc4a430cb86cd"
+    },
+    {
+      "id": "source07",
+      "release": "interval/programs/strip_corner.py",
+      "original_sha256": "dc75142f94927ff1f7ebef4a88911a61d576db55d89cefbebabb8f56eccf44e4",
+      "release_sha256": "dbf3c961b6d3ba33613f5e33b96f2a9a57aa513545f473eea82ce254bd4d1199"
+    },
+    {
+      "id": "source08",
+      "release": "interval/programs/omega_negative_alternate.py",
+      "original_sha256": "a63e77c2f73f26b2747b4c13217d7dc3514ff55139aeff8435b1a9984470faa2",
+      "release_sha256": "31e351bdbbf6f620483d2823936f5062d3deb1793f8cd76c9769613e2c423911"
+    },
+    {
+      "id": "source09",
+      "release": "interval/programs/omega_positive_alternate.py",
+      "original_sha256": "6d177ff5744ba98ffff7994923fb6fd1e036b6ebdfc8018a021f5a1d7fea430b",
+      "release_sha256": "975e1e536ba1fb39df1398bc3866311d0290673caa15f0a04755d2d8f089e383"
+    },
+    {
+      "id": "source10",
+      "release": "interval/programs/strip_corner_independent.py",
+      "original_sha256": "79752fe6eeb67d8f8fdc64dd5f02cf5dd9fae3c12c5db70e9e1528a579c684a4",
+      "release_sha256": "b78927622208ce050749a1104f3103094cc4f7fb9de50b7ec85b590979b3d549"
+    },
+    {
+      "id": "source11",
+      "release": "interval/programs/boundary_sliver.py",
+      "original_sha256": "783c34ba51e534911989efd6f8804427863ffa0f15d874a8feeb77c5f0909d71",
+      "release_sha256": "238d1dd8a20ba406d41114826f5dfd4810c663efc9e60c0b528b45b1183047f3"
+    },
+    {
+      "id": "source12",
+      "release": "interval/programs/omega_negative.py",
+      "original_sha256": "57818f7b9c538f01c2681438fc47c354e7720338d4bdb79823bf3d13d5c212ac",
+      "release_sha256": "3062875f5de991f48932a7de27aa09519be640473f1892e6215b9c2bcb26ed7b"
+    },
+    {
+      "id": "source13",
+      "release": "interval/programs/boundary_bulk_extended.py",
+      "original_sha256": "27dcdb925e90f4356aac445075c2b8cb78f67dbe7b3fb40f09ea6ece7f926cce",
+      "release_sha256": "6f9c45efaadd6d566e5ab6d9c4e98bbc49cbc4732a1384b6fdaabb1027df744e"
+    },
+    {
+      "id": "source14",
+      "release": "interval/programs/omega_positive.py",
+      "original_sha256": "f805924e937386c1925906ef91ba6597da463d40e143eef02f10bad3d8116c32",
+      "release_sha256": "79616e8fb82d1cfb29baea485cf8268a36180ed89946e6fe8be0e11af58407bd"
+    },
+    {
+      "id": "source15",
+      "release": "interval/programs/local_threshold.py",
+      "original_sha256": "268ce8d655b085f5ec16de974cc074de125f665a49081ca0fc711af456a8cc01",
+      "release_sha256": "31d6481e269c040d6b56d258760574ad2c4d4b2e3dbd2b7ef284ef8353097d93"
+    },
+    {
+      "id": "source16",
+      "release": "interval/programs/spline_certificate.py",
+      "original_sha256": "e7f863def5eafc87baee3aaacd224cb0702fb85e653159a23aa8001136296096",
+      "release_sha256": "ed3ea8a2ecea421918581d8021447c471683901fdbed5eb7c96954ce0ad635c8"
+    },
+    {
+      "id": "source17",
+      "release": "interval/programs/strip_bulk.py",
+      "original_sha256": "a0b3c5c7085c81107d632f616906dc34d40757fee98e9732ab958a40e143ffdd",
+      "release_sha256": "a45015ce62fbe0da64d5ececd5d1d47b2fa0908d4882afe31db2c66f9b269f73"
+    },
+    {
+      "id": "source18",
+      "release": "interval/programs/wide_chord_comparison.py",
+      "original_sha256": "e37b1c415ab01774d085a617509ea74827ebffdd78c3dc8a4e1febfbf15e074f",
+      "release_sha256": "e2c860f776b614111ea6f0781f1092c04aad93d1a377184d5acf8a476b88c5ed"
+    },
+    {
+      "id": "source19",
+      "release": "interval/programs/boundary_bulk.py",
+      "original_sha256": "a7537dda3a921f6d7b0f3d9723d4c492aad081d4ec2c1a7d5b794831516a340c",
+      "release_sha256": "0dccc82bf3b991345beb3298fb11579c2cc0d136a46d2b3f0d3fa710435756a5"
+    },
+    {
+      "id": "source20",
+      "release": "interval/certify_wide_chord.py",
+      "original_sha256": "068e2b044fa907d32afa00cea0fe22fdc71d5b235f30562d67443bae28e1aaf1",
+      "release_sha256": "dcd73dd834e8e6cf99f5feb5666d7fd1feaf3bf040aa4fa2ac5e2106e3823b79"
+    },
+    {
+      "id": "source21",
+      "release": "interval/replay_primary.py",
+      "original_sha256": "ee5486d460be5754480f5ae453d62f314fb17f7d65375d9e87f4cb6c52f2a4d4",
+      "release_sha256": "c95cede87267541807771861412b678a1a9beb054128a96c66334159a34c26f5"
+    }
+  ]
+}

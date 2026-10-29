@@ -1,0 +1,24 @@
+{
+  "name": "boundary_bulk_test",
+  "script": "programs/boundary_bulk.py",
+  "arguments": [
+    "--test"
+  ],
+  "markers": [
+    "^tests done$"
+  ],
+  "argv": [
+    "python",
+    "-u",
+    "-B",
+    "programs/boundary_bulk.py",
+    "--test"
+  ],
+  "cwd": ".",
+  "started": "2026-10-28T12:22:53.126675+00:00",
+  "status": "PASS",
+  "returncode": 0,
+  "ended": "2026-10-28T12:22:53.945702+00:00",
+  "stdout": "replays/release_primary/boundary_bulk_test.stdout.log",
+  "stderr": "replays/release_primary/boundary_bulk_test.stderr.log"
+}

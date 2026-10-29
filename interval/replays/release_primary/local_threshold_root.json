@@ -1,0 +1,22 @@
+{
+  "name": "local_threshold_root",
+  "script": "programs/local_threshold.py",
+  "arguments": [],
+  "markers": [
+    "unique simple root p_c in \\[9480393/7812500, 242698061/200000000\\]",
+    "^LEMMA P_c: PROVED$"
+  ],
+  "argv": [
+    "python",
+    "-u",
+    "-B",
+    "programs/local_threshold.py"
+  ],
+  "cwd": ".",
+  "started": "2026-10-28T12:22:55.805202+00:00",
+  "status": "PASS",
+  "returncode": 0,
+  "ended": "2026-10-28T12:22:55.897307+00:00",
+  "stdout": "replays/release_primary/local_threshold_root.stdout.log",
+  "stderr": "replays/release_primary/local_threshold_root.stderr.log"
+}
