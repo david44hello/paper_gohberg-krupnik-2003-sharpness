@@ -1,5 +1,5 @@
 /-
-SharpA3Final.lean — project019 Section5 (A3), final dependency assembly.
+SharpA3Final.lean — Section5 (A3), final dependency assembly.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
 -/
 import GKSharp.Proofs.SharpA3

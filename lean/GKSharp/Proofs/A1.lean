@@ -1,5 +1,5 @@
 /-
-A1.lean — consequence (A1) of Lemma A: f_ρ has at most one critical point in (0, π), project 019, Section 5.1.
+A1.lean — consequence (A1) of Lemma A: f_ρ has at most one critical point in (0, π), Section 5.1.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
 -/
 import GKSharp.Proofs.CriticalMaximum

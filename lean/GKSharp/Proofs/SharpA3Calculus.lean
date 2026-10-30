@@ -1,5 +1,5 @@
 /-
-SharpA3Calculus.lean — calculus consequences used in project019, Section5 (A3).
+SharpA3Calculus.lean — calculus consequences used in Section5 (A3).
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
 -/
 import GKSharp.Proofs.CriticalMaximum

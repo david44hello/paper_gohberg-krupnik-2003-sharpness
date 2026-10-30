@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """GKSharp claim audit: kernel axioms and explicit computer-check hypotheses.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
-previously: GKSharp namespaces, reviewed citation allowlist,
-Lean expression inspection for conditional rows, and the NOT stated registry.
 
 Run it on a quiet machine, one thread. --test uses no Lean.
 The generated audit never changes a paper statement or assumes a check.

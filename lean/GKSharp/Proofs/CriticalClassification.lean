@@ -1,5 +1,5 @@
 /-
-CriticalClassification.lean — all interior circle critical points, project019 Section5.1.
+CriticalClassification.lean — all interior circle critical points, Section5.1.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
 -/
 import GKSharp.Proofs.InverseCritical

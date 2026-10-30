@@ -1,5 +1,5 @@
 /-
-RealSegment.lean — real-segment calculus for project 019, Section 5.3.
+RealSegment.lean — real-segment calculus, Section 5.3.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
 -/
 import GKSharp.Proofs.MobiusDict

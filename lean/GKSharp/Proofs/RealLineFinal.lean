@@ -1,4 +1,4 @@
-/- RealLineFinal.lean - project 019, N family: N01_unique, N04 and N04_minus at their frozen types, with the
+/- RealLineFinal.lean - N family: N01_unique, N04 and N04_minus at their frozen types, with the
    density input N10 discharged by its proof (GKSharp.Proofs.N10Density.slice_N10_proved).
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now. -/
 import GKSharp.Proofs.RealLineLocal

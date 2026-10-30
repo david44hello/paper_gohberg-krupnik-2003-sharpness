@@ -1,5 +1,5 @@
 /-
-RealSegmentSign.lean — strict sign below the midpoint, project019 Section5.3.
+RealSegmentSign.lean — strict sign below the midpoint, Section5.3.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
 -/
 import GKSharp.Proofs.MobiusDict

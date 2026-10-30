@@ -1,5 +1,5 @@
 /-
-EllipseCalculus.lean — holomorphic ellipse extension and principal-power calculus, project019.
+EllipseCalculus.lean — holomorphic ellipse extension and principal-power calculus.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
 -/
 import GKSharp.Proofs.MobiusDict

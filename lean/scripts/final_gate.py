@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """final_gate.py — the FINAL-freeze gate of GKSharp (check.sh --final), after audit.py has written CLAIMS.json.
-with its exact type and a placeholder body, and is counted OPEN; the placeholder is allowed nowhere else.
+An unproved paper claim stays a public row with its exact type and a placeholder body, and is counted OPEN; the placeholder is allowed nowhere else.
 
 Checks, against one explicit list of OPEN rows (OPEN_ROWS.txt: one row name per line, '#' comments):
 1. In Statements.lean every occurrence of the placeholder word is the WHOLE body (`:= by <word>` or `:= <word>`)

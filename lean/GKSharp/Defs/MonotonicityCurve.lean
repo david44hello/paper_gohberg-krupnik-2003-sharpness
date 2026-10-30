@@ -1,4 +1,4 @@
-/- Section 5.4 coordinate and series definitions for exact coverage.
+/- Section 5.3 coordinate and series definitions for exact coverage.
 All mathematical properties are separate theorem rows; these definitions assume none.
 Copyright (C) Dave Goel 2026--now. -/
 import GKSharp.Defs.Monotonicity

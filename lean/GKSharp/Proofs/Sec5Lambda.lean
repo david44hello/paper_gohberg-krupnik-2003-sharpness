@@ -1,5 +1,5 @@
 /-
-Sec5Lambda.lean — the normalized critical-curve identity, project 019, Section 5.2.
+Sec5Lambda.lean — the normalized critical-curve identity, Section 5.2.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
 -/
 import GKSharp.Proofs.MobiusDict

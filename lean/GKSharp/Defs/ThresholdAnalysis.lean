@@ -1,5 +1,5 @@
 /- GKSharp/Defs/ThresholdAnalysis.lean - criterion/contact/strip objects.
-Frozen source: short_v0.40/.
+Paper places: short_v3.40/.
 No axioms, proof placeholders or assumed properties.
 Copyright (C) Dave Goel 2026--now. -/
 import GKSharp.Defs.Threshold
@@ -20,11 +20,11 @@ def obstacle (p lam t : ℝ) : ℝ := GKSharp.obstacle p (gk p lam) (lam : ℂ) 
 /-- Canonical h from the corrected shared Potential definition. -/
 def h (p lam : ℝ) : ℝ := GKSharp.axisGap p lam
 
-/-- sec4b_failure.tex:112. First zero is not assumed by defining sInf. -/
+/-- sec4b_failure.tex:119. First zero is not assumed by defining sInf. -/
 def axisZeros (p : ℝ) : Set ℝ := {lam | 0 < lam ∧ lam < lambdaLoc p ∧ h p lam = 0}
 def lambda0 (p : ℝ) : ℝ := sInf (axisZeros p)
 
-/-- sec5f_strip.tex:19. This is the continued positive quadratic root, NOT gk
+/-- sec5f_strip.tex:23. This is the continued positive quadratic root, NOT gk
 for negative delta. This distinction is essential in the involution. -/
 def cDelta (p delta : ℝ) : ℝ :=
   delta / (2 * sn p) + Real.sqrt (delta ^ 2 / (4 * sn p ^ 2) + 1 - delta)
@@ -37,7 +37,7 @@ def kap (p delta : ℝ) : ℝ :=
   2 * cDelta p delta * sn p ^ (p - 2) * cs p ^ (1 - q p) *
     (cDelta p delta ^ 2 + 1 - delta) ^ (q p - 1)
 
-/-- sec4b_failure.tex:130–131 and sec5f_strip.tex:17–20. Exact removable extension. -/
+/-- sec4b_failure.tex:136–137 and sec5f_strip.tex:21–24. Exact removable extension. -/
 def g (p delta s : ℝ) : ℝ :=
   (tOne p delta + s * phi p (s * delta)) / (s * (1 - s)) ^ q p - kap p delta
 

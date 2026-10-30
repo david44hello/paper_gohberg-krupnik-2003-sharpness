@@ -1,5 +1,5 @@
 /-
-CriticalMaximum.lean — second derivative at every interior critical point, project019 equation5.6.
+CriticalMaximum.lean — second derivative at every interior critical point, equation5.6.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
 -/
 import GKSharp.Proofs.EllipseSecond

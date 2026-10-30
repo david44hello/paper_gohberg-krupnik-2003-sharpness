@@ -1,5 +1,5 @@
 /-
-QEnds.lean — Re x^q on the real line and the two real ends of the ellipse Q(ρe^{iφ}), project 019, Section 5.1.
+QEnds.lean — Re x^q on the real line and the two real ends of the ellipse Q(ρe^{iφ}), Section 5.1.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
 -/
 import GKSharp.Proofs.RealSegment

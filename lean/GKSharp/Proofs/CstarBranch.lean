@@ -1,4 +1,4 @@
-/- GKSharp/Proofs/CstarBranch.lean — project 019, Theorem C*: the actual obstacle equals μ near the contact angle.
+/- GKSharp/Proofs/CstarBranch.lean — Theorem C*: the actual obstacle equals μ near the contact angle.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now. -/
 import GKSharp.Proofs.ContactObstacle
 

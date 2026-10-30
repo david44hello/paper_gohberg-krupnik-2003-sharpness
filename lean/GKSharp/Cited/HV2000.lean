@@ -9,7 +9,7 @@ namespace GKSharp.Cited
 `1 < p < ∞` ("It follows from the classical M. Riesz theorem"), and `‖P₊ f‖_{L^p} ≤ (1/sin(π/p)) ‖f‖_{L^p}` (1.1) "with a
 sharp constant"; the lower estimate `‖P₊‖_p ≥ 1/sin(π/p)` is Gohberg-Krupnik's, quoted on p. 371. Together: a bounded
 `P₊` with the exact nonnegative-frequency mask exists and `‖P₊‖_p = 1/sin(π/p)`. The paper cites this as [HV]
-(sec2_obstacle.tex l.28). -/
+(sec2_obstacle.tex l.29). -/
 axiom hv2000_riesz_norm (p : ℝ) [Fact (1 ≤ ENNReal.ofReal p)] (hp : 1 < p) :
     ∃ P : RieszProjection p, ‖P.plus‖ = 1 / Real.sin (Real.pi / p)
 

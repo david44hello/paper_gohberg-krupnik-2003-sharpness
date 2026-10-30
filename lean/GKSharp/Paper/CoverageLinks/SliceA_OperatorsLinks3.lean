@@ -30,11 +30,11 @@ noncomputable def circlePower (p : ℝ) (f : ℝ → ℂ) : ℝ :=
 namespace Paper
 variable {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)]
 
-/-- Coverage link (derived (Proofs/RealLineUnique with the N10 premise discharged by Proofs/N10Density)): the approved target `slice_N01_unique` of slice SliceA_OperatorsLinks3, from installed rows. Paper place: norm_correspondence.tex l.6-8 (short v0.70). -/
+/-- Coverage link (derived (Proofs/RealLineUnique with the N10 premise discharged by Proofs/N10Density)): the approved target `slice_N01_unique` of slice SliceA_OperatorsLinks3, from installed rows. Paper place: norm_correspondence.tex l.8-10 (short v3.40). -/
 theorem cover_slice_N01_unique : ∀ (hp : 1 < p) (α β : ℂ) (T S : RealLinePencil p α β), T = S :=
   fun hp α β T S => GKSharp.Proofs.RealLineUnique.slice_N01_unique_of_N10 (fun q _ hq f ε hε => GKSharp.Proofs.N10Density.slice_N10_proved hq f ε hε) hp α β T S
 
-/-- Coverage link (renamed (Proofs/N05Averaging)): the approved target `slice_N05` of slice SliceA_OperatorsLinks3, from installed rows. Paper place: norm_correspondence.tex l.30-35 (short v0.70). -/
+/-- Coverage link (renamed (Proofs/N05Averaging)): the approved target `slice_N05` of slice SliceA_OperatorsLinks3, from installed rows. Paper place: norm_correspondence.tex l.31-36 (short v3.40). -/
 theorem cover_slice_N05 : ∀ (hp : 1 < p) (η : SchwartzMap ℝ ℂ) (A : ℝ → ℝ)
     (hA : Continuous A) (hper : Function.Periodic A (2 * Real.pi)),
     Tendsto (fun h : ℝ => h * ∫ x : ℝ, ‖η (h * x)‖ ^ p * A x)
@@ -42,7 +42,7 @@ theorem cover_slice_N05 : ∀ (hp : 1 < p) (η : SchwartzMap ℝ ℂ) (A : ℝ �
       (𝓝 ((∫ x : ℝ, ‖η x‖ ^ p) * ((2 * Real.pi)⁻¹ * ∫ t in (0 : ℝ)..(2 * Real.pi), A t))) :=
   GKSharp.Proofs.N05Averaging.slice_N05_proved
 
-/-- Coverage link (renamed (Proofs/SchwartzPeriodizationMain)): the approved target `slice_N07` of slice SliceA_OperatorsLinks3, from installed rows. Paper place: norm_correspondence.tex l.39-44 (short v0.70). -/
+/-- Coverage link (renamed (Proofs/SchwartzPeriodizationMain)): the approved target `slice_N07` of slice SliceA_OperatorsLinks3, from installed rows. Paper place: norm_correspondence.tex l.40-45 (short v3.40). -/
 theorem cover_slice_N07 : ∀ (f : SchwartzMap ℝ ℂ) (hc : HasCompactSupport (paperFourier f))
     (hz : 0 ∉ tsupport (paperFourier f)) (N : ℕ) (hN : 0 < N),
     ∃ F : C(Circ, ℂ), (∀ t : ℝ, F (t : Circ) = periodized f N t) ∧
@@ -51,13 +51,13 @@ theorem cover_slice_N07 : ∀ (f : SchwartzMap ℝ ℂ) (hc : HasCompactSupport 
       Set.Finite {n : ℤ | fourierCoeff (⇑F) n ≠ 0} ∧ fourierCoeff (⇑F) 0 = 0 :=
   GKSharp.Proofs.SchwartzPeriodizationMain.slice_N07_proved
 
-/-- Coverage link (renamed (Proofs/N09Periodization)): the approved target `slice_N09` of slice SliceA_OperatorsLinks3, from installed rows. Paper place: norm_correspondence.tex l.46-51 (short v0.70). -/
+/-- Coverage link (renamed (Proofs/N09Periodization)): the approved target `slice_N09` of slice SliceA_OperatorsLinks3, from installed rows. Paper place: norm_correspondence.tex l.47-52 (short v3.40). -/
 theorem cover_slice_N09 : ∀ (hp : 1 < p) (f : SchwartzMap ℝ ℂ),
     Tendsto (fun N : ℕ => (2 * Real.pi * N) * circlePower p (periodized f N)) atTop
       (𝓝 (∫ x : ℝ, ‖f x‖ ^ p)) :=
   GKSharp.Proofs.N09Periodization.slice_N09_proved
 
-/-- Coverage link (renamed (Proofs/N10Density)): the approved target `slice_N10` of slice SliceA_OperatorsLinks3, from installed rows. Paper place: norm_correspondence.tex l.53 (short v0.70). -/
+/-- Coverage link (renamed (Proofs/N10Density)): the approved target `slice_N10` of slice SliceA_OperatorsLinks3, from installed rows. Paper place: norm_correspondence.tex l.54 (short v3.40). -/
 theorem cover_slice_N10 : ∀ (hp : 1 < p) (f : LpR p) (ε : ℝ) (hε : 0 < ε),
     ∃ g : SchwartzMap ℝ ℂ, ‖g.toLp (ENNReal.ofReal p) volume - f‖ < ε ∧
       HasCompactSupport (paperFourier g) ∧ 0 ∉ tsupport (paperFourier g) :=

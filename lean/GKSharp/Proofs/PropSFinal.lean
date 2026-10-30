@@ -1,4 +1,4 @@
-/- GKSharp/Proofs/PropSFinal.lean - the row sec5_prop_S (Proposition S, sec5f_strip.tex l.38-40, l.67-71), slice (b)
+/- GKSharp/Proofs/PropSFinal.lean - the row sec5_prop_S (Proposition S, sec5f_strip.tex l.38-40, l.67-68), slice (b)
 v1.40 type with its seven explicit checks: PropS.sec5_prop_S_of_cstarIf with the proved "if" half of Theorem C*
 (TheoremCstar.cstar_if_proved).
 Copyright (C) Dave Goel 2026--now. -/

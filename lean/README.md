@@ -1,7 +1,28 @@
-# The Gohberg–Krupnik sharpness belief for aI+bH (2003) is fully resolved: the Lean proof
+# The Gohberg–Krupnik sharpness belief for aI+bH (2003) is fully resolved — Lean 4 proof
 
-Dave Goel. Copyright (C) Dave Goel 2026--now. All rights reserved.
+The paper: its link will be added here when it is posted.
 
-This folder is the Lean 4 formalization of the paper (version 0.90). Nine interval estimates of the paper are not proved in Lean: `GKSharp/ComputerChecked.lean` states each one as a named computer check, and the proofs use them only as explicit hypotheses. The programs that verify them are in `../interval/`. Three published theorems are assumed: two of Hollenbeck and Verbitsky (2000) and one of Hollenbeck, Kalton and Verbitsky (2003). `GKSharp/Cited/` states each one with its source. `AUDIT.md` lists each public Lean statement (`GKSharp/Paper/Statements.lean`) with its place in the paper and the computer checks and published theorems it uses; the other claims are tied to their exact Lean statements in `GKSharp/Paper/CoverageLinks/`.
+This folder is a Lean 4 proof of the paper's results.
 
-Build, from this folder: `lake exe cache get && lake build` (Lean 4 v4.35.0, Mathlib commit 56a005855ea1). `bash scripts/check.sh` (Python 3 and ripgrep) checks the sources and regenerates `AUDIT.md`.
+## Directions to Reproduce
+
+Install Git, Lean (https://lean-lang.org/install/), Python 3 and ripgrep, then run:
+
+```bash
+git clone https://github.com/david44hello/paper_gohberg-krupnik-2003-sharpness.git
+cd paper_gohberg-krupnik-2003-sharpness/lean
+./check.sh
+```
+
+Its last lines look like:
+
+```
+FINAL GATE PASS: placeholders only as whole bodies of the 0 listed OPEN rows; statuses match the list.
+PASS (final): project builds; source policy passes; the only gaps are the listed OPEN rows.
+```
+
+The proof assumes three theorems that the paper cites, two of Hollenbeck and Verbitsky (2000) and one of Hollenbeck,
+Kalton and Verbitsky (2003); 29 claims use them. 22 claims are proved given interval estimates that are checked by
+computer, by the programs in [../interval/](../interval/). [AUDIT.md](AUDIT.md) names them, claim by claim.
+
+Copyright (C) Dave Goel 2026--now. All rights reserved.

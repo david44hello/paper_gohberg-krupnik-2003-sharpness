@@ -1,5 +1,5 @@
 /-
-SharpA3.lean — project019 Section5 (A3), geometric and calculus assembly.
+SharpA3.lean — Section5 (A3), geometric and calculus assembly.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
 -/
 import GKSharp.Proofs.CriticalClassification

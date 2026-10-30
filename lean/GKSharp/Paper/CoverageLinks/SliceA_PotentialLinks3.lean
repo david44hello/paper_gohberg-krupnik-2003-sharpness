@@ -35,12 +35,12 @@ noncomputable def fejerMean (u : ℝ → ℝ) (N : ℕ) (t : ℝ) : ℝ :=
 namespace Paper
 variable {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)]
 
-/-- Coverage link (renamed (Proofs/AngularDistribution)): the approved target `slice_O17` of slice SliceA_PotentialLinks3, from installed rows. Paper place: sec2_obstacle.tex l.67-69 (short v0.70). -/
+/-- Coverage link (renamed (Proofs/AngularDistribution)): the approved target `slice_O17` of slice SliceA_PotentialLinks3, from installed rows. Paper place: sec2_obstacle.tex l.67-69 (short v3.40). -/
 theorem cover_slice_O17 : ∀ (q : ℝ) (hq : 0 < q) (φ : ℝ → ℝ) (hper : Function.Periodic φ (2 * Real.pi)),
     QSubtrig q φ ↔ Continuous φ ∧ PositiveAngularDistribution q φ :=
   GKSharp.Proofs.AngularDistribution.slice_O17_proved
 
-/-- Coverage link (renamed (Proofs/AnalyticLift)): the approved target `slice_O22` of slice SliceA_PotentialLinks3, from installed rows. Paper place: sec2_obstacle.tex l.84-88 (short v0.70). -/
+/-- Coverage link (renamed (Proofs/AnalyticLift)): the approved target `slice_O22` of slice SliceA_PotentialLinks3, from installed rows. Paper place: sec2_obstacle.tex l.84-88 (short v3.40). -/
 theorem cover_slice_O22 : ∀ (hp : 1 < p) (P : RieszProjection p) (C : ℝ) (ρ : ℂ)
     (hC : pencilNorm P ρ ≤ C) (g : Polynomial ℂ) (hg0 : g.eval 0 = 0) (hg : g ≠ 0)
     (Y : Polynomial ℂ),
@@ -53,7 +53,7 @@ theorem cover_slice_O22 : ∀ (hp : 1 < p) (P : RieszProjection p) (C : ℝ) (ρ
       0 ≤ ∫ t in (0 : ℝ)..(2 * Real.pi), pairObstacle p C ρ (Z (unitPoint t)) (W (unitPoint t)) :=
   GKSharp.AnalyticLift.slice_O22_proved
 
-/-- Coverage link (renamed (Proofs/AnalyticLift)): the approved target `eq_lift` of slice SliceA_PotentialLinks3, from installed rows. Paper place: sec2_obstacle.tex l.87-89 (short v0.70). -/
+/-- Coverage link (renamed (Proofs/AnalyticLift)): the approved target `eq_lift` of slice SliceA_PotentialLinks3, from installed rows. Paper place: sec2_obstacle.tex l.87-89 (short v3.40). -/
 theorem cover_eq_lift : ∀ (hp : 1 < p) (P : RieszProjection p) (C : ℝ) (ρ : ℂ)
     (hC : pencilNorm P ρ ≤ C) (g : Polynomial ℂ) (hg0 : g.eval 0 = 0) (hg : g ≠ 0)
     (Y : Polynomial ℂ),

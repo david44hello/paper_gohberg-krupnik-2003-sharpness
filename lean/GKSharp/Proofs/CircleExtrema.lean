@@ -1,5 +1,5 @@
 /-
-CircleExtrema.lean — attained circle extrema for project 019, equation (5.2).
+CircleExtrema.lean — attained circle extrema, equation (5.2).
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
 -/
 import GKSharp.Proofs.MobiusDict

@@ -1,5 +1,5 @@
 /-
-CstarSlope.lean — project019 Section5e, positive Lambda curvature and negative Kf slope.
+CstarSlope.lean — Section5e, positive Lambda curvature and negative Kf slope.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
 -/
 import GKSharp.Proofs.CstarLambdaSecond

@@ -1,5 +1,5 @@
 /-
-RealGradients.lean — real gradients of the principal-power obstacle and norm power, project019.
+RealGradients.lean — real gradients of the principal-power obstacle and norm power.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
 -/
 import GKSharp.Proofs.EllipseCalculus

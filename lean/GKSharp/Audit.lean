@@ -525,8 +525,6 @@ run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec5d_Pi_factorization "sec5d_Pi_fa
 run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec5d_M_level "sec5d_M_level"
 #print axioms GKSharp.Paper.sec5d_M_gamma_formula
 run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec5d_M_gamma_formula "sec5d_M_gamma_formula"
-#print axioms GKSharp.Paper.sec5d_positive_lambda_signs
-run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec5d_positive_lambda_signs "sec5d_positive_lambda_signs"
 #print axioms GKSharp.Paper.sec5d_Pi_Psi_sign
 run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec5d_Pi_Psi_sign "sec5d_Pi_Psi_sign"
 #print axioms GKSharp.Paper.sec5d_Kf_log_form
@@ -635,20 +633,14 @@ run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec4_thm_L_dual "sec4_thm_L_dual"
 run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec4_axis_negative_fails "sec4_axis_negative_fails"
 #print axioms GKSharp.Paper.sec4_prop_F
 run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec4_prop_F "sec4_prop_F"
-#print axioms GKSharp.Paper.sec5e_mGK_eq_mu
-run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec5e_mGK_eq_mu "sec5e_mGK_eq_mu"
 #print axioms GKSharp.Paper.sec5e_Lambda_zero
 run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec5e_Lambda_zero "sec5e_Lambda_zero"
-#print axioms GKSharp.Paper.sec5e_Lambda_second
-run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec5e_Lambda_second "sec5e_Lambda_second"
 #print axioms GKSharp.Paper.sec4_cosine_exterior_support
 run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec4_cosine_exterior_support "sec4_cosine_exterior_support"
 #print axioms GKSharp.Paper.thm_B_b
 run_cmd GKSharpAudit.inspect ``GKSharp.Paper.thm_B_b "thm_B_b"
 #print axioms GKSharp.Paper.axis_zero_positive
 run_cmd GKSharpAudit.inspect ``GKSharp.Paper.axis_zero_positive "axis_zero_positive"
-#print axioms GKSharp.Paper.sec5e_Kf_slope
-run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec5e_Kf_slope "sec5e_Kf_slope"
 #print axioms GKSharp.Paper.sec5e_Kf_below
 run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec5e_Kf_below "sec5e_Kf_below"
 #print axioms GKSharp.Paper.sec5e_Lambda_pos
@@ -705,3 +697,65 @@ run_cmd GKSharpAudit.inspect ``GKSharp.Paper.angular_contact_determines_cos "ang
 run_cmd GKSharpAudit.inspect ``GKSharp.Paper.obstacle_joint_continuous "obstacle_joint_continuous"
 #print axioms GKSharp.Paper.sec5_strip_criterion
 run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec5_strip_criterion "sec5_strip_criterion"
+#print axioms GKSharp.Paper.thm_classification_nonpositive
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.thm_classification_nonpositive "thm_classification_nonpositive"
+#print axioms GKSharp.Paper.thm_classification_reciprocal
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.thm_classification_reciprocal "thm_classification_reciprocal"
+#print axioms GKSharp.Paper.intro_gk_lower_pair
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.intro_gk_lower_pair "intro_gk_lower_pair"
+#print axioms GKSharp.Paper.intro_constants
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.intro_constants "intro_constants"
+#print axioms GKSharp.Paper.intro_lambdaLoc_clamp
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.intro_lambdaLoc_clamp "intro_lambdaLoc_clamp"
+#print axioms GKSharp.Paper.intro_axis_test_iff
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.intro_axis_test_iff "intro_axis_test_iff"
+#print axioms GKSharp.Paper.intro_tests_criterion
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.intro_tests_criterion "intro_tests_criterion"
+#print axioms GKSharp.Paper.thm_classification_tests
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.thm_classification_tests "thm_classification_tests"
+#print axioms GKSharp.Paper.sec5d_log_partials
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec5d_log_partials "sec5d_log_partials"
+#print axioms GKSharp.Paper.q15_sec4b_T_sign
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.q15_sec4b_T_sign "q15_sec4b_T_sign"
+#print axioms GKSharp.Paper.q15_sec4b_ray_signs
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.q15_sec4b_ray_signs "q15_sec4b_ray_signs"
+#print axioms GKSharp.Paper.q15_sec4b_step6_identities
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.q15_sec4b_step6_identities "q15_sec4b_step6_identities"
+#print axioms GKSharp.Paper.q15_sec4b_step6_normalized
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.q15_sec4b_step6_normalized "q15_sec4b_step6_normalized"
+#print axioms GKSharp.Paper.q15_sec4b_cDelta_quotient
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.q15_sec4b_cDelta_quotient "q15_sec4b_cDelta_quotient"
+#print axioms GKSharp.Paper.q15_sec5d_substitutions
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.q15_sec5d_substitutions "q15_sec5d_substitutions"
+#print axioms GKSharp.Paper.q15_sec5d_cleared
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.q15_sec5d_cleared "q15_sec5d_cleared"
+#print axioms GKSharp.Paper.q15_sec5d_Pi_coefficients
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.q15_sec5d_Pi_coefficients "q15_sec5d_Pi_coefficients"
+#print axioms GKSharp.Paper.q15_normcorr_real_ratio
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.q15_normcorr_real_ratio "q15_normcorr_real_ratio"
+#print axioms GKSharp.Paper.q15_sec2_envelope_route
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.q15_sec2_envelope_route "q15_sec2_envelope_route"
+#print axioms GKSharp.Paper.q15_sec5e_star_holds
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.q15_sec5e_star_holds "q15_sec5e_star_holds"
+#print axioms GKSharp.Paper.q19_intro_hkv_example
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.q19_intro_hkv_example "q19_intro_hkv_example"
+#print axioms GKSharp.Paper.q19_sec2_gk_explicit
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.q19_sec2_gk_explicit "q19_sec2_gk_explicit"
+#print axioms GKSharp.Paper.q19_sec2_rescale
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.q19_sec2_rescale "q19_sec2_rescale"
+#print axioms GKSharp.Paper.q19_sec5d_q_closed
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.q19_sec5d_q_closed "q19_sec5d_q_closed"
+#print axioms GKSharp.Paper.q19_sec5d_constant_term
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.q19_sec5d_constant_term "q19_sec5d_constant_term"
+#print axioms GKSharp.Paper.q20_sec5d_D_split
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.q20_sec5d_D_split "q20_sec5d_D_split"
+#print axioms GKSharp.Paper.sec4_lambda1_interval
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec4_lambda1_interval "sec4_lambda1_interval"
+#print axioms GKSharp.Paper.sec4_lemma_Pc_b
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec4_lemma_Pc_b "sec4_lemma_Pc_b"
+#print axioms GKSharp.Paper.sec5e_routeB_identities
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec5e_routeB_identities "sec5e_routeB_identities"
+#print axioms GKSharp.Paper.sec5e_Kf_slope_routeB
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec5e_Kf_slope_routeB "sec5e_Kf_slope_routeB"
+#print axioms GKSharp.Paper.sec4_omega_endpoint_chain
+run_cmd GKSharpAudit.inspect ``GKSharp.Paper.sec4_omega_endpoint_chain "sec4_omega_endpoint_chain"

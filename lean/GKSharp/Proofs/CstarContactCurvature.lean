@@ -1,5 +1,5 @@
 /-
-CstarContactCurvature.lean — project019 local contact curvature for Theorem C*.
+CstarContactCurvature.lean — local contact curvature for Theorem C*.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
 -/
 import GKSharp.Proofs.ContactSign

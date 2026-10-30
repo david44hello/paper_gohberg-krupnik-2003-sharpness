@@ -1,5 +1,5 @@
 /-
-CstarProfileBridge.lean — project019 critical curve in logarithmic polar contact coordinates.
+CstarProfileBridge.lean — critical curve in logarithmic polar contact coordinates.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
 -/
 import GKSharp.Proofs.Sec5Lambda

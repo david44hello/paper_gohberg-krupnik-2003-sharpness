@@ -1,10 +1,10 @@
-/- GKSharp/Defs/Window.lean - the function G_C, the disk D_C and the window half-angle (sec3_nonreal.tex l.8-25).
+/- GKSharp/Defs/Window.lean - the function G_C, the disk D_C and the window half-angle (sec2_obstacle.tex l.60, sec3_nonreal.tex l.20-26).
 Copyright (C) Dave Goel 2026--now. -/
 import GKSharp.Defs.GK
 
 namespace GKSharp
 
-/-- `G_C(ζ) = C^p |1 + ζ|^p - |ρ + ζ|^p` (sec3_nonreal.tex l.8; real powers). -/
+/-- `G_C(ζ) = C^p |1 + ζ|^p - |ρ + ζ|^p`, the paper's `G(ζ) = G_C(ζ, 1)` (sec2_obstacle.tex l.60; real powers). -/
 noncomputable def obstacleG (p C : ℝ) (ρ ζ : ℂ) : ℝ := C ^ p * ‖1 + ζ‖ ^ p - ‖ρ + ζ‖ ^ p
 
 /-- The centre `c = -(C² - ρ)/(C² - 1)` of the disk `D_C` (l.20). -/

@@ -1,5 +1,5 @@
 /-
-CstarLambdaSecond.lean — project019 Section5e, second derivative at the contact angle.
+CstarLambdaSecond.lean — Section5e, second derivative at the contact angle.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
 -/
 import GKSharp.Proofs.Sec5Eq58

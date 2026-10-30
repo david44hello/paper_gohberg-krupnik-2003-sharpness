@@ -1,5 +1,5 @@
 /-
-InverseCritical.lean — inverse Moebius coordinates and the second form of equation5.3, project019.
+InverseCritical.lean — inverse Moebius coordinates and the second form of equation5.3.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
 -/
 import GKSharp.Proofs.CriticalMaximum

@@ -1,4 +1,4 @@
-/- RealLineExists.lean - project 019, N family: for 1 < p and all α, β a RealLinePencil exists (N01_nonvacuity).
+/- RealLineExists.lean - N family: for 1 < p and all α, β a RealLinePencil exists (N01_nonvacuity).
    P₊ = 𝓕⁻(χ_{(0,∞)} 𝓕 ·) on Schwartz inputs (cited bound HV2000 Theorem 3.1), extended to L^p by density;
    the map is α P₊ + β (1 − P₊); both weak half-line tests are proved.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now. -/

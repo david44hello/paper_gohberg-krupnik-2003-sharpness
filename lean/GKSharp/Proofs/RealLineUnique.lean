@@ -1,4 +1,4 @@
-/- RealLineUnique.lean - project 019, N family: a real-line Lp function killed by all one-sided weak tests is zero;
+/- RealLineUnique.lean - N family: a real-line Lp function killed by all one-sided weak tests is zero;
    consequences for RealLinePencil (identification of outputs, uniqueness, one-sided frequency inputs).
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now. -/
 import GKSharp.Defs.RealLineFourier

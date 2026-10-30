@@ -1,5 +1,6 @@
 /- GKSharp/Proofs/ContactEndpoint.lean — the endpoint contact at lambda=-1.
-Frozen source: short_v0.70/sec4_criterion.tex:28.
+Frozen source: short_v2.30/sec4a_criterion.tex:28 (support at λ = −1 for the row obstacle_smooth_contact, which
+covers the printed derivative m'_GK(θ₀) = −Kq; the paper takes that derivative from Section 2.4).
 Copyright (C) Dave Goel 2026--now. -/
 import GKSharp.Proofs.ContactMinimum
 import GKSharp.Proofs.ContactEnvelope

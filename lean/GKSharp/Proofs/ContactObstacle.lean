@@ -1,5 +1,6 @@
 /- GKSharp/Proofs/ContactObstacle.lean — identify the actual obstacle near contact.
-Frozen source: short_v0.70/sec4_criterion.tex:28.
+Frozen source: short_v2.30/sec5e_cstar.tex:13–14 ("m_GK = μ_* near θ₀, since the minimiser is unique ... and
+non-degenerate"; printed for 0 < λ < 1, proved here for −1 < λ < 1).
 Copyright (C) Dave Goel 2026--now. -/
 import GKSharp.Proofs.ContactMinimum
 import GKSharp.Proofs.ContactEnvelope

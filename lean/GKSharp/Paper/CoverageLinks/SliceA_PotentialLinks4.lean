@@ -34,7 +34,7 @@ noncomputable def fejerMean (u : ℝ → ℝ) (N : ℕ) (t : ℝ) : ℝ :=
 namespace Paper
 variable {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)]
 
-/-- Coverage link (renamed (Proofs/SliceO23)): the approved target `slice_O23` of slice SliceA_PotentialLinks4, from installed rows. Paper place: sec2_obstacle.tex l.90-94 (short v0.70). -/
+/-- Coverage link (renamed (Proofs/SliceO23)): the approved target `slice_O23` of slice SliceA_PotentialLinks4, from installed rows. Paper place: sec2_obstacle.tex l.90-94 (short v3.40). -/
 theorem cover_slice_O23 : ∀ (hp : 1 < p) (C : ℝ) (ρ : ℂ) (hC : max 1 ‖ρ‖ < C),
     (∀ ε : ℝ, 0 < ε → ∃ (Y : ℝ) (u : ℝ → ℝ), 0 ≤ Y ∧ Measurable u ∧
       Function.Periodic u (2 * Real.pi) ∧ (∀ t, |u t| ≤ Y) ∧

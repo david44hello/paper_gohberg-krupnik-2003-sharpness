@@ -1,4 +1,4 @@
-/- RealLineLocal.lean - project 019, N family: localization identities N04 and N04_minus
+/- RealLineLocal.lean - N family: localization identities N04 and N04_minus
    (norm_correspondence.tex l.22-29, l.37).
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now. -/
 import GKSharp.Proofs.RealLineUnique

@@ -1,4 +1,4 @@
-/- proposed definitions, frozen sec5d_monotone.tex:18-19,41-42.
+/- proposed definitions, frozen sec5d_monotone.tex:25-26,41-42.
 Copyright (C) Dave Goel 2026--now. -/
 import GKSharp.Defs.CriticalCurve
 

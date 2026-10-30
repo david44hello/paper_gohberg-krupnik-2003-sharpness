@@ -1,5 +1,6 @@
 /- GKSharp/Proofs/ContactObstacleSmooth.lean — assembly with explicit angular derivative leaves.
-Frozen source: short_v0.70/sec4_criterion.tex:28.
+Frozen source: short_v2.30/sec4a_criterion.tex:28 (the derivative m'_GK(θ₀) = −Kq) and sec5e_cstar.tex:13–14
+(smoothness of m_GK near θ₀).
 Copyright (C) Dave Goel 2026--now. -/
 import GKSharp.Proofs.ContactObstacle
 import GKSharp.Proofs.ContactObstacleEndpoint

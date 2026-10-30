@@ -1,5 +1,5 @@
 /-
-EllipseSecond.lean — second derivative of the principal power along the ellipse, project019.
+EllipseSecond.lean — second derivative of the principal power along the ellipse.
 Author: Dave Goel. Copyright (C) Dave Goel 2026--now.
 -/
 import GKSharp.Proofs.EllipseCalculus

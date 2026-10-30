@@ -1,4 +1,4 @@
-/- GKSharp/Proofs/PropS.lean - Proposition S (the strip), sec5f_strip.tex l.38-40 and l.67-71: h > 0 on the strip
+/- GKSharp/Proofs/PropS.lean - Proposition S (the strip), sec5f_strip.tex l.38-40 and l.67-68: h > 0 on the strip
 (installed strip_h_positive) and, for p0 ≤ p < 3 - √3, ‖P₊ + λP₋‖_p = GK_p(λ) for every real λ (Theorem C* "if" half
 for λ ∈ (0, 1) with λ_loc = 1 as p_c < p0; Theorem C1 for λ ∈ [-1, 0]; λ = 1; the symmetry λ ↦ 1/λ).
 20261028.
@@ -27,7 +27,7 @@ theorem endpoint_lt : 3 - Real.sqrt 3 < (317 / 250 : ℝ) := by
     norm_num
   linarith
 
-/-- The operator half (sec5f_strip.tex l.69-71) on the strip `p0 ≤ p < 3 - √3`: `λ ∈ (0, 1)` by C* "if" with
+/-- The operator half (sec5f_strip.tex l.67-68) on the strip `p0 ≤ p < 3 - √3`: `λ ∈ (0, 1)` by C* "if" with
 `h > 0` (strip_h_positive) and `λ_loc = 1` (`p_c < p0`); `λ ∈ [-1, 0]` by C1; `λ = 1` trivially; `|λ| > 1` by
 `N_p(λ) = |λ| N_p(1/λ)` and `GK_p(λ) = |λ| GK_p(1/λ)`. -/
 theorem operator_of_cstarIf (hCif : CstarIf) (hn : CheckOmegaNeg) (hr : CheckOmegaRoot)
