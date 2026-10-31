@@ -36,14 +36,14 @@ noncomputable def fejerMean (u : ℝ → ℝ) (N : ℕ) (t : ℝ) : ℝ :=
 namespace Paper
 variable {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)]
 
-/-- Coverage link (renamed (Proofs/PolarLaplacian)): the approved target `slice_O16` of slice SliceA_PotentialLinks2, from installed rows. Paper place: sec2_obstacle.tex l.67 (short v3.40). -/
+/-- Coverage link (renamed (Proofs/PolarLaplacian)): the approved target `slice_O16` of slice SliceA_PotentialLinks2, from installed rows. Paper place: sec2_obstacle.tex l.67 (short v3.70). -/
 theorem cover_slice_O16 : ∀ (q : ℝ) (φ : ℝ → ℝ) (hφ : ContDiff ℝ 2 φ)
     (hper : Function.Periodic φ (2 * Real.pi)) (r t : ℝ) (hr : 0 < r),
     polarLaplacian (angularPotential q φ) ((r : ℂ) * unitPoint t) =
       r ^ (q - 2) * (deriv (deriv φ) t + q ^ 2 * φ t) :=
   GKSharp.O16.slice_O16_proved
 
-/-- Coverage link (renamed (Proofs/BlaschkeLift)): the approved target `slice_O21` of slice SliceA_PotentialLinks2, from installed rows. Paper place: sec2_obstacle.tex l.82-85 (short v3.40). -/
+/-- Coverage link (renamed (Proofs/BlaschkeLift)): the approved target `slice_O21` of slice SliceA_PotentialLinks2, from installed rows. Paper place: sec2_obstacle.tex l.82-85 (short v3.70). -/
 theorem cover_slice_O21 : ∀ (g : Polynomial ℂ) (hg0 : g.eval 0 = 0) (hg : g ≠ 0),
     ∃ (k : ℕ) (B h H : ℂ → ℂ), 1 ≤ k ∧ FiniteBlaschke B ∧
       DifferentiableOn ℂ h (Metric.ball 0 1) ∧ DifferentiableOn ℂ H (Metric.ball 0 1) ∧
@@ -53,7 +53,7 @@ theorem cover_slice_O21 : ∀ (g : Polynomial ℂ) (hg0 : g.eval 0 = 0) (hg : g 
       (∀ z ∈ Metric.closedBall (0 : ℂ) 1, g.eval z = z ^ k * B z * h z) :=
   GKSharp.BlaschkeLift.slice_O21_proved
 
-/-- Coverage link (renamed (Proofs/ChordTent)): the approved target `slice_O31` of slice SliceA_PotentialLinks2, from installed rows. Paper place: sec2_obstacle.tex l.111-113 (short v3.40). -/
+/-- Coverage link (renamed (Proofs/ChordTent)): the approved target `slice_O31` of slice SliceA_PotentialLinks2, from installed rows. Paper place: sec2_obstacle.tex l.111-113 (short v3.70). -/
 theorem cover_slice_O31 : ∀ (q : ℝ) (hq : 0 < q) (c s : ℝ) (hs : 0 < s ∧ s ≤ Real.pi / q),
     (∀ t, 0 ≤ chordTent q c s t) ∧ HasCompactSupport (chordTent q c s) ∧
     LipschitzWith (Real.toNNReal q) (chordTent q c s) ∧

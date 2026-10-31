@@ -1,5 +1,5 @@
 /- GKSharp/Paper/Statements.lean - the claims of the paper, one theorem per claim, with file:line of the frozen
-paper short v3.40 (printed numbers such as Lemma 3.1, with the TeX label in parentheses). GKSharp. 20261030.
+paper short v3.70 (printed numbers such as Lemma 3.1, with the TeX label in parentheses). GKSharp. 20261030.
 Copyright (C) Dave Goel 2026--now. -/
 import GKSharp.Proofs.GKRoot
 import GKSharp.Proofs.GKProps
@@ -1750,7 +1750,9 @@ theorem contact_schur_expanded (p lam : ℝ) (hp : 1 < p) (hp2 : p < 2)
 
 /-- sec4b_failure.tex l.68-77: "Put B₀ = δ(1+λ)²/(c₀³s₀²v³) > 0" (`δ = 1 − λ`); "The second identity and
 c₀² + s₀² = 1 now yield e^{qy_*}μ_*″(θ₀)/(p𝒫) = B₀[(p−1)(1 − 4λc₀⁴/(1+λ)²) − p²s₀²/4]";
-"Thus μ_*″(θ₀) < 0 if and only if (pp′/4)s₀² + 4λc₀⁴/(1+λ)² > 1" (also for −1 < λ ≤ 0, l.85-86). -/
+"Thus μ_*″(θ₀) < 0 if and only if (pp′/4)s₀² + 4λc₀⁴/(1+λ)² > 1"; and l.86 (proof of Corollary 4.5):
+"\eqref{eq:signid} holds for every $\lambda\in(-1,1)$ (the same computation)" (the hypothesis `λ ∈ (−1, 1)` is this
+range). -/
 theorem contact_sign_factorization (p lam : ℝ) (hp : 1 < p) (hp2 : p < 2)
     (hlam : lam ∈ Ioo (-1 : ℝ) 1) :
     0 < bZero p lam ∧
@@ -2293,7 +2295,7 @@ section CompleteContactAndCriterion
 open Set Real GKSharp.Threshold
 open scoped ContDiff
 
-/-- short_v3.40/sec4a_criterion.tex:57–62. “The second equivalence is the definition of $m_C$ after $z \mapsto 1/z$”. -/
+/-- short_v3.70/sec4a_criterion.tex:57–62. “The second equivalence is the definition of $m_C$ after $z \mapsto 1/z$”. -/
 theorem obstacle_cos_iff_critD (p lam : ℝ) (hp : 1 < p) (hp2 : p < 2)
     (hlam : lam ∈ Ico (-1 : ℝ) 1) :
     (∀ t ∈ Icc (-Real.pi) Real.pi,
@@ -2301,7 +2303,7 @@ theorem obstacle_cos_iff_critD (p lam : ℝ) (hp : 1 < p) (hp2 : p < 2)
     (∀ z : ℂ, 0 ≤ critD p (gk p lam) (kConst p lam) lam z) := by
   apply GKSharp.obstacle_cos_iff_critD_proved <;> assumption
 
-/-- short_v3.40/sec4a_criterion.tex:69. “By Section~4.1, $m_{\GK}$ is differentiable at $\theta_0$ with $m'_{\GK}(\theta_0)=-Kq$.” The row is stronger: it also gives smoothness near θ₀. Lean takes the derivative by the Section 4.1 route (q15_sec2_envelope_route, slice_O35). -/
+/-- short_v3.70/sec4a_criterion.tex:69. “By Section~4.1, $m_{\GK}$ is differentiable at $\theta_0$ with $m'_{\GK}(\theta_0)=-Kq$.” The row is stronger: it also gives smoothness near θ₀. Lean takes the derivative by the Section 4.1 route (q15_sec2_envelope_route, slice_O35). -/
 theorem obstacle_smooth_contact (p lam : ℝ) (hp : 1 < p) (hp2 : p < 2)
     (hlam : lam ∈ Ico (-1 : ℝ) 1) :
     ∃ eps > 0, ContDiffOn ℝ ∞ (Threshold.obstacle p lam)
@@ -2309,7 +2311,7 @@ theorem obstacle_smooth_contact (p lam : ℝ) (hp : 1 < p) (hp2 : p < 2)
       deriv (Threshold.obstacle p lam) (theta p) = -q p * kConst p lam := by
   apply GKSharp.obstacle_smooth_contact_proved <;> assumption
 
-/-- short_v3.40/sec4a_criterion.tex:70–71. “hence $A_{\varphi} = K$ and $\varphi'(\theta_0^+) = -Kq$.” -/
+/-- short_v3.70/sec4a_criterion.tex:70–71. “hence $A_{\varphi} = K$ and $\varphi'(\theta_0^+) = -Kq$.” -/
 theorem sec4_angular_tangency (p lam : ℝ) (hp : 1 < p) (hp2 : p < 2)
     (hlam : lam ∈ Ico (-1 : ℝ) 1) (ff : ℝ → ℝ) (hf : QSubtrig (q p) ff)
     (hminor : ∀ t, ff t ≤ Threshold.obstacle p lam t) (aa : ℝ)
@@ -2318,7 +2320,7 @@ theorem sec4_angular_tangency (p lam : ℝ) (hp : 1 < p) (hp2 : p < 2)
       HasDerivWithinAt ff (-(kConst p lam) * q p) (Ici (theta p)) (theta p) := by
   apply GKSharp.sec4_angular_tangency_proved <;> assumption
 
-/-- short_v3.40/sec4a_criterion.tex:56–59. “put $C=\GK_p(\lambda)$. Then $\|\Pp + \lambda \Pm\|_p = C$ if and only if $m_{\GK}(t) \ge K \cos(q|t|)$ for all $|t| \le \pi$”, with the second equivalence to nonnegative $\mathcal{D}_C$ on $\mathbb{C}$. -/
+/-- short_v3.70/sec4a_criterion.tex:56–59. “put $C=\GK_p(\lambda)$. Then $\|\Pp + \lambda \Pm\|_p = C$ if and only if $m_{\GK}(t) \ge K \cos(q|t|)$ for all $|t| \le \pi$”, with the second equivalence to nonnegative $\mathcal{D}_C$ on $\mathbb{C}$. -/
 theorem sec4_prop_Q (p : ℝ) [Fact (1 ≤ ENNReal.ofReal p)] (P : RieszProjection p) :
     1 < p → p < 2 → ∀ lam ∈ Ico (-1 : ℝ) 1,
       (pencilNorm P lam = gk p lam ↔
@@ -2328,12 +2330,12 @@ theorem sec4_prop_Q (p : ℝ) [Fact (1 ≤ ENNReal.ofReal p)] (P : RieszProjecti
         ∀ z : ℂ, 0 ≤ critD p (gk p lam) (kConst p lam) lam z) := by
   apply GKSharp.sec4_prop_Q_proved <;> assumption
 
-/-- short_v3.40/P019_paper.tex:54–55. “Gohberg and Krupnik proved the lower bound $\|\alpha\Pp+\beta\Pm\|_p\ \ge\ \GK_p(\alpha,\beta)$” (here α = 1, β = ρ). Route R11 uses the proved HKV criterion and the existing HV2000 input for conjugate-exponent transport. -/
+/-- short_v3.70/P019_paper.tex:54–55. “Gohberg and Krupnik proved the lower bound $\|\alpha\Pp+\beta\Pm\|_p\ \ge\ \GK_p(\alpha,\beta)$” (here α = 1, β = ρ). Route R11 uses the proved HKV criterion and the existing HV2000 input for conjugate-exponent transport. -/
 theorem slice_O04 {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)] (hp : 1 < p) (P : RieszProjection p) (ρ : ℂ) :
     gk p ρ ≤ pencilNorm P ρ := by
   apply GKSharp.slice_O04_proved <;> assumption
 
-/-- short_v3.40/sec4a_criterion.tex:21–23, Lemma 4.1 (label E). “$m_C(\pm\theta_0) \ge 0$ if and only if $C \ge \GK_p(\lambda)$”; at equality the zero is attained only at the stated contact radius. -/
+/-- short_v3.70/sec4a_criterion.tex:21–23, Lemma 4.1 (label E). “$m_C(\pm\theta_0) \ge 0$ if and only if $C \ge \GK_p(\lambda)$”; at equality the zero is attained only at the stated contact radius. -/
 theorem slice_O33 {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)] (hp : 1 < p) (hp2 : p < 2) (C lam : ℝ) (hC : 1 < C)
     (hlam : -1 ≤ lam ∧ lam < 1) :
     (0 ≤ obstacle p C (lam : ℂ) (Real.pi / p) ↔ gk p (lam : ℂ) ≤ C) ∧
@@ -2347,7 +2349,7 @@ theorem slice_O33 {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)] (hp : 1 < p) (hp2 : 
         r = contactRadius p lam) := by
   apply GKSharp.slice_O33_proved <;> assumption
 
-/-- short_v3.40/sec4a_criterion.tex:37–38. “with $y_*=\log r_*$ we show that $K=-q^{-1}\partial_t\Gamma_C(y_*,\theta_0)=-m_C'(\theta_0)/q$.” The envelope identity is $K=-m_C'(\theta_0)/q$. -/
+/-- short_v3.70/sec4a_criterion.tex:37–38. “with $y_*=\log r_*$ we show that $K=-q^{-1}\partial_t\Gamma_C(y_*,\theta_0)=-m_C'(\theta_0)/q$.” The envelope identity is $K=-m_C'(\theta_0)/q$. -/
 theorem slice_O35 {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)] (hp : 1 < p) (hp2 : p < 2) (lam : ℝ) (hlam : -1 ≤ lam ∧ lam < 1) :
     DifferentiableAt ℝ (obstacle p (gk p (lam : ℂ)) (lam : ℂ)) (Real.pi / p) ∧
     DifferentiableAt ℝ (fun t => gamma p (gk p (lam : ℂ)) (lam : ℂ)
@@ -2363,7 +2365,7 @@ section CompleteOneVariableAndMonotonicity
 open Set Real
 open scoped ContDiff
 
-/-- short_v3.40/sec5d_monotone.tex:35. "this gives $2\sin u_1\sin u_2\,\mathcal ES=\Pi(X)$". -/
+/-- short_v3.70/sec5d_monotone.tex:35. "this gives $2\sin u_1\sin u_2\,\mathcal ES=\Pi(X)$". -/
 theorem sec5d_E_identity {p θ g : ℝ} (hp1 : 1 < p) (hp2 : p < 2)
     (hθ0 : 0 < θ) (hθ : θ < Real.pi)
     (hg : (p - 1) * (θ / 2) < g ∧ g < Real.pi / 2) (hga : g ≠ θ / 2) :
@@ -2371,14 +2373,14 @@ theorem sec5d_E_identity {p θ g : ℝ} (hp1 : 1 < p) (hp2 : p < 2)
       monoPi (p - 1) θ (Real.cos (2 * g)) := by
   apply GKSharp.sec5d_E_identity_proved <;> assumption
 
-/-- short_v3.40/sec5d_monotone.tex:39. "The explicit root $R(\theta)$ in Section~5.1 is real-analytic in $\lambda$ near zero, and $K_f$ is positive and real-analytic there". -/
+/-- short_v3.70/sec5d_monotone.tex:39. "The explicit root $R(\theta)$ in Section~5.1 is real-analytic in $\lambda$ near zero, and $K_f$ is positive and real-analytic there". -/
 theorem sec5d_lambda_zero_analytic {p θ : ℝ} (hp1 : 1 < p) (hp2 : p < 2)
     (hθ0 : 0 < θ) (hθ : θ < Real.pi) :
     AnalyticAt ℝ (fun lam => curveR p lam θ) 0 ∧
     AnalyticAt ℝ (fun lam => curveKf p lam θ) 0 ∧ 0 < curveKf p 0 θ := by
   apply GKSharp.sec5d_lambda_zero_analytic_proved <;> assumption
 
-/-- short_v3.40/sec5d_monotone.tex:40–41. "The coordinate $\gamma$ also varies smoothly"; "both sides of the formula in Lemma~5.7 extend continuously to $\lambda=0$". -/
+/-- short_v3.70/sec5d_monotone.tex:40–41. "The coordinate $\gamma$ also varies smoothly"; "both sides of the formula in Lemma~5.7 extend continuously to $\lambda=0$". -/
 theorem sec5d_lambda_zero_continuity {p θ : ℝ} (hp1 : 1 < p) (hp2 : p < 2)
     (hθ0 : 0 < θ) (hθ : θ < Real.pi) :
     ContDiffAt ℝ ∞ (fun lam => curveGamma p lam θ) 0 ∧
@@ -2387,7 +2389,7 @@ theorem sec5d_lambda_zero_continuity {p θ : ℝ} (hp1 : 1 < p) (hp2 : p < 2)
       monoSignDenominator p θ (Real.cos (2 * curveGamma p lam θ))) 0 := by
   apply GKSharp.sec5d_lambda_zero_continuity_proved <;> assumption
 
-/-- short_v3.40/sec5d_monotone.tex:34. "$d\log K_f/da = \mathcal E/M_\gamma$ with $\mathcal E = L_a M_\gamma - L_\gamma M_a$". -/
+/-- short_v3.70/sec5d_monotone.tex:34. "$d\log K_f/da = \mathcal E/M_\gamma$ with $\mathcal E = L_a M_\gamma - L_\gamma M_a$". -/
 theorem sec5d_level_derivative {p lam θ : ℝ} (hp1 : 1 < p) (hp2 : p < 2)
     (hl : -1 < lam) (hl1 : lam < 1) (hl0 : lam ≠ 0) (hθ0 : 0 < θ) (hθ : θ < Real.pi) :
     deriv (monoLogM p (θ / 2)) (curveGamma p lam θ) ≠ 0 ∧
@@ -2396,7 +2398,7 @@ theorem sec5d_level_derivative {p lam θ : ℝ} (hp1 : 1 < p) (hp2 : p < 2)
         deriv (monoLogM p (θ / 2)) (curveGamma p lam θ)) (θ / 2) := by
   apply GKSharp.sec5d_level_derivative_proved <;> assumption
 
-/-- short_v3.40/sec5d_monotone.tex:27–30, Lemma 5.7 (label signformula). "and the denominator is positive", with the displayed actual logarithmic derivative. -/
+/-- short_v3.70/sec5d_monotone.tex:27–30, Lemma 5.7 (label signformula). "and the denominator is positive", with the displayed actual logarithmic derivative. -/
 theorem lemma_signformula {p lam θ : ℝ} (hp1 : 1 < p) (hp2 : p < 2)
     (hl : -1 < lam) (hl1 : lam < 1) (hθ0 : 0 < θ) (hθ : θ < Real.pi) :
     HasDerivAt (fun a => Real.log (curveKf p lam (2 * a)))
@@ -2405,7 +2407,7 @@ theorem lemma_signformula {p lam θ : ℝ} (hp1 : 1 < p) (hp2 : p < 2)
     0 < monoSignDenominator p θ (Real.cos (2 * curveGamma p lam θ)) := by
   apply GKSharp.lemma_signformula_proved <;> assumption
 
-/-- short_v3.40/sec5d_monotone.tex:49–51, Lemma 5.8 (label onevar). "$K_f$ increases at $\theta$ if and only if" the displayed strict Psi inequality. -/
+/-- short_v3.70/sec5d_monotone.tex:49–51, Lemma 5.8 (label onevar). "$K_f$ increases at $\theta$ if and only if" the displayed strict Psi inequality. -/
 theorem lemma_onevar {p lam θ : ℝ} (hp1 : 1 < p) (hp2 : p < 2)
     (hl : -1 < lam) (hl1 : lam < 1) (hθ0 : 0 < θ) (hθ : θ < Real.pi) :
     DifferentiableAt ℝ (curveKf p lam) θ ∧
@@ -2414,30 +2416,30 @@ theorem lemma_onevar {p lam θ : ℝ} (hp1 : 1 < p) (hp2 : p < 2)
         monoPsi (p / (2 - p)) ((1 - p / 2) * θ)) := by
   apply GKSharp.lemma_onevar_proved <;> assumption
 
-/-- short_v3.40/sec5d_monotone.tex:30. "Hence $K_f$ increases exactly where $\Pi(X) > 0$." -/
+/-- short_v3.70/sec5d_monotone.tex:30. "Hence $K_f$ increases exactly where $\Pi(X) > 0$." -/
 theorem sec5d_Pi_increase_iff {p lam θ : ℝ} (hp1 : 1 < p) (hp2 : p < 2)
     (hl : -1 < lam) (hl1 : lam < 1) (hθ0 : 0 < θ) (hθ : θ < Real.pi) :
     (0 < deriv (curveKf p lam) θ ↔ 0 < monoPi (p - 1) θ (Real.cos (2 * curveGamma p lam θ))) := by
   apply GKSharp.sec5d_Pi_increase_iff_proved <;> assumption
 
-/-- short_v3.40/sec5d_monotone.tex:50–51. "$K_f$ increases at $\theta$ if and only if" the displayed Psi threshold inequality. -/
+/-- short_v3.70/sec5d_monotone.tex:50–51. "$K_f$ increases at $\theta$ if and only if" the displayed Psi threshold inequality. -/
 theorem sec5d_onevar_increase_iff {p lam θ : ℝ} (hp1 : 1 < p) (hp2 : p < 2)
     (hl : -1 < lam) (hl1 : lam < 1) (hθ0 : 0 < θ) (hθ : θ < Real.pi) :
     (0 < deriv (curveKf p lam) θ ↔ monoPsi (p / (2 - p)) ((1 - p / 2) * θ) <
       4 * ((p / (2 - p)) ^ 2 - 1) * lam / (1 + lam) ^ 2) := by
   apply GKSharp.sec5d_onevar_increase_iff_proved <;> assumption
 
-/-- short_v3.40/sec5d_monotone.tex:67–68, Lemma 5.9 (label Bneg). "For every $1 < p < 2$ and $\lambda \in (-1, 0]$, $K_f$ is strictly decreasing on $(0, \pi)$." -/
+/-- short_v3.70/sec5d_monotone.tex:67–68, Lemma 5.9 (label Bneg). "For every $1 < p < 2$ and $\lambda \in (-1, 0]$, $K_f$ is strictly decreasing on $(0, \pi)$." -/
 theorem lemma_B {p lam : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl : -1 < lam) (hl0 : lam ≤ 0) :
     StrictAntiOn (curveKf p lam) (Set.Ioo 0 Real.pi) := by
   apply GKSharp.lemma_B_proved @GKSharp.lemma_onevar_proved <;> assumption
 
-/-- short_v3.40/sec5d_monotone.tex:76–77, Lemma 5.10 (label Bplus). The printed threshold implies "$K_f$ is strictly decreasing on $(0,\pi)$". -/
+/-- short_v3.70/sec5d_monotone.tex:76–77, Lemma 5.10 (label Bplus). The printed threshold implies "$K_f$ is strictly decreasing on $(0,\pi)$". -/
 theorem lemma_Bplus {p lam : ℝ} (hp1 : 3 - Real.sqrt 3 ≤ p) (hp2 : p < 2)
     (hl : -1 < lam) (hl1 : lam < 1) : StrictAntiOn (curveKf p lam) (Set.Ioo 0 Real.pi) := by
   apply GKSharp.lemma_Bplus_proved @GKSharp.lemma_onevar_proved <;> assumption
 
-/-- short_v3.40/sec5d_monotone.tex:90–92, Lemma 5.11 (label U). "$\Psi_m$ is strictly increasing on $(0, \pi/2)$"; "$K_f$ is either strictly decreasing" or has the stated single turning point. -/
+/-- short_v3.70/sec5d_monotone.tex:90–92, Lemma 5.11 (label U). "$\Psi_m$ is strictly increasing on $(0, \pi/2)$"; "$K_f$ is either strictly decreasing" or has the stated single turning point. -/
 theorem lemma_U {p : ℝ} (hp1 : 1 < p) (hp2 : p < 4 / 3) :
     StrictMonoOn (monoPsi (p / (2 - p))) (Set.Ioo 0 (Real.pi / 2)) ∧
     ∀ lam ∈ Set.Ioo (0 : ℝ) 1, StrictAntiOn (curveKf p lam) (Set.Ioo 0 Real.pi) ∨
@@ -2445,14 +2447,14 @@ theorem lemma_U {p : ℝ} (hp1 : 1 < p) (hp2 : p < 4 / 3) :
         StrictAntiOn (curveKf p lam) (Set.Ico θl Real.pi) := by
   apply GKSharp.lemma_U_proved @GKSharp.lemma_onevar_proved <;> assumption
 
-/-- short_v3.40/sec5d_monotone.tex:111. "By Lemma~\ref{lem:onevar}, the set on which $K_f$ increases is an initial interval." -/
+/-- short_v3.70/sec5d_monotone.tex:111. "By Lemma~\ref{lem:onevar}, the set on which $K_f$ increases is an initial interval." -/
 theorem sec5d_U_initial_interval {p lam : ℝ} (hp1 : 1 < p) (hp2 : p < 4 / 3)
     (hl : 0 < lam) (hl1 : lam < 1) :
     ∀ x ∈ Set.Ioo 0 Real.pi, ∀ y ∈ Set.Ioo 0 Real.pi, x < y →
       0 < deriv (curveKf p lam) y → 0 < deriv (curveKf p lam) x := by
   apply GKSharp.sec5d_U_initial_interval_proved @GKSharp.lemma_onevar_proved <;> assumption
 
-/-- short_v3.40/sec5d_monotone.tex:116. "Thus $K_f$ decreases near $\theta=\pi$". -/
+/-- short_v3.70/sec5d_monotone.tex:116. "Thus $K_f$ decreases near $\theta=\pi$". -/
 theorem sec5d_U_terminal_decrease {p lam : ℝ} (hp1 : 1 < p) (hp2 : p < 4 / 3)
     (hl : 0 < lam) (hl1 : lam < 1) :
     ∃ a ∈ Set.Ioo 0 Real.pi, StrictAntiOn (curveKf p lam) (Set.Ioo a Real.pi) := by
@@ -2463,7 +2465,7 @@ end CompleteOneVariableAndMonotonicity
 section SharpCurveReductionAndC1
 open ComplexConjugate Filter Topology Set
 
-/-- short_v3.40; Consequence (E2), sec5_sharp_inequality.tex l.88-94: "ρ(θ) is continuous, injective by (E1), and ρ → ∞
+/-- short_v3.70; Consequence (E2), sec5_sharp_inequality.tex l.88-94: "ρ(θ) is continuous, injective by (E1), and ρ → ∞
 as θ → π (z_θ → −1); so ρ increases strictly from ρ₀ := ρ(0⁺) = (1 + λr₀)/(1 + r₀) ∈ [0, 1) to ∞, and ρ′ > 0"; "If λ > 0,
 r₀ ≤ 1 gives ρ₀ ≥ (1+λ)/2 > √λ". -/
 theorem sec5_A2 {p lam : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl : -1 ≤ lam) (hl1 : lam < 1) :
@@ -2476,13 +2478,13 @@ theorem sec5_A2 {p lam : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl : -1 ≤ lam) (hl1
     (0 < lam → (1 + lam) / 2 ≤ ρ0 ∧ Real.sqrt lam < (1 + lam) / 2) := by
   apply GKSharp.sec5_A2_proved <;> assumption
 
-/-- short_v3.40; (E2), the text's own step, sec5_sharp_inequality.tex l.89-90: "ρ(θ) is continuous, injective by
+/-- short_v3.70; (E2), the text's own step, sec5_sharp_inequality.tex l.89-90: "ρ(θ) is continuous, injective by
 (E1)" (two angles with the same `ρ(θ)` give two critical points of `f_ρ` in `(0, π)`). -/
 theorem sec5_A2_injective {p lam : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl : -1 ≤ lam) (hl1 : lam < 1) :
     Set.InjOn ((fun θ : ℝ => ‖mobW lam (curveZ p lam θ)‖)) (Set.Ioo 0 Real.pi) := by
   apply GKSharp.A2Injective.sec5_A2_injective_given @GKSharp.Paper.sec5_critical_points <;> assumption
 
-/-- short_v3.40; Consequence (E3), sec5_sharp_inequality.tex l.93-96: "If ρ > ρ₀, f_ρ has exactly one critical point
+/-- short_v3.70; Consequence (E3), sec5_sharp_inequality.tex l.93-96: "If ρ > ρ₀, f_ρ has exactly one critical point
 φ_c ∈ (0, π), at w(θ) with ρ(θ) = ρ; f_ρ′ > 0 on (0, φ_c), f_ρ′ < 0 on (φ_c, π), and max_{[0,π]} f_ρ is attained only
 at φ_c. If ρ ≤ ρ₀ (and ρ ≥ √λ when λ > 0), f_ρ is monotone on [0, π] (...), and Q(ρ) − Q(−ρ) = 2(1+λ)ρ ≥ 0
 (both real) gives max f_ρ = f_ρ(0), at w = ρ". -/
@@ -2500,7 +2502,7 @@ theorem sec5_A3 {p lam ρ : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl : -1 ≤ lam) (
       ∀ φ ∈ Set.Icc 0 Real.pi, fRho p lam ρ φ ≤ fRho p lam ρ 0) := by
   apply GKSharp.sec5_A3_proved <;> assumption
 
-/-- short_v3.40; sec5_sharp_inequality.tex l.102-103: "On the critical curve w = τv, so ∇Φ(w(θ)) = q|Q|^{q−1}(2τ cos ω − 1)
+/-- short_v3.70; sec5_sharp_inequality.tex l.102-103: "On the critical curve w = τv, so ∇Φ(w(θ)) = q|Q|^{q−1}(2τ cos ω − 1)
 (K − K_f(θ)) v" (real gradient on `ℂ`, `τ = ρ/|v|`, any `C` and `K`). -/
 theorem sec5_grad_Phi {p C K lam θ : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl : -1 ≤ lam) (hl1 : lam < 1)
     (hθ0 : 0 < θ) (hθ : θ < Real.pi) :
@@ -2511,7 +2513,7 @@ theorem sec5_grad_Phi {p C K lam θ : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl : -1 
         (K - curveKf p lam θ) : ℝ) : ℂ) * curveV p lam θ) : ℂ →L[ℝ] ℝ) w := by
   apply GKSharp.Sec5GradPhi.sec5_grad_Phi_proved <;> assumption
 
-/-- short_v3.40; sec5_sharp_inequality.tex l.106: "Re(v̄ w′) = (ρ²)′/(2τ)" on the critical curve (`w = w(θ)`,
+/-- short_v3.70; sec5_sharp_inequality.tex l.106: "Re(v̄ w′) = (ρ²)′/(2τ)" on the critical curve (`w = w(θ)`,
 `ρ = ρ(θ)`, `τ = ρ/|v|`). -/
 theorem sec5_re_vbar_wprime {p lam θ : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl : -1 ≤ lam) (hl1 : lam < 1)
     (hθ0 : 0 < θ) (hθ : θ < Real.pi) :
@@ -2521,7 +2523,7 @@ theorem sec5_re_vbar_wprime {p lam θ : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl : -
       deriv (fun x => (fun θ : ℝ => ‖mobW lam (curveZ p lam θ)‖) x ^ 2) θ / (2 * τ) := by
   apply GKSharp.Sec5ReVbar.sec5_re_vbar_wprime_proved <;> assumption
 
-/-- short_v3.40; sec5_sharp_inequality.tex l.106-109 (any `C`, `K`: `C^p` is constant): "d/dθ Φ(w(θ)) =
+/-- short_v3.70; sec5_sharp_inequality.tex l.106-109 (any `C`, `K`: `C^p` is constant): "d/dθ Φ(w(θ)) =
 Re(conj(∇Φ) w′) = q|Q|^{q−1}(2τ cos ω − 1)(ρρ′/τ)(K − K_f(θ))", and "by (5.5) and (E2), Λ′(θ) =
 c(θ)(K − K_f(θ)) with c(θ) > 0" (`Λ = Φ(w(θ))/(1−λ)^p`; the positive factor is `F/(1−λ)^p`, `F` the factor of (5.8)). -/
 theorem eq_5_8 {p C K lam θ : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl : -1 ≤ lam) (hl1 : lam < 1)
@@ -2535,7 +2537,7 @@ theorem eq_5_8 {p C K lam θ : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl : -1 ≤ lam
       (F / (1 - lam) ^ p * (K - curveKf p lam θ)) θ ∧ 0 < F / (1 - lam) ^ p := by
   exact GKSharp.Sec5Eq58.eq_5_8_of_rho_deriv_pos hp1 hp2 hl hl1 hθ0 hθ ((GKSharp.sec5_A2_proved hp1 hp2 hl hl1).2.2.2.2.2.2.1 θ ⟨hθ0, hθ⟩)
 
-/-- short_v3.40; Proposition (Reduction), sec5d_monotone.tex l.122-124: "Let 1 < p < 2 and λ ∈ [−1, 1). If K_f is
+/-- short_v3.70; Proposition (Reduction), sec5d_monotone.tex l.122-124: "Let 1 < p < 2 and λ ∈ [−1, 1). If K_f is
 strictly decreasing on (0, π), then 𝒟_C ≥ 0 on ℂ, with equality only at z_* and z̄_*". -/
 theorem prop_reduction {p lam : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl : -1 ≤ lam) (hl1 : lam < 1)
     (hdec : StrictAntiOn (curveKf p lam) (Set.Ioo 0 Real.pi)) :
@@ -2544,13 +2546,13 @@ theorem prop_reduction {p lam : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl : -1 ≤ la
       z = curveZ p lam (Real.pi / p) ∨ z = conj (curveZ p lam (Real.pi / p)) := by
   apply GKSharp.Proofs.Reduction.prop_reduction_proved <;> assumption
 
-/-- short_v3.40; sec5d_monotone.tex l.151-156 with Theorem 5.1 (label C1), P019_paper.tex l.151-153: for `1 < p < ∞` and
+/-- short_v3.70; sec5d_monotone.tex l.151-156 with Theorem 5.1 (label C1), P019_paper.tex l.151-153: for `1 < p < ∞` and
 `λ ∈ [−1, 0]`, "‖P₊ + λP₋‖_p = GK_p(λ)". -/
 theorem thm_C1 {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)] (hp : 1 < p) (P : RieszProjection p) {lam : ℝ}
     (hl : -1 ≤ lam) (hl0 : lam ≤ 0) : pencilNorm P lam = gk p lam := by
   apply GKSharp.Proofs.TheoremC1.thm_C1_proved <;> assumption
 
-/-- short_v3.40; Theorem 5.1 (label C1), equality case, sec5d_monotone.tex l.154 (`1 < p < 2`, `λ ∈ [−1, 0]`):
+/-- short_v3.70; Theorem 5.1 (label C1), equality case, sec5d_monotone.tex l.154 (`1 < p < 2`, `λ ∈ [−1, 0]`):
 "with equality in (*) only at z_* and z̄_*". -/
 theorem thm_C1_equality {p lam : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl : -1 ≤ lam) (hl0 : lam ≤ 0) :
     (∀ z : ℂ, 0 ≤ critD p (gk p lam) (kConst p lam) lam z) ∧
@@ -2563,25 +2565,25 @@ end SharpCurveReductionAndC1
 section LocalOperatorConsequences
 open Set GKSharp.Threshold
 
-/-- short_v3.40/sec4b_failure.tex:17–21, Theorem 4.4 (label L). Under (4.2), "then $\|\Pp + \lambda \Pm\|_p > \GK_p(\lambda)$". -/
+/-- short_v3.70/sec4b_failure.tex:17–21, Theorem 4.4 (label L). Under (4.2), "then $\|\Pp + \lambda \Pm\|_p > \GK_p(\lambda)$". -/
 theorem sec4_thm_L (p : ℝ) [Fact (1 ≤ ENNReal.ofReal p)] (P : RieszProjection p) :
     1 < p → p < 2 → ∀ lam ∈ Ioo (0 : ℝ) 1,
       1 < localTest p lam → gk p lam < pencilNorm P lam := by
   apply GKSharp.sec4_thm_L_proved <;> assumption
 
-/-- short_v3.40/sec4b_failure.tex:15. "for $p>2$ the statements below hold with $p'$ in place of $p$, by duality (Section~1)". -/
+/-- short_v3.70/sec4b_failure.tex:15. "for $p>2$ the statements below hold with $p'$ in place of $p$, by duality (Section~1)". -/
 theorem sec4_thm_L_dual (p : ℝ) [Fact (1 ≤ ENNReal.ofReal p)]
     (P : RieszProjection p) (hp : 2 < p) :
     ∀ lam ∈ Ioo (0 : ℝ) 1, 1 < localTest p lam → gk p lam < pencilNorm P lam := by
   apply GKSharp.sec4_thm_L_dual_proved <;> assumption
 
-/-- short_v3.40/sec4b_failure.tex:110. "$h(\lambda, p) < 0$ implies $\|\Pp + \lambda\Pm\|_p > \GK_p(\lambda)$." -/
+/-- short_v3.70/sec4b_failure.tex:110. "$h(\lambda, p) < 0$ implies $\|\Pp + \lambda\Pm\|_p > \GK_p(\lambda)$." -/
 theorem sec4_axis_negative_fails (p : ℝ) [Fact (1 ≤ ENNReal.ofReal p)]
     (P : RieszProjection p) (hp : 1 < p) (hp2 : p < 2) (lam : ℝ)
     (hlam : lam ∈ Ico (-1 : ℝ) 1) (hh : h p lam < 0) : gk p lam < pencilNorm P lam := by
   apply GKSharp.sec4_axis_negative_fails_proved <;> assumption
 
-/-- short_v3.40; sec4a_criterion.tex:79. "If $\Omega(p) < 0$, then $\|\Pp + \lambda\Pm\|_p > \GK_p(\lambda)$ for all $\lambda < 1$ close enough to $1$." -/
+/-- short_v3.70; sec4a_criterion.tex:79. "If $\Omega(p) < 0$, then $\|\Pp + \lambda\Pm\|_p > \GK_p(\lambda)$ for all $\lambda < 1$ close enough to $1$." -/
 theorem sec4_prop_F (p : ℝ) [Fact (1 ≤ ENNReal.ofReal p)] (P : RieszProjection p) :
     1 < p → p < 2 → omega p < 0 →
       ∃ eps > 0, ∀ lam : ℝ, 1 - eps < lam → lam < 1 → gk p lam < pencilNorm P lam := by
@@ -2592,7 +2594,7 @@ section CstarReadyLeavesAndHeadlineB
 open Set Filter Topology GKSharp.Threshold GKSharp.ComputerChecked
 open scoped ContDiff
 
-/-- short_v3.40; sec5e_cstar.tex l.22-24: "Λ(0⁺) = Φ(ρ₀)/(1−λ)^p with ρ₀ real, i.e. a value of 𝒟_C/|1+z|^p on the
+/-- short_v3.70; sec5e_cstar.tex l.22-24: "Λ(0⁺) = Φ(ρ₀)/(1−λ)^p with ρ₀ real, i.e. a value of 𝒟_C/|1+z|^p on the
 positive axis, which is ≥ 0 because h ≥ 0" (`ρ₀ = (1 + λr₀)/(1 + r₀)` as in `sec5_A2`). -/
 theorem sec5e_Lambda_zero {p lam : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl0 : 0 < lam) (hl1 : lam < 1) :
     let r0 := curveRoot lam (1 - p / 2) (p / 2)
@@ -2602,7 +2604,7 @@ theorem sec5e_Lambda_zero {p lam : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl0 : 0 < l
     (kConst p lam ≤ obstacle p (gk p lam) lam 0 → 0 ≤ mobPhi p (gk p lam) (kConst p lam) lam (ρ0 : ℂ)) := by
   apply GKSharp.CstarCurve.sec5e_Lambda_zero_proved <;> assumption
 
-/-- short_v3.40; sec4a_criterion.tex l.71-73 (proof of Proposition 4.2 (label Q), "Only if", after `A_φ = K`): "A q-subtrigonometric
+/-- short_v3.70; sec4a_criterion.tex l.71-73 (proof of Proposition 4.2 (label Q), "Only if", after `A_φ = K`): "A q-subtrigonometric
 function lies, on any interval of length at most π/q, above the sinusoid with its value and right derivative at the left end [HKV, Lemma 3.2]; at
 θ₀ this sinusoid is K cos(qt), since φ(θ₀)=0 and φ′(θ₀⁺)=−Kq, and [θ₀, π] has length π − π/p < π/q. So m_GK ≥ φ ≥ K cos(qt) on [θ₀, π]". Here φ is the
 q-subtrigonometric minorant of Theorem 2.2 (label R), equal to A_φ cos(qt) on the arch [−θ₀, θ₀] (l.68) with
@@ -2616,7 +2618,7 @@ theorem sec4_cosine_exterior_support (p lam : ℝ) (hp : 1 < p) (hp2 : p < 2)
       kConst p lam * Real.cos (Threshold.q p * t) ≤ ff t ∧ ff t ≤ Threshold.obstacle p lam t := by
   apply GKSharp.sec4_cosine_exterior_support_proved <;> assumption
 
-/-- short_v3.40; Theorem 5.2 (label B) (b), P019_paper.tex l.158: "If p < p₀ or p > p₀′, then ‖P₊ + λP₋‖_p > GK_p(λ) for every
+/-- short_v3.70; Theorem 5.2 (label B) (b), P019_paper.tex l.158: "If p < p₀ or p > p₀′, then ‖P₊ + λP₋‖_p > GK_p(λ) for every
 λ < 1 close enough to 1". Its hypotheses are the computer checks of its proof (Proposition 4.3 (label F) and duality,
 sec5d_monotone.tex l.162): `Ω < 0` on `(1, p₀)` is `p0_spec` (`CheckOmegaNeg`, `CheckOmegaRoot`). -/
 theorem thm_B_b (hn : CheckOmegaNeg) (hr : CheckOmegaRoot)
@@ -2625,11 +2627,11 @@ theorem thm_B_b (hn : CheckOmegaNeg) (hr : CheckOmegaRoot)
     ∃ ε > 0, ∀ lam : ℝ, 1 - ε < lam → lam < 1 → gk p lam < pencilNorm P lam := by
   apply GKSharp.ThmBb.thm_B_b_proved <;> assumption
 
-/-- short_v3.40/sec4b_failure.tex:108–110. "We have $h(0, p) > 0$" from C1's equality classification and an attained actual axis minimum. -/
+/-- short_v3.70/sec4b_failure.tex:108–110. "We have $h(0, p) > 0$" from C1's equality classification and an attained actual axis minimum. -/
 theorem axis_zero_positive (p : ℝ) (hp : 1 < p) (hp2 : p < 2) : 0 < h p 0 := by
   apply GKSharp.axis_zero_positive_proved <;> assumption
 
-/-- short_v3.40; sec5e_cstar.tex l.18-20 ("If" part): "Since 3 − √3 < 4/3, Lemma 5.11 (for p < 4/3) and Lemma 5.10
+/-- short_v3.70; sec5e_cstar.tex l.18-20 ("If" part): "Since 3 − √3 < 4/3, Lemma 5.11 (for p < 4/3) and Lemma 5.10
 (for p ≥ 3 − √3) together cover 1 < p < 2. They show that K_f is either decreasing, or increasing on (0, θ_λ] and
 decreasing afterwards; in the second case θ_λ < θ₀, because K_f′(θ₀) < 0 whereas K_f′ ≥ 0 on (0, θ_λ]. Hence
 {K_f < K} = (0, θ_a) ∪ (θ₀, π) for some θ_a ∈ [0, θ₀)". -/
@@ -2643,7 +2645,7 @@ theorem sec5e_Kf_below {p lam : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl0 : 0 < lam)
         Set.Ioo 0 θa ∪ Set.Ioo (Real.pi / p) Real.pi := by
   exact GKSharp.sec5e_Kf_below_proved GKSharp.Proofs.TheoremCstar.kf_slope hp1 hp2 hl0 hl1 hh hloc
 
-/-- short_v3.40; sec5e_cstar.tex l.21-22 ("If" part: `h(λ, p) ≥ 0`, `λ < λ_loc(p)`): "Thus Λ ≥ min(Λ(0⁺), 0) and Λ > 0
+/-- short_v3.70; sec5e_cstar.tex l.21-22 ("If" part: `h(λ, p) ≥ 0`, `λ < λ_loc(p)`): "Thus Λ ≥ min(Λ(0⁺), 0) and Λ > 0
 away from θ₀ unless Λ(0⁺) < 0" (here `Λ(0⁺) ≥ 0`, l.22-24). -/
 theorem sec5e_Lambda_pos {p lam : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl0 : 0 < lam) (hl1 : lam < 1)
     (hh : kConst p lam ≤ obstacle p (gk p lam) lam 0) (hloc : lam < Threshold.lambdaLoc p) :
@@ -2660,14 +2662,14 @@ end CstarReadyLeavesAndHeadlineB
 section EndpointEdgeStripAndCstar
 open Real Set Filter Topology GKSharp.Threshold GKSharp.ComputerChecked
 
-/-- Lemma A.1 (label endpoint), short_v3.40/endpoint_estimate.tex:7–9. "For $1<p\le1+10^{-6}$,
+/-- Lemma A.1 (label endpoint), short_v3.70/endpoint_estimate.tex:7–9. "For $1<p\le1+10^{-6}$,
 $h(\lambda_{\mathrm{loc}}(p),p)<-1.88$." (`h = axisGap`; this is case (b) of the proof of Proposition 4.7,
 sec4b_failure.tex l.131-132.) -/
 theorem slice_E01 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
     axisGap p (Threshold.lambdaLoc p) < -(1.88 : ℝ) ∧ axisGap p (Threshold.lambdaLoc p) < 0 := by
   exact GKSharp.endpoint_estimate_proved hp hp1
 
-/-- short_v3.40/endpoint_estimate.tex:12–17. "$s_0=\sin a=\sin(\pi/p)$ and $c_0=\cos a=-\cos(\pi/p)$. Put d^2=\frac{s_0^2}{c_0^4}\left(\frac{p\pi}{4a}-1-c_0^2\right),\qquad \lambda=\frac{1-d}{1+d},\qquad \delta=1-\lambda=\frac{2d}{1+d},\qquad Q_A=\frac{\delta}{s_0}." -/
+/-- short_v3.70/endpoint_estimate.tex:12–17. "$s_0=\sin a=\sin(\pi/p)$ and $c_0=\cos a=-\cos(\pi/p)$. Put d^2=\frac{s_0^2}{c_0^4}\left(\frac{p\pi}{4a}-1-c_0^2\right),\qquad \lambda=\frac{1-d}{1+d},\qquad \delta=1-\lambda=\frac{2d}{1+d},\qquad Q_A=\frac{\delta}{s_0}." -/
 theorem slice_E03 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
     let a := endpointA p
     let d := endpointD p
@@ -2680,7 +2682,7 @@ theorem slice_E03 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
   obtain ⟨hd0, hd1, hd2, he, _⟩ := GKSharp.endpoint_d_basic hp hp1
   exact ⟨hd0, hd1, hd2, he, fun lam h0 h1 => GKSharp.endpoint_threshold_equation hp hp1 lam h0 h1⟩
 
-/-- short_v3.40/endpoint_estimate.tex:19–21. "p-1\le a/3,\quad a-a^3/6\le s_0\le a,\quad 1-a^2/2\le c_0\le1, \quad \frac{\pi a}{4}(1-3a)\le d^2\le\frac{\pi a}{4}(1+a)." -/
+/-- short_v3.70/endpoint_estimate.tex:19–21. "p-1\le a/3,\quad a-a^3/6\le s_0\le a,\quad 1-a^2/2\le c_0\le1, \quad \frac{\pi a}{4}(1-3a)\le d^2\le\frac{\pi a}{4}(1+a)." -/
 theorem slice_E04 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
     let a := endpointA p
     p - 1 ≤ a / 3 ∧ a - a ^ 3 / 6 ≤ sin a ∧ sin a ≤ a ∧
@@ -2692,7 +2694,7 @@ theorem slice_E04 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
   obtain ⟨hdlo, hdhi⟩ := GKSharp.endpoint_d_squared_bounds hp hp1
   exact ⟨GKSharp.endpoint_p_sub_one hp hp1, hslo, hshi, hclo, hchi, hdlo, hdhi⟩
 
-/-- short_v3.40/endpoint_estimate.tex:26–28. "\sqrt a\le \delta\le1.8\sqrt a,\qquad a^{-1/2}\le Q_A\le2a^{-1/2},\qquad 2d\le1.8\sqrt a." -/
+/-- short_v3.70/endpoint_estimate.tex:26–28. "\sqrt a\le \delta\le1.8\sqrt a,\qquad a^{-1/2}\le Q_A\le2a^{-1/2},\qquad 2d\le1.8\sqrt a." -/
 theorem slice_E06 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
     let a := endpointA p
     let ε := 1 - endpointLambda p
@@ -2702,7 +2704,7 @@ theorem slice_E06 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
     2 * endpointD p ≤ 1.8 * sqrt a := by
   exact GKSharp.endpoint_scale_bounds hp hp1
 
-/-- short_v3.40/endpoint_estimate.tex:30–31. "$C=(Q_A+\sqrt{Q_A^2+4\lambda})/2$, hence $C^2\le Q_A^2+2$ and $C\le Q_A+Q_A^{-1}\le2Q_A$." -/
+/-- short_v3.70/endpoint_estimate.tex:30–31. "$C=(Q_A+\sqrt{Q_A^2+4\lambda})/2$, hence $C^2\le Q_A^2+2$ and $C\le Q_A+Q_A^{-1}\le2Q_A$." -/
 theorem slice_E07 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
     let lam := endpointLambda p
     let Q := (1 - lam) / sin (endpointA p)
@@ -2711,7 +2713,7 @@ theorem slice_E07 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
       C ≤ Q + Q⁻¹ ∧ Q + Q⁻¹ ≤ 2 * Q := by
   exact GKSharp.endpoint_gk_bounds hp hp1
 
-/-- short_v3.40/endpoint_estimate.tex:32–35. "Inequality~(4.6) with $\vartheta=1/2$, that is, $\rho=(1+\lambda)/2$, gives h(\lambda,p)\le U_1-U_2-K,\qquad U_1=(2C)^p,\qquad U_2=(2\rho)^p." -/
+/-- short_v3.70/endpoint_estimate.tex:32–35. "Inequality~(4.6) with $\vartheta=1/2$, that is, $\rho=(1+\lambda)/2$, gives h(\lambda,p)\le U_1-U_2-K,\qquad U_1=(2C)^p,\qquad U_2=(2\rho)^p." -/
 theorem slice_E08 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
     let lam := endpointLambda p
     let C := gk p (lam : ℂ)
@@ -2719,7 +2721,7 @@ theorem slice_E08 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
     axisGap p lam ≤ (2 * C) ^ p - (2 * w) ^ p - kConst p lam := by
   exact GKSharp.endpoint_midpoint_bound hp hp1
 
-/-- short_v3.40/endpoint_estimate.tex:36–37. "With $x=(p-1)\log(2C)$, we have $0\le x\le(a/3)\log(8/\sqrt a)<1$. The estimate $e^x\le1+2x$ therefore yields" -/
+/-- short_v3.70/endpoint_estimate.tex:36–37. "With $x=(p-1)\log(2C)$, we have $0\le x\le(a/3)\log(8/\sqrt a)<1$. The estimate $e^x\le1+2x$ therefore yields" -/
 theorem slice_E09 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
     let a := endpointA p
     let C := gk p (endpointLambda p : ℂ)
@@ -2728,7 +2730,7 @@ theorem slice_E09 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
       exp x ≤ 1 + 2 * x := by
   exact GKSharp.endpoint_log_bound hp hp1
 
-/-- short_v3.40/endpoint_estimate.tex:38–41. "U_1\le2Q_A+\frac2{Q_A}+\frac83Q_Aa\log\frac8{\sqrt a},\qquad U_2\ge2\rho=\frac2{1+d}\ge2-2d." -/
+/-- short_v3.70/endpoint_estimate.tex:38–41. "U_1\le2Q_A+\frac2{Q_A}+\frac83Q_Aa\log\frac8{\sqrt a},\qquad U_2\ge2\rho=\frac2{1+d}\ge2-2d." -/
 theorem slice_E10 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
     let a := endpointA p
     let d := endpointD p
@@ -2740,7 +2742,7 @@ theorem slice_E10 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
       2 * w ≤ (2 * w) ^ p ∧ 2 * w = 2 / (1 + d) ∧ 2 - 2 * d ≤ 2 / (1 + d) := by
   exact GKSharp.endpoint_term_bounds hp hp1
 
-/-- short_v3.40/endpoint_estimate.tex:42–48. "$v=r-\lambda/r=\sqrt{\delta^2+4\lambda s_0^2}/c_0$. The contact equation $r+\lambda/r=(1+\lambda)/c_0$ implies \frac1{c_0}\le r\le\frac{1+s_0^2/\delta}{c_0},\qquad v\le\frac{\delta(1+2s_0^2/\delta^2)}{c_0},\qquad |re^{i\pi/p}+\lambda|\ge r-\lambda\ge \delta." -/
+/-- short_v3.70/endpoint_estimate.tex:42–48. "$v=r-\lambda/r=\sqrt{\delta^2+4\lambda s_0^2}/c_0$. The contact equation $r+\lambda/r=(1+\lambda)/c_0$ implies \frac1{c_0}\le r\le\frac{1+s_0^2/\delta}{c_0},\qquad v\le\frac{\delta(1+2s_0^2/\delta^2)}{c_0},\qquad |re^{i\pi/p}+\lambda|\ge r-\lambda\ge \delta." -/
 theorem slice_E11 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
     let a := endpointA p
     let lam := endpointLambda p
@@ -2754,7 +2756,7 @@ theorem slice_E11 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
     ε ≤ r - lam ∧ r - lam ≤ ‖(r : ℂ) * unitPoint (Real.pi / p) + (lam : ℂ)‖ := by
   exact GKSharp.endpoint_contact_bounds hp hp1
 
-/-- short_v3.40/endpoint_estimate.tex:49–53. "K=2Q_A\,r^{-q}\frac{|re^{i\pi/p}+\lambda|^p}{v} \ge2Q_A\frac{c_0^2\delta^{p-1}}{(1+s_0^2/\delta)(1+2s_0^2/\delta^2)} \ge2Q_A(1-E_K)," -/
+/-- short_v3.70/endpoint_estimate.tex:49–53. "K=2Q_A\,r^{-q}\frac{|re^{i\pi/p}+\lambda|^p}{v} \ge2Q_A\frac{c_0^2\delta^{p-1}}{(1+s_0^2/\delta)(1+2s_0^2/\delta^2)} \ge2Q_A(1-E_K)," -/
 theorem slice_E12 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
     let a := endpointA p
     let lam := endpointLambda p
@@ -2772,7 +2774,7 @@ theorem slice_E12 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
   exact ⟨GKSharp.endpoint_contact_k_identity hp hp1, (GKSharp.endpoint_k_lower_bounds hp hp1).1,
     (GKSharp.endpoint_k_lower_bounds hp hp1).2⟩
 
-/-- short_v3.40/endpoint_estimate.tex:55–61. "E_K=(p-1)\log(1/\delta)+a^2+\frac{s_0^2}{\delta}+\frac{2s_0^2}{\delta^2} \le\frac a6\log\frac1a+a^2+a^{3/2}+2a." -/
+/-- short_v3.70/endpoint_estimate.tex:55–61. "E_K=(p-1)\log(1/\delta)+a^2+\frac{s_0^2}{\delta}+\frac{2s_0^2}{\delta^2} \le\frac a6\log\frac1a+a^2+a^{3/2}+2a." -/
 theorem slice_E13 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
     let a := endpointA p
     let ε := 1 - endpointLambda p
@@ -2783,25 +2785,25 @@ theorem slice_E13 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
     (∀ u : ℝ, 0 ≤ u → 1 - u ≤ (1 + u)⁻¹) := by
   exact GKSharp.endpoint_k_error_bounds hp hp1
 
-/-- short_v3.40/endpoint_estimate.tex:62–66. "h(\lambda_{\mathrm{loc}}(p),p)\le-2+R(a),\qquad R(a)=\sqrt a\left[2+\frac{16}3\log\frac8{\sqrt a}+1.8+\frac23\log\frac1a+8+4\sqrt a+4a\right]." -/
+/-- short_v3.70/endpoint_estimate.tex:62–66. "h(\lambda_{\mathrm{loc}}(p),p)\le-2+R(a),\qquad R(a)=\sqrt a\left[2+\frac{16}3\log\frac8{\sqrt a}+1.8+\frac23\log\frac1a+8+4\sqrt a+4a\right]." -/
 theorem slice_E14 {p : ℝ} (hp : 1 < p) (hp1 : p ≤ 1 + 10 ^ (-6 : ℤ)) :
     axisGap p (endpointLambda p) ≤ -2 + endpointError (endpointA p) := by
   exact GKSharp.endpoint_remainder_bound hp hp1
 
-/-- short_v3.40/endpoint_estimate.tex:67–67. "Every term in $R$ is increasing on $(0,\bar a]$: in particular $\sqrt a\log(1/a)$ increases for $a<e^{-2}$." -/
+/-- short_v3.70/endpoint_estimate.tex:67–67. "Every term in $R$ is increasing on $(0,\bar a]$: in particular $\sqrt a\log(1/a)$ increases for $a<e^{-2}$." -/
 theorem slice_E15 :
     MonotoneOn endpointError (Set.Ioc 0 (3.2 * 10 ^ (-6 : ℤ))) ∧
     StrictMonoOn (fun a : ℝ => sqrt a * log (1 / a)) (Set.Ioo 0 (exp (-2))) := by
   exact ⟨GKSharp.endpoint_error_monotone, GKSharp.sqrt_mul_log_strictMono⟩
 
-/-- short_v3.40/endpoint_estimate.tex:68–68. "Finally $\sqrt{\bar a}<0.001789$, $\log(8/\sqrt{\bar a})<8.5$, and $\log(1/\bar a)<12.66$ give $R(\bar a)<0.12$." -/
+/-- short_v3.70/endpoint_estimate.tex:68–68. "Finally $\sqrt{\bar a}<0.001789$, $\log(8/\sqrt{\bar a})<8.5$, and $\log(1/\bar a)<12.66$ give $R(\bar a)<0.12$." -/
 theorem slice_E16 :
     let a₁ : ℝ := 3.2 * 10 ^ (-6 : ℤ)
     sqrt a₁ < 0.001789 ∧ log (8 / sqrt a₁) < 8.5 ∧ log (1 / a₁) < 12.66 ∧
       endpointError a₁ < 0.12 := by
   exact GKSharp.endpoint_error_numeric
 
-/-- short_v3.40/sec4b_failure.tex:118–121. "For every $1 < p < p_c$, $h(\lambda_{\mathrm{loc}}(p), p) < 0$." The actual first positive axis zero and strict norm failure at the local threshold are included. The three named checks stay explicit. -/
+/-- short_v3.70/sec4b_failure.tex:118–121. "For every $1 < p < p_c$, $h(\lambda_{\mathrm{loc}}(p), p) < 0$." The actual first positive axis zero and strict norm failure at the local threshold are included. The three named checks stay explicit. -/
 theorem sec4_prop_edge (hc : CheckLocalF) (hb : CheckBoundaryBulk)
     (hs : CheckBoundarySliver) (p : ℝ) [Fact (1 ≤ ENNReal.ofReal p)]
     (P : RieszProjection p) : 1 < p → p < pc → h p (lambdaLoc p) < 0 ∧
@@ -2809,7 +2811,7 @@ theorem sec4_prop_edge (hc : CheckLocalF) (hb : CheckBoundaryBulk)
     gk p (lambdaLoc p) < pencilNorm P (lambdaLoc p) := by
   exact GKSharp.sec4_prop_edge_proved hc hb hs p P
 
-/-- short_v3.40/sec5f_strip.tex:43–45. "Let $p_0 \le p \le 1.268$ and $0 < \lambda < 1$. Then $h(\lambda, p) > 0$." The operator conclusion for every real ratio on the stated exponent strip is included, with its seven named checks: sec5f_strip.tex:74–75 "For $p_0\le p<3-\sqrt3$ we have $p>p_c$, so $\lambda_{\mathrm{loc}}=1$ and Theorem~5.3 turns $h>0$ into equality for $0<\lambda<1$." and "So the bound is sharp for every real ratio when $p_0\le p<3-\sqrt3$." -/
+/-- short_v3.70/sec5f_strip.tex:43–45. "Let $p_0 \le p \le 1.268$ and $0 < \lambda < 1$. Then $h(\lambda, p) > 0$." The operator conclusion for every real ratio on the stated exponent strip is included, with its seven named checks: sec5f_strip.tex:74–75 "For $p_0\le p<3-\sqrt3$ we have $p>p_c$, so $\lambda_{\mathrm{loc}}=1$ and Theorem~5.3 turns $h>0$ into equality for $0<\lambda<1$." and "So the bound is sharp for every real ratio when $p_0\le p<3-\sqrt3$." -/
 theorem sec5_prop_S (hn : CheckOmegaNeg) (hr : CheckOmegaRoot)
     (hcd : CheckCornerDerivatives) (hct : CheckCornerTails)
     (hbm : CheckStripBulkMiddle) (hbt : CheckStripBulkTails) (hc : CheckLocalF)
@@ -2817,9 +2819,9 @@ theorem sec5_prop_S (hn : CheckOmegaNeg) (hr : CheckOmegaRoot)
   (p ∈ Ico p0 (3 - Real.sqrt 3) → ∀ lam : ℝ, pencilNorm P lam = gk p lam) := by
   exact GKSharp.sec5_prop_S_proved hn hr hcd hct hbm hbt hc p P
 
-/-- short_v3.40; Theorem 5.3 (label Cstar), P019_paper.tex l.161-163 (proof sec5e_cstar.tex l.12-30): "Let 1 < p < 2 and
+/-- short_v3.70; Theorem 5.3 (label Cstar), P019_paper.tex l.161-163 (proof sec5e_cstar.tex l.12-30): "Let 1 < p < 2 and
 0 < λ < 1. Then ‖P₊ + λP₋‖_p = GK_p(λ) if and only if m_GK(0) ≥ K (the first condition in (1.1)) and
-λ < λ_loc(p), where λ_loc is the threshold defined in Section 1 (see Theorem 4.4; so
+λ < λ_loc(p), where λ_loc is the threshold defined in Section 1 (see Theorem 4.4 and Lemma 4.6; so
 λ_loc = 1 for p ≥ p_c)". (`m_GK(0) ≥ K` is `0 ≤ axisGap p lam`, i.e. h(λ, p) ≥ 0; `λ_loc` is the shared
 `Threshold.lambdaLoc`, whose clamp to 1 is `lambdaLoc_spec`.) Its hypotheses are the computer checks of its proof: the
 case `λ = λ_loc(p)` uses Proposition 4.7 (label edge) (`CheckLocalF`, `CheckBoundaryBulk`, `CheckBoundarySliver`), and the
@@ -2871,17 +2873,18 @@ N_p(λ) = GK_p(λ) holds for every real λ if and only if p₀ ≤ p ≤ p₀′
 for every λ < 1 sufficiently close to 1. (d) If 1 < p < 2 and 0 < λ < 1, then N_p(λ) = GK_p(λ) if and only if both
 conditions in (1.1) hold."; after it, l.104: "part (d) as Theorem 5.3; for p > 2 part (d) applies with p′ in place
 of p, since N_p(λ) = N_{p′}(λ) and GK_p = GK_{p′}. Ratios λ > 1 reduce to 1/λ by the reciprocal symmetries above,
-and the bound is sharp for λ = 1 and for p = 2." Each clause is its own conjunct, with four clauses
-carried by companion rows: (b) "If λ ≤ 0 is real" is stated here for `−1 ≤ λ ≤ 0` (Theorem 5.1) and for every `λ ≤ 0` by
+and the bound is sharp for λ = 1, for p = 2 and for α = 0." Each clause is its own conjunct, with five clauses
+carried by companion rows and links: (b) "If λ ≤ 0 is real" is stated here for `−1 ≤ λ ≤ 0` (Theorem 5.1) and for every `λ ≤ 0` by
 `thm_classification_nonpositive`; the criterion is stated here with Theorem 5.3's axis condition `m_GK(0) ≥ K` and
 in the form (1.1) by `thm_classification_tests`; the reduction of `λ > 1` is `thm_classification_reciprocal`;
-`λ = 1` is `sec5_lambda_one`. The criterion clause is stated for `1 < p < 2` and for `p > 2` (at
+`λ = 1` is `sec5_lambda_one`; `α = 0` is the link `cover_final_alpha_zero_sharp` (from the `α = 0` conjunct
+of `thm_B_pair`, with no computer check). The criterion clause is stated for `1 < p < 2` and for `p > 2` (at
 `p′ = p/(p−1)`). Its hypotheses are the union of the computer
 checks of Theorems 5.2 and 5.3 (`thm_B_a`, `thm_B_b`, `thm_Cstar`); the clauses for `ρ ∉ ℝ`, `λ ∈ [−1, 0]` and
 `p = 2` use none (they are also the rows `thm_A`, `thm_C1`). Caption of Figure 1, P019_paper.tex:113: "and for every
 $\lambda$ when $p_0\le p<2$" (clause (c), first sentence, for `p < 2`; the literal form is the link
 `cover_q17_intro_regime_sharp`) and "In the hatched band the criterion of Theorem~\ref{thm:classification}(d) still
-decides each $\lambda$, but its outcome is known only at some points; for example, when $p_c\le p<p_0$ the bound is not
+applies to each $\lambda$, but its outcome is known only in part; for example, when $p_c\le p<p_0$ the bound is not
 sharp for every $\lambda<1$ close enough to $1$ (Theorem~\ref{thm:classification}(c))" (clause (d); clause (c), second
 sentence, for `p < p₀`; the words on what is known are not a claim). -/
 theorem thm_classification (hn : CheckOmegaNeg) (hr : CheckOmegaRoot)
@@ -2905,7 +2908,7 @@ theorem thm_classification (hn : CheckOmegaNeg) (hr : CheckOmegaRoot)
     (p = 2 → ∀ ρ : ℂ, pencilNorm P ρ = gk p ρ) := by
   exact GKSharp.ThmClass.thm_classification_of hn hr (fun q _ Q hq => (GKSharp.sec5_prop_S_proved hn hr hcd hct hbm hbt hc q Q).2 hq) (fun _ _ Q hq1 hq2 _ hl0 hl1 => GKSharp.Proofs.TheoremCstarFinal.thm_Cstar_proved hc hb hs hq1 hq2 Q hl0 hl1) hp P
 
-/-- short_v3.40/sec5_sharp_inequality.tex:88–94. "θ is a smooth function of ρ"; local inverse conclusion (route R8(ii)). -/
+/-- short_v3.70/sec5_sharp_inequality.tex:88–94. "θ is a smooth function of ρ"; local inverse conclusion (route R8(ii)). -/
 theorem sec5_A2_ift {p lam θ₀ : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl : -1 ≤ lam) (hl1 : lam < 1)
     (hθ0 : 0 < θ₀) (hθ : θ₀ < Real.pi) :
     DifferentiableAt ℝ ((fun θ : ℝ => ‖mobW lam (curveZ p lam θ)‖)) θ₀ ∧
@@ -2913,17 +2916,17 @@ theorem sec5_A2_ift {p lam θ₀ : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl : -1 ≤
       deriv ((fun θ : ℝ => ‖mobW lam (curveZ p lam θ)‖)) θ₀ * deriv g ((fun θ : ℝ => ‖mobW lam (curveZ p lam θ)‖) θ₀) = 1 := by
   exact GKSharp.A2Ift.sec5_A2_ift_proved hp1 hp2 hl hl1 hθ0 hθ
 
-/-- short_v3.40/sec2_obstacle.tex:22–30. "They determine its singular values and are unchanged" by the listed symmetries, including conjugate exponents. -/
+/-- short_v3.70/sec2_obstacle.tex:22–30. "They determine its singular values and are unchanged" by the listed symmetries, including conjugate exponents. -/
 theorem sec2_gk_from_invariants (p : ℝ) (α β α' β' : ℂ)
     (hF : ∑ i, ∑ j, ‖gkMatrix p α β i j‖ ^ 2 = ∑ i, ∑ j, ‖gkMatrix p α' β' i j‖ ^ 2)
     (hD : ‖(gkMatrix p α β).det‖ = ‖(gkMatrix p α' β').det‖) : gkPair p α β = gkPair p α' β' := by
   exact GKSharp.GKSingular.sec2_gk_from_invariants_proved p α β α' β' hF hD
 
-/-- short_v3.40/sec2_obstacle.tex:22–30. "They determine its singular values and are unchanged" by the listed symmetries, including conjugate exponents. -/
+/-- short_v3.70/sec2_obstacle.tex:22–30. "They determine its singular values and are unchanged" by the listed symmetries, including conjugate exponents. -/
 theorem sec2_gkPair_dual {p : ℝ} (hp : 1 < p) (α β : ℂ) : gkPair (p / (p - 1)) α β = gkPair p α β := by
   exact GKSharp.GKSingular.sec2_gkPair_dual_proved hp α β
 
-/-- short_v3.40/sec4a_criterion.tex:67–74. "hence A_φ = K" and "So m_GK ≥ φ ≥ K cos(qt)"; the full interval follows by evenness. -/
+/-- short_v3.70/sec4a_criterion.tex:67–74. "hence A_φ = K" and "So m_GK ≥ φ ≥ K cos(qt)"; the full interval follows by evenness. -/
 theorem angular_contact_determines_cos (p lam : ℝ) (hp : 1 < p) (hp2 : p < 2)
     (hlam : lam ∈ Ico (-1 : ℝ) 1) (f : ℝ → ℝ)
     (hf : Continuous f) (hq : QTrigConvex (q p) f)
@@ -2931,13 +2934,13 @@ theorem angular_contact_determines_cos (p lam : ℝ) (hp : 1 < p) (hp2 : p < 2)
     ∀ t ∈ Icc (-Real.pi) Real.pi, kConst p lam * Real.cos (q p * |t|) ≤ Threshold.obstacle p lam t := by
   exact GKSharp.angular_contact_determines_cos_proved p lam hp hp2 hlam f hf hq hminor
 
-/-- short_v3.40/sec2_obstacle.tex:57–60 "m_C is finite and continuous";
+/-- short_v3.70/sec2_obstacle.tex:57–60 "m_C is finite and continuous";
 sec4b_failure.tex:114 "Joint continuity of Γ_C(y,0)"; joint parameter version used by the axis restriction. -/
 theorem obstacle_joint_continuous (p : ℝ) (hp : 1 < p) (hp2 : p < 2) :
     ContinuousOn (fun x : ℝ × ℝ => Threshold.obstacle p x.1 x.2) (Ioo (-1 : ℝ) 1 ×ˢ univ) := by
   exact GKSharp.obstacle_joint_continuous_proved p hp hp2
 
-/-- short_v3.40/sec5f_strip.tex:16–17. "the bound is sharp at λ ∈ (0,1) exactly when h(λ, p) ≥ 0". -/
+/-- short_v3.70/sec5f_strip.tex:16–17. "the bound is sharp at λ ∈ (0,1) exactly when h(λ, p) ≥ 0". -/
 theorem sec5_strip_criterion (hc : CheckLocalF) (p : ℝ)
     [Fact (1 ≤ ENNReal.ofReal p)] (P : RieszProjection p)
     (hp : pc ≤ p) (hp2 : p < 2) (lam : ℝ) (hlam : lam ∈ Ioo (0 : ℝ) 1) :
@@ -3141,7 +3144,7 @@ section Q15Rows
 open Set Filter GKSharp.Threshold
 open scoped Topology
 
-/-- short_v3.40/sec4b_failure.tex:128 "$d=\sqrt{T(p)}$, written as $d^2 = \sin^2 a\,(pp'/4 - 1 - \cos^2 a)/\cos^4 a$" (`a = π/p′`,
+/-- short_v3.70/sec4b_failure.tex:128 "$d=\sqrt{T(p)}$, written as $d^2 = \sin^2 a\,(pp'/4 - 1 - \cos^2 a)/\cos^4 a$" (`a = π/p′`,
 so `sin a = sin(π/p)`, `cos a = −cos(π/p)`) and :99 "Here $T(p)=s_0^2\mathcal F(p)/(4c_0^4)$, so the two functions have the same sign" (on `1 < p < 2`;
 `localD2` is `d²`, `localF` is `F`, `s₀ = sin(π/p)`, `c₀ = −cos(π/p)`). -/
 theorem q15_sec4b_T_sign (p : ℝ) :
@@ -3152,7 +3155,7 @@ theorem q15_sec4b_T_sign (p : ℝ) :
     (1 < p → p < 2 → SignType.sign (localD2 p) = SignType.sign (localF p)) :=
   GKSharp.Proofs.Q15Contact.q15_sec4b_T_sign_proved p
 
-/-- short_v3.40/sec4b_failure.tex:30 "The sign of $\partial_y\log|w|$ is the sign of $1+\lambda-c_0(r+\lambda/r)$: it is
+/-- short_v3.70/sec4b_failure.tex:30 "The sign of $\partial_y\log|w|$ is the sign of $1+\lambda-c_0(r+\lambda/r)$: it is
 negative, positive, negative across the two positive roots. Thus the smaller root is a minimum and the larger a maximum.
 Since $1+\lambda-\sigma<0$, the quadratic $r^2-\sigma r+\lambda$ is negative at $r=1$, placing $1$ between the roots"
 (`0 < λ < 1`; on the ray `t = θ₀`, `ζ = e^{y+iθ₀}`, `r = e^y`; the roots are `λ/r_*` and `r_*`). -/
@@ -3171,7 +3174,7 @@ theorem q15_sec4b_ray_signs (p lam : ℝ) (hp : 1 < p) (hp2 : p < 2) (hlam : lam
     1 + lam - sigmaContact p lam < 0 ∧ (1 : ℝ) ^ 2 - sigmaContact p lam * 1 + lam < 0 :=
   GKSharp.Proofs.Q15Contact.q15_sec4b_ray_signs_proved p lam hp hp2 hlam
 
-/-- short_v3.40/sec4b_failure.tex:68 "Write $X=r^2$ and $\delta=1-\lambda$. The contact identities give
+/-- short_v3.70/sec4b_failure.tex:68 "Write $X=r^2$ and $\delta=1-\lambda$. The contact identities give
 $\chi_y=X/(X-\lambda)$, $\sigma/v-p\chi_y+p/2=(1-p/2)\sigma/v$, $s_0^2v/(rD_1)=(X-1)/(X+\lambda)$. Hence
 $2\lambda s_0^2v/(rD_1)+\delta=(1+\lambda)(X-\lambda)/(X+\lambda)=c_0v$, $c_0^2v^2=(1+\lambda)^2-4\lambda c_0^2$. The first
 identity combines the two positive terms above into $p\delta c_0/(s_0^2v)$" (`−1 < λ < 1`; the terms are positive for
@@ -3194,7 +3197,7 @@ theorem q15_sec4b_step6_identities (p lam : ℝ) (hp : 1 < p) (hp2 : p < 2) (hla
     (0 < lam → 0 < 2 * p * lam * δ / (r * v * D) ∧ 0 < p * δ ^ 2 / (sn p ^ 2 * v ^ 2)) :=
   GKSharp.Proofs.Q15Contact.q15_sec4b_step6_identities_proved p lam hp hp2 hlam
 
-/-- short_v3.40/sec4b_failure.tex:68 "Put $B_0=\delta(1+\lambda)^2/(c_0^3s_0^2v^3)>0$. Dividing
+/-- short_v3.70/sec4b_failure.tex:68 "Put $B_0=\delta(1+\lambda)^2/(c_0^3s_0^2v^3)>0$. Dividing
 by $B_0$ then gives $e^{qy_*}\mu_*''(\theta_0)/(p\mathcal{P} B_0)=(p-1)c_0^4v^2/(1+\lambda)^2-s_0^2(1-p/2)^2$. The second identity and
 $c_0^2+s_0^2=1$ now yield" the bracket of :70-72 "$(p-1)(1-4\lambda c_0^4/(1+\lambda)^2)-p^2s_0^2/4$". -/
 theorem q15_sec4b_step6_normalized (p lam : ℝ) (hp : 1 < p) (hp2 : p < 2) (hlam : lam ∈ Ioo (-1 : ℝ) 1) :
@@ -3207,7 +3210,7 @@ theorem q15_sec4b_step6_normalized (p lam : ℝ) (hp : 1 < p) (hp2 : p < 2) (hla
       (p - 1) * (1 - 4 * lam * cs p ^ 4 / (1 + lam) ^ 2) - p ^ 2 * sn p ^ 2 / 4 :=
   GKSharp.Proofs.Q15Contact.q15_sec4b_step6_normalized_proved p lam hp hp2 hlam
 
-/-- short_v3.40/sec4b_failure.tex:138 "Here $(C-1)/\delta=(C-s_0)/(s_0(C+1))$, by $s_0(C^2-1)=\delta(C-s_0)$; the right
+/-- short_v3.70/sec4b_failure.tex:138 "Here $(C-1)/\delta=(C-s_0)/(s_0(C+1))$, by $s_0(C^2-1)=\delta(C-s_0)$; the right
 side is regular at $\delta=0$" (`C = C(δ)`, the root near 1 of `s₀C² − δC − s₀(1 − δ) = 0`, any `δ < 1`). -/
 theorem q15_sec4b_cDelta_quotient (p δ : ℝ) (hp : 1 < p) (hd : δ < 1) :
     sn p * (cDelta p δ ^ 2 - 1) = δ * (cDelta p δ - sn p) ∧
@@ -3216,7 +3219,7 @@ theorem q15_sec4b_cDelta_quotient (p δ : ℝ) (hp : 1 < p) (hd : δ < 1) :
     ContinuousAt (fun d => (cDelta p d - sn p) / (sn p * (cDelta p d + 1))) 0 :=
   GKSharp.Proofs.Q15Contact.q15_sec4b_cDelta_quotient_proved p δ hp hd
 
-/-- short_v3.40/sec5d_monotone.tex:20 "The identities $\lambda r=-\sin(\gamma-a)/\sin(\gamma+a)$,
+/-- short_v3.70/sec5d_monotone.tex:20 "The identities $\lambda r=-\sin(\gamma-a)/\sin(\gamma+a)$,
 $s_2-rs_1=\sin(\gamma+a)\sin2b/\sin(\gamma+b)$, $|1+\lambda z_\theta|=\sin2a/\sin(\gamma+a)$ follow from (5.9), the
 formula for $r$, and the sine addition formulas; the last identity follows by squaring, since both sides are positive"
 (`a = θ/2`, `b = εa`, `ε = p − 1`, `s₁ = sin((1−q)θ)`, `s₂ = sin(qθ)`, `q = p/2`, `r = R(θ)`). -/
@@ -3233,7 +3236,7 @@ theorem q15_sec5d_substitutions {p lam θ : ℝ} (hp1 : 1 < p) (hp2 : p < 2)
     0 < Real.sin (2 * a) / Real.sin (γ + a) :=
   GKSharp.Proofs.Q15Monotone.q15_sec5d_substitutions_proved hp1 hp2 hl hl1 hθ0 hθ
 
-/-- short_v3.40/sec5d_monotone.tex:34 "To clear the cotangents, put $U=\sin(\gamma-a)\sin(\gamma+a)=(\cos2a-X)/2$,
+/-- short_v3.70/sec5d_monotone.tex:34 "To clear the cotangents, put $U=\sin(\gamma-a)\sin(\gamma+a)=(\cos2a-X)/2$,
 $V=\sin(\gamma-b)\sin(\gamma+b)=(\cos2b-X)/2$, $N=\sin2a\,V-\sin2b\,U$, $S=UV$. Cotangent sums and differences give
 $SM_\gamma=N$, $SM_a=(\varepsilon U-V)\sin2\gamma$, $SL_\gamma=\tfrac12[(U-\varepsilon V)\sin2\gamma+\varepsilon N]$,
 $SL_a=\tfrac\varepsilon2[(\varepsilon U-V)\sin2\gamma+N]+2\varepsilon UV(\cot2a-\cot2b)$. In $S^2\mathcal E=(SL_a)(SM_\gamma)-(SL_\gamma)(SM_a)$
@@ -3261,7 +3264,7 @@ theorem q15_sec5d_cleared {p a g : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (ha0 : 0 < a
       2 * ε * (Real.cot (2 * a) - Real.cot (2 * b)) * N :=
   GKSharp.Proofs.Q15Monotone.q15_sec5d_cleared_proved hp1 hp2 ha0 ha hg hga
 
-/-- short_v3.40/sec5d_monotone.tex:35 "Since $\sin2a\sin2b(\cot2a-\cot2b)=-\sin u_3$ and $2N=\sin u_3-(\sin u_1-\sin u_2)X$,
+/-- short_v3.70/sec5d_monotone.tex:35 "Since $\sin2a\sin2b(\cot2a-\cot2b)=-\sin u_3$ and $2N=\sin u_3-(\sin u_1-\sin u_2)X$,
 this gives $2\sin u_1\sin u_2\,\mathcal ES=\Pi(X)$" (Lean route: the coefficients of X², X, 1 are compared directly,
 not through the quadratic Π_1; as an identity in `X`, wherever `UV ≠ 0`; `ε = p − 1`, `b = εa`,
 `θ = 2a`). -/
@@ -3279,8 +3282,8 @@ theorem q15_sec5d_Pi_coefficients {p a : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (ha0 :
         monoPi ε (2 * a) X :=
   GKSharp.Proofs.Q15Monotone.q15_sec5d_Pi_coefficients_proved hp1 hp2 ha0 ha
 
-/-- short_v3.40/P019_paper.tex:80 "These include the ratios of all real pairs $a,b$ with $ab\ne0$ ($|\rho|=1$, $\rho\ne\pm1$)"
-(`ρ = (a + ib)/(a − ib)`); the sharp real cases ρ = ±1 are λ = 1 and λ = −1 of Theorem 1.1 (l.104: "the bound is sharp for $\lambda=1$ and for $p=2$"; l.100: "If $\lambda\le0$ is real"). -/
+/-- short_v3.70/P019_paper.tex:80 "These include the ratios of all real pairs $a,b$ with $ab\ne0$ ($|\rho|=1$, $\rho\ne\pm1$)"
+(`ρ = (a + ib)/(a − ib)`); the sharp real cases ρ = ±1 are λ = 1 and λ = −1 of Theorem 1.1 (l.104: "the bound is sharp for $\lambda=1$, for $p=2$ and for $\alpha=0$"; l.100: "If $\lambda\le0$ is real"). -/
 theorem q15_normcorr_real_ratio {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)] (hp : 1 < p) (P : RieszProjection p)
     (a b : ℝ) (hab : (a : ℂ) - Complex.I * b ≠ 0) :
     let ρ := ((a : ℂ) + Complex.I * b) / ((a : ℂ) - Complex.I * b)
@@ -3288,7 +3291,7 @@ theorem q15_normcorr_real_ratio {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)] (hp : 
     (ρ.im = 0 → pencilNorm P ρ = gk p ρ) ∧ (gk p ρ < pencilNorm P ρ → ρ.im ≠ 0) :=
   GKSharp.Proofs.Q15Misc.q15_normcorr_real_ratio_proved hp P a b hab
 
-/-- short_v3.40/sec4a_criterion.tex:38 "Uniqueness of the minimizing $y_*$ (Lemma 4.1) and locally uniform coercivity
+/-- short_v3.70/sec4a_criterion.tex:38 "Uniqueness of the minimizing $y_*$ (Lemma 4.1) and locally uniform coercivity
 (Section 2.2) imply that any nearby minimizers $y_t$ tend to $y_*$ as $t\to\theta_0$. Minimality gives
 $\Gamma_C(y_t,t)-\Gamma_C(y_t,\theta_0)\le m_C(t)-m_C(\theta_0)\le\Gamma_C(y_*,t)-\Gamma_C(y_*,\theta_0)$. Dividing by
 $t-\theta_0$ ... gives $m_C'(\theta_0)=\partial_t\Gamma_C(y_*,\theta_0)$"; with :37
@@ -3310,7 +3313,7 @@ theorem q15_sec2_envelope_route {p : ℝ} (hp : 1 < p) (hp2 : p < 2) (lam : ℝ)
     kConst p lam = -deriv (GKSharp.obstacle p C lam) θ₀ / (p / 2) :=
   GKSharp.Proofs.Q15Misc.q15_sec2_envelope_route_proved hp hp2 lam hlam
 
-/-- short_v3.40/sec5e_cstar.tex:26 "So $(*)$ holds (at $z=-1$ by continuity)" ("If" part of Theorem 5.3, :15-25:
+/-- short_v3.70/sec5e_cstar.tex:26 "So $(*)$ holds (at $z=-1$ by continuity)" ("If" part of Theorem 5.3, :15-25:
 `1 < p < 2`, `0 < λ < 1`, `h(λ, p) ≥ 0`, `λ < λ_loc(p)`; `(*)` is `𝒟_C ≥ 0` on `ℂ`). -/
 theorem q15_sec5e_star_holds {p : ℝ} (hp1 : 1 < p) (hp2 : p < 2) {lam : ℝ} (hl0 : 0 < lam) (hl1 : lam < 1)
     (hh : kConst p lam ≤ GKSharp.obstacle p (gk p lam) lam 0) (hloc : lam < lambdaLoc p) :
@@ -3323,7 +3326,7 @@ end Q15Rows
 section Q19Rows
 open GKSharp.Proofs.Q19Rows
 
-/-- short_v3.40/P019_paper.tex:121 "On this subspace the constant in the displayed inequality becomes, after division by
+/-- short_v3.70/P019_paper.tex:121 "On this subspace the constant in the displayed inequality becomes, after division by
 $1+t$, $(1+t^2\tan^2(\pi/(2p)))^{1/2}/(1+t)$ ... For example, at $t=1$, that is, $\lambda=0$, the normalized constant is
 $1/(2\cos(\pi/(2p)))=\sin(\pi/(2p))\,\GK_p(0)$, strictly smaller than $\GK_p(0)=1/\sin(\pi/p)$" (every `p > 1`). -/
 theorem q19_intro_hkv_example {p : ℝ} (hp : 1 < p) :
@@ -3333,7 +3336,7 @@ theorem q19_intro_hkv_example {p : ℝ} (hp : 1 < p) :
     gk p 0 = 1 / Real.sin (Real.pi / p) :=
   q19_intro_hkv_example_proved hp
 
-/-- short_v3.40/sec2_obstacle.tex:42 "namely $C=\bigl((1-\lambda)+\sqrt{(1-\lambda)^2+4\lambda s_0^2}\bigr)/(2s_0)$"
+/-- short_v3.70/sec2_obstacle.tex:42 "namely $C=\bigl((1-\lambda)+\sqrt{(1-\lambda)^2+4\lambda s_0^2}\bigr)/(2s_0)$"
 (`C = GK_p(λ)` the larger root of (2.2), `s₀ = sin(π/p)`; here for every `p > 1` and every `λ < 1`, with the
 radicand nonnegative). -/
 theorem q19_sec2_gk_explicit {p : ℝ} (hp : 1 < p) {lam : ℝ} (hlam : lam < 1) :
@@ -3342,7 +3345,7 @@ theorem q19_sec2_gk_explicit {p : ℝ} (hp : 1 < p) {lam : ℝ} (hlam : lam < 1)
       (2 * Real.sin (Real.pi / p)) :=
   q19_sec2_gk_explicit_proved hp hlam
 
-/-- short_v3.40/sec2_obstacle.tex:69 "indeed $f(x)=\varphi(x/q)$ satisfies $f''+f=q^{-2}(\varphi''+q^2\varphi)(x/q)$"
+/-- short_v3.70/sec2_obstacle.tex:69 "indeed $f(x)=\varphi(x/q)$ satisfies $f''+f=q^{-2}(\varphi''+q^2\varphi)(x/q)$"
 (here for twice-differentiable `φ` and every `q ≠ 0`; the comparison with [HKV, (3.1)] in the same sentence is context). -/
 theorem q19_sec2_rescale {q : ℝ} (hq : q ≠ 0) {φ : ℝ → ℝ} (hφ1 : Differentiable ℝ φ)
     (hφ2 : Differentiable ℝ (deriv φ)) (x : ℝ) :
@@ -3350,7 +3353,7 @@ theorem q19_sec2_rescale {q : ℝ} (hq : q ≠ 0) {φ : ℝ → ℝ} (hφ1 : Dif
       (q ^ 2)⁻¹ * (deriv (deriv φ) (x / q) + q ^ 2 * φ (x / q)) :=
   q19_sec2_rescale_proved hq hφ1 hφ2 x
 
-/-- short_v3.40/sec5d_monotone.tex:35 (proof of Lemma 5.7 (label signformula), `ε = p − 1`, `b = εa`, `θ = 2a`,
+/-- short_v3.70/sec5d_monotone.tex:35 (proof of Lemma 5.7 (label signformula), `ε = p − 1`, `b = εa`, `θ = 2a`,
 `u₁ = 2a`, `u₂ = 2b`, `u₃ = 2(a − b)`, `X = cos 2γ`, `U, V` the affine forms, `N = sin2a V − sin2b U`):
 "Write the first term as $\Pi_1(X)/2$, where $\Pi_1:=[\varepsilon N^2-(U-\varepsilon V)(\varepsilon U-V)(1-X^2)]/(UV)$.
 Its numerator vanishes where $U=0$ and where $V=0$: there $1-X^2$ equals $\sin^22a$, respectively $\sin^22b$, and $N$
@@ -3376,14 +3379,14 @@ theorem q19_sec5d_q_closed {p a : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (ha0 : 0 < a)
     ∀ X : ℝ, 2 * N X = Real.sin (2 * (a - b)) - (Real.sin (2 * a) - Real.sin (2 * b)) * X :=
   q19_sec5d_q_closed_proved hp1 hp2 ha0 ha
 
-/-- short_v3.40/sec5d_monotone.tex:55 (proof of Lemma 5.8 (label onevar), before (5.10)): "for the constant term,
+/-- short_v3.70/sec5d_monotone.tex:55 (proof of Lemma 5.8 (label onevar), before (5.10)): "for the constant term,
 $\sin^2u_3=\sin^2u_1+\sin^2u_2-2\sin u_1\sin u_2\cos u_3$" (`u₃ = u₁ − u₂`; for all real `u₁, u₂`). -/
 theorem q19_sec5d_constant_term (u₁ u₂ : ℝ) :
     Real.sin (u₁ - u₂) ^ 2 =
       Real.sin u₁ ^ 2 + Real.sin u₂ ^ 2 - 2 * Real.sin u₁ * Real.sin u₂ * Real.cos (u₁ - u₂) :=
   q19_sec5d_constant_term_proved u₁ u₂
 
-/-- short_v3.40/sec5d_monotone.tex:18 "Write $D=(rs_2-s_1)+\lambda r(s_2-rs_1)$. With $r=\sin(\gamma-b)/\sin(\gamma+b)$,
+/-- short_v3.70/sec5d_monotone.tex:18 "Write $D=(rs_2-s_1)+\lambda r(s_2-rs_1)$. With $r=\sin(\gamma-b)/\sin(\gamma+b)$,
 product-to-sum gives $s_1-rs_2=\sin2b\,\sin(a-\gamma)/\sin(\gamma+b)$ and $s_2-rs_1=\sin2b\,\sin(\gamma+a)/\sin(\gamma+b)$"
 (`a = θ/2`, `b = (p − 1)a`, `s₁ = sin(a − b)`, `s₂ = sin(a + b)`, `D = D(θ, r)` of (5.3); wherever `sin(γ + b) ≠ 0`). -/
 theorem q20_sec5d_D_split (p lam θ γ : ℝ) (hplus : Real.sin (γ + (p - 1) * (θ / 2)) ≠ 0) :
@@ -3401,7 +3404,7 @@ end Q19Rows
 section FinalRows
 open Set GKSharp.Threshold GKSharp.ComputerChecked
 
-/-- short_v3.40/sec4b_failure.tex:115 "For $1<p<p_0$ let $(0,\lambda_1(p)]$ be the largest interval of the form
+/-- short_v3.70/sec4b_failure.tex:115 "For $1<p<p_0$ let $(0,\lambda_1(p)]$ be the largest interval of the form
 $(0,\lambda]$ on which $h(\cdot,p)\ge0$. It exists, and $\lambda_1(p)<1$"; P019_paper.tex:106 "with $\lambda_1(p)<1$, and
 $\lambda_1(p)<\lambda_{\mathrm{loc}}(p)$ when $p<p_c$ (Propositions~\ref{prop:F} and~\ref{prop:edge}). So the bound is
 sharp for $0<\lambda\le\lambda_1(p)$" (the largest interval: `λ₁` is the greatest `λ ∈ (0, 1)` with `h(·, p) ≥ 0` on
@@ -3416,7 +3419,7 @@ theorem sec4_lambda1_interval (hn : CheckOmegaNeg) (hr : CheckOmegaRoot) (hc : C
       (p < pc → lam1 < lambdaLoc p) ∧ ∀ lam ∈ Ioc 0 lam1, pencilNorm P lam = gk p lam :=
   GKSharp.Proofs.FinalRows.sec4_lambda1_interval_proved hn hr hc hb hs P hp1 hpp0
 
-/-- Lemma 4.6(b) (label Pc), short_v3.40/sec4b_failure.tex:95 "For $0<\lambda<1$ the left side of \eqref{eq:localfail}
+/-- Lemma 4.6(b) (label Pc), short_v3.70/sec4b_failure.tex:95 "For $0<\lambda<1$ the left side of \eqref{eq:localfail}
 is less than $1$, equal to $1$ or greater than $1$ according as $\lambda<\lambda_{\mathrm{loc}}(p)$,
 $\lambda=\lambda_{\mathrm{loc}}(p)$ or $\lambda>\lambda_{\mathrm{loc}}(p)$. Moreover $0<\lambda_{\mathrm{loc}}(p)\le1$"
 (`1 < p < 2`; the left side of (4.2) is `localTest p λ`). -/
@@ -3426,7 +3429,7 @@ theorem sec4_lemma_Pc_b (p : ℝ) (hp : 1 < p) (hp2 : p < 2) :
     0 < lambdaLoc p ∧ lambdaLoc p ≤ 1 :=
   GKSharp.Proofs.FinalRows.sec4_lemma_Pc_b_proved p hp hp2
 
-/-- Proof of Theorem 5.3 (label Cstar), "If", short_v3.40/sec5e_cstar.tex:15-17: "At $\theta=\theta_0$ we have
+/-- Proof of Theorem 5.3 (label Cstar), "If", short_v3.70/sec5e_cstar.tex:15-17: "At $\theta=\theta_0$ we have
 $m\omega=q\theta_0=\pi/2$ and $\sin\omega=c_0$, so $\Psi_m(\omega)=(m^2c_0^2-1)/c_0^4$. Since $m^2/(m^2-1)=pp'/4$ and
 $1/(m^2-1)=pp'/4-1$, \[ \frac{\Psi_m(\omega)}{m^2-1}=\frac{1-(pp'/4)s_0^2}{c_0^4} , \] so
 $\Psi_m(\omega)>4(m^2-1)\lambda/(1+\lambda)^2$ is equivalent to $(pp'/4)s_0^2+4\lambda c_0^4/(1+\lambda)^2<1$"
@@ -3443,7 +3446,7 @@ theorem sec5e_routeB_identities {p lam : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl : 
       localTest p lam < 1) :=
   GKSharp.Proofs.FinalRows.sec5e_routeB_identities_proved hp1 hp2 hl
 
-/-- Proof of Theorem 5.3 (label Cstar), "If", short_v3.40/sec5e_cstar.tex:15: "Assume $h(\lambda, p) \ge 0$ and
+/-- Proof of Theorem 5.3 (label Cstar), "If", short_v3.70/sec5e_cstar.tex:15: "Assume $h(\lambda, p) \ge 0$ and
 $\lambda < \lambda_{\mathrm{loc}}(p)$. By Lemma~\ref{lem:Pc}(b), the left side of \eqref{eq:localfail} is less than $1$.
 We first show that $K_f'(\theta_0)<0$." and l.17 "Lemma~\ref{lem:onevar} therefore gives $K_f'(\theta_0)<0$"
 (`1 < p < 2`, `0 < λ < 1`, `θ₀ = π/p`; the row does not need `h(λ, p) ≥ 0`). -/
@@ -3451,7 +3454,7 @@ theorem sec5e_Kf_slope_routeB {p lam : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl0 : 0
     (hloc : lam < lambdaLoc p) : deriv (curveKf p lam) (Real.pi / p) < 0 :=
   GKSharp.Proofs.FinalRows.sec5e_Kf_slope_routeB_proved hp1 hp2 hl0 hl1 hloc
 
-/-- Proposition 4.3 (label F), proof, short_v3.40/sec4a_criterion.tex:94: "By Jordan's inequality $s_0 \ge 2(p-1)/p$, so
+/-- Proposition 4.3 (label F), proof, short_v3.70/sec4a_criterion.tex:94: "By Jordan's inequality $s_0 \ge 2(p-1)/p$, so
 $s_0^{p-1}\ge(p-1)^{p-1}\ge0.001^{0.001}>0.9931$, since $x^x$ decreases on $(0,1/e)$" (the range `1 < p ≤ 1.001`, that
 is `0 < p − 1 ≤ 0.001`; `s₀ = sn p`; the row states that `x^x` decreases on `(0, 1/e]`). -/
 theorem sec4_omega_endpoint_chain {p : ℝ} (hp : 1 < p) (hhi : p - 1 ≤ 1 / 1000) :

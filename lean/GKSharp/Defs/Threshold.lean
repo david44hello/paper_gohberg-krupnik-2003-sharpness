@@ -1,5 +1,5 @@
 /- GKSharp/Defs/Threshold.lean - scalar thresholds, with no assumed properties.
-Paper places: short_v3.40/.
+Paper places: short_v3.70/.
 Copyright (C) Dave Goel 2026--now. -/
 import GKSharp.Defs.RealLine
 

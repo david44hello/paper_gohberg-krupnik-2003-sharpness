@@ -1,10 +1,11 @@
-# AUDIT_NOTES.md — notes for readers of AUDIT.md (paper short v3.40)
+# AUDIT_NOTES.md — notes for readers of AUDIT.md (paper short v3.70)
+## version 1.20 - 20261030_2210 - short v3.70: tags; caption wording in note 19.
 ## version 1.10 - 20261030_1240 - short v3.40: pointers re-pointed; notes on the Figure 1 caption (18, 19).
 ## version 1.00 - 20261030_0630 - first: routes, definitions, pointers, cited inputs, approximations.
 
 These notes list the places where the Lean development differs in form from the paper, or where a reader of AUDIT.md
 needs one more sentence. Every claim of the paper is a row of GKSharp/Paper/Statements.lean (listed in AUDIT.md) or a
-coverage link in GKSharp/Paper/CoverageLinks/. File and line numbers refer to the frozen short v3.40 sources.
+coverage link in GKSharp/Paper/CoverageLinks/. File and line numbers refer to the frozen short v3.70 sources.
 
 ## Routes
 
@@ -81,5 +82,5 @@ Where the Lean proof takes a different route from the paper (the statements are 
    `sec4_lambda1_interval` and the link `cover_q17_intro_regime_sharp` (sharp on and below λ₁(p) for p < p₀, and for
    every λ when p₀ ≤ p < 2), the link `cover_final_caption_upper_curve` (not sharp on and above λ_loc(p) for p < p_c;
    λ_loc(p_c) = 1) and the row `thm_classification` (clauses (c) and (d), for the hatched band).
-19. In the caption (l.113), "its outcome is known only at some points" and "We do not know whether it is sharp anywhere
+19. In the caption (l.113), "its outcome is known only in part" and "We do not know whether it is sharp anywhere
    in the band" say what is not known; they are not claims and have no row.

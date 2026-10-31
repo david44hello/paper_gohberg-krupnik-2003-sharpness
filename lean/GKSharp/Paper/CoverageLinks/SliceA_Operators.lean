@@ -121,21 +121,21 @@ theorem cover_slice_N12 : ∀ (a b : ℝ) (ha : (a : ℂ) - Complex.I * b ≠ 0)
     ‖((a : ℂ) + Complex.I * b) / ((a : ℂ) - Complex.I * b)‖ = 1 :=
   @GKSharp.Paper.normcorr_ratio_unimodular
 
-/-- Coverage link (renamed): the approved target `reduction_gk_conj` of slice SliceA_Operators, from installed rows. Paper place: sec2_obstacle.tex:22–27 (short v3.40). -/
+/-- Coverage link (renamed): the approved target `reduction_gk_conj` of slice SliceA_Operators, from installed rows. Paper place: sec2_obstacle.tex:22–27 (short v3.70). -/
 theorem cover_reduction_gk_conj : ∀ (p : ℝ) (ρ : ℂ), gk p (star ρ) = gk p ρ :=
   @GKSharp.Paper.sec2_gk_conj
 
-/-- Coverage link (renamed): the approved target `reduction_gk_inv` of slice SliceA_Operators, from installed rows. Paper place: sec2_obstacle.tex:22–28 (short v3.40). -/
+/-- Coverage link (renamed): the approved target `reduction_gk_inv` of slice SliceA_Operators, from installed rows. Paper place: sec2_obstacle.tex:22–28 (short v3.70). -/
 theorem cover_reduction_gk_inv : ∀ (p : ℝ) (ρ : ℂ) (hρ : ρ ≠ 0),
     gk p ρ = ‖ρ‖ * gk p (1 / ρ) :=
   by intro p ρ hρ; exact GKSharp.Paper.sec5_gk_inv p hρ
 
-/-- Coverage link (stronger): the approved target `classical_projection_norm` of slice SliceA_Operators, from installed rows. Paper place: sec2_obstacle.tex:36–37 (short v3.40). -/
+/-- Coverage link (stronger): the approved target `classical_projection_norm` of slice SliceA_Operators, from installed rows. Paper place: sec2_obstacle.tex:36–37 (short v3.70). -/
 theorem cover_classical_projection_norm : ∀ (hp : 1 < p) (P : RieszProjection p),
     pencilNorm P 0 = 1 / sin (Real.pi / p) :=
   by intro hp P; obtain ⟨Q, hQ⟩ := GKSharp.Cited.hv2000_riesz_norm p hp; simpa [GKSharp.pencilNorm, GKSharp.pencil_one_zero, GKSharp.riesz_unique P Q] using hQ
 
-/-- Coverage link (stronger (thm_C1 at lam = -1 + sec2_gk_at_minus_one)): the approved target `classical_conjugate_norm` of slice SliceA_Operators, from installed rows. Paper place: sec2_obstacle.tex:36–37 (short v3.40). -/
+/-- Coverage link (stronger (thm_C1 at lam = -1 + sec2_gk_at_minus_one)): the approved target `classical_conjugate_norm` of slice SliceA_Operators, from installed rows. Paper place: sec2_obstacle.tex:36–37 (short v3.70). -/
 theorem cover_classical_conjugate_norm : ∀ (hp : 1 < p) (hp2 : p < 2) (P : RieszProjection p),
     pencilNorm P (-1) = tan (Real.pi / (2 * p)) :=
   by intro hp hp2 P; have h := GKSharp.Paper.thm_C1 hp P (lam := -1) (by norm_num) (by norm_num); have hg := GKSharp.Paper.sec2_gk_at_minus_one hp hp2; push_cast at h; rw [h, hg]

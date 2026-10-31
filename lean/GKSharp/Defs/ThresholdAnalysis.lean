@@ -1,5 +1,5 @@
 /- GKSharp/Defs/ThresholdAnalysis.lean - criterion/contact/strip objects.
-Paper places: short_v3.40/.
+Paper places: short_v3.70/.
 No axioms, proof placeholders or assumed properties.
 Copyright (C) Dave Goel 2026--now. -/
 import GKSharp.Defs.Threshold

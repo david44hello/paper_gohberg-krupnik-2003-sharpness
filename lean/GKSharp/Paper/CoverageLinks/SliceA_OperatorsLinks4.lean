@@ -27,7 +27,7 @@ noncomputable def circlePower (p : ℝ) (f : ℝ → ℂ) : ℝ :=
 namespace Paper
 variable {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)]
 
-/-- Coverage link (renamed (Proofs/RealLineFinal)): the approved target `slice_N04` of slice SliceA_OperatorsLinks4, from installed rows. Paper place: norm_correspondence.tex l.23-30 (short v3.40). -/
+/-- Coverage link (renamed (Proofs/RealLineFinal)): the approved target `slice_N04` of slice SliceA_OperatorsLinks4, from installed rows. Paper place: norm_correspondence.tex l.23-30 (short v3.70). -/
 theorem cover_slice_N04 : ∀ (hp : 1 < p) (P : RieszProjection p) (α β : ℂ) (T : RealLinePencil p α β)
     (d : ℝ) (hd : 0 < d ∧ d < 1) (η : SchwartzMap ℝ ℂ)
     (hη : HasCompactSupport (paperFourier η)) (c : ℤ →₀ ℂ),
@@ -39,7 +39,7 @@ theorem cover_slice_N04 : ∀ (hp : 1 < p) (P : RieszProjection p) (α β : ℂ)
         T.map (Z.toLp (ENNReal.ofReal p) volume) = W.toLp (ENNReal.ofReal p) volume :=
   GKSharp.Proofs.RealLineFinal.slice_N04_proved
 
-/-- Coverage link (renamed (Proofs/RealLineFinal)): the approved target `slice_N04_minus` of slice SliceA_OperatorsLinks4, from installed rows. Paper place: norm_correspondence.tex l.38 (short v3.40). -/
+/-- Coverage link (renamed (Proofs/RealLineFinal)): the approved target `slice_N04_minus` of slice SliceA_OperatorsLinks4, from installed rows. Paper place: norm_correspondence.tex l.38 (short v3.70). -/
 theorem cover_slice_N04_minus : ∀ (hp : 1 < p) (α β : ℂ) (T : RealLinePencil p α β)
     (d : ℝ) (hd : 0 < d ∧ d < 1) (η : SchwartzMap ℝ ℂ)
     (hη : HasCompactSupport (paperFourier η)) (c : ℤ →₀ ℂ),
@@ -51,7 +51,7 @@ theorem cover_slice_N04_minus : ∀ (hp : 1 < p) (α β : ℂ) (T : RealLinePenc
         T.map (Z.toLp (ENNReal.ofReal p) volume) = W.toLp (ENNReal.ofReal p) volume :=
   GKSharp.Proofs.RealLineFinal.slice_N04_minus_proved
 
-/-- Coverage link (renamed (Proofs/SchwartzPencilFinal)): the approved target `slice_N08` of slice SliceA_OperatorsLinks4, from installed rows. Paper place: norm_correspondence.tex l.46-47 (short v3.40). -/
+/-- Coverage link (renamed (Proofs/SchwartzPencilFinal)): the approved target `slice_N08` of slice SliceA_OperatorsLinks4, from installed rows. Paper place: norm_correspondence.tex l.46-47 (short v3.70). -/
 theorem cover_slice_N08 : ∀ (hp : 1 < p) (α β : ℂ) (T : RealLinePencil p α β)
     (f : SchwartzMap ℝ ℂ) (hc : HasCompactSupport (paperFourier f))
     (hz : 0 ∉ tsupport (paperFourier f)),
@@ -59,7 +59,7 @@ theorem cover_slice_N08 : ∀ (hp : 1 < p) (α β : ℂ) (T : RealLinePencil p �
       ∀ ξ : ℝ, ξ ≠ 0 → paperFourier g ξ = (if 0 < ξ then α else β) * paperFourier f ξ :=
   GKSharp.Proofs.SchwartzPencilFinal.slice_N08_proved
 
-/-- Coverage link (renamed (Proofs/SchwartzPencilFinal)): the approved target `slice_N08_periodization` of slice SliceA_OperatorsLinks4, from installed rows. Paper place: norm_correspondence.tex l.46 (short v3.40). -/
+/-- Coverage link (renamed (Proofs/SchwartzPencilFinal)): the approved target `slice_N08_periodization` of slice SliceA_OperatorsLinks4, from installed rows. Paper place: norm_correspondence.tex l.46 (short v3.70). -/
 theorem cover_slice_N08_periodization : ∀ (hp : 1 < p) (P : RieszProjection p) (α β : ℂ)
     (T : RealLinePencil p α β) (f g : SchwartzMap ℝ ℂ)
     (hc : HasCompactSupport (paperFourier f)) (hz : 0 ∉ tsupport (paperFourier f))

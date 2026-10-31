@@ -1,8 +1,8 @@
-⚠ [9046/9115] Replayed GKSharp.Defs.GK
+⚠ [9046/9157] Replayed GKSharp.Defs.GK
 warning: GKSharp/Defs/GK.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [9055/9115] Replayed GKSharp.Defs.Pencil
+⚠ [9055/9157] Replayed GKSharp.Defs.Pencil
 warning: GKSharp/Defs/Pencil.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [9056/9115] Replayed GKSharp.Proofs.FourierDensity
+⚠ [9056/9157] Replayed GKSharp.Proofs.FourierDensity
 warning: GKSharp/Proofs/FourierDensity.lean:75:32: This simp argument is unused:
   Finsupp.filter_apply
 
@@ -17,7 +17,7 @@ Hint: Omit it from the simp argument list.
   [apply] simp [Ne.symm hnm]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [9058/9115] Replayed GKSharp.Proofs.Pencil
+⚠ [9058/9157] Replayed GKSharp.Proofs.Pencil
 warning: GKSharp/Proofs/Pencil.lean:44:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
@@ -50,9 +50,9 @@ Hint: Omit it from the simp argument list.
     shiftedHilbert, pencil, rieszMinus, ContinuousLinearMap.sub_apply, smul_sub, smul_smul]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [9077/9115] Replayed GKSharp.Proofs.ThresholdAlgebra
+⚠ [9077/9157] Replayed GKSharp.Proofs.ThresholdAlgebra
 warning: GKSharp/Proofs/ThresholdAlgebra.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [9079/9115] Replayed GKSharp.Proofs.EndpointBridge
+⚠ [9079/9157] Replayed GKSharp.Proofs.EndpointBridge
 warning: GKSharp/Proofs/EndpointBridge.lean:20:8: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
@@ -76,12 +76,12 @@ info: GKSharp/Proofs/EndpointBridge.lean:83:0: 'GKSharp.localF_positive_endpoint
 info: GKSharp/Proofs/EndpointBridge.lean:84:0: 'GKSharp.endpointLambda_eq_lambdaLoc' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/EndpointBridge.lean:85:0: 'GKSharp.contactK_eq_kConst' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/EndpointBridge.lean:86:0: 'GKSharp.clipped_sqrt_gap_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9080/9115] Replayed GKSharp.Proofs.LocalFCertificate
+⚠ [9080/9157] Replayed GKSharp.Proofs.LocalFCertificate
 warning: GKSharp/Proofs/LocalFCertificate.lean: imports `Mathlib.Tactic.Inclusion.Extension.IntervalDyadicReal.Tactic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 info: GKSharp/Proofs/LocalFCertificate.lean:100:0: 'GKSharp.cosTaylor12_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/LocalFCertificate.lean:101:0: 'GKSharp.localF_bracket_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/LocalFCertificate.lean:102:0: 'GKSharp.localF_bracket_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9084/9115] Replayed GKSharp.Proofs.GammaDerivative
+⚠ [9084/9157] Replayed GKSharp.Proofs.GammaDerivative
 warning: GKSharp/Proofs/GammaDerivative.lean:18:96: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
@@ -94,28 +94,28 @@ Note: This linter can be disabled with `set_option linter.unusedTactic false`
 warning: GKSharp/Proofs/GammaDerivative.lean:22:60: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [9085/9115] Replayed GKSharp.Proofs.ContactK
+⚠ [9085/9157] Replayed GKSharp.Proofs.ContactK
 warning: GKSharp/Proofs/ContactK.lean:36:44: Variable name `hp2` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _hp2
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [9086/9115] Replayed GKSharp.Proofs.EndpointElementary
+⚠ [9086/9157] Replayed GKSharp.Proofs.EndpointElementary
 warning: GKSharp/Proofs/EndpointElementary.lean:14:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
 warning: GKSharp/Proofs/EndpointElementary.lean:14:4: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [9087/9115] Replayed GKSharp.Proofs.PotentialLeaves
+⚠ [9087/9157] Replayed GKSharp.Proofs.PotentialLeaves
 warning: GKSharp/Proofs/PotentialLeaves.lean:12:34: Variable name `hp` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _hp
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [9090/9115] Replayed GKSharp.Proofs.Sec5Lambda
+⚠ [9090/9157] Replayed GKSharp.Proofs.Sec5Lambda
 warning: GKSharp/Proofs/Sec5Lambda.lean:22:8: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
@@ -126,7 +126,7 @@ warning: GKSharp/Proofs/Sec5Lambda.lean:22:8: Unused tactic linter: `ring` does 
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
 info: GKSharp/Proofs/Sec5Lambda.lean:45:0: 'GKSharp.Proofs.Sec5Lambda.sec5_Lambda_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9091/9115] Replayed GKSharp.Proofs.RealSegment
+⚠ [9091/9157] Replayed GKSharp.Proofs.RealSegment
 warning: GKSharp/Proofs/RealSegment.lean:25:29: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
@@ -203,7 +203,7 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
 info: GKSharp/Proofs/RealSegment.lean:118:0: 'GKSharp.Proofs.RealSegment.reduction_real_segment_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9092/9115] Replayed GKSharp.Proofs.CircleExtrema
+⚠ [9092/9157] Replayed GKSharp.Proofs.CircleExtrema
 warning: GKSharp/Proofs/CircleExtrema.lean:47:27: Variable name `hρ` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
@@ -224,7 +224,7 @@ Hint: Omit it from the simp argument list.
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
 info: GKSharp/Proofs/CircleExtrema.lean:98:0: 'GKSharp.Proofs.CircleExtrema.eq_5_2_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9093/9115] Replayed GKSharp.Proofs.MonotoneElementary
+⚠ [9093/9157] Replayed GKSharp.Proofs.MonotoneElementary
 warning: GKSharp/Proofs/MonotoneElementary.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: GKSharp/Proofs/MonotoneElementary.lean:21:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
@@ -244,9 +244,9 @@ Note: This linter can be disabled with `set_option linter.unusedTactic false`
 warning: GKSharp/Proofs/MonotoneElementary.lean:29:4: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [9094/9115] Replayed GKSharp.Proofs.MonotoneSine
+⚠ [9094/9157] Replayed GKSharp.Proofs.MonotoneSine
 warning: GKSharp/Proofs/MonotoneSine.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [9096/9115] Replayed GKSharp.Proofs.MonotoneIdentities
+⚠ [9096/9157] Replayed GKSharp.Proofs.MonotoneIdentities
 warning: GKSharp/Proofs/MonotoneIdentities.lean:38:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
@@ -265,12 +265,12 @@ Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus fa
 warning: GKSharp/Proofs/MonotoneIdentities.lean:139:2: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-ℹ [9101/9115] Replayed GKSharp.Proofs.ContactScalar
+ℹ [9101/9157] Replayed GKSharp.Proofs.ContactScalar
 info: GKSharp/Proofs/ContactScalar.lean:124:0: 'GKSharp.contact_root_properties' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/ContactScalar.lean:125:0: 'GKSharp.contact_rational_identities_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/ContactScalar.lean:126:0: 'GKSharp.contact_bZero_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/ContactScalar.lean:127:0: 'GKSharp.contact_signBracket_negative_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9112/9115] Replayed GKSharp.Proofs.ContactLog
+⚠ [9112/9157] Replayed GKSharp.Proofs.ContactLog
 warning: GKSharp/Proofs/ContactLog.lean:85:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
@@ -278,7 +278,7 @@ warning: GKSharp/Proofs/ContactLog.lean:85:4: Unused tactic linter: `<;>` should
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
 info: GKSharp/Proofs/ContactLog.lean:89:0: 'GKSharp.contact_local_log_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9113/9115] Replayed GKSharp.Proofs.ThresholdGammaLinks
+⚠ [9113/9157] Replayed GKSharp.Proofs.ThresholdGammaLinks
 warning: GKSharp/Proofs/ThresholdGammaLinks.lean:20:68: Variable name `hp` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
@@ -288,10 +288,10 @@ Note: This linter can be disabled with `set_option linter.unusedVariables false`
 info: GKSharp/Proofs/ThresholdGammaLinks.lean:33:0: 'GKSharp.threshold_gamma_even_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/ThresholdGammaLinks.lean:34:0: 'GKSharp.threshold_obstacle_even_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/ThresholdGammaLinks.lean:35:0: 'GKSharp.threshold_gamma_coordinate_bridge_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9114/9253] Replayed GKSharp.Proofs.LocalGapCertificate
+ℹ [9114/9157] Replayed GKSharp.Proofs.LocalGapCertificate
 info: GKSharp/Proofs/LocalGapCertificate.lean:133:0: 'GKSharp.localD2_uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/LocalGapCertificate.lean:134:0: 'GKSharp.checkLocalGap_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9117/9253] Replayed GKSharp.Proofs.SymmetricTaylor
+⚠ [9117/9157] Replayed GKSharp.Proofs.SymmetricTaylor
 warning: GKSharp/Proofs/SymmetricTaylor.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: GKSharp/Proofs/SymmetricTaylor.lean:35:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
@@ -300,7 +300,7 @@ warning: GKSharp/Proofs/SymmetricTaylor.lean:35:4: Unused tactic linter: `<;>` s
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
 info: GKSharp/Proofs/SymmetricTaylor.lean:64:0: 'GKSharp.symmetric_taylor_four_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9118/9253] Replayed GKSharp.Proofs.PotentialCoordinates
+ℹ [9118/9157] Replayed GKSharp.Proofs.PotentialCoordinates
 info: GKSharp/Proofs/PotentialCoordinates.lean:89:0: 'GKSharp.PotentialCoordinates.angularPotential_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/PotentialCoordinates.lean:90:0: 'GKSharp.PotentialCoordinates.homogeneousObstacle_homogeneous' depends on axioms: [propext,
  Classical.choice,
@@ -308,12 +308,12 @@ info: GKSharp/Proofs/PotentialCoordinates.lean:90:0: 'GKSharp.PotentialCoordinat
 info: GKSharp/Proofs/PotentialCoordinates.lean:91:0: 'GKSharp.PotentialCoordinates.homogeneousObstacle_continuous_of_obstacle' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-ℹ [9119/9253] Replayed GKSharp.Proofs.GammaCoercive
+ℹ [9119/9157] Replayed GKSharp.Proofs.GammaCoercive
 info: GKSharp/Proofs/GammaCoercive.lean:168:0: 'GKSharp.Coercive.gamma_uniform_coercive' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9120/9253] Replayed GKSharp.Proofs.ObstacleMinimum
+ℹ [9120/9157] Replayed GKSharp.Proofs.ObstacleMinimum
 info: GKSharp/Proofs/ObstacleMinimum.lean:112:0: 'GKSharp.slice_O12_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/ObstacleMinimum.lean:113:0: 'GKSharp.homogeneousObstacle_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9126/9253] Replayed GKSharp.Proofs.ContactRay
+⚠ [9126/9157] Replayed GKSharp.Proofs.ContactRay
 warning: GKSharp/Proofs/ContactRay.lean:50:8: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
@@ -331,7 +331,7 @@ warning: GKSharp/Proofs/ContactRay.lean:63:4: Unused tactic linter: `<;>` should
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
 info: GKSharp/Proofs/ContactRay.lean:115:0: 'GKSharp.contact_gk_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/ContactRay.lean:116:0: 'GKSharp.contact_ray_squared_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9127/9253] Replayed GKSharp.Proofs.ContactRayMaximum
+⚠ [9127/9157] Replayed GKSharp.Proofs.ContactRayMaximum
 warning: GKSharp/Proofs/ContactRayMaximum.lean:20:24: This simp argument is unused:
   mul_zero
 
@@ -349,9 +349,9 @@ Hint: Omit it from the simp argument list.
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
 info: GKSharp/Proofs/ContactRayMaximum.lean:102:0: 'GKSharp.contact_ray_max_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9130/9253] Replayed GKSharp.Proofs.NegativeContact
+⚠ [9130/9157] Replayed GKSharp.Proofs.NegativeContact
 warning: GKSharp/Proofs/NegativeContact.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [9134/9253] Replayed GKSharp.Proofs.GammaAsymptotics
+⚠ [9134/9157] Replayed GKSharp.Proofs.GammaAsymptotics
 warning: GKSharp/Proofs/GammaAsymptotics.lean:57:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
@@ -391,23 +391,23 @@ Note: This linter can be disabled with `set_option linter.unusedTactic false`
 info: GKSharp/Proofs/GammaAsymptotics.lean:109:0: 'GKSharp.Asymptotics.gamma_positive_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/GammaAsymptotics.lean:110:0: 'GKSharp.Asymptotics.gamma_negative_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/GammaAsymptotics.lean:111:0: 'GKSharp.Asymptotics.slice_O11_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9138/9253] Replayed GKSharp.Proofs.ExponentialLift
+ℹ [9138/9157] Replayed GKSharp.Proofs.ExponentialLift
 info: GKSharp/Proofs/ExponentialLift.lean:161:0: 'GKSharp.Lift.pair_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/ExponentialLift.lean:162:0: 'GKSharp.Lift.exponential_pair_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9139/9253] Replayed GKSharp.Proofs.DiscFromPairs
+ℹ [9139/9157] Replayed GKSharp.Proofs.DiscFromPairs
 info: GKSharp/Proofs/DiscFromPairs.lean:95:0: 'GKSharp.Lift.disc_bound_nozero' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/DiscFromPairs.lean:96:0: 'GKSharp.Lift.polynomialDiscBound_of_pairBound' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9140/9253] Replayed GKSharp.Proofs.NormDisc
+ℹ [9140/9157] Replayed GKSharp.Proofs.NormDisc
 info: GKSharp/Proofs/NormDisc.lean:24:0: 'GKSharp.slice_O24_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9141/9253] Replayed GKSharp.Proofs.HomogeneousFiniteCore
+ℹ [9141/9157] Replayed GKSharp.Proofs.HomogeneousFiniteCore
 info: GKSharp/Proofs/HomogeneousFiniteCore.lean:183:0: 'GKSharp.ProfileCore.homogeneous_finite_of_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/HomogeneousFiniteCore.lean:184:0: 'GKSharp.ProfileCore.profile_of_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9147/9253] Replayed GKSharp.Proofs.TheoremR
+ℹ [9147/9157] Replayed GKSharp.Proofs.TheoremR
 info: GKSharp/Proofs/TheoremR.lean:97:0: 'GKSharp.slice_O27_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/TheoremR.lean:98:0: 'GKSharp.thmR_only_if' depends on axioms: [propext, Classical.choice, Quot.sound, GKSharp.Cited.hkv_thm21]
 info: GKSharp/Proofs/TheoremR.lean:99:0: 'GKSharp.slice_O28_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/TheoremR.lean:100:0: 'GKSharp.slice_O18_proved' depends on axioms: [propext, Classical.choice, Quot.sound, GKSharp.Cited.hkv_thm21]
-⚠ [9148/9253] Replayed GKSharp.Proofs.Contact
+⚠ [9148/9157] Replayed GKSharp.Proofs.Contact
 warning: GKSharp/Proofs/Contact.lean:98:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
 If you'd rather continue using `push_neg` in your project, you can implement it as follows:
 ```
@@ -415,7 +415,7 @@ open Lean.Parser.Tactic in
 macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
   `(tactic| push $cfg:optConfig Not $[$loc]?)
 ```
-⚠ [9149/9253] Replayed GKSharp.Proofs.RealSegmentSign
+⚠ [9149/9157] Replayed GKSharp.Proofs.RealSegmentSign
 warning: GKSharp/Proofs/RealSegmentSign.lean:10:46: Variable name `C` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
@@ -431,7 +431,7 @@ Note: This linter can be disabled with `set_option linter.unusedVariables false`
 info: GKSharp/Proofs/RealSegmentSign.lean:27:0: 'GKSharp.Proofs.RealSegmentSign.reduction_phi_neg_below_mid_proved' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-⚠ [9150/9253] Replayed GKSharp.Proofs.EllipseCalculus
+⚠ [9150/9157] Replayed GKSharp.Proofs.EllipseCalculus
 warning: GKSharp/Proofs/EllipseCalculus.lean:25:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
@@ -457,9 +457,9 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
 info: GKSharp/Proofs/EllipseCalculus.lean:131:0: 'GKSharp.Proofs.EllipseCalculus.eq_5_3_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9151/9253] Replayed GKSharp.Proofs.EllipseSecond
+ℹ [9151/9157] Replayed GKSharp.Proofs.EllipseSecond
 info: GKSharp/Proofs/EllipseSecond.lean:108:0: 'GKSharp.Proofs.EllipseCalculus.real_power_second' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9152/9253] Replayed GKSharp.Proofs.CriticalMaximum
+⚠ [9152/9157] Replayed GKSharp.Proofs.CriticalMaximum
 warning: GKSharp/Proofs/CriticalMaximum.lean:126:36: `simp` already closes the goal
 
 Hint: Use `simp` instead of `simpa`:
@@ -480,13 +480,13 @@ Hint: Omit it from the simp argument list.
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
 info: GKSharp/Proofs/CriticalMaximum.lean:175:0: 'GKSharp.Proofs.CriticalMaximum.eq_5_6_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9153/9253] Replayed GKSharp.Proofs.MonotoneBplusA
+⚠ [9153/9157] Replayed GKSharp.Proofs.MonotoneBplusA
 warning: GKSharp/Proofs/MonotoneBplusA.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-ℹ [9158/9253] Replayed GKSharp.Proofs.ContactSpecification
+ℹ [9159/9271] Replayed GKSharp.Proofs.ContactSpecification
 info: GKSharp/Proofs/ContactSpecification.lean:30:0: 'GKSharp.contact_spec_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9159/9253] Replayed GKSharp.Proofs.ContactScaling
+ℹ [9160/9271] Replayed GKSharp.Proofs.ContactScaling
 info: GKSharp/Proofs/ContactScaling.lean:129:0: 'GKSharp.contact_gamma_scaling_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9160/9253] Replayed GKSharp.Proofs.ContactSchur
+⚠ [9161/9271] Replayed GKSharp.Proofs.ContactSchur
 warning: GKSharp/Proofs/ContactSchur.lean:60:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
@@ -494,7 +494,7 @@ warning: GKSharp/Proofs/ContactSchur.lean:60:2: Unused tactic linter: `<;>` shou
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
 info: GKSharp/Proofs/ContactSchur.lean:64:0: 'GKSharp.contact_schur_identity_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9161/9253] Replayed GKSharp.Proofs.ContactSign
+⚠ [9162/9271] Replayed GKSharp.Proofs.ContactSign
 warning: GKSharp/Proofs/ContactSign.lean:38:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
@@ -504,7 +504,7 @@ Note: This linter can be disabled with `set_option linter.unusedTactic false`
 info: GKSharp/Proofs/ContactSign.lean:110:0: 'GKSharp.contact_schur_expanded_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/ContactSign.lean:111:0: 'GKSharp.contact_sign_factorization_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/ContactSign.lean:112:0: 'GKSharp.corollary_L0_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9162/9253] Replayed GKSharp.Proofs.ContactSmooth
+⚠ [9163/9271] Replayed GKSharp.Proofs.ContactSmooth
 warning: GKSharp/Proofs/ContactSmooth.lean: imports `Mathlib.Analysis.Calculus.ImplicitContDiff` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: GKSharp/Proofs/ContactSmooth.lean:68:8: `ext` did not consume the patterns `x`
 
@@ -536,12 +536,12 @@ Hint: Omit it from the simp argument list.
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
 info: GKSharp/Proofs/ContactSmooth.lean:124:0: 'GKSharp.ContactSmooth.contact_critical_branch' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9163/9253] Replayed GKSharp.Proofs.ContactEnvelope
+⚠ [9164/9271] Replayed GKSharp.Proofs.ContactEnvelope
 warning: GKSharp/Proofs/ContactEnvelope.lean: imports `Mathlib.Analysis.Calculus.FDeriv.Symmetric` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 info: GKSharp/Proofs/ContactEnvelope.lean:129:0: 'GKSharp.contact_envelope_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9164/9253] Replayed GKSharp.Proofs.ContactNegativePair
+ℹ [9165/9271] Replayed GKSharp.Proofs.ContactNegativePair
 info: GKSharp/Proofs/ContactNegativePair.lean:64:0: 'GKSharp.negative_pair_of_muSecond_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9171/9253] Replayed GKSharp.Proofs.MonotoneCurveAlgebra
+⚠ [9172/9271] Replayed GKSharp.Proofs.MonotoneCurveAlgebra
 warning: GKSharp/Proofs/MonotoneCurveAlgebra.lean:80:42: This simp argument is unused:
   Pi.div_apply
 
@@ -573,21 +573,21 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
   [apply] _hl
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [9173/9253] Replayed GKSharp.Proofs.MonotoneFactorization
+⚠ [9174/9271] Replayed GKSharp.Proofs.MonotoneFactorization
 warning: GKSharp/Proofs/MonotoneFactorization.lean:61:5: Variable name `hg` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _hg
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [9174/9253] Replayed GKSharp.Proofs.MonotonePi
+⚠ [9175/9271] Replayed GKSharp.Proofs.MonotonePi
 warning: GKSharp/Proofs/MonotonePi.lean:16:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
 warning: GKSharp/Proofs/MonotonePi.lean:16:2: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [9175/9253] Replayed GKSharp.Proofs.MonotoneLogM
+⚠ [9176/9271] Replayed GKSharp.Proofs.MonotoneLogM
 warning: GKSharp/Proofs/MonotoneLogM.lean:108:12: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
@@ -597,7 +597,7 @@ Note: This linter can be disabled with `set_option linter.unusedTactic false`
 warning: GKSharp/Proofs/MonotoneLogM.lean:108:12: Unused tactic linter: `ring` does nothing.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [9176/9253] Replayed GKSharp.Proofs.MonotonePiPsi
+⚠ [9177/9271] Replayed GKSharp.Proofs.MonotonePiPsi
 warning: GKSharp/Proofs/MonotonePiPsi.lean:16:17: This simp argument is unused:
   norm_mul
 
@@ -617,7 +617,7 @@ Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus fa
 warning: GKSharp/Proofs/MonotonePiPsi.lean:54:4: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [9177/9253] Replayed GKSharp.Proofs.MonotoneKfLog
+⚠ [9178/9271] Replayed GKSharp.Proofs.MonotoneKfLog
 info: GKSharp/Proofs/MonotoneKfLog.lean:24:30: Try this:
   [apply] ring_nf
   
@@ -640,7 +640,7 @@ Hint: Omit it from the simp argument list.
     Real.cos_neg, Real.sin_neg]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [9178/9253] Replayed GKSharp.Proofs.InverseCritical
+⚠ [9179/9271] Replayed GKSharp.Proofs.InverseCritical
 warning: GKSharp/Proofs/InverseCritical.lean:92:45: `simp` already closes the goal
 
 Hint: Use `simp` instead of `simpa`:
@@ -661,7 +661,7 @@ Hint: Omit it from the simp argument list.
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
 info: GKSharp/Proofs/InverseCritical.lean:135:0: 'GKSharp.Proofs.InverseCritical.eq_5_3_second_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9179/9253] Replayed GKSharp.Proofs.RealGradients
+⚠ [9180/9271] Replayed GKSharp.Proofs.RealGradients
 warning: GKSharp/Proofs/RealGradients.lean:15:30: This simp argument is unused:
   Complex.mul_re
 
@@ -700,7 +700,7 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
 info: GKSharp/Proofs/RealGradients.lean:90:0: 'GKSharp.Proofs.RealGradients.sec5_grad_parts_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9180/9253] Replayed GKSharp.Proofs.CriticalClassification
+⚠ [9181/9271] Replayed GKSharp.Proofs.CriticalClassification
 warning: GKSharp/Proofs/CriticalClassification.lean:41:45: `simp` already closes the goal
 
 Hint: Use `simp` instead of `simpa`:
@@ -716,7 +716,7 @@ Note: This linter can be disabled with `set_option linter.unnecessarySimpa false
 info: GKSharp/Proofs/CriticalClassification.lean:161:0: 'GKSharp.Proofs.CriticalClassification.sec5_critical_points_proved' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-⚠ [9188/9253] Replayed GKSharp.Proofs.MonotoneUD
+⚠ [9189/9271] Replayed GKSharp.Proofs.MonotoneUD
 warning: GKSharp/Proofs/MonotoneUD.lean:89:48: Variable name `hm` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
@@ -729,7 +729,7 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
   [apply] _hm2
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [9191/9253] Replayed GKSharp.Proofs.CosineNecessity
+⚠ [9192/9271] Replayed GKSharp.Proofs.CosineNecessity
 warning: GKSharp/Proofs/CosineNecessity.lean:58:22: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
@@ -757,7 +757,7 @@ Note: This linter can be disabled with `set_option linter.unusedTactic false`
 info: GKSharp/Proofs/CosineNecessity.lean:114:0: 'GKSharp.cosine_support_of_arch' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/CosineNecessity.lean:115:0: 'GKSharp.cosine_minorant_of_arch' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/CosineNecessity.lean:116:0: 'GKSharp.cosine_tangent_derivative_of_arch' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9192/9253] Replayed GKSharp.Proofs.CosineCriterion
+⚠ [9193/9271] Replayed GKSharp.Proofs.CosineCriterion
 warning: GKSharp/Proofs/CosineCriterion.lean:24:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
@@ -771,24 +771,24 @@ warning: GKSharp/Proofs/CosineCriterion.lean:29:4: Unused tactic linter: `<;>` s
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
 info: GKSharp/Proofs/CosineCriterion.lean:119:0: 'GKSharp.obstacle_cos_iff_critD_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9193/9253] Replayed GKSharp.Proofs.PropositionQ
+ℹ [9194/9271] Replayed GKSharp.Proofs.PropositionQ
 info: GKSharp/Proofs/PropositionQ.lean:91:0: 'GKSharp.cosine_necessary_of_norm_le' depends on axioms: [propext,
  Classical.choice,
  Quot.sound,
  GKSharp.Cited.hkv_thm21]
 info: GKSharp/Proofs/PropositionQ.lean:92:0: 'GKSharp.norm_le_of_cosine_minorant' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/PropositionQ.lean:93:0: 'GKSharp.proposition_Q_of_contact' depends on axioms: [propext, Classical.choice, Quot.sound, GKSharp.Cited.hkv_thm21]
-⚠ [9194/9253] Replayed GKSharp.Proofs.ContactDtGamma
+⚠ [9195/9271] Replayed GKSharp.Proofs.ContactDtGamma
 warning: GKSharp/Proofs/ContactDtGamma.lean:33:43: Variable name `hp` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _hp
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-ℹ [9196/9253] Replayed GKSharp.Proofs.ContactObstacle
+ℹ [9197/9271] Replayed GKSharp.Proofs.ContactObstacle
 info: GKSharp/Proofs/ContactObstacle.lean:127:0: 'GKSharp.ContactSmooth.obstacle_branch_interior' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/ContactObstacle.lean:128:0: 'GKSharp.ContactSmooth.obstacle_regular_interior' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9197/9253] Replayed GKSharp.Proofs.ContactEndpoint
+⚠ [9198/9271] Replayed GKSharp.Proofs.ContactEndpoint
 warning: GKSharp/Proofs/ContactEndpoint.lean:77:100: This simp argument is unused:
   zero_add
 
@@ -815,27 +815,27 @@ warning: GKSharp/Proofs/ContactEndpoint.lean:92:23: Unused tactic linter: `<;>` 
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
 info: GKSharp/Proofs/ContactEndpoint.lean:110:0: 'GKSharp.ContactSmooth.endpoint_contact_data' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9198/9253] Replayed GKSharp.Proofs.ContactObstacleEndpoint
+ℹ [9199/9271] Replayed GKSharp.Proofs.ContactObstacleEndpoint
 info: GKSharp/Proofs/ContactObstacleEndpoint.lean:61:0: 'GKSharp.ContactSmooth.obstacle_regular_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9199/9253] Replayed GKSharp.Proofs.ContactObstacleSmooth
+ℹ [9200/9271] Replayed GKSharp.Proofs.ContactObstacleSmooth
 info: GKSharp/Proofs/ContactObstacleSmooth.lean:39:0: 'GKSharp.obstacle_smooth_contact_of_dt' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9200/9253] Replayed GKSharp.Proofs.GKLowerReal
+ℹ [9201/9271] Replayed GKSharp.Proofs.GKLowerReal
 info: GKSharp/Proofs/GKLowerReal.lean:131:0: 'GKSharp.ContactLower.contact_obstacle_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/GKLowerReal.lean:132:0: 'GKSharp.gk_le_pencilNorm_real' depends on axioms: [propext, Classical.choice, Quot.sound, GKSharp.Cited.hkv_thm21]
-ℹ [9201/9253] Replayed GKSharp.Proofs.ContactObstruction
+ℹ [9202/9271] Replayed GKSharp.Proofs.ContactObstruction
 info: GKSharp/Proofs/ContactObstruction.lean:57:0: 'GKSharp.negative_pair_excludes_cosine_minorant' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/ContactObstruction.lean:58:0: 'GKSharp.localTest_excludes_cosine_minorant' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9202/9253] Replayed GKSharp.Proofs.ContactOperator
+ℹ [9203/9271] Replayed GKSharp.Proofs.ContactOperator
 info: GKSharp/Proofs/ContactOperator.lean:42:0: 'GKSharp.contact_kConst_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/ContactOperator.lean:43:0: 'GKSharp.local_failure_of_cosine_criterion' depends on axioms: [propext,
  Classical.choice,
  Quot.sound,
  GKSharp.Cited.hkv_thm21]
-ℹ [9203/9253] Replayed GKSharp.Proofs.PropositionQFull
+ℹ [9204/9271] Replayed GKSharp.Proofs.PropositionQFull
 info: GKSharp/Proofs/PropositionQFull.lean:72:0: 'GKSharp.obstacle_smooth_contact_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/PropositionQFull.lean:73:0: 'GKSharp.sec4_prop_Q_proved' depends on axioms: [propext, Classical.choice, Quot.sound, GKSharp.Cited.hkv_thm21]
 info: GKSharp/Proofs/PropositionQFull.lean:74:0: 'GKSharp.sec4_angular_tangency_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9204/9253] Replayed GKSharp.Proofs.GKLowerAll
+⚠ [9205/9271] Replayed GKSharp.Proofs.GKLowerAll
 warning: GKSharp/Proofs/GKLowerAll.lean:38:2: Try this: 
   letI̵
 
@@ -849,13 +849,13 @@ info: GKSharp/Proofs/GKLowerAll.lean:62:0: 'GKSharp.slice_O04_proved' depends on
  Quot.sound,
  GKSharp.Cited.hkv_thm21,
  GKSharp.Cited.hv2000_riesz_norm]
-ℹ [9205/9253] Replayed GKSharp.Proofs.LemmaEContact
+ℹ [9206/9271] Replayed GKSharp.Proofs.LemmaEContact
 info: GKSharp/Proofs/LemmaEContact.lean:118:0: 'GKSharp.slice_O33_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9206/9253] Replayed GKSharp.Proofs.ContactDerivativeFull
+ℹ [9207/9271] Replayed GKSharp.Proofs.ContactDerivativeFull
 info: GKSharp/Proofs/ContactDerivativeFull.lean:65:0: 'GKSharp.contact_dt_gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/ContactDerivativeFull.lean:66:0: 'GKSharp.endpoint_dt_gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/ContactDerivativeFull.lean:67:0: 'GKSharp.slice_O35_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9208/9253] Replayed GKSharp.Proofs.MonotoneLevel
+⚠ [9209/9271] Replayed GKSharp.Proofs.MonotoneLevel
 warning: GKSharp/Proofs/MonotoneLevel.lean:49:95: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
@@ -871,7 +871,7 @@ Note: This linter can be disabled with `set_option linter.unusedTactic false`
 warning: GKSharp/Proofs/MonotoneLevel.lean:63:112: Unused tactic linter: `ring` does nothing.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [9210/9253] Replayed GKSharp.Proofs.MonotoneDetAlgebra
+⚠ [9211/9271] Replayed GKSharp.Proofs.MonotoneDetAlgebra
 warning: GKSharp/Proofs/MonotoneDetAlgebra.lean:22:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
@@ -884,7 +884,7 @@ Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus fa
 warning: GKSharp/Proofs/MonotoneDetAlgebra.lean:63:46: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [9213/9253] Replayed GKSharp.Proofs.MonotoneSign
+⚠ [9214/9271] Replayed GKSharp.Proofs.MonotoneSign
 warning: GKSharp/Proofs/MonotoneSign.lean:13:64: Variable name `hS` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
@@ -897,11 +897,11 @@ Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus fa
 warning: GKSharp/Proofs/MonotoneSign.lean:16:2: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [9215/9253] Replayed GKSharp.Proofs.SharpA3Calculus
+⚠ [9216/9271] Replayed GKSharp.Proofs.SharpA3Calculus
 warning: GKSharp/Proofs/SharpA3Calculus.lean: imports `Mathlib.Analysis.Calculus.Darboux` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 info: GKSharp/Proofs/SharpA3Calculus.lean:83:0: 'GKSharp.Proofs.SharpA3Calculus.shape_of_unique_critical' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/SharpA3Calculus.lean:84:0: 'GKSharp.Proofs.SharpA3Calculus.shape_of_no_critical' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9216/9253] Replayed GKSharp.Proofs.SharpA3
+⚠ [9217/9271] Replayed GKSharp.Proofs.SharpA3
 warning: GKSharp/Proofs/SharpA3.lean:78:10: This simp argument is unused:
   norm_mul
 
@@ -910,19 +910,19 @@ Hint: Omit it from the simp argument list.
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
 info: GKSharp/Proofs/SharpA3.lean:128:0: 'GKSharp.Proofs.SharpA3.sec5_A3_of_A1_A2' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9221/9253] Replayed GKSharp.Proofs.Reduction
+ℹ [9222/9271] Replayed GKSharp.Proofs.Reduction
 info: GKSharp/Proofs/Reduction.lean:429:0: 'GKSharp.Proofs.Reduction.critD_nonneg_of_step3' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/Reduction.lean:430:0: 'GKSharp.Proofs.Reduction.prop_reduction_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9222/9253] Replayed GKSharp.Proofs.TheoremC1
+ℹ [9223/9271] Replayed GKSharp.Proofs.TheoremC1
 info: GKSharp/Proofs/TheoremC1.lean:79:0: 'GKSharp.Proofs.TheoremC1.thm_C1_equality_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/TheoremC1.lean:80:0: 'GKSharp.Proofs.TheoremC1.thm_C1_proved' depends on axioms: [propext,
  Classical.choice,
  Quot.sound,
  GKSharp.Cited.hkv_thm21,
  GKSharp.Cited.hv2000_riesz_norm]
-ℹ [9223/9253] Replayed GKSharp.Proofs.SharpA3Final
+ℹ [9224/9271] Replayed GKSharp.Proofs.SharpA3Final
 info: GKSharp/Proofs/SharpA3Final.lean:32:0: 'GKSharp.sec5_A3_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9225/9253] Replayed GKSharp.Proofs.LocalConsequences
+⚠ [9226/9271] Replayed GKSharp.Proofs.LocalConsequences
 warning: GKSharp/Proofs/LocalConsequences.lean:28:2: Try this: 
   letI̵
 
@@ -942,9 +942,9 @@ info: GKSharp/Proofs/LocalConsequences.lean:67:0: 'GKSharp.sec4_axis_negative_fa
  Quot.sound,
  GKSharp.Cited.hkv_thm21]
 info: GKSharp/Proofs/LocalConsequences.lean:68:0: 'GKSharp.sec4_prop_F_proved' depends on axioms: [propext, Classical.choice, Quot.sound, GKSharp.Cited.hkv_thm21]
-ℹ [9227/9253] Replayed GKSharp.Proofs.AxisOrigin
+ℹ [9228/9271] Replayed GKSharp.Proofs.AxisOrigin
 info: GKSharp/Proofs/AxisOrigin.lean:86:0: 'GKSharp.axis_zero_positive_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9229/9253] Replayed GKSharp.Proofs.CstarLambdaSecond
+⚠ [9230/9271] Replayed GKSharp.Proofs.CstarLambdaSecond
 warning: GKSharp/Proofs/CstarLambdaSecond.lean:47:48: `simp` already closes the goal
 
 Hint: Use `simp` instead of `simpa`:
@@ -952,9 +952,9 @@ Hint: Use `simp` instead of `simpa`:
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
 info: GKSharp/Proofs/CstarLambdaSecond.lean:111:0: 'GKSharp.Proofs.CstarLambdaSecond.sec5e_Lambda_second_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9230/9253] Replayed GKSharp.Proofs.CosineExteriorSupport
+ℹ [9231/9271] Replayed GKSharp.Proofs.CosineExteriorSupport
 info: GKSharp/Proofs/CosineExteriorSupport.lean:34:0: 'GKSharp.sec4_cosine_exterior_support_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9234/9253] Replayed GKSharp.Proofs.CstarContactCurvature
+⚠ [9235/9271] Replayed GKSharp.Proofs.CstarContactCurvature
 warning: GKSharp/Proofs/CstarContactCurvature.lean:34:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
@@ -977,7 +977,7 @@ info: GKSharp/Proofs/CstarContactCurvature.lean:123:0: 'GKSharp.Proofs.CstarCont
  Classical.choice,
  Quot.sound]
 info: GKSharp/Proofs/CstarContactCurvature.lean:124:0: 'GKSharp.Proofs.CstarContactCurvature.second_along_graph' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9236/9253] Replayed GKSharp.Proofs.CstarSlope
+⚠ [9237/9271] Replayed GKSharp.Proofs.CstarSlope
 warning: GKSharp/Proofs/CstarSlope.lean:18:5: Variable name `hh` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
@@ -985,7 +985,7 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
 info: GKSharp/Proofs/CstarSlope.lean:111:0: 'GKSharp.Proofs.CstarSlope.sec5e_Kf_slope_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9239/9253] Replayed GKSharp.Proofs.EndpointEnclosure
+⚠ [9240/9271] Replayed GKSharp.Proofs.EndpointEnclosure
 warning: GKSharp/Proofs/EndpointEnclosure.lean:36:43: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
@@ -1027,9 +1027,9 @@ warning: GKSharp/Proofs/EndpointEnclosure.lean:110:69: Unused tactic linter: `ri
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
 info: GKSharp/Proofs/EndpointEnclosure.lean:118:0: 'GKSharp.endpoint_d_basic' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/EndpointEnclosure.lean:119:0: 'GKSharp.endpoint_d_squared_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9240/9253] Replayed GKSharp.Proofs.EndpointScale
+ℹ [9241/9271] Replayed GKSharp.Proofs.EndpointScale
 info: GKSharp/Proofs/EndpointScale.lean:81:0: 'GKSharp.endpoint_scale_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9241/9253] Replayed GKSharp.Proofs.EndpointGK
+⚠ [9242/9271] Replayed GKSharp.Proofs.EndpointGK
 warning: GKSharp/Proofs/EndpointGK.lean:48:21: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
@@ -1041,9 +1041,9 @@ warning: GKSharp/Proofs/EndpointGK.lean:48:21: Unused tactic linter: `ring` does
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
 info: GKSharp/Proofs/EndpointGK.lean:125:0: 'GKSharp.endpoint_gk_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/EndpointGK.lean:126:0: 'GKSharp.endpoint_midpoint_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9242/9253] Replayed GKSharp.Proofs.EndpointLog
+ℹ [9243/9271] Replayed GKSharp.Proofs.EndpointLog
 info: GKSharp/Proofs/EndpointLog.lean:73:0: 'GKSharp.endpoint_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9243/9253] Replayed GKSharp.Proofs.EndpointTerms
+⚠ [9244/9271] Replayed GKSharp.Proofs.EndpointTerms
 warning: GKSharp/Proofs/EndpointTerms.lean:66:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
@@ -1051,7 +1051,7 @@ warning: GKSharp/Proofs/EndpointTerms.lean:66:4: Unused tactic linter: `<;>` sho
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
 info: GKSharp/Proofs/EndpointTerms.lean:72:0: 'GKSharp.endpoint_term_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9244/9253] Replayed GKSharp.Proofs.EndpointContact
+⚠ [9245/9271] Replayed GKSharp.Proofs.EndpointContact
 warning: GKSharp/Proofs/EndpointContact.lean:64:77: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
@@ -1077,7 +1077,7 @@ warning: GKSharp/Proofs/EndpointContact.lean:86:93: Unused tactic linter: `ring`
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
 info: GKSharp/Proofs/EndpointContact.lean:107:0: 'GKSharp.endpoint_contact_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9245/9253] Replayed GKSharp.Proofs.EndpointContactK
+⚠ [9246/9271] Replayed GKSharp.Proofs.EndpointContactK
 warning: GKSharp/Proofs/EndpointContactK.lean:31:89: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
@@ -1094,7 +1094,7 @@ warning: GKSharp/Proofs/EndpointContactK.lean:80:6: Unused tactic linter: `<;>` 
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
 info: GKSharp/Proofs/EndpointContactK.lean:84:0: 'GKSharp.endpoint_contact_k_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9246/9253] Replayed GKSharp.Proofs.EndpointKError
+⚠ [9247/9271] Replayed GKSharp.Proofs.EndpointKError
 warning: GKSharp/Proofs/EndpointKError.lean:72:64: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
@@ -1111,7 +1111,7 @@ warning: GKSharp/Proofs/EndpointKError.lean:72:64: Unused tactic linter: `ring` 
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
 info: GKSharp/Proofs/EndpointKError.lean:84:0: 'GKSharp.endpoint_k_error_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9247/9253] Replayed GKSharp.Proofs.EndpointKLower
+⚠ [9248/9271] Replayed GKSharp.Proofs.EndpointKLower
 warning: GKSharp/Proofs/EndpointKLower.lean:85:48: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
@@ -1134,12 +1134,12 @@ warning: GKSharp/Proofs/EndpointKLower.lean:102:8: Unused tactic linter: `ring` 
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
 info: GKSharp/Proofs/EndpointKLower.lean:129:0: 'GKSharp.endpoint_k_lower_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9248/9253] Replayed GKSharp.Proofs.EndpointErrorNumeric
+ℹ [9249/9271] Replayed GKSharp.Proofs.EndpointErrorNumeric
 info: GKSharp/Proofs/EndpointErrorNumeric.lean:68:0: 'GKSharp.endpoint_error_numeric' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9249/9253] Replayed GKSharp.Proofs.EndpointErrorMonotone
+ℹ [9250/9271] Replayed GKSharp.Proofs.EndpointErrorMonotone
 info: GKSharp/Proofs/EndpointErrorMonotone.lean:69:0: 'GKSharp.sqrt_mul_log_strictMono' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/EndpointErrorMonotone.lean:70:0: 'GKSharp.endpoint_error_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9250/9253] Replayed GKSharp.Proofs.EndpointEstimate
+⚠ [9251/9271] Replayed GKSharp.Proofs.EndpointEstimate
 warning: GKSharp/Proofs/EndpointEstimate.lean:87:49: This simp argument is unused:
   hs3
 
@@ -1191,7 +1191,7 @@ warning: GKSharp/Proofs/EndpointEstimate.lean:95:54: Unused tactic linter: `<;>`
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
 info: GKSharp/Proofs/EndpointEstimate.lean:119:0: 'GKSharp.endpoint_remainder_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: GKSharp/Proofs/EndpointEstimate.lean:120:0: 'GKSharp.endpoint_estimate_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9251/9253] Replayed GKSharp.Proofs.EndpointThreshold
+⚠ [9252/9271] Replayed GKSharp.Proofs.EndpointThreshold
 warning: GKSharp/Proofs/EndpointThreshold.lean:31:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
@@ -1209,88 +1209,88 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
   [apply] _hp
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: GKSharp/Paper/Statements.lean:2004:48: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+warning: GKSharp/Paper/Statements.lean:2006:48: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: GKSharp/Paper/Statements.lean:2004:48: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+warning: GKSharp/Paper/Statements.lean:2006:48: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: GKSharp/Paper/Statements.lean:2187:44: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+warning: GKSharp/Paper/Statements.lean:2189:44: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: GKSharp/Paper/Statements.lean:2187:44: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+warning: GKSharp/Paper/Statements.lean:2189:44: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: GKSharp/Paper/Statements.lean:2230:47: this tactic is never executed
+warning: GKSharp/Paper/Statements.lean:2232:47: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: GKSharp/Paper/Statements.lean:2230:43: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+warning: GKSharp/Paper/Statements.lean:2232:43: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: GKSharp/Paper/Statements.lean:2230:47: Unused tactic linter: `assumption` does nothing.
+warning: GKSharp/Paper/Statements.lean:2232:47: Unused tactic linter: `assumption` does nothing.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: GKSharp/Paper/Statements.lean:2238:56: this tactic is never executed
+warning: GKSharp/Paper/Statements.lean:2240:56: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: GKSharp/Paper/Statements.lean:2238:52: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+warning: GKSharp/Paper/Statements.lean:2240:52: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: GKSharp/Paper/Statements.lean:2238:56: Unused tactic linter: `assumption` does nothing.
+warning: GKSharp/Paper/Statements.lean:2240:56: Unused tactic linter: `assumption` does nothing.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: GKSharp/Paper/Statements.lean:2249:55: this tactic is never executed
+warning: GKSharp/Paper/Statements.lean:2251:55: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: GKSharp/Paper/Statements.lean:2249:51: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+warning: GKSharp/Paper/Statements.lean:2251:51: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: GKSharp/Paper/Statements.lean:2249:55: Unused tactic linter: `assumption` does nothing.
+warning: GKSharp/Paper/Statements.lean:2251:55: Unused tactic linter: `assumption` does nothing.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: GKSharp/Paper/Statements.lean:2274:50: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+warning: GKSharp/Paper/Statements.lean:2276:50: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: GKSharp/Paper/Statements.lean:2274:50: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+warning: GKSharp/Paper/Statements.lean:2276:50: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: GKSharp/Paper/Statements.lean:2335:39: this tactic is never executed
+warning: GKSharp/Paper/Statements.lean:2337:39: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: GKSharp/Paper/Statements.lean:2335:35: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+warning: GKSharp/Paper/Statements.lean:2337:35: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: GKSharp/Paper/Statements.lean:2335:39: Unused tactic linter: `assumption` does nothing.
+warning: GKSharp/Paper/Statements.lean:2337:39: Unused tactic linter: `assumption` does nothing.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: GKSharp/Paper/Statements.lean:2340:33: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+warning: GKSharp/Paper/Statements.lean:2342:33: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: GKSharp/Paper/Statements.lean:2340:33: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+warning: GKSharp/Paper/Statements.lean:2342:33: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: GKSharp/Paper/Statements.lean:2576:38: this tactic is never executed
+warning: GKSharp/Paper/Statements.lean:2578:38: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: GKSharp/Paper/Statements.lean:2576:34: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+warning: GKSharp/Paper/Statements.lean:2578:34: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: GKSharp/Paper/Statements.lean:2576:38: Unused tactic linter: `assumption` does nothing.
+warning: GKSharp/Paper/Statements.lean:2578:38: Unused tactic linter: `assumption` does nothing.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: GKSharp/Paper/Statements.lean:2582:39: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+warning: GKSharp/Paper/Statements.lean:2584:39: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: GKSharp/Paper/Statements.lean:2582:39: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+warning: GKSharp/Paper/Statements.lean:2584:39: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: GKSharp/Paper/Statements.lean:2594:39: this tactic is never executed
+warning: GKSharp/Paper/Statements.lean:2596:39: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: GKSharp/Paper/Statements.lean:2594:35: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+warning: GKSharp/Paper/Statements.lean:2596:35: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: GKSharp/Paper/Statements.lean:2594:39: Unused tactic linter: `assumption` does nothing.
+warning: GKSharp/Paper/Statements.lean:2596:39: Unused tactic linter: `assumption` does nothing.
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
 ℹ [9271/9271] Replayed GKSharp.Audit

@@ -27,11 +27,11 @@ noncomputable def circlePower (p : ℝ) (f : ℝ → ℂ) : ℝ :=
 namespace Paper
 variable {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)]
 
-/-- Coverage link (renamed (Proofs/RealLineExists; cited HV2000 Theorem 3.1)): the approved target `slice_N01_nonvacuity` of slice SliceA_OperatorsLinks6, from installed rows. Paper place: norm_correspondence.tex l.8-10 and l.56 (short v3.40). -/
+/-- Coverage link (renamed (Proofs/RealLineExists; cited HV2000 Theorem 3.1)): the approved target `slice_N01_nonvacuity` of slice SliceA_OperatorsLinks6, from installed rows. Paper place: norm_correspondence.tex l.8-10 and l.56 (short v3.70). -/
 theorem cover_slice_N01_nonvacuity : ∀ (hp : 1 < p) (α β : ℂ), Nonempty (RealLinePencil p α β) :=
   GKSharp.Proofs.RealLineExists.slice_N01_nonvacuity_proved
 
-/-- Coverage link (renamed (Proofs/N02Final)): the approved target `slice_N02` of slice SliceA_OperatorsLinks6, from installed rows. Paper place: norm_correspondence.tex l.15-20 (short v3.40). -/
+/-- Coverage link (renamed (Proofs/N02Final)): the approved target `slice_N02` of slice SliceA_OperatorsLinks6, from installed rows. Paper place: norm_correspondence.tex l.15-20 (short v3.70). -/
 theorem cover_slice_N02 : ∀ (hp : 1 < p) (P : RieszProjection p) (α β : ℂ) (T : RealLinePencil p α β),
     ‖pencil P α β‖ = functionNorm (circleMinus P α β) ∧
     ‖pencil P α β‖ = functionNorm (circleMid P α β) ∧

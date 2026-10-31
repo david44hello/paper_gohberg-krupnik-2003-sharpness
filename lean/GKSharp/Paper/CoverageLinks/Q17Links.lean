@@ -6,7 +6,7 @@ namespace GKSharp.CoverageLinks.Q17Links
 
 open GKSharp GKSharp.Paper GKSharp.Threshold GKSharp.ComputerChecked Set
 
-/-- Coverage link: short_v3.40/P019_paper.tex:93 "Let $p_c\approx1.213490304$ be the unique zero in $(1,2)$ of
+/-- Coverage link: short_v3.70/P019_paper.tex:93 "Let $p_c\approx1.213490304$ be the unique zero in $(1,2)$ of
 $pp'-4(1+\cos^2(\pi/p))$ (Lemma 4.6)" (from the row `pc_spec`, given `CheckLocalF`: the certified bracket
 `1.213490304 < p_c < 1.213490305` and the unique zero; `p′ = p/(p − 1)`). -/
 theorem cover_q17_intro_pc (hc : CheckLocalF) :
@@ -14,7 +14,7 @@ theorem cover_q17_intro_pc (hc : CheckLocalF) :
     ∀ p ∈ Ioo (1 : ℝ) 2, (p * (p / (p - 1)) - 4 * (1 + Real.cos (Real.pi / p) ^ 2) = 0 ↔ p = pc) :=
   ⟨(pc_spec hc).2.1, (pc_spec hc).2.2.1⟩
 
-/-- Coverage link: short_v3.40/P019_paper.tex:93 "Then $T(p)>0$ exactly for $1<p<p_c$", with
+/-- Coverage link: short_v3.70/P019_paper.tex:93 "Then $T(p)>0$ exactly for $1<p<p_c$", with
 `T(p) = s₀²(pp′/4 − 1 − c₀²)/c₀⁴`, `s₀ = sin(π/p)`, `c₀ = −cos(π/p)` (from the rows `q15_sec4b_T_sign` and `pc_spec`,
 given `CheckLocalF`). -/
 theorem cover_q17_intro_T_pos (hc : CheckLocalF) :
@@ -35,8 +35,8 @@ theorem cover_q17_intro_T_pos (hc : CheckLocalF) :
     rw [← hs] at h'
     exact sign_eq_one_iff.mp h'
 
-/-- Coverage link: short_v3.40/P019_paper.tex:106 "When $p_c\le p<p_0$ the second condition is automatic, so the
-positive-axis test alone decides sharpness" (`0 < λ < 1`; from the rows `lambdaLoc_spec` (`λ_loc = 1` on `[p_c, 2)`),
+/-- Coverage link: short_v3.70/P019_paper.tex:106 "When $p_c\le p<p_0$ the second condition is automatic, so
+sharpness is equivalent to the positive-axis test" (`0 < λ < 1`; from the rows `lambdaLoc_spec` (`λ_loc = 1` on `[p_c, 2)`),
 `p0_spec` (`p₀ < 2`) and `intro_tests_criterion`; the hypotheses are the computer checks of those rows). -/
 theorem cover_q17_intro_regime_axis (hn : CheckOmegaNeg) (hr : CheckOmegaRoot) (hc : CheckLocalF)
     (hb : CheckBoundaryBulk) (hs : CheckBoundarySliver)
@@ -54,7 +54,7 @@ theorem cover_q17_intro_regime_axis (hn : CheckOmegaNeg) (hr : CheckOmegaRoot) (
   rw [intro_tests_criterion hc hb hs hp1 hp2 P hl0 hl1, hloc]
   exact ⟨fun h => h.1, fun h => ⟨h, hl1⟩⟩
 
-/-- Coverage link: short_v3.40/P019_paper.tex:106 "When $p_0\le p<2$ the bound is sharp for every real ratio"; also the
+/-- Coverage link: short_v3.70/P019_paper.tex:106 "When $p_0\le p<2$ the bound is sharp for every real ratio"; also the
 caption of Figure 1, P019_paper.tex:113 "The bound is sharp on and below the lower curve $\lambda=\lambda_1(p)$, defined for
 $p<p_0$ (Section~\ref{subsec:second}), and for every $\lambda$ when $p_0\le p<2$" (the last clause; the first is the row
 `sec4_lambda1_interval`) (from the rows

@@ -26,7 +26,7 @@ noncomputable def circlePower (p : ℝ) (f : ℝ → ℂ) : ℝ :=
 namespace Paper
 variable {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)]
 
-/-- Coverage link (renamed (Proofs/BandLimitedSchwartz)): the approved target `slice_N03` of slice SliceA_OperatorsLinks2, from installed rows. Paper place: norm_correspondence.tex l.23 (short v3.40). -/
+/-- Coverage link (renamed (Proofs/BandLimitedSchwartz)): the approved target `slice_N03` of slice SliceA_OperatorsLinks2, from installed rows. Paper place: norm_correspondence.tex l.23 (short v3.70). -/
 theorem cover_slice_N03 : ∃ η : SchwartzMap ℝ ℂ, η ≠ 0 ∧ HasCompactSupport (paperFourier η) :=
   GKSharp.Proofs.BandLimitedSchwartz.slice_N03_proved
 
