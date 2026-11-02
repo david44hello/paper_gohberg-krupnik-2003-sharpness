@@ -1,5 +1,5 @@
 # AUDIT_NOTES.md — notes for readers of AUDIT.md (paper short v3.90)
-## version 1.50 - 20261101_1222 - short v3.90: distinguish the paper's renamed Z1 from Lean's unchanged tOne definition.
+## version 1.60 - 20261101_2020 - spacing in note 22. (1.50: short v3.90, the paper's Z1 vs Lean's unchanged tOne.)
 ## version 1.30 - 20261031_1010 - short v3.80: pointers re-pointed; new Figure 1 (note 20); old Figure 1 is Figure 2.
 ## version 1.20 - 20261030_2210 - short v3.70: tags; caption wording in note 19.
 
@@ -114,8 +114,8 @@ Where the Lean proof takes a different route from the paper (the statements are 
    cancel in the determinant identity `q15_sec5d_cleared`; the renames c_omega, g, nu and Z1 change notation, not the definitions.
 
 22. Table 1's new sizes are recorded computer-run outputs, not Lean proofs of the execution's cell census.
-   The primary interval replay logs record 141 cells for Ω<0; 1 and35 for Ω'>0 and Ω>0; 12 and13 cells for the two
-   F sign domains, one interval enclosure for F'<0, and two root-endpoint evaluations. The sliver log records1023
-   cells. The three boundary-bulk logs record8153+2682+6950=17785 certified cells. These are the successful claim
+   The primary interval replay logs record 141 cells for Ω<0; 1 and 35 for Ω'>0 and Ω>0; 12 and 13 cells for the two
+   F sign domains, one interval enclosure for F'<0, and two root-endpoint evaluations. The sliver log records 1023
+   cells. The three boundary-bulk logs record 8153 + 2682 + 6950 = 17785 certified cells. These are the successful claim
    runs, excluding deliberately refused controls. The mathematical sign conclusions remain the same explicit
    computer-check hypotheses shown in AUDIT.md. No run census is promoted to a new proved row by this comparison.
