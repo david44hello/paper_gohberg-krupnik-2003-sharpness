@@ -1,4 +1,4 @@
-/- Coverage links for the places of the paper (P019_paper.tex l.56, l.80, l.91-93, l.95, l.106, l.116, l.118;
+/- Coverage links for the places of the paper (P019_paper.tex l.57, l.81, l.100-102, l.104, l.115, l.125, l.127;
 sec4a_criterion.tex l.61-62; sec5_sharp_inequality.tex l.106) whose printed claim already has installed rows:
 each link states the printed claim and is proved from them. -/
 import GKSharp.Paper.Statements
@@ -7,15 +7,14 @@ namespace GKSharp.CoverageLinks.Q19Links
 
 open GKSharp GKSharp.Paper GKSharp.Threshold GKSharp.ComputerChecked Set
 
-/-- Coverage link: short_v3.70/P019_paper.tex:56 "for a single projection, whose norm $1/\sin(\pi/p)$ was conjectured
+/-- Coverage link: short_v3.90/P019_paper.tex:57 "for a single projection, whose norm $1/\sin(\pi/p)$ was conjectured
 by Gohberg and Krupnik and found by Hollenbeck and Verbitsky~\cite{HV}" (the cited input `hv2000_riesz_norm`; for every
 Riesz projection `P`, `‖P₊‖_p = 1/sin(π/p)` is the link `cover_classical_projection_norm`). -/
 theorem cover_q19_intro_hv_norm {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)] (hp : 1 < p) :
     ∃ P : RieszProjection p, ‖P.plus‖ = 1 / Real.sin (Real.pi / p) :=
   GKSharp.Cited.hv2000_riesz_norm p hp
 
-/-- Coverage link: short_v3.70/P019_paper.tex:80 "For $p\ne2$ the inequality is strict for every non-real ratio
-(Theorem~\ref{thm:A}). These include the ratios of all real pairs $a,b$ with $ab\ne0$ ($|\rho|=1$, $\rho\ne\pm1$)": for real `a, b ≠ 0` the ratio
+/-- Coverage link: short_v3.90/P019_paper.tex:81 "For $p\ne2$ the inequality $N_p(\rho)\ge\GK_p(\rho)$ is strict for every non-real ratio (Theorem~\ref{thm:A}). These include the ratios of all real pairs $a,b$ with $ab\ne0$ ($|\rho|=1$, $\rho\ne\pm1$)": for real `a, b ≠ 0` the ratio
 `ρ = (a + ib)/(a − ib)` is unimodular, not `±1`, non-real, and fails for `p ≠ 2` (from the rows
 `normcorr_ratio_unimodular`, `q15_normcorr_real_ratio` and `thm_A`). -/
 theorem cover_q19_intro_real_pairs {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)] (hp : 1 < p) (hp2 : p ≠ 2)
@@ -34,7 +33,7 @@ theorem cover_q19_intro_real_pairs {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)] (hp
   have him : ρ.im ≠ 0 := fun h => (hreal.mp h).elim hne1 hnem1
   exact ⟨normcorr_ratio_unimodular a b hab, hne1, hnem1, him, thm_A hp hp2 P him⟩
 
-/-- Coverage link: short_v3.70/P019_paper.tex:91-93 "The first condition is the restriction to $z=x>0$ of the inequality"
+/-- Coverage link: short_v3.90/P019_paper.tex:100-102 "The first condition is the restriction to $z=x>0$ of the inequality"
 `(*)` "with the principal branch of $z^q$. Proposition~\ref{prop:Q}, where this inequality is labeled $(*)$, shows that it
 is equivalent to sharpness for these $\lambda$. We call the first condition in \eqref{eq:introcrit} the
 \emph{positive-axis test}" (`1 < p < 2`,
@@ -57,7 +56,7 @@ theorem cover_q19_intro_axis_test_star {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)]
       Real.cos_zero, mul_one]
   rw [e1, e2, e5]
 
-/-- Coverage link: short_v3.70/P019_paper.tex:116 "trigonometric convexity shows that such a function exists if and only
+/-- Coverage link: short_v3.90/P019_paper.tex:125 "trigonometric convexity shows that such a function exists if and only
 if $K\cos(q|t|)\le m_C(t)$, $C=\GK_p(\lambda)$, on the whole circle. This reduces sharpness to the pointwise inequality
 $(*)$ in one complex variable (Proposition~\ref{prop:Q})" (`1 < p < 2`, `−1 ≤ λ < 1`; "such a function" = a `q`-subtrigonometric
 angular function below the obstacle; from the rows `slice_O18` (Theorem 2.2), `slice_O04`, `sec3_gk_gt_max` and
@@ -77,7 +76,7 @@ theorem cover_q19_intro_angular_iff {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)] (h
   · intro hcos
     exact h18.1 (hQ1.2 hcos).le
 
-/-- Coverage link: short_v3.70/P019_paper.tex:118 "After the M\"obius change of variable $w=(1+\lambda z)/(1+z)$, the left
+/-- Coverage link: short_v3.90/P019_paper.tex:127 "After the M\"obius change of variable $w=(1+\lambda z)/(1+z)$, the left
 side of $(*)$ equals, up to a positive factor, $(1-\lambda)^p(C^p-|w|^p)-K\operatorname{Re}Q^q$ with
 $Q=(w-\lambda)(1-\bar w)$. On a circle $|w|=\mathrm{const}$ the first term is constant and $Q$ runs over an ellipse"
 (any `C`, `K`, `λ < 1`, `z ≠ −1`; from the rows `eq_5_1` and `sec5_ellipse`). -/
@@ -91,10 +90,7 @@ theorem cover_q19_intro_mobius_ellipse {p C K lam : ℝ} (hp : 0 < p) (hl : lam 
   have h1 : 0 < ‖1 + z‖ := norm_pos_iff.mpr (fun h => hz (by linear_combination h))
   exact div_pos (Real.rpow_pos_of_pos h1 p) (Real.rpow_pos_of_pos (by linarith) p)
 
-/-- Coverage link: short_v3.70/P019_paper.tex:118 "If $K_f$ decreases throughout, the normalized left side has its only
-minimum at $\theta_0$, where it vanishes. If $K_f$ first increases and then decreases, and $K_f'(\theta_0)<0$, which is
-what $\lambda<\lambda_{\mathrm{loc}}(p)$ gives, then the only other possible minimum is the end of the curve on the
-positive real axis, which the positive-axis test controls" (`1 < p < 2`; from the rows `prop_reduction`,
+/-- Coverage link: short_v3.90/P019_paper.tex:127 "If $K_f$ decreases throughout, this quotient has its only minimum at $\theta_0$, where it vanishes. If $K_f$ first increases and then decreases, and $K_f'(\theta_0)<0$, which is what $\lambda<\lambda_{\mathrm{loc}}(p)$ gives, then the only other possible minimum is the end of the curve on the positive real axis, which the positive-axis test controls" (`1 < p < 2`; from the rows `prop_reduction`,
 `sec5e_Kf_slope_routeB`, `sec5e_Lambda_pos` and `q15_sec5e_star_holds`; the second case under the hypotheses of
 Theorem 5.3, positive-axis test and `λ < λ_loc(p)`). -/
 theorem cover_q19_intro_reduction_cases {p lam : ℝ} (hp1 : 1 < p) (hp2 : p < 2) :
@@ -111,7 +107,7 @@ theorem cover_q19_intro_reduction_cases {p lam : ℝ} (hp1 : 1 < p) (hp2 : p < 2
     fun hl0 hl1 hh hloc => ⟨sec5e_Kf_slope_routeB hp1 hp2 hl0 hl1 hloc, sec5e_Lambda_pos hp1 hp2 hl0 hl1 hh hloc,
       (q15_sec5e_star_holds hp1 hp2 hl0 hl1 hh hloc).1⟩⟩
 
-/-- Coverage link: short_v3.70/sec5_sharp_inequality.tex:106 "By \eqref{eq:dPhi} below, $K_f(\theta)$ is the value of $K$
+/-- Coverage link: short_v3.90/sec5_sharp_inequality.tex:106 "By \eqref{eq:dPhi} below, $K_f(\theta)$ is the value of $K$
 at which $\Lambda$ is stationary at $\theta$" (`Λ = Φ(w(θ))/(1−λ)^p`, any `C`, `−1 ≤ λ < 1`, `0 < θ < π`; from the
 row `eq_5_8`). -/
 theorem cover_q19_sec5_Kf_stationary {p C K lam θ : ℝ} (hp1 : 1 < p) (hp2 : p < 2) (hl : -1 ≤ lam) (hl1 : lam < 1)
@@ -121,7 +117,7 @@ theorem cover_q19_sec5_Kf_stationary {p C K lam θ : ℝ} (hp1 : 1 < p) (hp2 : p
   rw [hd.deriv, mul_eq_zero, sub_eq_zero]
   exact ⟨fun h => h.resolve_left hpos.ne', Or.inr⟩
 
-/-- Coverage link: short_v3.70/sec4a_criterion.tex:61-62 "for $\zeta=1/z$ one has $|\zeta|^p\mathcal{D}_C(1/\zeta)=C^p|\zeta+1|^p
+/-- Coverage link: short_v3.90/sec4a_criterion.tex:61-62 "for $\zeta=1/z$ one has $|\zeta|^p\mathcal{D}_C(1/\zeta)=C^p|\zeta+1|^p
 -|\zeta+\lambda|^p-K|\zeta|^q\cos(q\arg\zeta)$, so $(*)$ holds if and only if
 $r^{-q}\bigl(C^p|1+re^{it}|^p-|\lambda+re^{it}|^p\bigr)\ge K\cos(qt)$ for all $r>0$ and $|t|\le\pi$" (any `K`, `C > 1`;
 the second part with `ζ = re^{it}`, `t = arg ζ` (principal), multiplied by `r^q > 0`; from `critD_inv_factor` and
@@ -146,7 +142,7 @@ theorem cover_q19_prop_Q_inversion {p C K lam : ℝ} (hp : 1 < p) (hC : 1 < C) :
   · rw [critD_nonneg_iff_radial (by linarith) hC K lam]
     simp only [hG, hR]
 
-/-- Coverage link: short_v3.70/P019_paper.tex:95 "Propositions~\ref{prop:F} and~\ref{prop:strip} show that $\Omega$ has
+/-- Coverage link: short_v3.90/P019_paper.tex:104 "Propositions~\ref{prop:F} and~\ref{prop:strip} show that $\Omega$ has
 exactly one zero $p_0\approx1.2336026$ in $(1,1.268]$, with $\Omega<0$ on $(1,p_0)$ and $\Omega>0$ on $(p_0,1.268]$" (the
 two signs; "exactly one zero" is the uniqueness conjunct of `p0_spec`; `1.268 = 317/250`; from the row
 `p0_spec`, given its two computer checks). -/
@@ -159,8 +155,7 @@ theorem cover_q20_intro_omega_signs (hn : CheckOmegaNeg) (hr : CheckOmegaRoot) :
   · exact h
   · exact absurd ((huniq p ⟨h1, hp.2⟩).mp h.symm) hp.1.ne'
 
-/-- Coverage link: short_v3.70/P019_paper.tex:93 "when $\Omega(p)<0$ it fails for all $\lambda$ close enough to $1$
-(Proposition~\ref{prop:F})" (also l.85: "A number $\Omega(p)$ controls the first condition below as
+/-- Coverage link: short_v3.90/P019_paper.tex:102 "when $\Omega(p)<0$ it fails for all $\lambda$ sufficiently close to $1$ (Proposition~\ref{prop:F})" (also l.94: "A number $\Omega(p)$ controls the first condition below as
 $\lambda\uparrow1$"): if `Ω(p) < 0`, the positive-axis test fails for every `λ < 1` close
 enough to 1 (`1 < p < 2`; from the rows `omega_negative_eventual_h` and `intro_axis_test_iff`). -/
 theorem cover_q20_intro_omega_axis {p : ℝ} (hp : 1 < p) (hp2 : p < 2) (homega : omega p < 0) :
@@ -174,8 +169,7 @@ theorem cover_q20_intro_omega_axis {p : ℝ} (hp : 1 < p) (hp2 : p < 2) (homega 
   simp only [Threshold.h, GKSharp.axisGap] at hh
   linarith
 
-/-- Coverage link: short_v3.70/P019_paper.tex:106 "When $p_c\le p<p_0$ the second condition is automatic, so
-sharpness is equivalent to the positive-axis test, and it fails for $\lambda$ close to $1$" (the last clause, here for every
+/-- Coverage link: short_v3.90/P019_paper.tex:115 "When $p_c\le p<p_0$ the second condition is automatic, so sharpness is equivalent to the positive-axis test, and the test fails for $\lambda$ close to $1$" (the last clause, here for every
 `1 < p < p₀`; from the rows `p0_spec`, given its two computer checks, `omega_negative_eventual_h` and
 `intro_axis_test_iff`). -/
 theorem cover_q20_intro_regime_fails_near_one (hn : CheckOmegaNeg) (hr : CheckOmegaRoot) {p : ℝ}

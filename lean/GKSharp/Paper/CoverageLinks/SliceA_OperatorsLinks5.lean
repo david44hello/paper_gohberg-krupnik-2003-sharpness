@@ -27,13 +27,13 @@ noncomputable def circlePower (p : ℝ) (f : ℝ → ℂ) : ℝ :=
 namespace Paper
 variable {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)]
 
-/-- Coverage link (renamed (Proofs/N06Final)): the approved target `slice_N06` of slice SliceA_OperatorsLinks5, from installed rows. Paper place: norm_correspondence.tex l.37-38 (short v3.70). -/
+/-- Coverage link (renamed (Proofs/N06Final)): the approved target `slice_N06` of slice SliceA_OperatorsLinks5, from installed rows. Paper place: norm_correspondence.tex l.37-38 (short v3.90). -/
 theorem cover_slice_N06 : ∀ (hp : 1 < p) (P : RieszProjection p) (α β : ℂ) (T : RealLinePencil p α β),
     ‖pencil P α β‖ ≤ ‖T.map‖ ∧ functionNorm (circleMinus P α β) ≤ ‖T.map‖ ∧
       functionNorm (circleMid P α β) ≤ ‖T.map‖ :=
   GKSharp.N06Final.slice_N06_proved
 
-/-- Coverage link (renamed (Proofs/ReverseNormCircle)): the approved target `slice_N11` of slice SliceA_OperatorsLinks5, from installed rows. Paper place: norm_correspondence.tex l.53-54 (short v3.70). -/
+/-- Coverage link (renamed (Proofs/ReverseNormCircle)): the approved target `slice_N11` of slice SliceA_OperatorsLinks5, from installed rows. Paper place: norm_correspondence.tex l.53-54 (short v3.90). -/
 theorem cover_slice_N11 : ∀ (hp : 1 < p) (P : RieszProjection p) (α β : ℂ) (T : RealLinePencil p α β),
     ‖T.map‖ ≤ ‖pencil P α β‖ ∧ ‖T.map‖ ≤ functionNorm (circleMinus P α β) ∧
       ‖T.map‖ ≤ functionNorm (circleMid P α β) :=

@@ -1,4 +1,4 @@
-/- Coverage links for the places of the paper added at the final re-reference pass (P019_paper.tex l.95, l.104, l.113, l.119, l.156;
+/- Coverage links for the places of the paper added at the final re-reference pass (P019_paper.tex l.40, l.91, l.104, l.113, l.122, l.128, l.168;
 sec4a_criterion.tex l.45-47, l.79-80; sec4b_failure.tex l.90, l.100, l.108-109, l.141; sec5_sharp_inequality.tex
 l.53-54) whose printed claim already has
 installed rows: each link states the printed claim and is proved from them. -/
@@ -9,7 +9,7 @@ namespace GKSharp.CoverageLinks.FinalLinks
 
 open GKSharp GKSharp.Paper GKSharp.Threshold GKSharp.ComputerChecked Set
 
-/-- Coverage link: short_v3.70/P019_paper.tex:95 "Since the bound is sharp for every real ratio when $3-\sqrt3\le p<2$
+/-- Coverage link: short_v3.90/P019_paper.tex:104 "Since the bound is sharp for every real ratio when $3-\sqrt3\le p<2$
 (Section~\ref{subsec:proofsC1B}) and $3-\sqrt3<1.268$" (the first clause; the second is the row
 `sec5_strip_endpoint`): for `3 − √3 ≤ p < 2`, `N_p(λ) = GK_p(λ)` for every real `λ`, with no computer check (from the
 rows `lemma_Bplus`, `prop_reduction`, `sec4_prop_Q` for `−1 < λ < 1`, `thm_classification_nonpositive` for `λ ≤ 0`,
@@ -36,7 +36,7 @@ theorem cover_final_sqrt3_every_real {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)] (
       linarith
     · exact (div_lt_one (by linarith)).mpr h1
 
-/-- Coverage link: short_v3.70/P019_paper.tex:119 "It is delicate at $p=p_0$ as $\lambda\to1$, where the leading term of
+/-- Coverage link: short_v3.90/P019_paper.tex:128 "It is delicate at $p=p_0$ as $\lambda\to1$, where the leading term of
 the test vanishes" (with sec4b_failure.tex l.141 "whose minimum over $s$ is $\Omega(p)$"): at `δ = 0` the function `g`
 of Section 5.6 is at least `Ω(p)` for every `0 < s < 1`, with equality at `s = s_*`, and `Ω(p₀) = 0` (from the rows
 `etilde_zero_minimum`, `g_zero` and `p0_spec`; the last given its two computer checks). -/
@@ -54,7 +54,7 @@ theorem cover_final_intro_delicate (hn : CheckOmegaNeg) (hr : CheckOmegaRoot) :
     have h2 : p0 ≤ 317 / 250 := le_trans hb0.le (by norm_num [b0])
     exact (huniq p0 ⟨h1, h2⟩).mpr rfl
 
-/-- Coverage link: short_v3.70/sec4b_failure.tex:141 "Interval arithmetic also gives $T(p)\le0.015^2$ on
+/-- Coverage link: short_v3.90/sec4b_failure.tex:141 "Interval arithmetic also gives $T(p)\le0.015^2$ on
 $[1.2134,1.2134904]$" (calculation_certificates.tex l.30, Table 1 row "$T$": "$T(p)\le0.015^2$"), in exactly the printed
 form (from the kernel-proved row `sec4_local_gap_kernel`, which states `2√(max(T(p), 0)) ≤ 0.03`; no computer check). -/
 theorem cover_final_T_gap (p : ℝ) (hp : p ∈ Icc (6067 / 5000 : ℝ) (12134904 / 10000000)) :
@@ -67,7 +67,7 @@ theorem cover_final_T_gap (p : ℝ) (hp : p ∈ Icc (6067 / 5000 : ℝ) (1213490
     _ = Real.sqrt (max (localD2 p) 0) ^ 2 := hsq
     _ ≤ (15 / 1000 : ℝ) ^ 2 := pow_le_pow_left₀ (Real.sqrt_nonneg _) hs 2
 
-/-- Coverage link: short_v3.70/sec4a_criterion.tex:45-47 "With $r_* = c_0 (C^2 - \lambda)/(C^2 - 1)$ and
+/-- Coverage link: short_v3.90/sec4a_criterion.tex:45-47 "With $r_* = c_0 (C^2 - \lambda)/(C^2 - 1)$ and
 \[ |\zeta_* + 1|^2 = r_*^2 - 2 r_*^2/\kappa + 1 = 1+\kappa c_0^2(\kappa-2) = \frac{(1 - \lambda)^2 (C^2 + \lambda)}{(C^2 - 1)(C^2 - \lambda)} , \]
 by $\kappa^2c_0^2=\kappa^2-R^2=(C^2-\lambda^2)/(C^2-1)$ (tangency, proof of Lemma 4.1)" (`1 < p < 2`, `−1 ≤ λ < 1`,
 `C = GK_p(λ)`, `κ = (C² − λ)/(C² − 1)`, `R = C(1 − λ)/(C² − 1)`; the outer forms of `|ζ_* + 1|²` are the link
@@ -125,7 +125,7 @@ theorem cover_final_contact_values {p lam : ℝ} (hp : 1 < p) (hp2 : p < 2) (hl 
     rw [neg_sq, div_pow, div_mul_eq_mul_div, mul_comm, hc2]
     field_simp
 
-/-- Coverage link: short_v3.70/sec4a_criterion.tex:79-80 (Proposition 4.3) "Moreover $\Omega < 0$ on
+/-- Coverage link: short_v3.90/sec4a_criterion.tex:79-80 (Proposition 4.3) "Moreover $\Omega < 0$ on
 $(1, 1.2336025]$" (`1.2336025 = a0`; from the row `omega_endpoint` on `(1, 1.001]` and the computer check
 `CheckOmegaNeg` on `[1.001, 1.2336025]`, as in the paper's proof). -/
 theorem cover_final_omega_neg_upto_a0 (hn : CheckOmegaNeg) : ∀ p ∈ Ioc (1 : ℝ) a0, omega p < 0 := by
@@ -134,7 +134,7 @@ theorem cover_final_omega_neg_upto_a0 (hn : CheckOmegaNeg) : ∀ p ∈ Ioc (1 : 
   · exact omega_endpoint p hp.1 hle
   · exact hn p ⟨hgt.le, hp.2⟩
 
-/-- Coverage link: short_v3.70/sec4b_failure.tex:90 "So for $\lambda\le0$ the second-order mechanism of
+/-- Coverage link: short_v3.90/sec4b_failure.tex:90 "So for $\lambda\le0$ the second-order mechanism of
 Theorem~\ref{thm:L} gives no obstruction, in agreement with Theorem~\ref{thm:C1}" (`1 < p < 2`, `−1 < λ ≤ 0`): the
 hypothesis (4.2) of Theorem 4.4 fails (its left side is `< 1`, rows `strict_jordan_pp` and `λ ≤ 0`) and
 `μ_*″(θ₀) > 0` for `μ_*(t) = Γ_C(y_*(t), t)` with the branch `y_*` of `∂_yΓ_C = 0` of the proof of Theorem 4.4
@@ -156,7 +156,7 @@ theorem cover_final_lambda_nonpos_no_obstruction {p lam : ℝ} (hp : 1 < p) (hp2
   unfold localTest
   linarith
 
-/-- Coverage link: short_v3.70/sec4b_failure.tex:108-109 "We have $h(0, p) > 0$: by Theorem~\ref{thm:C1}, equality in
+/-- Coverage link: short_v3.90/sec4b_failure.tex:108-109 "We have $h(0, p) > 0$: by Theorem~\ref{thm:C1}, equality in
 $(*)$ at $\lambda = 0$ holds only at $z = e^{\pm i\theta_0}/r_*$" (`1 < p < 2`, `θ₀ = π/p`, `r_*` = contactRadius; the
 rows `thm_C1_equality` and `lemma_contact`; the next reason, `r^{-q}G(r) → +∞` as `r → 0` and `r → ∞`, is the row
 `sec3_radial_limits`; `h(0, p) > 0` is the row `axis_zero_positive`). -/
@@ -172,7 +172,7 @@ theorem cover_final_lambda_zero_equality {p : ℝ} (hp : 1 < p) (hp2 : p < 2) (z
       Complex.conj_ofReal, Complex.conj_I]
     ring_nf
 
-/-- Coverage link: short_v3.70/P019_paper.tex:156 "Let $p_0$ and $p_0'$ be as in Theorem~\ref{thm:classification}
+/-- Coverage link: short_v3.90/P019_paper.tex:168 "Let $p_0$ and $p_0'$ be as in Theorem~\ref{thm:classification}
 ($p_0\approx1.2336026$, $p_0'\approx5.2807742$)" (the printed values are approximations; Lean proves the brackets
 `1.2336025 < p₀ < 1.2336027` and `5.280772 < p₀′ < 5.280777`, `p₀′ = p₀/(p₀ − 1)`, from the row `p0_spec`, given the
 same two computer checks). -/
@@ -189,7 +189,7 @@ theorem cover_final_p0_dual_bracket (hn : CheckOmegaNeg) (hr : CheckOmegaRoot) :
   · rw [div_lt_iff₀ h1]
     linarith
 
-/-- Coverage link: short_v3.70/sec4b_failure.tex:100 "On $(1, 1 + 10^{-6}]$, $\mathcal{F} \ge 1/(p-1) - 8 > 0$, since
+/-- Coverage link: short_v3.90/sec4b_failure.tex:100 "On $(1, 1 + 10^{-6}]$, $\mathcal{F} \ge 1/(p-1) - 8 > 0$, since
 $(p-2)^2/(p-1)=1/(p-1)+p-3$" (the reason; the bound itself is the row `localF_endpoint_one`). -/
 theorem cover_final_F_near_one_identity {p : ℝ} (hp : 1 < p) :
     (p - 2) ^ 2 / (p - 1) = 1 / (p - 1) + p - 3 := by
@@ -197,7 +197,7 @@ theorem cover_final_F_near_one_identity {p : ℝ} (hp : 1 < p) :
   field_simp
   ring
 
-/-- Coverage link: short_v3.70/sec5_sharp_inequality.tex:53-54 "For $\lambda \ne 0$ its zeros have product
+/-- Coverage link: short_v3.90/sec5_sharp_inequality.tex:53-54 "For $\lambda \ne 0$ its zeros have product
 $1/\lambda$: for $\lambda < 0$ the other zero is negative" ("its" = of `D(θ, ·)`; `−1 ≤ λ < 0`, `0 < θ < π`): `R(θ)`
 and `1/(λR(θ))` are zeros of `D(θ, ·)` with product `1/λ`, and `1/(λR(θ)) < 0` (from the rows
 `sec5_critical_zero_product` and `sec5_critical_root_formula`, which gives `R(θ) > 0`). -/
@@ -212,7 +212,7 @@ theorem cover_final_other_zero_negative {p lam θ : ℝ} (hp1 : 1 < p) (hp2 : p 
     ring
   · field_simp
 
-/-- Coverage link: short_v3.70/P019_paper.tex:113 (caption of Figure 1) "For $p<p_c$ it is not sharp on and above the
+/-- Coverage link: short_v3.90/P019_paper.tex:122 (caption of Figure 2) "For $p<p_c$ it is not sharp on and above the
 upper curve $\lambda=\lambda_{\mathrm{loc}}(p)$; this curve reaches $\lambda=1$ at $p=p_c$." (`1 < p < p_c`,
 `λ_loc(p) ≤ λ < 1`): `N_p(λ) > GK_p(λ)`, at `λ = λ_loc(p)` from the row `sec4_prop_edge` (Proposition 4.7) and for
 `λ > λ_loc(p)` from the rows `local_threshold_iff` and `sec4_thm_L` (Theorem 4.4); and `λ_loc(p_c) = 1` (from the rows
@@ -232,7 +232,7 @@ theorem cover_final_caption_upper_curve (hc : CheckLocalF) (hb : CheckBoundaryBu
   · rw [← heq]
     exact (sec4_prop_edge hc hb hs p P hp hpc).2.2.2.2
 
-/-- Coverage link: short_v3.70/P019_paper.tex:104 "and the bound is sharp for $\lambda=1$, for $p=2$ and for
+/-- Coverage link: short_v3.90/P019_paper.tex:113 "and the bound is sharp for $\lambda=1$, for $p=2$ and for
 $\alpha=0$" (the last clause; the clauses `λ = 1` and `p = 2` are carried by `thm_classification` and its companion
 rows): for every `p > 1` and every `β`, `‖0·P₊ + βP₋‖_p = GK_p(0, β)`, with no computer check (from the rows
 `intro_pencil_zero_left`, which uses the cited norm of `P₊`, and `sec2_gk_pure_minus`; the same equality is the
@@ -240,5 +240,203 @@ rows): for every `p > 1` and every `β`, `‖0·P₊ + βP₋‖_p = GK_p(0, β)
 theorem cover_final_alpha_zero_sharp {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)] (hp : 1 < p) (P : RieszProjection p) :
     ∀ β : ℂ, ‖pencil P 0 β‖ = gkPair p 0 β := fun β => by
   rw [intro_pencil_zero_left hp P β, sec2_gk_pure_minus p hp β]
+
+/-- Coverage link: short_v3.90/P019_paper.tex:91 (caption of Figure 1) "The disc $|\rho|\le1$ of ratios; the other ratios reduce to it by $N_p(\rho)=|\rho|N_p(1/\rho)$": for `|ρ| > 1`, `|1/ρ| < 1`, `N_p(ρ) = |ρ| N_p(1/ρ)`, and the
+bound is sharp at `ρ` if and only if it is sharp at `1/ρ` (every `1 < p < ∞`; from the rows `intro_norm_inv` and
+`sec5_gk_inv`, with no computer check). -/
+theorem cover_final_disk_reduction {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)] (P : RieszProjection p) {ρ : ℂ}
+    (hρ : 1 < ‖ρ‖) :
+    ‖1 / ρ‖ < 1 ∧ pencilNorm P ρ = ‖ρ‖ * pencilNorm P (1 / ρ) ∧
+      (pencilNorm P ρ = gk p ρ ↔ pencilNorm P (1 / ρ) = gk p (1 / ρ)) := by
+  have hpos : 0 < ‖ρ‖ := by linarith
+  have hne : ρ ≠ 0 := norm_pos_iff.mp hpos
+  refine ⟨?_, intro_norm_inv P hne, ?_⟩
+  · rw [norm_div, norm_one, div_lt_one hpos]
+    exact hρ
+  · rw [intro_norm_inv P hne, sec5_gk_inv p hne]
+    exact ⟨fun h => mul_left_cancel₀ hpos.ne' h, fun h => by rw [h]⟩
+
+/-- Coverage link: short_v3.90/P019_paper.tex:91 (caption of Figure 1) "Left: what was known before this paper, for any $p\ne2$: the ratios $\rho=-1$~\cite{Pich,Gamelin}, $\rho=0$~\cite{HV} and $\rho=1$, where the bound is sharp, and the circle $|\rho|=1$ of real $a,b$" (every `1 < p < ∞`): `N_p(ρ) = GK_p(ρ)` for `ρ = −1, 0, 1` (from the rows
+`thm_C1` and `sec5_lambda_one`), and the ratios `ρ = (a + ib)/(a − ib)` of the real pairs `a, b` with `a − ib ≠ 0`
+are exactly the `ρ` with `|ρ| = 1` (from the row `normcorr_ratio_unimodular`; the converse is direct). That these
+cases were settled before this paper, and that [HKV, Theorem 4.1] found the exact norm on the circle, are statements
+about the literature (AUDIT_NOTES.md, note 20). -/
+theorem cover_final_disk_before {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)] (hp : 1 < p) (P : RieszProjection p) :
+    (∀ lam : ℝ, (lam = -1 ∨ lam = 0 ∨ lam = 1) → pencilNorm P lam = gk p lam) ∧
+    (∀ a b : ℝ, (a : ℂ) - Complex.I * b ≠ 0 →
+      ‖((a : ℂ) + Complex.I * b) / ((a : ℂ) - Complex.I * b)‖ = 1) ∧
+    (∀ ρ : ℂ, ‖ρ‖ = 1 → ∃ a b : ℝ, (a : ℂ) - Complex.I * b ≠ 0 ∧
+      ρ = ((a : ℂ) + Complex.I * b) / ((a : ℂ) - Complex.I * b)) := by
+  refine ⟨?_, fun a b hab => normcorr_ratio_unimodular a b hab, ?_⟩
+  · rintro lam (h | h | h)
+    · exact thm_C1 hp P h.ge (by rw [h]; norm_num)
+    · exact thm_C1 hp P (by rw [h]; norm_num) h.le
+    · subst h
+      rw [Complex.ofReal_one, (sec5_lambda_one (p := p) P).1, (sec5_lambda_one (p := p) P).2]
+  · intro ρ hρ
+    by_cases hm : ρ = -1
+    · refine ⟨0, 1, by simp, ?_⟩
+      rw [hm]
+      simp
+    · have hne : ρ ≠ 0 := by
+        intro h
+        rw [h, norm_zero] at hρ
+        exact zero_ne_one hρ
+      have hw : 1 + ρ ≠ 0 := by
+        intro h
+        apply hm
+        linear_combination h
+      have hconj : (starRingEnd ℂ) ρ = ρ⁻¹ := by
+        rw [Complex.inv_def, Complex.normSq_eq_norm_sq, hρ]
+        simp
+      have hre : ((1 + ρ).re : ℂ) + Complex.I * (1 + ρ).im = 1 + ρ := by
+        rw [mul_comm]
+        exact Complex.re_add_im _
+      have hcj : ((1 + ρ).re : ℂ) - Complex.I * (1 + ρ).im = 1 + ρ⁻¹ := by
+        rw [← hconj]
+        apply Complex.ext <;> simp
+      have hinv : 1 + ρ⁻¹ = (1 + ρ) / ρ := by
+        field_simp
+        ring
+      refine ⟨(1 + ρ).re, (1 + ρ).im, ?_, ?_⟩
+      · rw [hcj, hinv]
+        exact div_ne_zero hw hne
+      · rw [hre, hcj, hinv]
+        field_simp
+
+/-- Coverage link: short_v3.90/P019_paper.tex:91 (caption of Figure 1) "for real $\lambda$ with $\lambda_{\mathrm{loc}}(1.1)\le\lambda<1$ ($\lambda_{\mathrm{loc}}(1.1)=0.513\ldots$)" (the value `0.513…`): `0.513 ≤ λ_loc(1.1) < 0.514`, from the closed form of `λ_loc` (P019_paper.tex l.96-97) with `cos(π/11)` enclosed by
+its degree-12 Taylor polynomial (`cosTaylor12_bound`) and kernel-checked interval arithmetic; no computer check. -/
+theorem cover_final_disk_lambdaLoc_bracket :
+    (513 / 1000 : ℝ) ≤ lambdaLoc (11 / 10) ∧ lambdaLoc (11 / 10) < 514 / 1000 := by
+  let aa : ℝ := Real.pi * ((1 / 11 : ℚ) : ℝ)
+  have hpi : Real.pi ∈ Set.Icc (3.14159265358979323846 : ℝ) 3.14159265358979323847 :=
+    ⟨Real.pi_gt_d20.le, Real.pi_lt_d20.le⟩
+  have ha : |aa| ≤ 1 := by
+    dsimp [aa]
+    rw [abs_of_pos (by positivity)]
+    nlinarith [hpi.1, hpi.2]
+  have hpoly_lo : ((9594929735 / 10000000000 : ℚ) : ℝ) ≤ cosTaylor12 aa := by
+    unfold cosTaylor12 aa
+    dyadic_interval [prec := 100]
+  have hpoly_hi : cosTaylor12 aa ≤ ((9594929737 / 10000000000 : ℚ) : ℝ) := by
+    unfold cosTaylor12 aa
+    dyadic_interval [prec := 100]
+  norm_num at hpoly_lo hpoly_hi
+  have hb := abs_le.mp (cosTaylor12_bound aa ha)
+  set cc := Real.cos aa with hcc
+  have hc_lo : (9594929734 / 10000000000 : ℝ) ≤ cc := by linarith [hb.1]
+  have hc_hi : cc ≤ 9594929738 / 10000000000 := by linarith [hb.2]
+  have hangle : Real.pi / (11 / 10 : ℝ) = Real.pi - aa := by
+    dsimp [aa]
+    push_cast
+    ring
+  have hcs : cs (11 / 10) = cc := by
+    rw [cs, hangle, Real.cos_pi_sub, neg_neg]
+  have hsn : sn (11 / 10) ^ 2 = 1 - cc ^ 2 := by
+    rw [sn, hangle, Real.sin_pi_sub, Real.sin_sq]
+  have hdual : (11 / 10 : ℝ) * dual (11 / 10) = 121 / 10 := by
+    norm_num [dual]
+  have hF : 0 < localF (11 / 10) := by
+    have hcos2 : Real.cos (Real.pi / (11 / 10 : ℝ)) ^ 2 ≤ 1 := Real.cos_sq_le_one _
+    rw [localF, hdual]
+    linarith
+  have hu_lo : (9594929734 / 10000000000 : ℝ) ^ 2 ≤ cc ^ 2 := by
+    apply pow_le_pow_left₀ (by norm_num) hc_lo
+  have hu_hi : cc ^ 2 ≤ (9594929738 / 10000000000 : ℝ) ^ 2 := by
+    apply pow_le_pow_left₀ (by linarith) hc_hi
+  have hupos : 0 < cc ^ 2 := by nlinarith
+  have hD : localD2 (11 / 10) = (1 - cc ^ 2) * (121 / 40 - 1 - cc ^ 2) / (cc ^ 2) ^ 2 := by
+    rw [localD2, hsn, hcs, hdual]
+    ring
+  have hD_lo : ((486 : ℝ) / 1514) ^ 2 < localD2 (11 / 10) := by
+    rw [hD, lt_div_iff₀ (by positivity)]
+    nlinarith [mul_le_mul hu_lo hu_lo (by positivity) (by positivity)]
+  have hD_hi : localD2 (11 / 10) ≤ ((487 : ℝ) / 1513) ^ 2 := by
+    rw [hD, div_le_iff₀ (by positivity)]
+    nlinarith [mul_le_mul hu_hi hu_hi (by positivity) (by positivity)]
+  have hd_lo : (486 : ℝ) / 1514 < Real.sqrt (localD2 (11 / 10)) :=
+    Real.lt_sqrt_of_sq_lt hD_lo
+  have hd_hi : Real.sqrt (localD2 (11 / 10)) ≤ 487 / 1513 :=
+    Real.sqrt_le_sqrt hD_hi |>.trans (Real.sqrt_sq (by norm_num)).le
+  have hd0 : 0 ≤ Real.sqrt (localD2 (11 / 10)) := Real.sqrt_nonneg _
+  simp only [lambdaLoc, hF, ↓reduceIte]
+  constructor
+  · rw [le_div_iff₀ (by linarith)]
+    linarith
+  · rw [div_lt_iff₀ (by linarith)]
+    linarith
+
+/-- Coverage link: short_v3.90/P019_paper.tex:91 (caption of Figure 1) "Right: Theorem~\ref{thm:classification} for $p=1.1$. For every non-real $\rho$, and for real $\lambda$ with $\lambda_{\mathrm{loc}}(1.1)\le\lambda<1$ ($\lambda_{\mathrm{loc}}(1.1)=0.513\ldots$), the bound is not sharp; it is sharp for $-1\le\lambda\le\lambda_1(1.1)$ and for $\lambda=1$; the hatched piece of the real axis is the band of Figure~\ref{fig:regions} at $p=1.1$" (`p = 1.1`): `N_p(ρ) > GK_p(ρ)` for every non-real `ρ`
+(row `thm_A`); `N_p(λ) > GK_p(λ)` for `λ_loc(1.1) ≤ λ < 1` (link `cover_final_caption_upper_curve`, with `1.1 < p_c`
+from the row `pc_spec`); `λ₁(1.1)`, the greatest `λ ∈ (0, 1)` with `h(·, 1.1) ≥ 0` on `(0, λ]`, exists and lies below
+`λ_loc(1.1)`, so the band `λ₁(1.1) < λ < λ_loc(1.1)` is not empty, and `N_p(λ) = GK_p(λ)` for `−1 ≤ λ ≤ λ₁(1.1)`
+(rows `sec4_lambda1_interval`, with `1.1 < p₀` from `p0_spec`, and `thm_C1`); `N_p(1) = GK_p(1)` (row
+`sec5_lambda_one`). The value `0.513…` is the link `cover_final_disk_lambdaLoc_bracket`; the value
+`λ₁(1.1) ≈ 0.389` was computed numerically (AUDIT_NOTES.md, note 20). Given the five computer checks of the row
+`sec4_lambda1_interval`. -/
+theorem cover_final_disk_p11 (hn : CheckOmegaNeg) (hr : CheckOmegaRoot) (hc : CheckLocalF)
+    (hb : CheckBoundaryBulk) (hs : CheckBoundarySliver)
+    {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)] (P : RieszProjection p) (hp : p = 11 / 10) :
+    (∀ ρ : ℂ, ρ.im ≠ 0 → gk p ρ < pencilNorm P ρ) ∧
+    (∀ lam : ℝ, lambdaLoc p ≤ lam → lam < 1 → gk p lam < pencilNorm P lam) ∧
+    (∃ lam1 : ℝ, IsGreatest {lam : ℝ | 0 < lam ∧ lam < 1 ∧ ∀ mu ∈ Ioc 0 lam, 0 ≤ h p mu} lam1 ∧
+      lam1 < lambdaLoc p ∧ ∀ lam : ℝ, -1 ≤ lam → lam ≤ lam1 → pencilNorm P lam = gk p lam) ∧
+    pencilNorm P 1 = gk p 1 := by
+  have ha0 : a0 = 12336025 / 10000000 := rfl
+  have hp1 : 1 < p := by
+    rw [hp]
+    norm_num
+  have hp2 : p ≠ 2 := by
+    rw [hp]
+    norm_num
+  have hpc : p < pc := by
+    have hlo := (pc_spec hc).2.1.1
+    rw [hp]
+    linarith
+  have hpp0 : p < p0 := by
+    have hlo := (p0_spec hn hr).2.1
+    rw [hp]
+    linarith
+  obtain ⟨lam1, hg, hlt, hsharp⟩ := sec4_lambda1_interval hn hr hc hb hs P hp1 hpp0
+  refine ⟨fun ρ hρ => thm_A hp1 hp2 P hρ,
+    fun lam hlo hhi => (cover_final_caption_upper_curve hc hb hs P).1 hp1 hpc lam hlo hhi,
+    ⟨lam1, hg, hlt hpc, fun lam hl hl1 => ?_⟩, ?_⟩
+  · rcases le_or_gt lam 0 with h0 | h0
+    · exact thm_C1 hp1 P hl h0
+    · exact hsharp lam ⟨h0, hl1⟩
+  · rw [(sec5_lambda_one (p := p) P).1, (sec5_lambda_one (p := p) P).2]
+
+/-- Coverage link: short_v3.90/P019_paper.tex:91 (caption of Figure 1) "For $p_0\le p\le p_0'$, $p\ne2$, the bound is
+sharp on the whole segment $[-1,1]$" (here for every `p₀ ≤ p ≤ p₀′`, `p = 2` included): from the row `thm_B_a`, given
+its computer checks. -/
+theorem cover_final_disk_segment (hn : CheckOmegaNeg) (hr : CheckOmegaRoot)
+    (hcd : CheckCornerDerivatives) (hct : CheckCornerTails)
+    (hbm : CheckStripBulkMiddle) (hbt : CheckStripBulkTails) (hc : CheckLocalF)
+    {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)] (P : RieszProjection p)
+    (hlo : p0 ≤ p) (hhi : p ≤ p0 / (p0 - 1)) :
+    ∀ lam ∈ Icc (-1 : ℝ) 1, pencilNorm P lam = gk p lam := by
+  have ha0 : a0 = 12336025 / 10000000 := rfl
+  have hp : 1 < p := by
+    have hlo0 := (p0_spec hn hr).2.1
+    linarith
+  exact fun lam _ => thm_B_a hn hr hcd hct hbm hbt hc hp P hlo hhi lam
+
+/-- Coverage link: short_v3.90/P019_paper.tex:40 (abstract) "For $1<p<p_0$ the bound is sharp for all $\lambda$ near
+$0$" (the rest of the sentence, "and on a band of intermediate ratios the outcome is known only in part", says what is
+not known and is not a claim): for `1 < p < p₀` there is `ε > 0` with `N_p(λ) = GK_p(λ)` for every real `|λ| < ε` (from
+the rows `sec4_lambda1_interval`, for `0 < λ ≤ λ₁(p)`, and `thm_C1`, for `−1 ≤ λ ≤ 0`), given the computer checks of
+`sec4_lambda1_interval`. -/
+theorem cover_final_abstract_near_zero (hn : CheckOmegaNeg) (hr : CheckOmegaRoot) (hc : CheckLocalF)
+    (hb : CheckBoundaryBulk) (hs : CheckBoundarySliver)
+    {p : ℝ} [Fact (1 ≤ ENNReal.ofReal p)] (P : RieszProjection p) (hp1 : 1 < p) (hpp0 : p < p0) :
+    ∃ ε > 0, ∀ lam : ℝ, |lam| < ε → pencilNorm P lam = gk p lam := by
+  obtain ⟨lam1, hg, -, hsharp⟩ := sec4_lambda1_interval hn hr hc hb hs P hp1 hpp0
+  have h0 : 0 < lam1 := hg.1.1
+  have h1 : lam1 < 1 := hg.1.2.1
+  refine ⟨lam1, h0, fun lam hl => ?_⟩
+  rw [abs_lt] at hl
+  rcases le_or_gt lam 0 with hneg | hpos
+  · exact thm_C1 hp1 P (by linarith) hneg
+  · exact hsharp lam ⟨hpos, hl.2.le⟩
 
 end GKSharp.CoverageLinks.FinalLinks

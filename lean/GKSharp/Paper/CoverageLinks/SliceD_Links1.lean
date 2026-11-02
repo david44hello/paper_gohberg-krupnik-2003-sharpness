@@ -16,7 +16,7 @@ namespace GKSharp.CoverageLinks.SliceD_Links1
 namespace GKSharp
 namespace Paper
 
-/-- Coverage link (renamed (Proofs/CoordinateDictionaryFull)): the approved target `sec5d_coordinate_dictionary` of slice SliceD_Links1, from installed rows. Paper place: sec5d_monotone.tex l.44, 62 (short v3.70). -/
+/-- Coverage link (renamed (Proofs/CoordinateDictionaryFull)): the approved target `sec5d_coordinate_dictionary` of slice SliceD_Links1, from installed rows. Paper place: sec5d_monotone.tex l.44, 62 (short v3.90). -/
 theorem cover_sec5d_coordinate_dictionary : ∀ (p θ : ℝ) (hp : 1 < p ∧ p < 2)
     (hθ : 0 < θ ∧ θ < Real.pi),
     1 < p / (2 - p) ∧

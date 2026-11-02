@@ -1,5 +1,5 @@
 {
-  "version": "1.10",
+  "version": "1.20",
   "author": "Dave Goel",
   "created_utc": "2026-10-28T14:00:29.063840+00:00",
   "scope": "Exact complete repository payload; excludes this manifest.",
@@ -20,6 +20,36 @@
       "sha256": "a7ee1b41731bd0995441be37e54b27d08eca4ee306f1729c4dd71c7a5272da75"
     },
     {
+      "file": "illustration/README.md",
+      "bytes": 990,
+      "sha256": "97e24ef94b908b33d1d8695c26e3239d85970820f5773ed744b4f9210f450fda"
+    },
+    {
+      "file": "illustration/lambda_one.py",
+      "bytes": 4977,
+      "sha256": "f12970b95fe1649a6b268cde4df377c14f5c3a309239c5ac8db366ef41628e22"
+    },
+    {
+      "file": "illustration/run.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "illustration/run.stdout.log",
+      "bytes": 1510,
+      "sha256": "5d9fb9b9017511b37fe86aa5bc2229f8ba70b509f79c8f0e3551f473abad58d3"
+    },
+    {
+      "file": "illustration/test.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "illustration/test.stdout.log",
+      "bytes": 13,
+      "sha256": "fe57e664bcff3dea7ec404334cbf77b833fa2f27841075e943dd5da8e5ee98f8"
+    },
+    {
       "file": "interval/AST_EQUIVALENCE.json",
       "bytes": 7609,
       "sha256": "0c1627d8b9c86cc3d2fc6c0d3b4972ab61048e4f8fdd68058b9277090dcbf77e"
@@ -31,8 +61,8 @@
     },
     {
       "file": "interval/README.md",
-      "bytes": 4357,
-      "sha256": "1638edb7ac6cc4f60f653ea1716a8827f3f6cc3a56387c798e126cde2c6270ee"
+      "bytes": 5516,
+      "sha256": "98eff1b4cb264b5f997da2e3e81a3b13052936c1985fab978998eefbf9dc5701"
     },
     {
       "file": "interval/REPLAY_DEPENDENCIES.json",
@@ -153,6 +183,36 @@
       "file": "interval/programs/wide_chord_independent.py",
       "bytes": 4305,
       "sha256": "21c6d99e18be3f0bb735bbd3b473572988f92ac1450e9ece3c2bc4a430cb86cd"
+    },
+    {
+      "file": "interval/prop_6_3_check/README.md",
+      "bytes": 1090,
+      "sha256": "dddefd6d80b33450ee7551498158ca42584c0c785fa65714c3cfa0ca38db2a6f"
+    },
+    {
+      "file": "interval/prop_6_3_check/certify_wide_chord.py",
+      "bytes": 3873,
+      "sha256": "7f72227c81ab826bc530fafa1c3d500a6c9ed771fc1655003fc7a54ef720eaa7"
+    },
+    {
+      "file": "interval/prop_6_3_check/test.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "interval/prop_6_3_check/test.stdout.log",
+      "bytes": 36,
+      "sha256": "dcd0f660b6642f40cea863b4a7231b9f32c4c37c3b5b3956a862262415b19311"
+    },
+    {
+      "file": "interval/prop_6_3_check/verify.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "interval/prop_6_3_check/verify.stdout.log",
+      "bytes": 247,
+      "sha256": "93a56a667b242c6685514773498929aa3c4dd790a51fcb8a58814d375587f8b0"
     },
     {
       "file": "interval/replay_primary.py",

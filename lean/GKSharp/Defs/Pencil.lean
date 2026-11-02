@@ -8,10 +8,10 @@ open MeasureTheory
 
 instance fact_two_pi_pos : Fact (0 < 2 * Real.pi) := ⟨by positivity⟩
 
-/-- P019_paper.tex:51. The same actual circle as018. -/
+/-- P019_paper.tex:52. The same actual circle as018. -/
 abbrev Circ := AddCircle (2 * Real.pi)
 
-/-- P019_paper.tex:51. Actual complex Lp; volume has mass2π. The common
+/-- P019_paper.tex:52. Actual complex Lp; volume has mass2π. The common
 positive measure factor cancels in every pencil norm and norm inequality. -/
 noncomputable abbrev LpT (p : ℝ) := Lp ℂ (ENNReal.ofReal p) (volume : Measure Circ)
 
@@ -29,7 +29,7 @@ section Operators
 
 variable (p : ℝ) [Fact (1 ≤ ENNReal.ofReal p)]
 
-/-- P019_paper.tex:51. An ACTUAL bounded complex-linear Fourier projection.
+/-- P019_paper.tex:52. An ACTUAL bounded complex-linear Fourier projection.
 Existence is a separate theorem/input, never assumed by a structure instance.
 The sole field constraint specifies the exact nonnegative-frequency mask. -/
 structure RieszProjection where
@@ -42,15 +42,15 @@ variable {p}
 noncomputable def rieszMinus (P : RieszProjection p) : LpT p →L[ℂ] LpT p :=
   ContinuousLinearMap.id ℂ (LpT p) - P.plus
 
-/-- P019_paper.tex:52. The actual projection pencil. -/
+/-- P019_paper.tex:53. The actual projection pencil. -/
 noncomputable def pencil (P : RieszProjection p) (α β : ℂ) : LpT p →L[ℂ] LpT p :=
   α • P.plus + β • rieszMinus P
 
-/-- P019_paper.tex:58. Normalized pencil's actual Lp operator norm.
+/-- P019_paper.tex:59. Normalized pencil's actual Lp operator norm.
 Fourier uniqueness makes this independent of the supplied witness P. -/
 noncomputable def pencilNorm (P : RieszProjection p) (ρ : ℂ) : ℝ := ‖pencil P 1 ρ‖
 
-/-- P019_paper.tex:51, 56. Modified Hilbert operator, including H1=−i. -/
+/-- P019_paper.tex:52, 56. Modified Hilbert operator, including H1=−i. -/
 noncomputable def shiftedHilbert (P : RieszProjection p) : LpT p →L[ℂ] LpT p :=
   (-Complex.I) • (P.plus - rieszMinus P)
 

@@ -232,7 +232,7 @@
     },
     {
       "name": "intro_minus_mask",
-      "doc": "P019_paper.tex l.51: \"P\u208b = I \u2212 P\u208a retains the frequencies n < 0\" (`P.plus` keeps n \u2265 0, including constants).",
+      "doc": "P019_paper.tex l.52: \"P\u208b = I \u2212 P\u208a retains the frequencies n < 0\" (`P.plus` keeps n \u2265 0, including constants).",
       "line": 260,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.intro_minus_mask",
@@ -247,7 +247,7 @@
     },
     {
       "name": "intro_hilbert_convention",
-      "doc": "P019_paper.tex l.51-52 and l.53: \"H = \u2212i(P\u208a \u2212 P\u208b)\"; \"aI + bH = \u03b1P\u208a + \u03b2P\u208b, \u03b1 = a \u2212 ib, \u03b2 = a + ib\"; \"Our H maps the constant 1 to \u2212i\".",
+      "doc": "P019_paper.tex l.52-53 and l.54: \"H = \u2212i(P\u208a \u2212 P\u208b)\"; \"aI + bH = \u03b1P\u208a + \u03b2P\u208b, \u03b1 = a \u2212 ib, \u03b2 = a + ib\"; \"Our H maps the constant 1 to \u2212i\".",
       "line": 266,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.intro_hilbert_convention",
@@ -262,7 +262,7 @@
     },
     {
       "name": "intro_pencil_homogeneous",
-      "doc": "P019_paper.tex l.58: \"For \u03b1 \u2260 0, homogeneity gives \u2016\u03b1P\u208a + \u03b2P\u208b\u2016_p = |\u03b1| N_p(\u03b2/\u03b1)\".",
+      "doc": "P019_paper.tex l.59: \"For \u03b1 \u2260 0, homogeneity gives \u2016\u03b1P\u208a + \u03b2P\u208b\u2016_p = |\u03b1| N_p(\u03b2/\u03b1)\".",
       "line": 273,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.intro_pencil_homogeneous",
@@ -277,7 +277,7 @@
     },
     {
       "name": "intro_isometry_U",
-      "doc": "P019_paper.tex l.58: \"The isometry Uf(e^{it}) = e^{\u2212it} f(e^{\u2212it}) interchanges P\u208a and P\u208b\".",
+      "doc": "P019_paper.tex l.59: \"The isometry Uf(e^{it}) = e^{\u2212it} f(e^{\u2212it}) interchanges P\u208a and P\u208b\".",
       "line": 278,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.intro_isometry_U",
@@ -292,7 +292,7 @@
     },
     {
       "name": "intro_isometry_J",
-      "doc": "P019_paper.tex l.58: \"the conjugate-linear isometry Jf(e^{it}) = conj f(e^{\u2212it}) preserves both frequency spaces and conjugates scalar coefficients\".",
+      "doc": "P019_paper.tex l.59: \"the conjugate-linear isometry Jf(e^{it}) = conj f(e^{\u2212it}) preserves both frequency spaces and conjugates scalar coefficients\".",
       "line": 288,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.intro_isometry_J",
@@ -307,7 +307,7 @@
     },
     {
       "name": "intro_norm_conj",
-      "doc": "P019_paper.tex l.60 (first identity): \"N_p(\u03c1) = N_p(\u03c1\u0304)\".",
+      "doc": "P019_paper.tex l.61 (first identity): \"N_p(\u03c1) = N_p(\u03c1\u0304)\".",
       "line": 297,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.intro_norm_conj",
@@ -322,7 +322,7 @@
     },
     {
       "name": "intro_norm_inv",
-      "doc": "P019_paper.tex l.60 (second identity): \"N_p(\u03c1) = |\u03c1| N_p(1/\u03c1) (\u03c1 \u2260 0)\".",
+      "doc": "P019_paper.tex l.61 (second identity): \"N_p(\u03c1) = |\u03c1| N_p(1/\u03c1) (\u03c1 \u2260 0)\".",
       "line": 301,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.intro_norm_inv",
@@ -337,7 +337,7 @@
     },
     {
       "name": "intro_pencil_zero_left",
-      "doc": "P019_paper.tex l.62: \"If \u03b1 = 0, the norm is |\u03b2|/sin(\u03c0/p), since U conjugates P\u208b isometrically to P\u208a and \u2016P\u208a\u2016_p = 1/sin(\u03c0/p) [HV]\" (every \u03b2, including \u03b2 = 0; uses the cited norm of P\u208a, Hollenbeck-Verbitsky 2000).",
+      "doc": "P019_paper.tex l.63: \"If \u03b1 = 0, the norm is |\u03b2|/sin(\u03c0/p), since U conjugates P\u208b isometrically to P\u208a and \u2016P\u208a\u2016_p = 1/sin(\u03c0/p) [HV]\" (every \u03b2, including \u03b2 = 0; uses the cited norm of P\u208a, Hollenbeck-Verbitsky 2000).",
       "line": 307,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.intro_pencil_zero_left",
@@ -353,7 +353,7 @@
     },
     {
       "name": "intro_pencil_two",
-      "doc": "P019_paper.tex l.56: \"for p = 2, where orthogonality gives \u2016\u03b1P\u208a + \u03b2P\u208b\u2016\u2082 = max(|\u03b1|, |\u03b2|)\".",
+      "doc": "P019_paper.tex l.57: \"for p = 2, where orthogonality gives \u2016\u03b1P\u208a + \u03b2P\u208b\u2016\u2082 = max(|\u03b1|, |\u03b2|)\".",
       "line": 312,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.intro_pencil_two",
@@ -383,7 +383,7 @@
     },
     {
       "name": "intro_selfadjoint",
-      "doc": "P019_paper.tex l.58: \"both projections are self-adjoint for the sesquilinear L^p\u2013L^{p\u2032} pairing \u27e8f,g\u27e9 = \u222b_\ud835\udd4b f \u1e21 dt/(2\u03c0)\" (here `\u222b f \u1e21`; the normalized form is the link `cover_q15_intro_pairing`).",
+      "doc": "P019_paper.tex l.59: \"both projections are self-adjoint for the sesquilinear L^p\u2013L^{p\u2032} pairing \u27e8f,g\u27e9 = \u222b_\ud835\udd4b f \u1e21 dt/(2\u03c0)\" (here `\u222b f \u1e21`; the normalized form is the link `cover_q15_intro_pairing`).",
       "line": 322,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.intro_selfadjoint",
@@ -398,7 +398,7 @@
     },
     {
       "name": "intro_norm_dual",
-      "doc": "P019_paper.tex l.60 (third identity): \"N_p(\u03c1) = N_{p\u2032}(\u03c1\u0304)\", `p\u2032 = p/(p \u2212 1)`.",
+      "doc": "P019_paper.tex l.61 (third identity): \"N_p(\u03c1) = N_{p\u2032}(\u03c1\u0304)\", `p\u2032 = p/(p \u2212 1)`.",
       "line": 331,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.intro_norm_dual",
@@ -413,7 +413,7 @@
     },
     {
       "name": "normcorr_ratio_unimodular",
-      "doc": "P019_paper.tex l.70: \"the exact norms for real a, b (|\u03c1| = 1)\" (and l.80: \"the ratios of all real pairs a, b with ab \u2260 0 (|\u03c1| = 1, \u03c1 \u2260 \u00b11)\"); here for every a \u2212 ib \u2260 0.",
+      "doc": "P019_paper.tex l.71: \"the exact norms for real a, b (|\u03c1| = 1)\" (and l.81: \"the ratios of all real pairs a, b with ab \u2260 0 (|\u03c1| = 1, \u03c1 \u2260 \u00b11)\"); here for every a \u2212 ib \u2260 0.",
       "line": 339,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.normcorr_ratio_unimodular",
@@ -713,7 +713,7 @@
     },
     {
       "name": "sec2_gk_conj",
-      "doc": "sec2_obstacle.tex l.27: \"GK_p(\u03c1\u0304) = GK_p(\u03c1)\" (used at P019_paper.tex l.62, \"the corresponding symmetries of GK_p\").",
+      "doc": "sec2_obstacle.tex l.27: \"GK_p(\u03c1\u0304) = GK_p(\u03c1)\" (used at P019_paper.tex l.63, \"the corresponding symmetries of GK_p\").",
       "line": 523,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec2_gk_conj",
@@ -743,7 +743,7 @@
     },
     {
       "name": "sec5_lambda_one",
-      "doc": "sec5d_monotone.tex l.158-159: \"\u03bb = 1 is trivial (P\u208a + P\u208b = I, GK_p(1) = 1)\"; P019_paper.tex l.62: \"for $\\rho=1$ both sides equal $1$\": `N_p(1) = 1 = GK_p(1)`.",
+      "doc": "sec5d_monotone.tex l.158-159: \"\u03bb = 1 is trivial (P\u208a + P\u208b = I, GK_p(1) = 1)\"; P019_paper.tex l.63: \"for $\\rho=1$ both sides equal $1$\": `N_p(1) = 1 = GK_p(1)`.",
       "line": 533,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5_lambda_one",
@@ -818,7 +818,7 @@
     },
     {
       "name": "intro_norm_reduce",
-      "doc": "P019_paper.tex l.62: \"these identities reduce the question to |\u03c1| \u2264 1 and 1 < p < 2\": with `q \u2208 {p, p\u2032}`, `1 < q \u2264 2`, `r \u2208 {\u03c1, \u03c1\u0304, 1/\u03c1, 1/\u03c1\u0304}`, `|r| \u2264 1` and `s = max(1, |\u03c1|)`, both `N_p(\u03c1) = s N_q(r)` and `GK_p(\u03c1) = s GK_q(r)` (uses the cited `P\u208a` on `L^{p\u2032}` when `p > 2`).",
+      "doc": "P019_paper.tex l.63: \"these identities reduce the question to |\u03c1| \u2264 1 and 1 < p < 2\": with `q \u2208 {p, p\u2032}`, `1 < q \u2264 2`, `r \u2208 {\u03c1, \u03c1\u0304, 1/\u03c1, 1/\u03c1\u0304}`, `|r| \u2264 1` and `s = max(1, |\u03c1|)`, both `N_p(\u03c1) = s N_q(r)` and `GK_p(\u03c1) = s GK_q(r)` (uses the cited `P\u208a` on `L^{p\u2032}` when `p > 2`).",
       "line": 579,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.intro_norm_reduce",
@@ -894,7 +894,7 @@
     },
     {
       "name": "endpoint_threshold_radicand",
-      "doc": "endpoint_estimate.tex:12\u201317 and P019_paper.tex:87\u201388: the endpoint D equals the square root of the global local-threshold radicand.",
+      "doc": "endpoint_estimate.tex:12\u201317 and P019_paper.tex:96\u201397: the endpoint D equals the square root of the global local-threshold radicand.",
       "line": 614,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.endpoint_threshold_radicand",
@@ -924,7 +924,7 @@
     },
     {
       "name": "endpoint_threshold_identification",
-      "doc": "endpoint_estimate.tex:12\u201317 and P019_paper.tex:87\u201388: the endpoint formula denotes the global lambda_loc on the entire endpoint interval.",
+      "doc": "endpoint_estimate.tex:12\u201317 and P019_paper.tex:96\u201397: the endpoint formula denotes the global lambda_loc on the entire endpoint interval.",
       "line": 624,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.endpoint_threshold_identification",
@@ -1104,7 +1104,7 @@
     },
     {
       "name": "phi_ge_one",
-      "doc": "sec5f_strip.tex l.65-66: \"g \u2265 (T\u2081 + 0.95)/0.05^q \u2212 k, respectively (as \u03c8_p \u2265 1)\", where \u03c8_p(x) = (1 \u2212 (1\u2212x)^p)/x (l.22); here for 1 \u2264 p and 0 \u2264 x \u2264 1.",
+      "doc": "sec5f_strip.tex l.65-66: \"g \u2265 (Z\u2081 + 0.95)/0.05^q \u2212 k, respectively (as \u03c8_p \u2265 1)\", where \u03c8_p(x) = (1 \u2212 (1\u2212x)^p)/x (l.22); here for 1 \u2264 p and 0 \u2264 x \u2264 1.",
       "line": 713,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.phi_ge_one",
@@ -1179,7 +1179,7 @@
     },
     {
       "name": "g_tail_bounds",
-      "doc": "sec5f_strip.tex l.65-66: \"Near the ends s \u2264 0.05 and s \u2265 0.95 we have g \u2265 T\u2081/0.05^q \u2212 k and g \u2265 (T\u2081 + 0.95)/0.05^q \u2212 k, respectively (as \u03c8_p \u2265 1)\" (`lowTail` and `highTail` are the two right sides).",
+      "doc": "sec5f_strip.tex l.65-66: \"Near the ends s \u2264 0.05 and s \u2265 0.95 we have g \u2265 Z\u2081/0.05^q \u2212 k and g \u2265 (Z\u2081 + 0.95)/0.05^q \u2212 k, respectively (as \u03c8_p \u2265 1)\" (`lowTail` and `highTail` are the two right sides).",
       "line": 751,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.g_tail_bounds",
@@ -1362,7 +1362,7 @@
     },
     {
       "name": "sec5d_trig_dictionary",
-      "doc": "sec5d_monotone.tex l.54-55: \"d_\u03c9 = cos \u03c9 > 0\"; \"Using d_\u03c9\u00b2 \u2212 c_q\u00b2 = sin \u03b8 sin(\u03b5\u03b8), sin u\u2083 c_q/d_\u03c9 = sin u\u2081 \u2212 sin u\u2082\" (c_q = cos(q\u03b8); the two identities used by (5.10)).",
+      "doc": "sec5d_monotone.tex l.54-55: \"c_\u03c9 = cos \u03c9 > 0\"; \"Using c_\u03c9\u00b2 \u2212 c_q\u00b2 = sin \u03b8 sin(\u03b5\u03b8), sin u\u2083 c_q/c_\u03c9 = sin u\u2081 \u2212 sin u\u2082\" (c_q = cos(q\u03b8); the two identities used by (5.10)).",
       "line": 868,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5d_trig_dictionary",
@@ -1467,7 +1467,7 @@
     },
     {
       "name": "reQPow_continuous",
-      "doc": "P019_paper.tex:139; continuity of the real part of the fractional power, including zero.",
+      "doc": "P019_paper.tex:151; continuity of the real part of the fractional power, including zero.",
       "line": 919,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.reQPow_continuous",
@@ -1557,7 +1557,7 @@
     },
     {
       "name": "sStar_spec",
-      "doc": "P019_paper.tex:85, sec4a_criterion.tex:90\u201391: \"Let s_* be the unique root in (0,1) of (2q\u22121)s\u00b2 + (1 \u2212 q + 2qA)s \u2212 qA = 0\"; unique interior quadratic root and unique global minimum.",
+      "doc": "P019_paper.tex:94, sec4a_criterion.tex:90\u201391: \"Let s_* be the unique root in (0,1) of (2q\u22121)s\u00b2 + (1 \u2212 q + 2qA)s \u2212 qA = 0\"; unique interior quadratic root and unique global minimum.",
       "line": 952,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sStar_spec",
@@ -1769,7 +1769,7 @@
     },
     {
       "name": "lambdaLoc_spec",
-      "doc": "P019_paper.tex l.87-88: \"Put T(p) = s\u2080\u00b2(pp\u2032/4 \u2212 1 \u2212 c\u2080\u00b2)/c\u2080\u2074 and \u03bb_loc(p) = { (1 \u2212 \u221aT(p))/(1 + \u221aT(p)), T(p) > 0; 1, T(p) \u2264 0 }\" (s\u2080 = sin(\u03c0/p), c\u2080 = \u2212cos(\u03c0/p)); Lemma 4.6 (label Pc), sec4b_failure.tex l.93: \"Some \u03bb \u2208 (0, 1) satisfies (4.2) if and only if F(p) ... > 0, that is, if and only if p < p_c\"; sec5f_strip.tex l.16: \"for p \u2265 p_c (where \u03bb_loc = 1)\". (`localD2` is d\u00b2 = T(p), d = \u221aT(p) as in sec4b_failure.tex l.128.)",
+      "doc": "P019_paper.tex l.96-97: \"Put T(p) = s\u2080\u00b2(pp\u2032/4 \u2212 1 \u2212 c\u2080\u00b2)/c\u2080\u2074 and \u03bb_loc(p) = { (1 \u2212 \u221aT(p))/(1 + \u221aT(p)), T(p) > 0; 1, T(p) \u2264 0 }\" (s\u2080 = sin(\u03c0/p), c\u2080 = \u2212cos(\u03c0/p)); Lemma 4.6 (label Pc), sec4b_failure.tex l.93: \"Some \u03bb \u2208 (0, 1) satisfies (4.2) if and only if F(p) ... > 0, that is, if and only if p < p_c\"; sec5f_strip.tex l.16: \"for p \u2265 p_c (where \u03bb_loc = 1)\". (`localD2` is d\u00b2 = T(p), d = \u221aT(p) as in sec4b_failure.tex l.128.)",
       "line": 1052,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.lambdaLoc_spec",
@@ -2517,7 +2517,7 @@
     },
     {
       "name": "sec2_qsub_iff_trigconvex",
-      "doc": "sec2_obstacle.tex l.67-68: \"\u03c6 is q-subtrigonometric if and only if \u03c6 is continuous and \u03c6'' + q\u00b2\u03c6 \u2265 0\" (chord form of trigonometric q-convexity, Levin Lecture 8). Throughout sec2, q = p/2 > 1/2 (P019_paper.tex l.58).",
+      "doc": "sec2_obstacle.tex l.67-68: \"\u03c6 is q-subtrigonometric if and only if \u03c6 is continuous and \u03c6'' + q\u00b2\u03c6 \u2265 0\" (chord form of trigonometric q-convexity, Levin Lecture 8). Throughout sec2, q = p/2 > 1/2 (P019_paper.tex l.59).",
       "line": 1459,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec2_qsub_iff_trigconvex",
@@ -2547,7 +2547,7 @@
     },
     {
       "name": "qsub_continuous_trigconvex",
-      "doc": "sec2_obstacle.tex l.67-69: \"\u03c6 is q-subtrigonometric if and only if \u03c6 is continuous and \u03c6\u2033 + q\u00b2\u03c6 \u2265 0 in the sense of distributions on \u211d (\u201ctrigonometrically q-convex\u201d functions, Levin, Lecture 8)\". This row is the \"only if\" half, with q-convexity in its three-point sine form `Threshold.QTrigConvex`, for q > 1/2 (q = p/2, P019_paper.tex l.58); used in sec4a_criterion.tex l.66-74.",
+      "doc": "sec2_obstacle.tex l.67-69: \"\u03c6 is q-subtrigonometric if and only if \u03c6 is continuous and \u03c6\u2033 + q\u00b2\u03c6 \u2265 0 in the sense of distributions on \u211d (\u201ctrigonometrically q-convex\u201d functions, Levin, Lecture 8)\". This row is the \"only if\" half, with q-convexity in its three-point sine form `Threshold.QTrigConvex`, for q > 1/2 (q = p/2, P019_paper.tex l.59); used in sec4a_criterion.tex l.66-74.",
       "line": 1473,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.qsub_continuous_trigconvex",
@@ -2577,7 +2577,7 @@
     },
     {
       "name": "slice_O19",
-      "doc": "sec2_obstacle.tex l.76-77: \"S(\u03b6) = |\u03b6|^q \u03c6(arg \u03b6) is subharmonic on \u2102 \\ {0} and tends to 0 at 0 (\u03c6 is bounded), so it extends subharmonically to \u2102 with S(0) = 0\". Range q > 1/2: P019_paper.tex l.58 \"q = p/2\", 1 < p < \u221e.",
+      "doc": "sec2_obstacle.tex l.76-77: \"S(\u03b6) = |\u03b6|^q \u03c6(arg \u03b6) is subharmonic on \u2102 \\ {0} and tends to 0 at 0 (\u03c6 is bounded), so it extends subharmonically to \u2102 with S(0) = 0\". Range q > 1/2: P019_paper.tex l.59 \"q = p/2\", 1 < p < \u221e.",
       "line": 1488,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.slice_O19",
@@ -2622,7 +2622,7 @@
     },
     {
       "name": "slice_O27",
-      "doc": "Theorem 2.2 (label R),\"Only if\", the largest minorant M\u0332, sec2_obstacle.tex l.98-101: \"M\u0332(\u03c4\u03b6) = \u03c4^q M\u0332(\u03b6). Hence M\u0332(\u03b6) = |\u03b6|^q \u03c6(arg \u03b6)\"; \"If \u03c6(t\u2080) = \u2212\u221e, then M\u0332 = \u2212\u221e on a ray; this is impossible, since a ray is not polar and M\u0332 \u2262 \u2212\u221e\"; \"Thus \u03c6 is finite and its homogeneous extension is the subharmonic function M\u0332; by Definition 2.1, it is q-subtrigonometric\". The row: any q-homogeneous subharmonic V with V(0) \u2265 0, q > 1/2 (q = p/2, P019_paper.tex l.58); it also states that \u03c6 is continuous (proved).",
+      "doc": "Theorem 2.2 (label R),\"Only if\", the largest minorant M\u0332, sec2_obstacle.tex l.98-101: \"M\u0332(\u03c4\u03b6) = \u03c4^q M\u0332(\u03b6). Hence M\u0332(\u03b6) = |\u03b6|^q \u03c6(arg \u03b6)\"; \"If \u03c6(t\u2080) = \u2212\u221e, then M\u0332 = \u2212\u221e on a ray; this is impossible, since a ray is not polar and M\u0332 \u2262 \u2212\u221e\"; \"Thus \u03c6 is finite and its homogeneous extension is the subharmonic function M\u0332; by Definition 2.1, it is q-subtrigonometric\". The row: any q-homogeneous subharmonic V with V(0) \u2265 0, q > 1/2 (q = p/2, P019_paper.tex l.59); it also states that \u03c6 is continuous (proved).",
       "line": 1515,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.slice_O27",
@@ -2894,7 +2894,7 @@
     },
     {
       "name": "sec5_reQPow_monotone",
-      "doc": "sec5_sharp_inequality.tex l.19 (`1 < p < 2`, `q = p/2`): \"x \u21a6 Re x^q is nondecreasing on \u211d, since cos(q\u03c0) < 0\" (Re x^q = |x|^q cos(q arg x), P019_paper.tex l.139). (Continuity on \u2102 is `reQPow_continuous`.)",
+      "doc": "sec5_sharp_inequality.tex l.19 (`1 < p < 2`, `q = p/2`): \"x \u21a6 Re x^q is nondecreasing on \u211d, since cos(q\u03c0) < 0\" (Re x^q = |x|^q cos(q arg x), P019_paper.tex l.151). (Continuity on \u2102 is `reQPow_continuous`.)",
       "line": 1666,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5_reQPow_monotone",
@@ -3269,7 +3269,7 @@
     },
     {
       "name": "sec3_arch",
-      "doc": "The arch inequality, sec3_nonreal.tex l.15-16: \"A 2\u03c0-periodic q-subtrigonometric function \u03c6 satisfies the arch inequality \u03c6(t) + \u03c6(t + \u03c0/q) \u2265 0 for all t [HKV, Proposition 3.4(1)] (it is also Lemma 2.3 with s = \u03c0/(2q))\". (`QSubtrig` includes 2\u03c0-periodicity; Lemma 2.3 (label chord), sec2_obstacle.tex l.106-108, allows every `0 < s \u2264 \u03c0/q`. The range `q > 1/2` is the standing `q = p/2` (P019_paper.tex l.58) with the section's `p > 1`, sec3_nonreal.tex l.11.)",
+      "doc": "The arch inequality, sec3_nonreal.tex l.15-16: \"A 2\u03c0-periodic q-subtrigonometric function \u03c6 satisfies the arch inequality \u03c6(t) + \u03c6(t + \u03c0/q) \u2265 0 for all t [HKV, Proposition 3.4(1)] (it is also Lemma 2.3 with s = \u03c0/(2q))\". (`QSubtrig` includes 2\u03c0-periodicity; Lemma 2.3 (label chord), sec2_obstacle.tex l.106-108, allows every `0 < s \u2264 \u03c0/q`. The range `q > 1/2` is the standing `q = p/2` (P019_paper.tex l.59) with the section's `p > 1`, sec3_nonreal.tex l.11.)",
       "line": 1965,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec3_arch",
@@ -3376,7 +3376,7 @@
     },
     {
       "name": "sec5d_sigma_cosine",
-      "doc": "sec5d_monotone.tex l.57: \"Let \u03c3 = \u221a(1 \u2212 X\u00b2) sin \u03c9 and \u03bd = c_q \u2212 X d_\u03c9. Since cos(2\u03b3 \u2213 \u03c9) = X d_\u03c9 \u00b1 \u03c3\".",
+      "doc": "sec5d_monotone.tex l.57: \"Let \u03c3 = \u221a(1 \u2212 X\u00b2) sin \u03c9 and \u03bd = c_q \u2212 X c_\u03c9. Since cos(2\u03b3 \u2213 \u03c9) = X c_\u03c9 \u00b1 \u03c3\".",
       "line": 2020,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5d_sigma_cosine",
@@ -3451,7 +3451,7 @@
     },
     {
       "name": "sec5d_factorization_dictionary",
-      "doc": "sec5d_monotone.tex l.59-60: \"Then c_q\u00b2 + d_\u03c9\u00b2 \u2212 2c_q d_\u03c9 X = \u03bd\u00b2 + \u03c3\u00b2cot\u00b2\u03c9, c_q/d_\u03c9 \u2212 X = \u03bd/d_\u03c9 and W\u2080 \u2212 W = \u03b5 sin\u00b2 2\u03c9\".",
+      "doc": "sec5d_monotone.tex l.59-60: \"Then c_q\u00b2 + c_\u03c9\u00b2 \u2212 2c_q c_\u03c9 X = \u03bd\u00b2 + \u03c3\u00b2cot\u00b2\u03c9, c_q/c_\u03c9 \u2212 X = \u03bd/c_\u03c9 and W\u2080 \u2212 W = \u03b5 sin\u00b2 2\u03c9\".",
       "line": 2070,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5d_factorization_dictionary",
@@ -3466,7 +3466,7 @@
     },
     {
       "name": "sec5d_Pi_factorization",
-      "doc": "sec5d_monotone.tex l.60-61: \"so (5.10) becomes \u03a0(X) = \u03c3\u00b2cot\u00b2\u03c9/d_\u03c9\u00b2 [W \u2212 4\u03b5((1\u2212\u03bb)/(1+\u03bb))\u00b2 sin\u2074\u03c9]\", with a positive prefactor.",
+      "doc": "sec5d_monotone.tex l.60-61: \"so (5.10) becomes \u03a0(X) = \u03c3\u00b2cot\u00b2\u03c9/c_\u03c9\u00b2 [W \u2212 4\u03b5((1\u2212\u03bb)/(1+\u03bb))\u00b2 sin\u2074\u03c9]\", with a positive prefactor.",
       "line": 2084,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5d_Pi_factorization",
@@ -3828,7 +3828,7 @@
     },
     {
       "name": "obstacle_cos_iff_critD",
-      "doc": "short_v3.70/sec4a_criterion.tex:57\u201362. \u201cThe second equivalence is the definition of $m_C$ after $z \\mapsto 1/z$\u201d.",
+      "doc": "short_v3.90/sec4a_criterion.tex:57\u201362. \u201cThe second equivalence is the definition of $m_C$ after $z \\mapsto 1/z$\u201d.",
       "line": 2299,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.obstacle_cos_iff_critD",
@@ -3843,7 +3843,7 @@
     },
     {
       "name": "obstacle_smooth_contact",
-      "doc": "short_v3.70/sec4a_criterion.tex:69. \u201cBy Section~4.1, $m_{\\GK}$ is differentiable at $\\theta_0$ with $m'_{\\GK}(\\theta_0)=-Kq$.\u201d The row is stronger: it also gives smoothness near \u03b8\u2080. Lean takes the derivative by the Section 4.1 route (q15_sec2_envelope_route, slice_O35).",
+      "doc": "short_v3.90/sec4a_criterion.tex:69. \u201cBy Section~4.1, $m_{\\GK}$ is differentiable at $\\theta_0$ with $m'_{\\GK}(\\theta_0)=-Kq$.\u201d The row is stronger: it also gives smoothness near \u03b8\u2080. Lean takes the derivative by the Section 4.1 route (q15_sec2_envelope_route, slice_O35).",
       "line": 2307,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.obstacle_smooth_contact",
@@ -3858,7 +3858,7 @@
     },
     {
       "name": "sec4_angular_tangency",
-      "doc": "short_v3.70/sec4a_criterion.tex:70\u201371. \u201chence $A_{\\varphi} = K$ and $\\varphi'(\\theta_0^+) = -Kq$.\u201d",
+      "doc": "short_v3.90/sec4a_criterion.tex:70\u201371. \u201chence $A_{\\varphi} = K$ and $\\varphi'(\\theta_0^+) = -Kq$.\u201d",
       "line": 2315,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec4_angular_tangency",
@@ -3873,7 +3873,7 @@
     },
     {
       "name": "sec4_prop_Q",
-      "doc": "short_v3.70/sec4a_criterion.tex:56\u201359. \u201cput $C=\\GK_p(\\lambda)$. Then $\\|\\Pp + \\lambda \\Pm\\|_p = C$ if and only if $m_{\\GK}(t) \\ge K \\cos(q|t|)$ for all $|t| \\le \\pi$\u201d, with the second equivalence to nonnegative $\\mathcal{D}_C$ on $\\mathbb{C}$.",
+      "doc": "short_v3.90/sec4a_criterion.tex:56\u201359. \u201cput $C=\\GK_p(\\lambda)$. Then $\\|\\Pp + \\lambda \\Pm\\|_p = C$ if and only if $m_{\\GK}(t) \\ge K \\cos(q|t|)$ for all $|t| \\le \\pi$\u201d, with the second equivalence to nonnegative $\\mathcal{D}_C$ on $\\mathbb{C}$.",
       "line": 2324,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec4_prop_Q",
@@ -3889,7 +3889,7 @@
     },
     {
       "name": "slice_O04",
-      "doc": "short_v3.70/P019_paper.tex:54\u201355. \u201cGohberg and Krupnik proved the lower bound $\\|\\alpha\\Pp+\\beta\\Pm\\|_p\\ \\ge\\ \\GK_p(\\alpha,\\beta)$\u201d (here \u03b1 = 1, \u03b2 = \u03c1). Route R11 uses the proved HKV criterion and the existing HV2000 input for conjugate-exponent transport.",
+      "doc": "short_v3.90/P019_paper.tex:55\u201356. \u201cGohberg and Krupnik proved the lower bound $\\|\\alpha\\Pp+\\beta\\Pm\\|_p\\ \\ge\\ \\GK_p(\\alpha,\\beta)$\u201d (here \u03b1 = 1, \u03b2 = \u03c1). Route R11 uses the proved HKV criterion and the existing HV2000 input for conjugate-exponent transport.",
       "line": 2334,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.slice_O04",
@@ -3906,7 +3906,7 @@
     },
     {
       "name": "slice_O33",
-      "doc": "short_v3.70/sec4a_criterion.tex:21\u201323, Lemma 4.1 (label E). \u201c$m_C(\\pm\\theta_0) \\ge 0$ if and only if $C \\ge \\GK_p(\\lambda)$\u201d; at equality the zero is attained only at the stated contact radius.",
+      "doc": "short_v3.90/sec4a_criterion.tex:21\u201323, Lemma 4.1 (label E). \u201c$m_C(\\pm\\theta_0) \\ge 0$ if and only if $C \\ge \\GK_p(\\lambda)$\u201d; at equality the zero is attained only at the stated contact radius.",
       "line": 2339,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.slice_O33",
@@ -3921,7 +3921,7 @@
     },
     {
       "name": "slice_O35",
-      "doc": "short_v3.70/sec4a_criterion.tex:37\u201338. \u201cwith $y_*=\\log r_*$ we show that $K=-q^{-1}\\partial_t\\Gamma_C(y_*,\\theta_0)=-m_C'(\\theta_0)/q$.\u201d The envelope identity is $K=-m_C'(\\theta_0)/q$.",
+      "doc": "short_v3.90/sec4a_criterion.tex:37\u201338. \u201cwith $y_*=\\log r_*$ we show that $K=-q^{-1}\\partial_t\\Gamma_C(y_*,\\theta_0)=-m_C'(\\theta_0)/q$.\u201d The envelope identity is $K=-m_C'(\\theta_0)/q$.",
       "line": 2353,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.slice_O35",
@@ -3936,7 +3936,7 @@
     },
     {
       "name": "sec5d_E_identity",
-      "doc": "short_v3.70/sec5d_monotone.tex:35. \"this gives $2\\sin u_1\\sin u_2\\,\\mathcal ES=\\Pi(X)$\".",
+      "doc": "short_v3.90/sec5d_monotone.tex:35. \"this gives $2\\sin u_1\\sin u_2\\,\\mathcal ES=\\Pi(X)$\".",
       "line": 2369,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5d_E_identity",
@@ -3951,7 +3951,7 @@
     },
     {
       "name": "sec5d_lambda_zero_analytic",
-      "doc": "short_v3.70/sec5d_monotone.tex:39. \"The explicit root $R(\\theta)$ in Section~5.1 is real-analytic in $\\lambda$ near zero, and $K_f$ is positive and real-analytic there\".",
+      "doc": "short_v3.90/sec5d_monotone.tex:39. \"The explicit root $R(\\theta)$ in Section~5.1 is real-analytic in $\\lambda$ near zero, and $K_f$ is positive and real-analytic there\".",
       "line": 2377,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5d_lambda_zero_analytic",
@@ -3966,7 +3966,7 @@
     },
     {
       "name": "sec5d_lambda_zero_continuity",
-      "doc": "short_v3.70/sec5d_monotone.tex:40\u201341. \"The coordinate $\\gamma$ also varies smoothly\"; \"both sides of the formula in Lemma~5.7 extend continuously to $\\lambda=0$\".",
+      "doc": "short_v3.90/sec5d_monotone.tex:40\u201341. \"The coordinate $\\gamma$ also varies smoothly\"; \"both sides of the formula in Lemma~5.7 extend continuously to $\\lambda=0$\".",
       "line": 2384,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5d_lambda_zero_continuity",
@@ -3981,7 +3981,7 @@
     },
     {
       "name": "sec5d_level_derivative",
-      "doc": "short_v3.70/sec5d_monotone.tex:34. \"$d\\log K_f/da = \\mathcal E/M_\\gamma$ with $\\mathcal E = L_a M_\\gamma - L_\\gamma M_a$\".",
+      "doc": "short_v3.90/sec5d_monotone.tex:34. \"$d\\log K_f/da = \\mathcal E/M_\\gamma$ with $\\mathcal E = L_a M_\\gamma - L_\\gamma M_a$\".",
       "line": 2393,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5d_level_derivative",
@@ -3996,7 +3996,7 @@
     },
     {
       "name": "lemma_signformula",
-      "doc": "short_v3.70/sec5d_monotone.tex:27\u201330, Lemma 5.7 (label signformula). \"and the denominator is positive\", with the displayed actual logarithmic derivative.",
+      "doc": "short_v3.90/sec5d_monotone.tex:27\u201330, Lemma 5.7 (label signformula). \"and the denominator is positive\", with the displayed actual logarithmic derivative.",
       "line": 2402,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.lemma_signformula",
@@ -4011,7 +4011,7 @@
     },
     {
       "name": "lemma_onevar",
-      "doc": "short_v3.70/sec5d_monotone.tex:49\u201351, Lemma 5.8 (label onevar). \"$K_f$ increases at $\\theta$ if and only if\" the displayed strict Psi inequality.",
+      "doc": "short_v3.90/sec5d_monotone.tex:49\u201351, Lemma 5.8 (label onevar). \"$K_f$ increases at $\\theta$ if and only if\" the displayed strict Psi inequality.",
       "line": 2411,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.lemma_onevar",
@@ -4026,7 +4026,7 @@
     },
     {
       "name": "sec5d_Pi_increase_iff",
-      "doc": "short_v3.70/sec5d_monotone.tex:30. \"Hence $K_f$ increases exactly where $\\Pi(X) > 0$.\"",
+      "doc": "short_v3.90/sec5d_monotone.tex:30. \"Hence $K_f$ increases exactly where $\\Pi(X) > 0$.\"",
       "line": 2420,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5d_Pi_increase_iff",
@@ -4041,7 +4041,7 @@
     },
     {
       "name": "sec5d_onevar_increase_iff",
-      "doc": "short_v3.70/sec5d_monotone.tex:50\u201351. \"$K_f$ increases at $\\theta$ if and only if\" the displayed Psi threshold inequality.",
+      "doc": "short_v3.90/sec5d_monotone.tex:50\u201351. \"$K_f$ increases at $\\theta$ if and only if\" the displayed Psi threshold inequality.",
       "line": 2426,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5d_onevar_increase_iff",
@@ -4056,7 +4056,7 @@
     },
     {
       "name": "lemma_B",
-      "doc": "short_v3.70/sec5d_monotone.tex:67\u201368, Lemma 5.9 (label Bneg). \"For every $1 < p < 2$ and $\\lambda \\in (-1, 0]$, $K_f$ is strictly decreasing on $(0, \\pi)$.\"",
+      "doc": "short_v3.90/sec5d_monotone.tex:67\u201368, Lemma 5.9 (label Bneg). \"For every $1 < p < 2$ and $\\lambda \\in (-1, 0]$, $K_f$ is strictly decreasing on $(0, \\pi)$.\"",
       "line": 2433,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.lemma_B",
@@ -4071,7 +4071,7 @@
     },
     {
       "name": "lemma_Bplus",
-      "doc": "short_v3.70/sec5d_monotone.tex:76\u201377, Lemma 5.10 (label Bplus). The printed threshold implies \"$K_f$ is strictly decreasing on $(0,\\pi)$\".",
+      "doc": "short_v3.90/sec5d_monotone.tex:76\u201377, Lemma 5.10 (label Bplus). The printed threshold implies \"$K_f$ is strictly decreasing on $(0,\\pi)$\".",
       "line": 2438,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.lemma_Bplus",
@@ -4086,7 +4086,7 @@
     },
     {
       "name": "lemma_U",
-      "doc": "short_v3.70/sec5d_monotone.tex:90\u201392, Lemma 5.11 (label U). \"$\\Psi_m$ is strictly increasing on $(0, \\pi/2)$\"; \"$K_f$ is either strictly decreasing\" or has the stated single turning point.",
+      "doc": "short_v3.90/sec5d_monotone.tex:90\u201392, Lemma 5.11 (label U). \"$\\Psi_m$ is strictly increasing on $(0, \\pi/2)$\"; \"$K_f$ is either strictly decreasing\" or has the stated single turning point.",
       "line": 2443,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.lemma_U",
@@ -4101,7 +4101,7 @@
     },
     {
       "name": "sec5d_U_initial_interval",
-      "doc": "short_v3.70/sec5d_monotone.tex:111. \"By Lemma~\\ref{lem:onevar}, the set on which $K_f$ increases is an initial interval.\"",
+      "doc": "short_v3.90/sec5d_monotone.tex:111. \"By Lemma~\\ref{lem:onevar}, the set on which $K_f$ increases is an initial interval.\"",
       "line": 2451,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5d_U_initial_interval",
@@ -4116,7 +4116,7 @@
     },
     {
       "name": "sec5d_U_terminal_decrease",
-      "doc": "short_v3.70/sec5d_monotone.tex:116. \"Thus $K_f$ decreases near $\\theta=\\pi$\".",
+      "doc": "short_v3.90/sec5d_monotone.tex:116. \"Thus $K_f$ decreases near $\\theta=\\pi$\".",
       "line": 2458,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5d_U_terminal_decrease",
@@ -4131,7 +4131,7 @@
     },
     {
       "name": "sec5_A2",
-      "doc": "short_v3.70; Consequence (E2), sec5_sharp_inequality.tex l.88-94: \"\u03c1(\u03b8) is continuous, injective by (E1), and \u03c1 \u2192 \u221e as \u03b8 \u2192 \u03c0 (z_\u03b8 \u2192 \u22121); so \u03c1 increases strictly from \u03c1\u2080 := \u03c1(0\u207a) = (1 + \u03bbr\u2080)/(1 + r\u2080) \u2208 [0, 1) to \u221e, and \u03c1\u2032 > 0\"; \"If \u03bb > 0, r\u2080 \u2264 1 gives \u03c1\u2080 \u2265 (1+\u03bb)/2 > \u221a\u03bb\".",
+      "doc": "short_v3.90; Consequence (E2), sec5_sharp_inequality.tex l.88-94: \"\u03c1(\u03b8) is continuous, injective by (E1), and \u03c1 \u2192 \u221e as \u03b8 \u2192 \u03c0 (z_\u03b8 \u2192 \u22121); so \u03c1 increases strictly from \u03c1\u2080 := \u03c1(0\u207a) = (1 + \u03bbr\u2080)/(1 + r\u2080) \u2208 [0, 1) to \u221e, and \u03c1\u2032 > 0\"; \"If \u03bb > 0, r\u2080 \u2264 1 gives \u03c1\u2080 \u2265 (1+\u03bb)/2 > \u221a\u03bb\".",
       "line": 2471,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5_A2",
@@ -4146,7 +4146,7 @@
     },
     {
       "name": "sec5_A2_injective",
-      "doc": "short_v3.70; (E2), the text's own step, sec5_sharp_inequality.tex l.89-90: \"\u03c1(\u03b8) is continuous, injective by (E1)\" (two angles with the same `\u03c1(\u03b8)` give two critical points of `f_\u03c1` in `(0, \u03c0)`).",
+      "doc": "short_v3.90; (E2), the text's own step, sec5_sharp_inequality.tex l.89-90: \"\u03c1(\u03b8) is continuous, injective by (E1)\" (two angles with the same `\u03c1(\u03b8)` give two critical points of `f_\u03c1` in `(0, \u03c0)`).",
       "line": 2483,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5_A2_injective",
@@ -4161,7 +4161,7 @@
     },
     {
       "name": "sec5_A3",
-      "doc": "short_v3.70; Consequence (E3), sec5_sharp_inequality.tex l.93-96: \"If \u03c1 > \u03c1\u2080, f_\u03c1 has exactly one critical point \u03c6_c \u2208 (0, \u03c0), at w(\u03b8) with \u03c1(\u03b8) = \u03c1; f_\u03c1\u2032 > 0 on (0, \u03c6_c), f_\u03c1\u2032 < 0 on (\u03c6_c, \u03c0), and max_{[0,\u03c0]} f_\u03c1 is attained only at \u03c6_c. If \u03c1 \u2264 \u03c1\u2080 (and \u03c1 \u2265 \u221a\u03bb when \u03bb > 0), f_\u03c1 is monotone on [0, \u03c0] (...), and Q(\u03c1) \u2212 Q(\u2212\u03c1) = 2(1+\u03bb)\u03c1 \u2265 0 (both real) gives max f_\u03c1 = f_\u03c1(0), at w = \u03c1\".",
+      "doc": "short_v3.90; Consequence (E3), sec5_sharp_inequality.tex l.93-96: \"If \u03c1 > \u03c1\u2080, f_\u03c1 has exactly one critical point \u03c6_c \u2208 (0, \u03c0), at w(\u03b8) with \u03c1(\u03b8) = \u03c1; f_\u03c1\u2032 > 0 on (0, \u03c6_c), f_\u03c1\u2032 < 0 on (\u03c6_c, \u03c0), and max_{[0,\u03c0]} f_\u03c1 is attained only at \u03c6_c. If \u03c1 \u2264 \u03c1\u2080 (and \u03c1 \u2265 \u221a\u03bb when \u03bb > 0), f_\u03c1 is monotone on [0, \u03c0] (...), and Q(\u03c1) \u2212 Q(\u2212\u03c1) = 2(1+\u03bb)\u03c1 \u2265 0 (both real) gives max f_\u03c1 = f_\u03c1(0), at w = \u03c1\".",
       "line": 2491,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5_A3",
@@ -4176,7 +4176,7 @@
     },
     {
       "name": "sec5_grad_Phi",
-      "doc": "short_v3.70; sec5_sharp_inequality.tex l.102-103: \"On the critical curve w = \u03c4v, so \u2207\u03a6(w(\u03b8)) = q|Q|^{q\u22121}(2\u03c4 cos \u03c9 \u2212 1) (K \u2212 K_f(\u03b8)) v\" (real gradient on `\u2102`, `\u03c4 = \u03c1/|v|`, any `C` and `K`).",
+      "doc": "short_v3.90; sec5_sharp_inequality.tex l.102-103: \"On the critical curve w = \u03c4v, so \u2207\u03a6(w(\u03b8)) = q|Q|^{q\u22121}(2\u03c4 cos \u03c9 \u2212 1) (K \u2212 K_f(\u03b8)) v\" (real gradient on `\u2102`, `\u03c4 = \u03c1/|v|`, any `C` and `K`).",
       "line": 2507,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5_grad_Phi",
@@ -4191,7 +4191,7 @@
     },
     {
       "name": "sec5_re_vbar_wprime",
-      "doc": "short_v3.70; sec5_sharp_inequality.tex l.106: \"Re(v\u0304 w\u2032) = (\u03c1\u00b2)\u2032/(2\u03c4)\" on the critical curve (`w = w(\u03b8)`, `\u03c1 = \u03c1(\u03b8)`, `\u03c4 = \u03c1/|v|`).",
+      "doc": "short_v3.90; sec5_sharp_inequality.tex l.106: \"Re(v\u0304 w\u2032) = (\u03c1\u00b2)\u2032/(2\u03c4)\" on the critical curve (`w = w(\u03b8)`, `\u03c1 = \u03c1(\u03b8)`, `\u03c4 = \u03c1/|v|`).",
       "line": 2518,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5_re_vbar_wprime",
@@ -4206,7 +4206,7 @@
     },
     {
       "name": "eq_5_8",
-      "doc": "short_v3.70; sec5_sharp_inequality.tex l.106-109 (any `C`, `K`: `C^p` is constant): \"d/d\u03b8 \u03a6(w(\u03b8)) = Re(conj(\u2207\u03a6) w\u2032) = q|Q|^{q\u22121}(2\u03c4 cos \u03c9 \u2212 1)(\u03c1\u03c1\u2032/\u03c4)(K \u2212 K_f(\u03b8))\", and \"by (5.5) and (E2), \u039b\u2032(\u03b8) = c(\u03b8)(K \u2212 K_f(\u03b8)) with c(\u03b8) > 0\" (`\u039b = \u03a6(w(\u03b8))/(1\u2212\u03bb)^p`; the positive factor is `F/(1\u2212\u03bb)^p`, `F` the factor of (5.8)).",
+      "doc": "short_v3.90; sec5_sharp_inequality.tex l.106-109 (any `C`, `K`: `C^p` is constant): \"d/d\u03b8 \u03a6(w(\u03b8)) = Re(conj(\u2207\u03a6) w\u2032) = q|Q|^{q\u22121}(2\u03c4 cos \u03c9 \u2212 1)(\u03c1\u03c1\u2032/\u03c4)(K \u2212 K_f(\u03b8))\", and \"by (5.5) and (E2), \u039b\u2032(\u03b8) = c(\u03b8)(K \u2212 K_f(\u03b8)) with c(\u03b8) > 0\" (`\u039b = \u03a6(w(\u03b8))/(1\u2212\u03bb)^p`; the positive factor is `F/(1\u2212\u03bb)^p`, `F` the factor of (5.8)).",
       "line": 2529,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.eq_5_8",
@@ -4221,7 +4221,7 @@
     },
     {
       "name": "prop_reduction",
-      "doc": "short_v3.70; Proposition (Reduction), sec5d_monotone.tex l.122-124: \"Let 1 < p < 2 and \u03bb \u2208 [\u22121, 1). If K_f is strictly decreasing on (0, \u03c0), then \ud835\udc9f_C \u2265 0 on \u2102, with equality only at z_* and z\u0304_*\".",
+      "doc": "short_v3.90; Proposition (Reduction), sec5d_monotone.tex l.122-124: \"Let 1 < p < 2 and \u03bb \u2208 [\u22121, 1). If K_f is strictly decreasing on (0, \u03c0), then \ud835\udc9f_C \u2265 0 on \u2102, with equality only at z_* and z\u0304_*\".",
       "line": 2542,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.prop_reduction",
@@ -4236,7 +4236,7 @@
     },
     {
       "name": "thm_C1",
-      "doc": "short_v3.70; sec5d_monotone.tex l.151-156 with Theorem 5.1 (label C1), P019_paper.tex l.151-153: for `1 < p < \u221e` and `\u03bb \u2208 [\u22121, 0]`, \"\u2016P\u208a + \u03bbP\u208b\u2016_p = GK_p(\u03bb)\".",
+      "doc": "short_v3.90; sec5d_monotone.tex l.151-156 with Theorem 5.1 (label C1), P019_paper.tex l.163-165: for `1 < p < \u221e` and `\u03bb \u2208 [\u22121, 0]`, \"\u2016P\u208a + \u03bbP\u208b\u2016_p = GK_p(\u03bb)\".",
       "line": 2551,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.thm_C1",
@@ -4253,7 +4253,7 @@
     },
     {
       "name": "thm_C1_equality",
-      "doc": "short_v3.70; Theorem 5.1 (label C1), equality case, sec5d_monotone.tex l.154 (`1 < p < 2`, `\u03bb \u2208 [\u22121, 0]`): \"with equality in (*) only at z_* and z\u0304_*\".",
+      "doc": "short_v3.90; Theorem 5.1 (label C1), equality case, sec5d_monotone.tex l.154 (`1 < p < 2`, `\u03bb \u2208 [\u22121, 0]`): \"with equality in (*) only at z_* and z\u0304_*\".",
       "line": 2557,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.thm_C1_equality",
@@ -4268,7 +4268,7 @@
     },
     {
       "name": "sec4_thm_L",
-      "doc": "short_v3.70/sec4b_failure.tex:17\u201321, Theorem 4.4 (label L). Under (4.2), \"then $\\|\\Pp + \\lambda \\Pm\\|_p > \\GK_p(\\lambda)$\".",
+      "doc": "short_v3.90/sec4b_failure.tex:17\u201321, Theorem 4.4 (label L). Under (4.2), \"then $\\|\\Pp + \\lambda \\Pm\\|_p > \\GK_p(\\lambda)$\".",
       "line": 2569,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec4_thm_L",
@@ -4284,7 +4284,7 @@
     },
     {
       "name": "sec4_thm_L_dual",
-      "doc": "short_v3.70/sec4b_failure.tex:15. \"for $p>2$ the statements below hold with $p'$ in place of $p$, by duality (Section~1)\".",
+      "doc": "short_v3.90/sec4b_failure.tex:15. \"for $p>2$ the statements below hold with $p'$ in place of $p$, by duality (Section~1)\".",
       "line": 2575,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec4_thm_L_dual",
@@ -4301,7 +4301,7 @@
     },
     {
       "name": "sec4_axis_negative_fails",
-      "doc": "short_v3.70/sec4b_failure.tex:110. \"$h(\\lambda, p) < 0$ implies $\\|\\Pp + \\lambda\\Pm\\|_p > \\GK_p(\\lambda)$.\"",
+      "doc": "short_v3.90/sec4b_failure.tex:110. \"$h(\\lambda, p) < 0$ implies $\\|\\Pp + \\lambda\\Pm\\|_p > \\GK_p(\\lambda)$.\"",
       "line": 2581,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec4_axis_negative_fails",
@@ -4317,7 +4317,7 @@
     },
     {
       "name": "sec4_prop_F",
-      "doc": "short_v3.70; sec4a_criterion.tex:79. \"If $\\Omega(p) < 0$, then $\\|\\Pp + \\lambda\\Pm\\|_p > \\GK_p(\\lambda)$ for all $\\lambda < 1$ close enough to $1$.\"",
+      "doc": "short_v3.90; sec4a_criterion.tex:79. \"If $\\Omega(p) < 0$, then $\\|\\Pp + \\lambda\\Pm\\|_p > \\GK_p(\\lambda)$ for all $\\lambda < 1$ sufficiently close to $1$.\"",
       "line": 2587,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec4_prop_F",
@@ -4333,7 +4333,7 @@
     },
     {
       "name": "sec5e_Lambda_zero",
-      "doc": "short_v3.70; sec5e_cstar.tex l.22-24: \"\u039b(0\u207a) = \u03a6(\u03c1\u2080)/(1\u2212\u03bb)^p with \u03c1\u2080 real, i.e. a value of \ud835\udc9f_C/|1+z|^p on the positive axis, which is \u2265 0 because h \u2265 0\" (`\u03c1\u2080 = (1 + \u03bbr\u2080)/(1 + r\u2080)` as in `sec5_A2`).",
+      "doc": "short_v3.90; sec5e_cstar.tex l.22-24: \"\u039b(0\u207a) = \u03a6(\u03c1\u2080)/(1\u2212\u03bb)^p with \u03c1\u2080 real, i.e. a value of \ud835\udc9f_C/|1+z|^p on the positive axis, which is \u2265 0 because h \u2265 0\" (`\u03c1\u2080 = (1 + \u03bbr\u2080)/(1 + r\u2080)` as in `sec5_A2`).",
       "line": 2599,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5e_Lambda_zero",
@@ -4348,7 +4348,7 @@
     },
     {
       "name": "sec4_cosine_exterior_support",
-      "doc": "short_v3.70; sec4a_criterion.tex l.71-73 (proof of Proposition 4.2 (label Q), \"Only if\", after `A_\u03c6 = K`): \"A q-subtrigonometric function lies, on any interval of length at most \u03c0/q, above the sinusoid with its value and right derivative at the left end [HKV, Lemma 3.2]; at \u03b8\u2080 this sinusoid is K cos(qt), since \u03c6(\u03b8\u2080)=0 and \u03c6\u2032(\u03b8\u2080\u207a)=\u2212Kq, and [\u03b8\u2080, \u03c0] has length \u03c0 \u2212 \u03c0/p < \u03c0/q. So m_GK \u2265 \u03c6 \u2265 K cos(qt) on [\u03b8\u2080, \u03c0]\". Here \u03c6 is the q-subtrigonometric minorant of Theorem 2.2 (label R), equal to A_\u03c6 cos(qt) on the arch [\u2212\u03b8\u2080, \u03b8\u2080] (l.68) with A_\u03c6 = K (l.71).",
+      "doc": "short_v3.90; sec4a_criterion.tex l.71-73 (proof of Proposition 4.2 (label Q), \"Only if\", after `A_\u03c6 = K`): \"A q-subtrigonometric function lies, on any interval of length at most \u03c0/q, above the sinusoid with its value and right derivative at the left end [HKV, Lemma 3.2]; at \u03b8\u2080 this sinusoid is K cos(qt), since \u03c6(\u03b8\u2080)=0 and \u03c6\u2032(\u03b8\u2080\u207a)=\u2212Kq, and [\u03b8\u2080, \u03c0] has length \u03c0 \u2212 \u03c0/p < \u03c0/q. So m_GK \u2265 \u03c6 \u2265 K cos(qt) on [\u03b8\u2080, \u03c0]\". Here \u03c6 is the q-subtrigonometric minorant of Theorem 2.2 (label R), equal to A_\u03c6 cos(qt) on the arch [\u2212\u03b8\u2080, \u03b8\u2080] (l.68) with A_\u03c6 = K (l.71).",
       "line": 2612,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec4_cosine_exterior_support",
@@ -4363,7 +4363,7 @@
     },
     {
       "name": "thm_B_b",
-      "doc": "short_v3.70; Theorem 5.2 (label B) (b), P019_paper.tex l.158: \"If p < p\u2080 or p > p\u2080\u2032, then \u2016P\u208a + \u03bbP\u208b\u2016_p > GK_p(\u03bb) for every \u03bb < 1 close enough to 1\". Its hypotheses are the computer checks of its proof (Proposition 4.3 (label F) and duality, sec5d_monotone.tex l.162): `\u03a9 < 0` on `(1, p\u2080)` is `p0_spec` (`CheckOmegaNeg`, `CheckOmegaRoot`).",
+      "doc": "short_v3.90; Theorem 5.2 (label B) (b), P019_paper.tex l.170: \"If p < p\u2080 or p > p\u2080\u2032, then \u2016P\u208a + \u03bbP\u208b\u2016_p > GK_p(\u03bb) for every \u03bb < 1 sufficiently close to 1\". Its hypotheses are the computer checks of its proof (Proposition 4.3 (label F) and duality, sec5d_monotone.tex l.162): `\u03a9 < 0` on `(1, p\u2080)` is `p0_spec` (`CheckOmegaNeg`, `CheckOmegaRoot`).",
       "line": 2624,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.thm_B_b",
@@ -4383,7 +4383,7 @@
     },
     {
       "name": "axis_zero_positive",
-      "doc": "short_v3.70/sec4b_failure.tex:108\u2013110. \"We have $h(0, p) > 0$\" from C1's equality classification and an attained actual axis minimum.",
+      "doc": "short_v3.90/sec4b_failure.tex:108\u2013110. \"We have $h(0, p) > 0$\" from C1's equality classification and an attained actual axis minimum.",
       "line": 2631,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.axis_zero_positive",
@@ -4398,7 +4398,7 @@
     },
     {
       "name": "sec5e_Kf_below",
-      "doc": "short_v3.70; sec5e_cstar.tex l.18-20 (\"If\" part): \"Since 3 \u2212 \u221a3 < 4/3, Lemma 5.11 (for p < 4/3) and Lemma 5.10 (for p \u2265 3 \u2212 \u221a3) together cover 1 < p < 2. They show that K_f is either decreasing, or increasing on (0, \u03b8_\u03bb] and decreasing afterwards; in the second case \u03b8_\u03bb < \u03b8\u2080, because K_f\u2032(\u03b8\u2080) < 0 whereas K_f\u2032 \u2265 0 on (0, \u03b8_\u03bb]. Hence {K_f < K} = (0, \u03b8_a) \u222a (\u03b8\u2080, \u03c0) for some \u03b8_a \u2208 [0, \u03b8\u2080)\".",
+      "doc": "short_v3.90; sec5e_cstar.tex l.18-20 (\"If\" part): \"Since 3 \u2212 \u221a3 < 4/3, Lemma 5.11 (for p < 4/3) and Lemma 5.10 (for p \u2265 3 \u2212 \u221a3) together cover 1 < p < 2. They show that K_f is either decreasing, or increasing on (0, \u03b8_\u03bb] and decreasing afterwards; in the second case \u03b8_\u03bb < \u03b8\u2080, because K_f\u2032(\u03b8\u2080) < 0 whereas K_f\u2032 \u2265 0 on (0, \u03b8_\u03bb]. Hence {K_f < K} = (0, \u03b8_a) \u222a (\u03b8\u2080, \u03c0) for some \u03b8_a \u2208 [0, \u03b8\u2080)\".",
       "line": 2638,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5e_Kf_below",
@@ -4413,7 +4413,7 @@
     },
     {
       "name": "sec5e_Lambda_pos",
-      "doc": "short_v3.70; sec5e_cstar.tex l.21-22 (\"If\" part: `h(\u03bb, p) \u2265 0`, `\u03bb < \u03bb_loc(p)`): \"Thus \u039b \u2265 min(\u039b(0\u207a), 0) and \u039b > 0 away from \u03b8\u2080 unless \u039b(0\u207a) < 0\" (here `\u039b(0\u207a) \u2265 0`, l.22-24).",
+      "doc": "short_v3.90; sec5e_cstar.tex l.21-22 (\"If\" part: `h(\u03bb, p) \u2265 0`, `\u03bb < \u03bb_loc(p)`): \"Thus \u039b \u2265 min(\u039b(0\u207a), 0) and \u039b > 0 away from \u03b8\u2080 unless \u039b(0\u207a) < 0\" (here `\u039b(0\u207a) \u2265 0`, l.22-24).",
       "line": 2650,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5e_Lambda_pos",
@@ -4428,7 +4428,7 @@
     },
     {
       "name": "slice_E01",
-      "doc": "Lemma A.1 (label endpoint), short_v3.70/endpoint_estimate.tex:7\u20139. \"For $1<p\\le1+10^{-6}$, $h(\\lambda_{\\mathrm{loc}}(p),p)<-1.88$.\" (`h = axisGap`; this is case (b) of the proof of Proposition 4.7, sec4b_failure.tex l.131-132.)",
+      "doc": "Lemma A.1 (label endpoint), short_v3.90/endpoint_estimate.tex:7\u20139. \"For $1<p\\le1+10^{-6}$, $h(\\lambda_{\\mathrm{loc}}(p),p)<-1.88$.\" (`h = axisGap`; this is case (b) of the proof of Proposition 4.7, sec4b_failure.tex l.131-132.)",
       "line": 2668,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.slice_E01",
@@ -4443,7 +4443,7 @@
     },
     {
       "name": "slice_E03",
-      "doc": "short_v3.70/endpoint_estimate.tex:12\u201317. \"$s_0=\\sin a=\\sin(\\pi/p)$ and $c_0=\\cos a=-\\cos(\\pi/p)$. Put d^2=\\frac{s_0^2}{c_0^4}\\left(\\frac{p\\pi}{4a}-1-c_0^2\\right),\\qquad \\lambda=\\frac{1-d}{1+d},\\qquad \\delta=1-\\lambda=\\frac{2d}{1+d},\\qquad Q_A=\\frac{\\delta}{s_0}.\"",
+      "doc": "short_v3.90/endpoint_estimate.tex:12\u201317. \"$s_0=\\sin a=\\sin(\\pi/p)$ and $c_0=\\cos a=-\\cos(\\pi/p)$. Put d^2=\\frac{s_0^2}{c_0^4}\\left(\\frac{p\\pi}{4a}-1-c_0^2\\right),\\qquad \\lambda=\\frac{1-d}{1+d},\\qquad \\delta=1-\\lambda=\\frac{2d}{1+d},\\qquad Q_A=\\frac{\\delta}{s_0}.\"",
       "line": 2673,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.slice_E03",
@@ -4458,7 +4458,7 @@
     },
     {
       "name": "slice_E04",
-      "doc": "short_v3.70/endpoint_estimate.tex:19\u201321. \"p-1\\le a/3,\\quad a-a^3/6\\le s_0\\le a,\\quad 1-a^2/2\\le c_0\\le1, \\quad \\frac{\\pi a}{4}(1-3a)\\le d^2\\le\\frac{\\pi a}{4}(1+a).\"",
+      "doc": "short_v3.90/endpoint_estimate.tex:19\u201321. \"p-1\\le a/3,\\quad a-a^3/6\\le s_0\\le a,\\quad 1-a^2/2\\le c_0\\le1, \\quad \\frac{\\pi a}{4}(1-3a)\\le d^2\\le\\frac{\\pi a}{4}(1+a).\"",
       "line": 2686,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.slice_E04",
@@ -4473,7 +4473,7 @@
     },
     {
       "name": "slice_E06",
-      "doc": "short_v3.70/endpoint_estimate.tex:26\u201328. \"\\sqrt a\\le \\delta\\le1.8\\sqrt a,\\qquad a^{-1/2}\\le Q_A\\le2a^{-1/2},\\qquad 2d\\le1.8\\sqrt a.\"",
+      "doc": "short_v3.90/endpoint_estimate.tex:26\u201328. \"\\sqrt a\\le \\delta\\le1.8\\sqrt a,\\qquad a^{-1/2}\\le Q_A\\le2a^{-1/2},\\qquad 2d\\le1.8\\sqrt a.\"",
       "line": 2698,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.slice_E06",
@@ -4488,7 +4488,7 @@
     },
     {
       "name": "slice_E07",
-      "doc": "short_v3.70/endpoint_estimate.tex:30\u201331. \"$C=(Q_A+\\sqrt{Q_A^2+4\\lambda})/2$, hence $C^2\\le Q_A^2+2$ and $C\\le Q_A+Q_A^{-1}\\le2Q_A$.\"",
+      "doc": "short_v3.90/endpoint_estimate.tex:30\u201331. \"$C=(Q_A+\\sqrt{Q_A^2+4\\lambda})/2$, hence $C^2\\le Q_A^2+2$ and $C\\le Q_A+Q_A^{-1}\\le2Q_A$.\"",
       "line": 2708,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.slice_E07",
@@ -4503,7 +4503,7 @@
     },
     {
       "name": "slice_E08",
-      "doc": "short_v3.70/endpoint_estimate.tex:32\u201335. \"Inequality~(4.6) with $\\vartheta=1/2$, that is, $\\rho=(1+\\lambda)/2$, gives h(\\lambda,p)\\le U_1-U_2-K,\\qquad U_1=(2C)^p,\\qquad U_2=(2\\rho)^p.\"",
+      "doc": "short_v3.90/endpoint_estimate.tex:32\u201335. \"Inequality~(4.6) with $\\vartheta=1/2$, that is, $\\rho=(1+\\lambda)/2$, gives h(\\lambda,p)\\le U_1-U_2-K,\\qquad U_1=(2C)^p,\\qquad U_2=(2\\rho)^p.\"",
       "line": 2717,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.slice_E08",
@@ -4518,7 +4518,7 @@
     },
     {
       "name": "slice_E09",
-      "doc": "short_v3.70/endpoint_estimate.tex:36\u201337. \"With $x=(p-1)\\log(2C)$, we have $0\\le x\\le(a/3)\\log(8/\\sqrt a)<1$. The estimate $e^x\\le1+2x$ therefore yields\"",
+      "doc": "short_v3.90/endpoint_estimate.tex:36\u201337. \"With $x=(p-1)\\log(2C)$, we have $0\\le x\\le(a/3)\\log(8/\\sqrt a)<1$. The estimate $e^x\\le1+2x$ therefore yields\"",
       "line": 2725,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.slice_E09",
@@ -4533,7 +4533,7 @@
     },
     {
       "name": "slice_E10",
-      "doc": "short_v3.70/endpoint_estimate.tex:38\u201341. \"U_1\\le2Q_A+\\frac2{Q_A}+\\frac83Q_Aa\\log\\frac8{\\sqrt a},\\qquad U_2\\ge2\\rho=\\frac2{1+d}\\ge2-2d.\"",
+      "doc": "short_v3.90/endpoint_estimate.tex:38\u201341. \"U_1\\le2Q_A+\\frac2{Q_A}+\\frac83Q_Aa\\log\\frac8{\\sqrt a},\\qquad U_2\\ge2\\rho=\\frac2{1+d}\\ge2-2d.\"",
       "line": 2734,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.slice_E10",
@@ -4548,7 +4548,7 @@
     },
     {
       "name": "slice_E11",
-      "doc": "short_v3.70/endpoint_estimate.tex:42\u201348. \"$v=r-\\lambda/r=\\sqrt{\\delta^2+4\\lambda s_0^2}/c_0$. The contact equation $r+\\lambda/r=(1+\\lambda)/c_0$ implies \\frac1{c_0}\\le r\\le\\frac{1+s_0^2/\\delta}{c_0},\\qquad v\\le\\frac{\\delta(1+2s_0^2/\\delta^2)}{c_0},\\qquad |re^{i\\pi/p}+\\lambda|\\ge r-\\lambda\\ge \\delta.\"",
+      "doc": "short_v3.90/endpoint_estimate.tex:42\u201348. \"$v=r-\\lambda/r=\\sqrt{\\delta^2+4\\lambda s_0^2}/c_0$. The contact equation $r+\\lambda/r=(1+\\lambda)/c_0$ implies \\frac1{c_0}\\le r\\le\\frac{1+s_0^2/\\delta}{c_0},\\qquad v\\le\\frac{\\delta(1+2s_0^2/\\delta^2)}{c_0},\\qquad |re^{i\\pi/p}+\\lambda|\\ge r-\\lambda\\ge \\delta.\"",
       "line": 2746,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.slice_E11",
@@ -4563,7 +4563,7 @@
     },
     {
       "name": "slice_E12",
-      "doc": "short_v3.70/endpoint_estimate.tex:49\u201353. \"K=2Q_A\\,r^{-q}\\frac{|re^{i\\pi/p}+\\lambda|^p}{v} \\ge2Q_A\\frac{c_0^2\\delta^{p-1}}{(1+s_0^2/\\delta)(1+2s_0^2/\\delta^2)} \\ge2Q_A(1-E_K),\"",
+      "doc": "short_v3.90/endpoint_estimate.tex:49\u201353. \"K=2Q_A\\,r^{-q}\\frac{|re^{i\\pi/p}+\\lambda|^p}{v} \\ge2Q_A\\frac{c_0^2\\delta^{p-1}}{(1+s_0^2/\\delta)(1+2s_0^2/\\delta^2)} \\ge2Q_A(1-E_K),\"",
       "line": 2760,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.slice_E12",
@@ -4578,7 +4578,7 @@
     },
     {
       "name": "slice_E13",
-      "doc": "short_v3.70/endpoint_estimate.tex:55\u201361. \"E_K=(p-1)\\log(1/\\delta)+a^2+\\frac{s_0^2}{\\delta}+\\frac{2s_0^2}{\\delta^2} \\le\\frac a6\\log\\frac1a+a^2+a^{3/2}+2a.\"",
+      "doc": "short_v3.90/endpoint_estimate.tex:55\u201361. \"E_K=(p-1)\\log(1/\\delta)+a^2+\\frac{s_0^2}{\\delta}+\\frac{2s_0^2}{\\delta^2} \\le\\frac a6\\log\\frac1a+a^2+a^{3/2}+2a.\"",
       "line": 2778,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.slice_E13",
@@ -4593,7 +4593,7 @@
     },
     {
       "name": "slice_E14",
-      "doc": "short_v3.70/endpoint_estimate.tex:62\u201366. \"h(\\lambda_{\\mathrm{loc}}(p),p)\\le-2+R(a),\\qquad R(a)=\\sqrt a\\left[2+\\frac{16}3\\log\\frac8{\\sqrt a}+1.8+\\frac23\\log\\frac1a+8+4\\sqrt a+4a\\right].\"",
+      "doc": "short_v3.90/endpoint_estimate.tex:62\u201366. \"h(\\lambda_{\\mathrm{loc}}(p),p)\\le-2+R(a),\\qquad R(a)=\\sqrt a\\left[2+\\frac{16}3\\log\\frac8{\\sqrt a}+1.8+\\frac23\\log\\frac1a+8+4\\sqrt a+4a\\right].\"",
       "line": 2789,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.slice_E14",
@@ -4608,7 +4608,7 @@
     },
     {
       "name": "slice_E15",
-      "doc": "short_v3.70/endpoint_estimate.tex:67\u201367. \"Every term in $R$ is increasing on $(0,\\bar a]$: in particular $\\sqrt a\\log(1/a)$ increases for $a<e^{-2}$.\"",
+      "doc": "short_v3.90/endpoint_estimate.tex:67. \"Every term in $R$ is increasing on $(0,\\bar a]$: in particular $\\sqrt a\\log(1/a)$ increases for $a<e^{-2}$.\"",
       "line": 2794,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.slice_E15",
@@ -4623,7 +4623,7 @@
     },
     {
       "name": "slice_E16",
-      "doc": "short_v3.70/endpoint_estimate.tex:68\u201368. \"Finally $\\sqrt{\\bar a}<0.001789$, $\\log(8/\\sqrt{\\bar a})<8.5$, and $\\log(1/\\bar a)<12.66$ give $R(\\bar a)<0.12$.\"",
+      "doc": "short_v3.90/endpoint_estimate.tex:68. \"Finally $\\sqrt{\\bar a}<0.001789$, $\\log(8/\\sqrt{\\bar a})<8.5$, and $\\log(1/\\bar a)<12.66$ give $R(\\bar a)<0.12$.\"",
       "line": 2800,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.slice_E16",
@@ -4638,7 +4638,7 @@
     },
     {
       "name": "sec4_prop_edge",
-      "doc": "short_v3.70/sec4b_failure.tex:118\u2013121. \"For every $1 < p < p_c$, $h(\\lambda_{\\mathrm{loc}}(p), p) < 0$.\" The actual first positive axis zero and strict norm failure at the local threshold are included. The three named checks stay explicit.",
+      "doc": "short_v3.90/sec4b_failure.tex:118\u2013121. \"For every $1 < p < p_c$, $h(\\lambda_{\\mathrm{loc}}(p), p) < 0$.\" The actual first positive axis zero and strict norm failure at the local threshold are included. The three named checks stay explicit.",
       "line": 2807,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec4_prop_edge",
@@ -4658,7 +4658,7 @@
     },
     {
       "name": "sec5_prop_S",
-      "doc": "short_v3.70/sec5f_strip.tex:43\u201345. \"Let $p_0 \\le p \\le 1.268$ and $0 < \\lambda < 1$. Then $h(\\lambda, p) > 0$.\" The operator conclusion for every real ratio on the stated exponent strip is included, with its seven named checks: sec5f_strip.tex:74\u201375 \"For $p_0\\le p<3-\\sqrt3$ we have $p>p_c$, so $\\lambda_{\\mathrm{loc}}=1$ and Theorem~5.3 turns $h>0$ into equality for $0<\\lambda<1$.\" and \"So the bound is sharp for every real ratio when $p_0\\le p<3-\\sqrt3$.\"",
+      "doc": "short_v3.90/sec5f_strip.tex:43\u201345. \"Let $p_0 \\le p \\le 1.268$ and $0 < \\lambda < 1$. Then $h(\\lambda, p) > 0$.\" The operator conclusion for every real ratio on the stated exponent strip is included, with its seven named checks: sec5f_strip.tex:74\u201375 \"For $p_0\\le p<3-\\sqrt3$ we have $p>p_c$, so $\\lambda_{\\mathrm{loc}}=1$ and Theorem~5.3 turns $h>0$ into equality for $0<\\lambda<1$.\" and \"So the bound is sharp for every real ratio when $p_0\\le p<3-\\sqrt3$.\"",
       "line": 2815,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5_prop_S",
@@ -4682,7 +4682,7 @@
     },
     {
       "name": "thm_Cstar",
-      "doc": "short_v3.70; Theorem 5.3 (label Cstar), P019_paper.tex l.161-163 (proof sec5e_cstar.tex l.12-30): \"Let 1 < p < 2 and 0 < \u03bb < 1. Then \u2016P\u208a + \u03bbP\u208b\u2016_p = GK_p(\u03bb) if and only if m_GK(0) \u2265 K (the first condition in (1.1)) and \u03bb < \u03bb_loc(p), where \u03bb_loc is the threshold defined in Section 1 (see Theorem 4.4 and Lemma 4.6; so \u03bb_loc = 1 for p \u2265 p_c)\". (`m_GK(0) \u2265 K` is `0 \u2264 axisGap p lam`, i.e. h(\u03bb, p) \u2265 0; `\u03bb_loc` is the shared `Threshold.lambdaLoc`, whose clamp to 1 is `lambdaLoc_spec`.) Its hypotheses are the computer checks of its proof: the case `\u03bb = \u03bb_loc(p)` uses Proposition 4.7 (label edge) (`CheckLocalF`, `CheckBoundaryBulk`, `CheckBoundarySliver`), and the description of `\u03bb_loc` uses `CheckLocalF`.",
+      "doc": "short_v3.90; Theorem 5.3 (label Cstar), P019_paper.tex l.173-175 (proof sec5e_cstar.tex l.12-30): \"Let 1 < p < 2 and 0 < \u03bb < 1. Then \u2016P\u208a + \u03bbP\u208b\u2016_p = GK_p(\u03bb) if and only if m_GK(0) \u2265 K (the first condition in (1.1)) and \u03bb < \u03bb_loc(p), where \u03bb_loc is the threshold defined in Section 1 (see Theorem 4.4 and Lemma 4.6; so \u03bb_loc = 1 for p \u2265 p_c)\". (`m_GK(0) \u2265 K` is `0 \u2264 axisGap p lam`, i.e. h(\u03bb, p) \u2265 0; `\u03bb_loc` is the shared `Threshold.lambdaLoc`, whose clamp to 1 is `lambdaLoc_spec`.) Its hypotheses are the computer checks of its proof: the case `\u03bb = \u03bb_loc(p)` uses Proposition 4.7 (label edge) (`CheckLocalF`, `CheckBoundaryBulk`, `CheckBoundarySliver`), and the description of `\u03bb_loc` uses `CheckLocalF`.",
       "line": 2829,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.thm_Cstar",
@@ -4702,7 +4702,7 @@
     },
     {
       "name": "thm_B_a",
-      "doc": "Theorem 5.2 (label B) (a), P019_paper.tex l.156-157: \"Let p\u2080 and p\u2080\u2032 be as in Theorem 1.1 (p\u2080 \u2248 1.2336026, p\u2080\u2032 \u2248 5.2807742). (a) If p\u2080 \u2264 p \u2264 p\u2080\u2032, then \u2016P\u208a + \u03bbP\u208b\u2016_p = GK_p(\u03bb) for every \u03bb \u2208 \u211d\". Its hypotheses are the computer checks of its proof (sec5d_monotone.tex l.157-162, sec5f_strip.tex l.43-45 and l.74-75): the six checks of Proposition 5.14 (label strip), and `CheckLocalF` for `p_c < p\u2080` (`pc_lt_p0`), which gives `\u03bb_loc = 1` in Theorem 5.3.",
+      "doc": "Theorem 5.2 (label B) (a), P019_paper.tex l.168-169: \"Let p\u2080 and p\u2080\u2032 be as in Theorem 1.1 (p\u2080 \u2248 1.2336026, p\u2080\u2032 \u2248 5.2807742). (a) If p\u2080 \u2264 p \u2264 p\u2080\u2032, then \u2016P\u208a + \u03bbP\u208b\u2016_p = GK_p(\u03bb) for every \u03bb \u2208 \u211d\". Its hypotheses are the computer checks of its proof (sec5d_monotone.tex l.157-162, sec5f_strip.tex l.43-45 and l.74-75): the six checks of Proposition 5.14 (label strip), and `CheckLocalF` for `p_c < p\u2080` (`pc_lt_p0`), which gives `\u03bb_loc = 1` in Theorem 5.3.",
       "line": 2848,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.thm_B_a",
@@ -4727,7 +4727,7 @@
     },
     {
       "name": "thm_B_pair",
-      "doc": "Theorem 5.2 (label B) (c), P019_paper.tex l.159: \"If p\u2080 \u2264 p \u2264 p\u2080\u2032, p \u2260 2 and \u03b1 \u2260 0, then \u2016\u03b1P\u208a + \u03b2P\u208b\u2016_p = GK_p(\u03b1, \u03b2) if and only if \u03b2/\u03b1 \u2208 \u211d. If \u03b1 = 0, the bound is always sharp\" (\"always\": every `p > 1`, so the `\u03b1 = 0` clause is outside the range hypotheses). Its hypotheses are the computer checks of Theorem 5.2 (a) (`thm_B_a`), used for the \"if\" direction; the \"only if\" direction (Theorem 3.2) and the `\u03b1 = 0` clause use no computer check.",
+      "doc": "Theorem 5.2 (label B) (c), P019_paper.tex l.171: \"If p\u2080 \u2264 p \u2264 p\u2080\u2032, p \u2260 2 and \u03b1 \u2260 0, then \u2016\u03b1P\u208a + \u03b2P\u208b\u2016_p = GK_p(\u03b1, \u03b2) if and only if \u03b2/\u03b1 \u2208 \u211d. If \u03b1 = 0, the bound is always sharp\" (\"always\": every `p > 1`, so the `\u03b1 = 0` clause is outside the range hypotheses). Its hypotheses are the computer checks of Theorem 5.2 (a) (`thm_B_a`), used for the \"if\" direction; the \"only if\" direction (Theorem 3.2) and the `\u03b1 = 0` clause use no computer check.",
       "line": 2861,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.thm_B_pair",
@@ -4752,8 +4752,8 @@
     },
     {
       "name": "thm_classification",
-      "doc": "Theorem 1.1 (label classification), P019_paper.tex l.97-103: \"Let 1 < p < \u221e and p\u2080\u2032 = p\u2080/(p\u2080 \u2212 1). (a) If p \u2260 2 and \u03c1 \u2209 \u211d, then N_p(\u03c1) > GK_p(\u03c1). (b) If \u03bb \u2264 0 is real, then N_p(\u03bb) = GK_p(\u03bb). (c) The equality N_p(\u03bb) = GK_p(\u03bb) holds for every real \u03bb if and only if p\u2080 \u2264 p \u2264 p\u2080\u2032. If p < p\u2080 or p > p\u2080\u2032, then N_p(\u03bb) > GK_p(\u03bb) for every \u03bb < 1 sufficiently close to 1. (d) If 1 < p < 2 and 0 < \u03bb < 1, then N_p(\u03bb) = GK_p(\u03bb) if and only if both conditions in (1.1) hold.\"; after it, l.104: \"part (d) as Theorem 5.3; for p > 2 part (d) applies with p\u2032 in place of p, since N_p(\u03bb) = N_{p\u2032}(\u03bb) and GK_p = GK_{p\u2032}. Ratios \u03bb > 1 reduce to 1/\u03bb by the reciprocal symmetries above, and the bound is sharp for \u03bb = 1, for p = 2 and for \u03b1 = 0.\" Each clause is its own conjunct, with five clauses carried by companion rows and links: (b) \"If \u03bb \u2264 0 is real\" is stated here for `\u22121 \u2264 \u03bb \u2264 0` (Theorem 5.1) and for every `\u03bb \u2264 0` by `thm_classification_nonpositive`; the criterion is stated here with Theorem 5.3's axis condition `m_GK(0) \u2265 K` and in the form (1.1) by `thm_classification_tests`; the reduction of `\u03bb > 1` is `thm_classification_reciprocal`; `\u03bb = 1` is `sec5_lambda_one`; `\u03b1 = 0` is the link `cover_final_alpha_zero_sharp` (from the `\u03b1 = 0` conjunct of `thm_B_pair`, with no computer check). The criterion clause is stated for `1 < p < 2` and for `p > 2` (at `p\u2032 = p/(p\u22121)`). Its hypotheses are the union of the computer checks of Theorems 5.2 and 5.3 (`thm_B_a`, `thm_B_b`, `thm_Cstar`); the clauses for `\u03c1 \u2209 \u211d`, `\u03bb \u2208 [\u22121, 0]` and `p = 2` use none (they are also the rows `thm_A`, `thm_C1`). Caption of Figure 1, P019_paper.tex:113: \"and for every $\\lambda$ when $p_0\\le p<2$\" (clause (c), first sentence, for `p < 2`; the literal form is the link `cover_q17_intro_regime_sharp`) and \"In the hatched band the criterion of Theorem~\\ref{thm:classification}(d) still applies to each $\\lambda$, but its outcome is known only in part; for example, when $p_c\\le p<p_0$ the bound is not sharp for every $\\lambda<1$ close enough to $1$ (Theorem~\\ref{thm:classification}(c))\" (clause (d); clause (c), second sentence, for `p < p\u2080`; the words on what is known are not a claim).",
-      "line": 2890,
+      "doc": "Theorem 1.1 (label classification), P019_paper.tex l.106-112: \"Let 1 < p < \u221e and p\u2080\u2032 = p\u2080/(p\u2080 \u2212 1). (a) If p \u2260 2 and \u03c1 \u2209 \u211d, then N_p(\u03c1) > GK_p(\u03c1). (b) If \u03bb \u2264 0 is real, then N_p(\u03bb) = GK_p(\u03bb). (c) The equality N_p(\u03bb) = GK_p(\u03bb) holds for every real \u03bb if and only if p\u2080 \u2264 p \u2264 p\u2080\u2032. If p < p\u2080 or p > p\u2080\u2032, then N_p(\u03bb) > GK_p(\u03bb) for every \u03bb < 1 sufficiently close to 1. (d) If 1 < p < 2 and 0 < \u03bb < 1, then N_p(\u03bb) = GK_p(\u03bb) if and only if both conditions in (1.1) hold.\"; after it, l.113: \"part (d) as Theorem 5.3; for p > 2 part (d) applies with p\u2032 in place of p, since N_p(\u03bb) = N_{p\u2032}(\u03bb) and GK_p = GK_{p\u2032}. Ratios \u03bb > 1 reduce to 1/\u03bb by the reciprocal symmetries above, and the bound is sharp for \u03bb = 1, for p = 2 and for \u03b1 = 0.\" Each clause is its own conjunct, with five clauses carried by companion rows and links: (b) \"If \u03bb \u2264 0 is real\" is stated here for `\u22121 \u2264 \u03bb \u2264 0` (Theorem 5.1) and for every `\u03bb \u2264 0` by `thm_classification_nonpositive`; the criterion is stated here with Theorem 5.3's axis condition `m_GK(0) \u2265 K` and in the form (1.1) by `thm_classification_tests`; the reduction of `\u03bb > 1` is `thm_classification_reciprocal`; `\u03bb = 1` is `sec5_lambda_one`; `\u03b1 = 0` is the link `cover_final_alpha_zero_sharp` (from the `\u03b1 = 0` conjunct of `thm_B_pair`, with no computer check). The criterion clause is stated for `1 < p < 2` and for `p > 2` (at `p\u2032 = p/(p\u22121)`). Its hypotheses are the union of the computer checks of Theorems 5.2 and 5.3 (`thm_B_a`, `thm_B_b`, `thm_Cstar`); the clauses for `\u03c1 \u2209 \u211d`, `\u03bb \u2208 [\u22121, 0]` and `p = 2` use none (they are also the rows `thm_A`, `thm_C1`). Caption of Figure 2, P019_paper.tex:122: \"and for every $\\lambda$ when $p_0\\le p<2$\" (clause (c), first sentence, for `p < 2`; the literal form is the link `cover_q17_intro_regime_sharp`) and \"In the hatched band the criterion of Theorem~\\ref{thm:classification}(d) still applies to each $\\lambda$, but its outcome is known only in part; for example, when $p_c\\le p<p_0$ the bound is not sharp for any $\\lambda<1$ sufficiently close to $1$ (Theorem~\\ref{thm:classification}(c))\" (clause (d); clause (c), second sentence, for `p < p\u2080`; the words on what is known are not a claim).",
+      "line": 2888,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.thm_classification",
       "file": "GKSharp/Paper/Statements.lean",
@@ -4779,8 +4779,8 @@
     },
     {
       "name": "sec5_A2_ift",
-      "doc": "short_v3.70/sec5_sharp_inequality.tex:88\u201394. \"\u03b8 is a smooth function of \u03c1\"; local inverse conclusion (route R8(ii)).",
-      "line": 2912,
+      "doc": "short_v3.90/sec5_sharp_inequality.tex:88\u201394. \"\u03b8 is a smooth function of \u03c1\"; local inverse conclusion (route R8(ii)).",
+      "line": 2910,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5_A2_ift",
       "file": "GKSharp/Paper/Statements.lean",
@@ -4794,8 +4794,8 @@
     },
     {
       "name": "sec2_gk_from_invariants",
-      "doc": "short_v3.70/sec2_obstacle.tex:22\u201330. \"They determine its singular values and are unchanged\" by the listed symmetries, including conjugate exponents.",
-      "line": 2920,
+      "doc": "short_v3.90/sec2_obstacle.tex:22\u201330. \"They determine its singular values and are unchanged\" by the listed symmetries, including conjugate exponents.",
+      "line": 2918,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec2_gk_from_invariants",
       "file": "GKSharp/Paper/Statements.lean",
@@ -4809,8 +4809,8 @@
     },
     {
       "name": "sec2_gkPair_dual",
-      "doc": "short_v3.70/sec2_obstacle.tex:22\u201330. \"They determine its singular values and are unchanged\" by the listed symmetries, including conjugate exponents.",
-      "line": 2926,
+      "doc": "short_v3.90/sec2_obstacle.tex:22\u201330. \"They determine its singular values and are unchanged\" by the listed symmetries, including conjugate exponents.",
+      "line": 2924,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec2_gkPair_dual",
       "file": "GKSharp/Paper/Statements.lean",
@@ -4824,8 +4824,8 @@
     },
     {
       "name": "angular_contact_determines_cos",
-      "doc": "short_v3.70/sec4a_criterion.tex:67\u201374. \"hence A_\u03c6 = K\" and \"So m_GK \u2265 \u03c6 \u2265 K cos(qt)\"; the full interval follows by evenness.",
-      "line": 2930,
+      "doc": "short_v3.90/sec4a_criterion.tex:67\u201374. \"hence A_\u03c6 = K\" and \"So m_GK \u2265 \u03c6 \u2265 K cos(qt)\"; the full interval follows by evenness.",
+      "line": 2928,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.angular_contact_determines_cos",
       "file": "GKSharp/Paper/Statements.lean",
@@ -4839,8 +4839,8 @@
     },
     {
       "name": "obstacle_joint_continuous",
-      "doc": "short_v3.70/sec2_obstacle.tex:57\u201360 \"m_C is finite and continuous\"; sec4b_failure.tex:114 \"Joint continuity of \u0393_C(y,0)\"; joint parameter version used by the axis restriction.",
-      "line": 2939,
+      "doc": "short_v3.90/sec2_obstacle.tex:57\u201360 \"m_C is finite and continuous\"; sec4b_failure.tex:114 \"Joint continuity of \u0393_C(y,0)\"; joint parameter version used by the axis restriction.",
+      "line": 2937,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.obstacle_joint_continuous",
       "file": "GKSharp/Paper/Statements.lean",
@@ -4854,8 +4854,8 @@
     },
     {
       "name": "sec5_strip_criterion",
-      "doc": "short_v3.70/sec5f_strip.tex:16\u201317. \"the bound is sharp at \u03bb \u2208 (0,1) exactly when h(\u03bb, p) \u2265 0\".",
-      "line": 2944,
+      "doc": "short_v3.90/sec5f_strip.tex:16\u201317. \"the bound is sharp at \u03bb \u2208 (0,1) exactly when h(\u03bb, p) \u2265 0\".",
+      "line": 2942,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5_strip_criterion",
       "file": "GKSharp/Paper/Statements.lean",
@@ -4872,8 +4872,8 @@
     },
     {
       "name": "thm_classification_nonpositive",
-      "doc": "Theorem 1.1 (label classification), P019_paper.tex l.100: \"(b) If \u03bb \u2264 0 is real, then N_p(\u03bb) = GK_p(\u03bb)\" (all `1 < p < \u221e`). For `\u03bb \u2208 [\u22121, 0]` this is Theorem 5.1 (`thm_C1`); for `\u03bb < \u22121` the reciprocal symmetries of P019_paper.tex l.60 (`intro_norm_inv`) and sec5d_monotone.tex l.159-160 (`sec5_gk_inv`) move `\u03bb` to `1/\u03bb \u2208 (\u22121, 0)`. No computer check is used.",
-      "line": 2959,
+      "doc": "Theorem 1.1 (label classification), P019_paper.tex l.109: \"(b) If \u03bb \u2264 0 is real, then N_p(\u03bb) = GK_p(\u03bb)\" (all `1 < p < \u221e`). For `\u03bb \u2208 [\u22121, 0]` this is Theorem 5.1 (`thm_C1`); for `\u03bb < \u22121` the reciprocal symmetries of P019_paper.tex l.61 (`intro_norm_inv`) and sec5d_monotone.tex l.159-160 (`sec5_gk_inv`) move `\u03bb` to `1/\u03bb \u2208 (\u22121, 0)`. No computer check is used.",
+      "line": 2957,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.thm_classification_nonpositive",
       "file": "GKSharp/Paper/Statements.lean",
@@ -4889,8 +4889,8 @@
     },
     {
       "name": "thm_classification_reciprocal",
-      "doc": "Theorem 1.1 (label classification), P019_paper.tex l.104: \"Ratios \u03bb > 1 reduce to 1/\u03bb by the reciprocal symmetries above\": for `\u03bb > 1`, `N_p(\u03bb) = GK_p(\u03bb)` if and only if `N_p(1/\u03bb) = GK_p(1/\u03bb)` (all `1 < p < \u221e`; from `intro_norm_inv` and `sec5_gk_inv`).",
-      "line": 2976,
+      "doc": "Theorem 1.1 (label classification), P019_paper.tex l.113: \"Ratios \u03bb > 1 reduce to 1/\u03bb by the reciprocal symmetries above\": for `\u03bb > 1`, `N_p(\u03bb) = GK_p(\u03bb)` if and only if `N_p(1/\u03bb) = GK_p(1/\u03bb)` (all `1 < p < \u221e`; from `intro_norm_inv` and `sec5_gk_inv`).",
+      "line": 2974,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.thm_classification_reciprocal",
       "file": "GKSharp/Paper/Statements.lean",
@@ -4904,8 +4904,8 @@
     },
     {
       "name": "intro_gk_lower_pair",
-      "doc": "P019_paper.tex l.54-55: \"Gohberg and Krupnik proved the lower bound \u2016\u03b1P\u208a + \u03b2P\u208b\u2016_p \u2265 GK_p(\u03b1, \u03b2)\" (every `\u03b1, \u03b2 \u2208 \u2102`, `1 < p`): the normalized bound `slice_O04` with the homogeneity rows `sec2_gk_homogeneous`, `intro_pencil_homogeneous`, and for `\u03b1 = 0` the equal values `sec2_gk_pure_minus`, `intro_pencil_zero_left`.",
-      "line": 2989,
+      "doc": "P019_paper.tex l.55-56: \"Gohberg and Krupnik proved the lower bound \u2016\u03b1P\u208a + \u03b2P\u208b\u2016_p \u2265 GK_p(\u03b1, \u03b2)\" (every `\u03b1, \u03b2 \u2208 \u2102`, `1 < p`): the normalized bound `slice_O04` with the homogeneity rows `sec2_gk_homogeneous`, `intro_pencil_homogeneous`, and for `\u03b1 = 0` the equal values `sec2_gk_pure_minus`, `intro_pencil_zero_left`.",
+      "line": 2987,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.intro_gk_lower_pair",
       "file": "GKSharp/Paper/Statements.lean",
@@ -4921,8 +4921,8 @@
     },
     {
       "name": "intro_constants",
-      "doc": "P019_paper.tex l.85-87 (definitions before Theorem 1.1, `q = p/2`, `s\u2080 = sin(\u03c0/p)`, `c\u2080 = \u2212cos(\u03c0/p)`): \"A = (1 \u2212 s\u2080)/(2s\u2080)\"; \"put \u03a9(p) = p(A + s_*)/(s_*(1 \u2212 s_*))^q \u2212 2^q s\u2080^{p\u22122} c\u2080^{1\u2212q}\"; \"K = 2(1 \u2212 \u03bb)C s\u2080^{p\u22122} c\u2080^{1\u2212q}(C\u00b2 + \u03bb)^{q\u22121}\" with `C = GK_p(\u03bb)`. (That `s_*` is \"the unique root in (0, 1)\" of `(2q \u2212 1)s\u00b2 + (1 \u2212 q + 2qA)s \u2212 qA = 0` is the row `sStar_spec`.)",
-      "line": 3001,
+      "doc": "P019_paper.tex l.94-96 (definitions before Theorem 1.1, `q = p/2`, `s\u2080 = sin(\u03c0/p)`, `c\u2080 = \u2212cos(\u03c0/p)`): \"A = (1 \u2212 s\u2080)/(2s\u2080)\"; \"put \u03a9(p) = p(A + s_*)/(s_*(1 \u2212 s_*))^q \u2212 2^q s\u2080^{p\u22122} c\u2080^{1\u2212q}\"; \"K = 2(1 \u2212 \u03bb)C s\u2080^{p\u22122} c\u2080^{1\u2212q}(C\u00b2 + \u03bb)^{q\u22121}\" with `C = GK_p(\u03bb)`. (That `s_*` is \"the unique root in (0, 1)\" of `(2q \u2212 1)s\u00b2 + (1 \u2212 q + 2qA)s \u2212 qA = 0` is the row `sStar_spec`.)",
+      "line": 2999,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.intro_constants",
       "file": "GKSharp/Paper/Statements.lean",
@@ -4936,8 +4936,8 @@
     },
     {
       "name": "intro_lambdaLoc_clamp",
-      "doc": "P019_paper.tex l.87-88: \"Put T(p) = s\u2080\u00b2(pp\u2032/4 \u2212 1 \u2212 c\u2080\u00b2)/c\u2080\u2074 and \u03bb_loc(p) = (1 \u2212 \u221aT(p))/(1 + \u221aT(p)) if T(p) > 0, and \u03bb_loc(p) = 1 if T(p) \u2264 0\" (`1 < p < 2`, `p\u2032 = p/(p \u2212 1)`): this is Lean's `lambdaLoc`, whose case split is on the sign of `localF p = pp\u2032 \u2212 4(1 + cos\u00b2(\u03c0/p))`; `T(p) = s\u2080\u00b2 localF(p)/(4c\u2080\u2074)` has the same sign.",
-      "line": 3012,
+      "doc": "P019_paper.tex l.96-97: \"Put T(p) = s\u2080\u00b2(pp\u2032/4 \u2212 1 \u2212 c\u2080\u00b2)/c\u2080\u2074 and \u03bb_loc(p) = (1 \u2212 \u221aT(p))/(1 + \u221aT(p)) if T(p) > 0, and \u03bb_loc(p) = 1 if T(p) \u2264 0\" (`1 < p < 2`, `p\u2032 = p/(p \u2212 1)`): this is Lean's `lambdaLoc`, whose case split is on the sign of `localF p = pp\u2032 \u2212 4(1 + cos\u00b2(\u03c0/p))`; `T(p) = s\u2080\u00b2 localF(p)/(4c\u2080\u2074)` has the same sign.",
+      "line": 3010,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.intro_lambdaLoc_clamp",
       "file": "GKSharp/Paper/Statements.lean",
@@ -4951,8 +4951,8 @@
     },
     {
       "name": "intro_axis_test_iff",
-      "doc": "P019_paper.tex l.90 (`1 < p < 2`, `0 < \u03bb < 1`, `C = GK_p(\u03bb)`): the positive-axis test \"C^p(1 + x)^p \u2212 (1 + \u03bbx)^p \u2265 K x^q for every x > 0\" is `m_GK(0) \u2265 K`, the axis condition of Theorem 5.3 (P019_paper.tex l.162).",
-      "line": 3035,
+      "doc": "P019_paper.tex l.99 (`1 < p < 2`, `0 < \u03bb < 1`, `C = GK_p(\u03bb)`): the positive-axis test \"C^p(1 + x)^p \u2212 (1 + \u03bbx)^p \u2265 K x^q for every x > 0\" is `m_GK(0) \u2265 K`, the axis condition of Theorem 5.3 (P019_paper.tex l.174).",
+      "line": 3033,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.intro_axis_test_iff",
       "file": "GKSharp/Paper/Statements.lean",
@@ -4966,8 +4966,8 @@
     },
     {
       "name": "intro_tests_criterion",
-      "doc": "(1.1) (label introcrit), P019_paper.tex l.89-90 (`1 < p < 2`, `0 < \u03bb < 1`, `C = GK_p(\u03bb)`): \"The two conditions of the criterion are C^p(1 + x)^p \u2212 (1 + \u03bbx)^p \u2265 K x^q for every x > 0, \u03bb < \u03bb_loc(p)\", with Theorem 1.1, l.102: \"(d) If 1 < p < 2 and 0 < \u03bb < 1, then N_p(\u03bb) = GK_p(\u03bb) if and only if both conditions in (1.1) hold\" (Theorem 5.3 with the axis test of `intro_axis_test_iff`). Its hypotheses are the computer checks of Theorem 5.3 (`thm_Cstar`).",
-      "line": 3080,
+      "doc": "(1.1) (label introcrit), P019_paper.tex l.98-99 (`1 < p < 2`, `0 < \u03bb < 1`, `C = GK_p(\u03bb)`): \"The two conditions of the criterion are C^p(1 + x)^p \u2212 (1 + \u03bbx)^p \u2265 K x^q for every x > 0, \u03bb < \u03bb_loc(p)\", with Theorem 1.1, l.111: \"(d) If 1 < p < 2 and 0 < \u03bb < 1, then N_p(\u03bb) = GK_p(\u03bb) if and only if both conditions in (1.1) hold\" (Theorem 5.3 with the axis test of `intro_axis_test_iff`). Its hypotheses are the computer checks of Theorem 5.3 (`thm_Cstar`).",
+      "line": 3078,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.intro_tests_criterion",
       "file": "GKSharp/Paper/Statements.lean",
@@ -4986,8 +4986,8 @@
     },
     {
       "name": "thm_classification_tests",
-      "doc": "Theorem 1.1 (label classification), P019_paper.tex l.102 and l.104 with (1.1) (label introcrit), l.90: \"(d) If 1 < p < 2 and 0 < \u03bb < 1, then N_p(\u03bb) = GK_p(\u03bb) if and only if both conditions in (1.1) hold\"; \"for p > 2 part (d) applies with p\u2032 in place of p\", (1.1) being \"C^p(1 + x)^p \u2212 (1 + \u03bbx)^p \u2265 K x^q for every x > 0, \u03bb < \u03bb_loc(p)\". The two criterion clauses of `thm_classification` with the axis test of `intro_axis_test_iff`; the hypotheses are those of `thm_classification`.",
-      "line": 3093,
+      "doc": "Theorem 1.1 (label classification), P019_paper.tex l.111 and l.113 with (1.1) (label introcrit), l.99: \"(d) If 1 < p < 2 and 0 < \u03bb < 1, then N_p(\u03bb) = GK_p(\u03bb) if and only if both conditions in (1.1) hold\"; \"for p > 2 part (d) applies with p\u2032 in place of p\", (1.1) being \"C^p(1 + x)^p \u2212 (1 + \u03bbx)^p \u2265 K x^q for every x > 0, \u03bb < \u03bb_loc(p)\". The two criterion clauses of `thm_classification` with the axis test of `intro_axis_test_iff`; the hypotheses are those of `thm_classification`.",
+      "line": 3091,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.thm_classification_tests",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5014,7 +5014,7 @@
     {
       "name": "sec5d_log_partials",
       "doc": "sec5d_monotone.tex l.34 (`\u03b5 = p \u2212 1`, `q = p/2`, `b = \u03b5a`; `monoLogL` and `monoLogM` are L of l.21 and M of l.33, at points where the sines are nonzero): \"With p fixed and b = \u03b5a, differentiation gives L_a = \u03b5[q cot(\u03b3+b) \u2212 (1\u2212q) cot(\u03b3\u2212b) \u2212 cot(\u03b3+a) + 2 cot 2a \u2212 2 cot 2b], L_\u03b3 = (1\u2212q) cot(\u03b3\u2212b) + q cot(\u03b3+b) \u2212 \u03b5 cot(\u03b3+a), M_a = \u2212cot(\u03b3\u2212a) \u2212 cot(\u03b3+a) + \u03b5[cot(\u03b3+b) + cot(\u03b3\u2212b)], M_\u03b3 = cot(\u03b3\u2212a) + cot(\u03b3+b) \u2212 cot(\u03b3+a) \u2212 cot(\u03b3\u2212b)\".",
-      "line": 3123,
+      "line": 3121,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5d_log_partials",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5028,8 +5028,8 @@
     },
     {
       "name": "q15_sec4b_T_sign",
-      "doc": "short_v3.70/sec4b_failure.tex:128 \"$d=\\sqrt{T(p)}$, written as $d^2 = \\sin^2 a\\,(pp'/4 - 1 - \\cos^2 a)/\\cos^4 a$\" (`a = \u03c0/p\u2032`, so `sin a = sin(\u03c0/p)`, `cos a = \u2212cos(\u03c0/p)`) and :99 \"Here $T(p)=s_0^2\\mathcal F(p)/(4c_0^4)$, so the two functions have the same sign\" (on `1 < p < 2`; `localD2` is `d\u00b2`, `localF` is `F`, `s\u2080 = sin(\u03c0/p)`, `c\u2080 = \u2212cos(\u03c0/p)`).",
-      "line": 3150,
+      "doc": "short_v3.90/sec4b_failure.tex:128 \"$d=\\sqrt{T(p)}$, written as $d^2 = \\sin^2 a\\,(pp'/4 - 1 - \\cos^2 a)/\\cos^4 a$\" (`a = \u03c0/p\u2032`, so `sin a = sin(\u03c0/p)`, `cos a = \u2212cos(\u03c0/p)`) and :99 \"Here $T(p)=s_0^2\\mathcal F(p)/(4c_0^4)$, so the two functions have the same sign\" (on `1 < p < 2`; `localD2` is `d\u00b2`, `localF` is `F`, `s\u2080 = sin(\u03c0/p)`, `c\u2080 = \u2212cos(\u03c0/p)`).",
+      "line": 3148,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.q15_sec4b_T_sign",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5043,8 +5043,8 @@
     },
     {
       "name": "q15_sec4b_ray_signs",
-      "doc": "short_v3.70/sec4b_failure.tex:30 \"The sign of $\\partial_y\\log|w|$ is the sign of $1+\\lambda-c_0(r+\\lambda/r)$: it is negative, positive, negative across the two positive roots. Thus the smaller root is a minimum and the larger a maximum. Since $1+\\lambda-\\sigma<0$, the quadratic $r^2-\\sigma r+\\lambda$ is negative at $r=1$, placing $1$ between the roots\" (`0 < \u03bb < 1`; on the ray `t = \u03b8\u2080`, `\u03b6 = e^{y+i\u03b8\u2080}`, `r = e^y`; the roots are `\u03bb/r_*` and `r_*`).",
-      "line": 3162,
+      "doc": "short_v3.90/sec4b_failure.tex:30 \"The sign of $\\partial_y\\log|w|$ is the sign of $1+\\lambda-c_0(r+\\lambda/r)$: it is negative, positive, negative across the two positive roots. Thus the smaller root is a minimum and the larger a maximum. Since $1+\\lambda-\\sigma<0$, the quadratic $r^2-\\sigma r+\\lambda$ is negative at $r=1$, placing $1$ between the roots\" (`0 < \u03bb < 1`; on the ray `t = \u03b8\u2080`, `\u03b6 = e^{y+i\u03b8\u2080}`, `r = e^y`; the roots are `\u03bb/r_*` and `r_*`).",
+      "line": 3160,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.q15_sec4b_ray_signs",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5058,8 +5058,8 @@
     },
     {
       "name": "q15_sec4b_step6_identities",
-      "doc": "short_v3.70/sec4b_failure.tex:68 \"Write $X=r^2$ and $\\delta=1-\\lambda$. The contact identities give $\\chi_y=X/(X-\\lambda)$, $\\sigma/v-p\\chi_y+p/2=(1-p/2)\\sigma/v$, $s_0^2v/(rD_1)=(X-1)/(X+\\lambda)$. Hence $2\\lambda s_0^2v/(rD_1)+\\delta=(1+\\lambda)(X-\\lambda)/(X+\\lambda)=c_0v$, $c_0^2v^2=(1+\\lambda)^2-4\\lambda c_0^2$. The first identity combines the two positive terms above into $p\\delta c_0/(s_0^2v)$\" (`\u22121 < \u03bb < 1`; the terms are positive for `\u03bb > 0`).",
-      "line": 3182,
+      "doc": "short_v3.90/sec4b_failure.tex:68 \"Write $X=r^2$ and $\\delta=1-\\lambda$. The contact identities give $\\chi_y=X/(X-\\lambda)$, $\\sigma/v-p\\chi_y+p/2=(1-p/2)\\sigma/v$, $s_0^2v/(rD_1)=(X-1)/(X+\\lambda)$. Hence $2\\lambda s_0^2v/(rD_1)+\\delta=(1+\\lambda)(X-\\lambda)/(X+\\lambda)=c_0v$, $c_0^2v^2=(1+\\lambda)^2-4\\lambda c_0^2$. The first identity combines the two positive terms above into $p\\delta c_0/(s_0^2v)$\" (`\u22121 < \u03bb < 1`; the terms are positive for `\u03bb > 0`).",
+      "line": 3180,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.q15_sec4b_step6_identities",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5073,8 +5073,8 @@
     },
     {
       "name": "q15_sec4b_step6_normalized",
-      "doc": "short_v3.70/sec4b_failure.tex:68 \"Put $B_0=\\delta(1+\\lambda)^2/(c_0^3s_0^2v^3)>0$. Dividing by $B_0$ then gives $e^{qy_*}\\mu_*''(\\theta_0)/(p\\mathcal{P} B_0)=(p-1)c_0^4v^2/(1+\\lambda)^2-s_0^2(1-p/2)^2$. The second identity and $c_0^2+s_0^2=1$ now yield\" the bracket of :70-72 \"$(p-1)(1-4\\lambda c_0^4/(1+\\lambda)^2)-p^2s_0^2/4$\".",
-      "line": 3203,
+      "doc": "short_v3.90/sec4b_failure.tex:68 \"Put $B_0=\\delta(1+\\lambda)^2/(c_0^3s_0^2v^3)>0$. Dividing by $B_0$ then gives $e^{qy_*}\\mu_*''(\\theta_0)/(p\\mathcal{P} B_0)=(p-1)c_0^4v^2/(1+\\lambda)^2-s_0^2(1-p/2)^2$. The second identity and $c_0^2+s_0^2=1$ now yield\" the bracket of :70-72 \"$(p-1)(1-4\\lambda c_0^4/(1+\\lambda)^2)-p^2s_0^2/4$\".",
+      "line": 3201,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.q15_sec4b_step6_normalized",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5088,8 +5088,8 @@
     },
     {
       "name": "q15_sec4b_cDelta_quotient",
-      "doc": "short_v3.70/sec4b_failure.tex:138 \"Here $(C-1)/\\delta=(C-s_0)/(s_0(C+1))$, by $s_0(C^2-1)=\\delta(C-s_0)$; the right side is regular at $\\delta=0$\" (`C = C(\u03b4)`, the root near 1 of `s\u2080C\u00b2 \u2212 \u03b4C \u2212 s\u2080(1 \u2212 \u03b4) = 0`, any `\u03b4 < 1`).",
-      "line": 3215,
+      "doc": "short_v3.90/sec4b_failure.tex:138 \"Here $(C-1)/\\delta=(C-s_0)/(s_0(C+1))$, by $s_0(C^2-1)=\\delta(C-s_0)$; the right side is regular at $\\delta=0$\" (`C = C(\u03b4)`, the root near 1 of `s\u2080C\u00b2 \u2212 \u03b4C \u2212 s\u2080(1 \u2212 \u03b4) = 0`, any `\u03b4 < 1`).",
+      "line": 3213,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.q15_sec4b_cDelta_quotient",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5103,8 +5103,8 @@
     },
     {
       "name": "q15_sec5d_substitutions",
-      "doc": "short_v3.70/sec5d_monotone.tex:20 \"The identities $\\lambda r=-\\sin(\\gamma-a)/\\sin(\\gamma+a)$, $s_2-rs_1=\\sin(\\gamma+a)\\sin2b/\\sin(\\gamma+b)$, $|1+\\lambda z_\\theta|=\\sin2a/\\sin(\\gamma+a)$ follow from (5.9), the formula for $r$, and the sine addition formulas; the last identity follows by squaring, since both sides are positive\" (`a = \u03b8/2`, `b = \u03b5a`, `\u03b5 = p \u2212 1`, `s\u2081 = sin((1\u2212q)\u03b8)`, `s\u2082 = sin(q\u03b8)`, `q = p/2`, `r = R(\u03b8)`).",
-      "line": 3226,
+      "doc": "short_v3.90/sec5d_monotone.tex:20 \"The identities $\\lambda r=-\\sin(\\gamma-a)/\\sin(\\gamma+a)$, $s_2-rs_1=\\sin(\\gamma+a)\\sin2b/\\sin(\\gamma+b)$, $|1+\\lambda z_\\theta|=\\sin2a/\\sin(\\gamma+a)$ follow from (5.9), the formula for $r$, and the sine addition formulas; the last identity follows by squaring, since both sides are positive\" (`a = \u03b8/2`, `b = \u03b5a`, `\u03b5 = p \u2212 1`, `s\u2081 = sin((1\u2212q)\u03b8)`, `s\u2082 = sin(q\u03b8)`, `q = p/2`, `r = R(\u03b8)`).",
+      "line": 3224,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.q15_sec5d_substitutions",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5118,8 +5118,8 @@
     },
     {
       "name": "q15_sec5d_cleared",
-      "doc": "short_v3.70/sec5d_monotone.tex:34 \"To clear the cotangents, put $U=\\sin(\\gamma-a)\\sin(\\gamma+a)=(\\cos2a-X)/2$, $V=\\sin(\\gamma-b)\\sin(\\gamma+b)=(\\cos2b-X)/2$, $N=\\sin2a\\,V-\\sin2b\\,U$, $S=UV$. Cotangent sums and differences give $SM_\\gamma=N$, $SM_a=(\\varepsilon U-V)\\sin2\\gamma$, $SL_\\gamma=\\tfrac12[(U-\\varepsilon V)\\sin2\\gamma+\\varepsilon N]$, $SL_a=\\tfrac\\varepsilon2[(\\varepsilon U-V)\\sin2\\gamma+N]+2\\varepsilon UV(\\cot2a-\\cot2b)$. In $S^2\\mathcal E=(SL_a)(SM_\\gamma)-(SL_\\gamma)(SM_a)$ the mixed terms cancel. Since $\\sin^22\\gamma=1-X^2$, $\\mathcal ES=[\\varepsilon N^2-(U-\\varepsilon V)(\\varepsilon U-V)(1-X^2)]/(2UV)+2\\varepsilon(\\cot2a-\\cot2b)N$\" (any `\u03b3 \u2208 (b, \u03c0/2)`, `\u03b3 \u2260 a`, i.e. `\u03bb \u2260 0`; `X = cos 2\u03b3`; `L_a, L_\u03b3, M_a, M_\u03b3` the actual partial derivatives).",
-      "line": 3246,
+      "doc": "short_v3.90/sec5d_monotone.tex:34: clearing the cotangents with U,V,N,S as printed gives \"In $S^2\\mathcal E=(SL_a)(SM_\\gamma)-(SL_\\gamma)(SM_a)$ the terms $\\pm\\tfrac\\varepsilon2(\\varepsilon U-V)N\\sin2\\gamma$ cancel.\" The theorem states the resulting cleared determinant identity and all four scaled partial-derivative identities (any `\u03b3 \u2208 (b, \u03c0/2)`, `\u03b3 \u2260 a`, i.e. `\u03bb \u2260 0`; `X = cos 2\u03b3`; `L_a, L_\u03b3, M_a, M_\u03b3` the actual partial derivatives).",
+      "line": 3242,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.q15_sec5d_cleared",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5133,8 +5133,8 @@
     },
     {
       "name": "q15_sec5d_Pi_coefficients",
-      "doc": "short_v3.70/sec5d_monotone.tex:35 \"Since $\\sin2a\\sin2b(\\cot2a-\\cot2b)=-\\sin u_3$ and $2N=\\sin u_3-(\\sin u_1-\\sin u_2)X$, this gives $2\\sin u_1\\sin u_2\\,\\mathcal ES=\\Pi(X)$\" (Lean route: the coefficients of X\u00b2, X, 1 are compared directly, not through the quadratic \u03a0_1; as an identity in `X`, wherever `UV \u2260 0`; `\u03b5 = p \u2212 1`, `b = \u03b5a`, `\u03b8 = 2a`).",
-      "line": 3271,
+      "doc": "short_v3.90/sec5d_monotone.tex:35 \"Since $\\sin2a\\sin2b(\\cot2a-\\cot2b)=-\\sin u_3$ and $2N=\\sin u_3-(\\sin u_1-\\sin u_2)X$, this gives $2\\sin u_1\\sin u_2\\,\\mathcal ES=\\Pi(X)$\" (Lean route: the coefficients of X\u00b2, X, 1 are compared directly, not through the quadratic \u03a0_1; as an identity in `X`, wherever `UV \u2260 0`; `\u03b5 = p \u2212 1`, `b = \u03b5a`, `\u03b8 = 2a`).",
+      "line": 3267,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.q15_sec5d_Pi_coefficients",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5148,8 +5148,8 @@
     },
     {
       "name": "q15_normcorr_real_ratio",
-      "doc": "short_v3.70/P019_paper.tex:80 \"These include the ratios of all real pairs $a,b$ with $ab\\ne0$ ($|\\rho|=1$, $\\rho\\ne\\pm1$)\" (`\u03c1 = (a + ib)/(a \u2212 ib)`); the sharp real cases \u03c1 = \u00b11 are \u03bb = 1 and \u03bb = \u22121 of Theorem 1.1 (l.104: \"the bound is sharp for $\\lambda=1$, for $p=2$ and for $\\alpha=0$\"; l.100: \"If $\\lambda\\le0$ is real\").",
-      "line": 3287,
+      "doc": "short_v3.90/P019_paper.tex:81 \"These include the ratios of all real pairs $a,b$ with $ab\\ne0$ ($|\\rho|=1$, $\\rho\\ne\\pm1$)\" (`\u03c1 = (a + ib)/(a \u2212 ib)`); the sharp real cases \u03c1 = \u00b11 are \u03bb = 1 and \u03bb = \u22121 of Theorem 1.1 (l.113: \"the bound is sharp for $\\lambda=1$, for $p=2$ and for $\\alpha=0$\"; l.109: \"If $\\lambda\\le0$ is real\").",
+      "line": 3283,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.q15_normcorr_real_ratio",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5165,8 +5165,8 @@
     },
     {
       "name": "q15_sec2_envelope_route",
-      "doc": "short_v3.70/sec4a_criterion.tex:38 \"Uniqueness of the minimizing $y_*$ (Lemma 4.1) and locally uniform coercivity (Section 2.2) imply that any nearby minimizers $y_t$ tend to $y_*$ as $t\\to\\theta_0$. Minimality gives $\\Gamma_C(y_t,t)-\\Gamma_C(y_t,\\theta_0)\\le m_C(t)-m_C(\\theta_0)\\le\\Gamma_C(y_*,t)-\\Gamma_C(y_*,\\theta_0)$. Dividing by $t-\\theta_0$ ... gives $m_C'(\\theta_0)=\\partial_t\\Gamma_C(y_*,\\theta_0)$\"; with :37 \"$K=-q^{-1}\\partial_t\\Gamma_C(y_*,\\theta_0)=-m_C'(\\theta_0)/q$\" (`C = GK_p(\u03bb)`, `\u03b8\u2080 = \u03c0/p`, `y_* = log r_*`, `\u22121 \u2264 \u03bb < 1`).",
-      "line": 3299,
+      "doc": "short_v3.90/sec4a_criterion.tex:38 \"Uniqueness of the minimizing $y_*$ (Lemma 4.1) and locally uniform coercivity (Section 2.2) imply that any nearby minimizers $y_t$ tend to $y_*$ as $t\\to\\theta_0$. Minimality gives $\\Gamma_C(y_t,t)-\\Gamma_C(y_t,\\theta_0)\\le m_C(t)-m_C(\\theta_0)\\le\\Gamma_C(y_*,t)-\\Gamma_C(y_*,\\theta_0)$. Dividing by $t-\\theta_0$ ... gives $m_C'(\\theta_0)=\\partial_t\\Gamma_C(y_*,\\theta_0)$\"; with :37 \"$K=-q^{-1}\\partial_t\\Gamma_C(y_*,\\theta_0)=-m_C'(\\theta_0)/q$\" (`C = GK_p(\u03bb)`, `\u03b8\u2080 = \u03c0/p`, `y_* = log r_*`, `\u22121 \u2264 \u03bb < 1`).",
+      "line": 3295,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.q15_sec2_envelope_route",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5180,8 +5180,8 @@
     },
     {
       "name": "q15_sec5e_star_holds",
-      "doc": "short_v3.70/sec5e_cstar.tex:26 \"So $(*)$ holds (at $z=-1$ by continuity)\" (\"If\" part of Theorem 5.3, :15-25: `1 < p < 2`, `0 < \u03bb < 1`, `h(\u03bb, p) \u2265 0`, `\u03bb < \u03bb_loc(p)`; `(*)` is `\ud835\udc9f_C \u2265 0` on `\u2102`).",
-      "line": 3318,
+      "doc": "short_v3.90/sec5e_cstar.tex:26 \"So $(*)$ holds (at $z=-1$ by continuity)\" (\"If\" part of Theorem 5.3, :15-25: `1 < p < 2`, `0 < \u03bb < 1`, `h(\u03bb, p) \u2265 0`, `\u03bb < \u03bb_loc(p)`; `(*)` is `\ud835\udc9f_C \u2265 0` on `\u2102`).",
+      "line": 3314,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.q15_sec5e_star_holds",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5195,8 +5195,8 @@
     },
     {
       "name": "q19_intro_hkv_example",
-      "doc": "short_v3.70/P019_paper.tex:121 \"On this subspace the constant in the displayed inequality becomes, after division by $1+t$, $(1+t^2\\tan^2(\\pi/(2p)))^{1/2}/(1+t)$ ... For example, at $t=1$, that is, $\\lambda=0$, the normalized constant is $1/(2\\cos(\\pi/(2p)))=\\sin(\\pi/(2p))\\,\\GK_p(0)$, strictly smaller than $\\GK_p(0)=1/\\sin(\\pi/p)$\" (every `p > 1`).",
-      "line": 3332,
+      "doc": "short_v3.90/P019_paper.tex:130 \"On this subspace the constant in the displayed inequality becomes, after division by $1+t$, $(1+t^2\\tan^2(\\pi/(2p)))^{1/2}/(1+t)$ ... For example, at $t=1$, that is, $\\lambda=0$, the normalized constant is $1/(2\\cos(\\pi/(2p)))=\\sin(\\pi/(2p))\\,\\GK_p(0)$, strictly smaller than $\\GK_p(0)=1/\\sin(\\pi/p)$\" (every `p > 1`).",
+      "line": 3328,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.q19_intro_hkv_example",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5210,8 +5210,8 @@
     },
     {
       "name": "q19_sec2_gk_explicit",
-      "doc": "short_v3.70/sec2_obstacle.tex:42 \"namely $C=\\bigl((1-\\lambda)+\\sqrt{(1-\\lambda)^2+4\\lambda s_0^2}\\bigr)/(2s_0)$\" (`C = GK_p(\u03bb)` the larger root of (2.2), `s\u2080 = sin(\u03c0/p)`; here for every `p > 1` and every `\u03bb < 1`, with the radicand nonnegative).",
-      "line": 3342,
+      "doc": "short_v3.90/sec2_obstacle.tex:42 \"namely $C=\\bigl((1-\\lambda)+\\sqrt{(1-\\lambda)^2+4\\lambda s_0^2}\\bigr)/(2s_0)$\" (`C = GK_p(\u03bb)` the larger root of (2.2), `s\u2080 = sin(\u03c0/p)`; here for every `p > 1` and every `\u03bb < 1`, with the radicand nonnegative).",
+      "line": 3338,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.q19_sec2_gk_explicit",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5225,8 +5225,8 @@
     },
     {
       "name": "q19_sec2_rescale",
-      "doc": "short_v3.70/sec2_obstacle.tex:69 \"indeed $f(x)=\\varphi(x/q)$ satisfies $f''+f=q^{-2}(\\varphi''+q^2\\varphi)(x/q)$\" (here for twice-differentiable `\u03c6` and every `q \u2260 0`; the comparison with [HKV, (3.1)] in the same sentence is context).",
-      "line": 3350,
+      "doc": "short_v3.90/sec2_obstacle.tex:69 \"indeed $f(x)=\\varphi(x/q)$ satisfies $f''+f=q^{-2}(\\varphi''+q^2\\varphi)(x/q)$\" (here for twice-differentiable `\u03c6` and every `q \u2260 0`; the comparison with [HKV, (3.1)] in the same sentence is context).",
+      "line": 3346,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.q19_sec2_rescale",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5240,8 +5240,8 @@
     },
     {
       "name": "q19_sec5d_q_closed",
-      "doc": "short_v3.70/sec5d_monotone.tex:35 (proof of Lemma 5.7 (label signformula), `\u03b5 = p \u2212 1`, `b = \u03b5a`, `\u03b8 = 2a`, `u\u2081 = 2a`, `u\u2082 = 2b`, `u\u2083 = 2(a \u2212 b)`, `X = cos 2\u03b3`, `U, V` the affine forms, `N = sin2a V \u2212 sin2b U`): \"Write the first term as $\\Pi_1(X)/2$, where $\\Pi_1:=[\\varepsilon N^2-(U-\\varepsilon V)(\\varepsilon U-V)(1-X^2)]/(UV)$. Its numerator vanishes where $U=0$ and where $V=0$: there $1-X^2$ equals $\\sin^22a$, respectively $\\sin^22b$, and $N$ equals $V\\sin2a$, respectively $-U\\sin2b$. So $\\Pi_1$ is a quadratic polynomial in $X$. Its leading coefficient is $-(1-\\varepsilon)^2$, and at $X=\\pm1$ one finds $\\Pi_1(\\pm1)=4\\varepsilon\\sin^2(a-b)=2\\varepsilon(1-\\cos u_3)$. Hence $\\Pi_1(X)=-(1-\\varepsilon)^2X^2+1+\\varepsilon^2-2\\varepsilon\\cos u_3$\"; \"$2N=\\sin u_3-(\\sin u_1-\\sin u_2)X$\".",
-      "line": 3363,
+      "doc": "short_v3.90/sec5d_monotone.tex:35 (proof of Lemma 5.7 (label signformula), `\u03b5 = p \u2212 1`, `b = \u03b5a`, `\u03b8 = 2a`, `u\u2081 = 2a`, `u\u2082 = 2b`, `u\u2083 = 2(a \u2212 b)`, `X = cos 2\u03b3`, `U, V` the affine forms, `N = sin2a V \u2212 sin2b U`): \"Write the first term as $\\Pi_1(X)/2$, where $\\Pi_1:=[\\varepsilon N^2-(U-\\varepsilon V)(\\varepsilon U-V)(1-X^2)]/(UV)$. Its numerator vanishes where $U=0$ and where $V=0$: there $1-X^2$ equals $\\sin^22a$, respectively $\\sin^22b$, and $N$ equals $V\\sin2a$, respectively $-U\\sin2b$. So $\\Pi_1$ is a quadratic polynomial in $X$. Its leading coefficient is $-(1-\\varepsilon)^2$, and at $X=\\pm1$ one finds $\\Pi_1(\\pm1)=4\\varepsilon\\sin^2(a-b)=2\\varepsilon(1-\\cos u_3)$. Hence $\\Pi_1(X)=-(1-\\varepsilon)^2X^2+1+\\varepsilon^2-2\\varepsilon\\cos u_3$\"; \"$2N=\\sin u_3-(\\sin u_1-\\sin u_2)X$\".",
+      "line": 3359,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.q19_sec5d_q_closed",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5255,8 +5255,8 @@
     },
     {
       "name": "q19_sec5d_constant_term",
-      "doc": "short_v3.70/sec5d_monotone.tex:55 (proof of Lemma 5.8 (label onevar), before (5.10)): \"for the constant term, $\\sin^2u_3=\\sin^2u_1+\\sin^2u_2-2\\sin u_1\\sin u_2\\cos u_3$\" (`u\u2083 = u\u2081 \u2212 u\u2082`; for all real `u\u2081, u\u2082`).",
-      "line": 3384,
+      "doc": "short_v3.90/sec5d_monotone.tex:55 (proof of Lemma 5.8 (label onevar), before (5.10)): \"for the constant term, $\\sin^2u_3=\\sin^2u_1+\\sin^2u_2-2\\sin u_1\\sin u_2\\cos u_3$\" (`u\u2083 = u\u2081 \u2212 u\u2082`; for all real `u\u2081, u\u2082`).",
+      "line": 3380,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.q19_sec5d_constant_term",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5270,8 +5270,8 @@
     },
     {
       "name": "q20_sec5d_D_split",
-      "doc": "short_v3.70/sec5d_monotone.tex:18 \"Write $D=(rs_2-s_1)+\\lambda r(s_2-rs_1)$. With $r=\\sin(\\gamma-b)/\\sin(\\gamma+b)$, product-to-sum gives $s_1-rs_2=\\sin2b\\,\\sin(a-\\gamma)/\\sin(\\gamma+b)$ and $s_2-rs_1=\\sin2b\\,\\sin(\\gamma+a)/\\sin(\\gamma+b)$\" (`a = \u03b8/2`, `b = (p \u2212 1)a`, `s\u2081 = sin(a \u2212 b)`, `s\u2082 = sin(a + b)`, `D = D(\u03b8, r)` of (5.3); wherever `sin(\u03b3 + b) \u2260 0`).",
-      "line": 3392,
+      "doc": "short_v3.90/sec5d_monotone.tex:18 \"Write $D=(rs_2-s_1)+\\lambda r(s_2-rs_1)$. With $r=\\sin(\\gamma-b)/\\sin(\\gamma+b)$, product-to-sum gives $s_1-rs_2=\\sin2b\\,\\sin(a-\\gamma)/\\sin(\\gamma+b)$ and $s_2-rs_1=\\sin2b\\,\\sin(\\gamma+a)/\\sin(\\gamma+b)$\" (`a = \u03b8/2`, `b = (p \u2212 1)a`, `s\u2081 = sin(a \u2212 b)`, `s\u2082 = sin(a + b)`, `D = D(\u03b8, r)` of (5.3); wherever `sin(\u03b3 + b) \u2260 0`).",
+      "line": 3388,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.q20_sec5d_D_split",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5285,8 +5285,8 @@
     },
     {
       "name": "sec4_lambda1_interval",
-      "doc": "short_v3.70/sec4b_failure.tex:115 \"For $1<p<p_0$ let $(0,\\lambda_1(p)]$ be the largest interval of the form $(0,\\lambda]$ on which $h(\\cdot,p)\\ge0$. It exists, and $\\lambda_1(p)<1$\"; P019_paper.tex:106 \"with $\\lambda_1(p)<1$, and $\\lambda_1(p)<\\lambda_{\\mathrm{loc}}(p)$ when $p<p_c$ (Propositions~\\ref{prop:F} and~\\ref{prop:edge}). So the bound is sharp for $0<\\lambda\\le\\lambda_1(p)$\" (the largest interval: `\u03bb\u2081` is the greatest `\u03bb \u2208 (0, 1)` with `h(\u00b7, p) \u2265 0` on `(0, \u03bb]`; given the computer checks of Propositions 4.3, 4.7, 5.14 and Lemma 4.6); caption of Figure 1, P019_paper.tex:113 \"The bound is sharp on and below the lower curve $\\lambda=\\lambda_1(p)$, defined for $p<p_0$ (Section~\\ref{subsec:second})\" (for `0 < \u03bb \u2264 \u03bb\u2081(p)`; the clause \"for every $\\lambda$ when $p_0\\le p<2$\" is the link `cover_q17_intro_regime_sharp`).",
-      "line": 3415,
+      "doc": "short_v3.90/sec4b_failure.tex:115 \"For $1<p<p_0$ let $(0,\\lambda_1(p)]$ be the largest interval of the form $(0,\\lambda]$ on which $h(\\cdot,p)\\ge0$. It exists, and $\\lambda_1(p)<1$\"; P019_paper.tex:115 \"then $\\lambda_1(p)<1$, and $\\lambda_1(p)<\\lambda_{\\mathrm{loc}}(p)$ when $p<p_c$ (Propositions~\\ref{prop:F} and~\\ref{prop:edge}). So the bound is sharp for $0<\\lambda\\le\\lambda_1(p)$\" (the largest interval: `\u03bb\u2081` is the greatest `\u03bb \u2208 (0, 1)` with `h(\u00b7, p) \u2265 0` on `(0, \u03bb]`; given the computer checks of Propositions 4.3, 4.7, 5.14 and Lemma 4.6); caption of Figure 2, P019_paper.tex:122 \"The bound is sharp on and below the lower curve $\\lambda=\\lambda_1(p)$, defined for $p<p_0$ (Section~\\ref{subsec:second})\" (for `0 < \u03bb \u2264 \u03bb\u2081(p)`; the clause \"for every $\\lambda$ when $p_0\\le p<2$\" is the link `cover_q17_intro_regime_sharp`).",
+      "line": 3411,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec4_lambda1_interval",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5307,8 +5307,8 @@
     },
     {
       "name": "sec4_lemma_Pc_b",
-      "doc": "Lemma 4.6(b) (label Pc), short_v3.70/sec4b_failure.tex:95 \"For $0<\\lambda<1$ the left side of \\eqref{eq:localfail} is less than $1$, equal to $1$ or greater than $1$ according as $\\lambda<\\lambda_{\\mathrm{loc}}(p)$, $\\lambda=\\lambda_{\\mathrm{loc}}(p)$ or $\\lambda>\\lambda_{\\mathrm{loc}}(p)$. Moreover $0<\\lambda_{\\mathrm{loc}}(p)\\le1$\" (`1 < p < 2`; the left side of (4.2) is `localTest p \u03bb`).",
-      "line": 3426,
+      "doc": "Lemma 4.6(b) (label Pc), short_v3.90/sec4b_failure.tex:95 \"For $0<\\lambda<1$ the left side of \\eqref{eq:localfail} is less than $1$, equal to $1$ or greater than $1$ according as $\\lambda<\\lambda_{\\mathrm{loc}}(p)$, $\\lambda=\\lambda_{\\mathrm{loc}}(p)$ or $\\lambda>\\lambda_{\\mathrm{loc}}(p)$. Moreover $0<\\lambda_{\\mathrm{loc}}(p)\\le1$\" (`1 < p < 2`; the left side of (4.2) is `localTest p \u03bb`).",
+      "line": 3422,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec4_lemma_Pc_b",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5322,8 +5322,8 @@
     },
     {
       "name": "sec5e_routeB_identities",
-      "doc": "Proof of Theorem 5.3 (label Cstar), \"If\", short_v3.70/sec5e_cstar.tex:15-17: \"At $\\theta=\\theta_0$ we have $m\\omega=q\\theta_0=\\pi/2$ and $\\sin\\omega=c_0$, so $\\Psi_m(\\omega)=(m^2c_0^2-1)/c_0^4$. Since $m^2/(m^2-1)=pp'/4$ and $1/(m^2-1)=pp'/4-1$, \\[ \\frac{\\Psi_m(\\omega)}{m^2-1}=\\frac{1-(pp'/4)s_0^2}{c_0^4} , \\] so $\\Psi_m(\\omega)>4(m^2-1)\\lambda/(1+\\lambda)^2$ is equivalent to $(pp'/4)s_0^2+4\\lambda c_0^4/(1+\\lambda)^2<1$\" (`1 < p < 2`, `\u03bb > \u22121`, `m = p/(2 \u2212 p)`, `q = p/2`, `\u03c9 = (1 \u2212 q)\u03b8\u2080`, `\u03b8\u2080 = \u03c0/p`, `s\u2080 = sn p`, `c\u2080 = cs p`).",
-      "line": 3437,
+      "doc": "Proof of Theorem 5.3 (label Cstar), \"If\", short_v3.90/sec5e_cstar.tex:15-17: \"At $\\theta=\\theta_0$ we have $m\\omega=q\\theta_0=\\pi/2$ and $\\sin\\omega=c_0$, so $\\Psi_m(\\omega)=(m^2c_0^2-1)/c_0^4$. Since $m^2/(m^2-1)=pp'/4$ and $1/(m^2-1)=pp'/4-1$, \\[ \\frac{\\Psi_m(\\omega)}{m^2-1}=\\frac{1-(pp'/4)s_0^2}{c_0^4} , \\] so $\\Psi_m(\\omega)>4(m^2-1)\\lambda/(1+\\lambda)^2$ is equivalent to $(pp'/4)s_0^2+4\\lambda c_0^4/(1+\\lambda)^2<1$\" (`1 < p < 2`, `\u03bb > \u22121`, `m = p/(2 \u2212 p)`, `q = p/2`, `\u03c9 = (1 \u2212 q)\u03b8\u2080`, `\u03b8\u2080 = \u03c0/p`, `s\u2080 = sn p`, `c\u2080 = cs p`).",
+      "line": 3433,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5e_routeB_identities",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5337,8 +5337,8 @@
     },
     {
       "name": "sec5e_Kf_slope_routeB",
-      "doc": "Proof of Theorem 5.3 (label Cstar), \"If\", short_v3.70/sec5e_cstar.tex:15: \"Assume $h(\\lambda, p) \\ge 0$ and $\\lambda < \\lambda_{\\mathrm{loc}}(p)$. By Lemma~\\ref{lem:Pc}(b), the left side of \\eqref{eq:localfail} is less than $1$. We first show that $K_f'(\\theta_0)<0$.\" and l.17 \"Lemma~\\ref{lem:onevar} therefore gives $K_f'(\\theta_0)<0$\" (`1 < p < 2`, `0 < \u03bb < 1`, `\u03b8\u2080 = \u03c0/p`; the row does not need `h(\u03bb, p) \u2265 0`).",
-      "line": 3453,
+      "doc": "Proof of Theorem 5.3 (label Cstar), \"If\", short_v3.90/sec5e_cstar.tex:15: \"Assume $h(\\lambda, p) \\ge 0$ and $\\lambda < \\lambda_{\\mathrm{loc}}(p)$. By Lemma~\\ref{lem:Pc}(b), the left side of \\eqref{eq:localfail} is less than $1$. We first show that $K_f'(\\theta_0)<0$.\" and l.17 \"Lemma~\\ref{lem:onevar} therefore gives $K_f'(\\theta_0)<0$\" (`1 < p < 2`, `0 < \u03bb < 1`, `\u03b8\u2080 = \u03c0/p`; the row does not need `h(\u03bb, p) \u2265 0`).",
+      "line": 3449,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec5e_Kf_slope_routeB",
       "file": "GKSharp/Paper/Statements.lean",
@@ -5352,8 +5352,8 @@
     },
     {
       "name": "sec4_omega_endpoint_chain",
-      "doc": "Proposition 4.3 (label F), proof, short_v3.70/sec4a_criterion.tex:94: \"By Jordan's inequality $s_0 \\ge 2(p-1)/p$, so $s_0^{p-1}\\ge(p-1)^{p-1}\\ge0.001^{0.001}>0.9931$, since $x^x$ decreases on $(0,1/e)$\" (the range `1 < p \u2264 1.001`, that is `0 < p \u2212 1 \u2264 0.001`; `s\u2080 = sn p`; the row states that `x^x` decreases on `(0, 1/e]`).",
-      "line": 3460,
+      "doc": "Proposition 4.3 (label F), proof, short_v3.90/sec4a_criterion.tex:94: \"By Jordan's inequality $s_0 \\ge 2(p-1)/p$, so $s_0^{p-1}\\ge(p-1)^{p-1}\\ge0.001^{0.001}>0.9931$, since $x^x$ decreases on $(0,1/e)$\" (the range `1 < p \u2264 1.001`, that is `0 < p \u2212 1 \u2264 0.001`; `s\u2080 = sn p`; the row states that `x^x` decreases on `(0, 1/e]`).",
+      "line": 3456,
       "direct_cited_input": null,
       "qualified_name": "GKSharp.Paper.sec4_omega_endpoint_chain",
       "file": "GKSharp/Paper/Statements.lean",

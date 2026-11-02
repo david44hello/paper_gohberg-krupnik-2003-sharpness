@@ -1,4 +1,4 @@
-/- GKSharp/Defs/GK.lean - the Gohberg-Krupnik constant (P019_paper.tex l.55, sec2_obstacle.tex l.18-43).
+/- GKSharp/Defs/GK.lean - the Gohberg-Krupnik constant (P019_paper.tex l.56, sec2_obstacle.tex l.18-43).
 Copyright (C) Dave Goel 2026--now. -/
 import Mathlib
 
@@ -6,7 +6,7 @@ namespace GKSharp
 
 open scoped Matrix.Norms.L2Operator
 
-/-- The matrix `[[α, (β - α) cot(π/p)], [0, β]]` of P019_paper.tex l.55. -/
+/-- The matrix `[[α, (β - α) cot(π/p)], [0, β]]` of P019_paper.tex l.56. -/
 noncomputable def gkMatrix (p : ℝ) (α β : ℂ) : Matrix (Fin 2) (Fin 2) ℂ :=
   !![α, (β - α) * (Real.cot (Real.pi / p) : ℂ); 0, β]
 

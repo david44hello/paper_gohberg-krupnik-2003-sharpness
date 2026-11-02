@@ -1,5 +1,5 @@
 /- GKSharp/ComputerChecked.lean - exact ordinary computer-check Prop hypotheses.
-Paper places: short_v3.70/.
+Paper places: short_v3.90/.
 No axioms, proof placeholders or assumed properties.
 Copyright (C) Dave Goel 2026--now. -/
 import GKSharp.Defs.ThresholdAnalysis

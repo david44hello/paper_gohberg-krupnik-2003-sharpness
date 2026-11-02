@@ -17,7 +17,7 @@ p. 386, THEOREM 3.1: "Let 1 < p < ∞ and f ∈ L^p(ℝ) be a complex-valued fun
 Form used here: only Schwartz inputs f, where χ_{(0,∞)} 𝓕f is integrable and 𝓕⁻¹(χ_{(0,∞)} 𝓕f) is a genuine
 function. Fourier convention: Mathlib's 𝓕 uses exp(-2πixξ); HV leave the convention open, (3.1) bounds both P₊ and P₋,
 a sign change of the convention swaps them, and a positive rescaling of ξ does not change χ_{(0,∞)}, so the Mathlib form
-is covered. The paper cites this as [HV] (P019_paper.tex l.186, used at l.81) and applies it to its projection
+is covered. The paper cites this as [HV] (P019_paper.tex l.199, used at l.82) and applies it to its projection
 convention at norm_correspondence.tex l.56 ("the classical norms in [HKV,HV,Pich] apply to the projection convention
 used here"). -/
 axiom hv2000_thm31_schwartz (p : ℝ) (hp : 1 < p) (f : SchwartzMap ℝ ℂ) :

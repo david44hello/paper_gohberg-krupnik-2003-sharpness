@@ -115,7 +115,7 @@ def ClaimEdge (p : ℝ) [Fact (1 ≤ ENNReal.ofReal p)] (P : RieszProjection p) 
     IsLeast (axisZeros p) (lambda0 p) ∧ 0 < lambda0 p ∧ lambda0 p < lambdaLoc p ∧
     gk p (lambdaLoc p) < pencilNorm P (lambdaLoc p)
 
-/-- Coverage link (renamed): the approved target `taylor_positive` of slice SliceB, from installed rows. Paper place: sec5f_strip.tex l.52-57 (short v3.70). -/
+/-- Coverage link (renamed): the approved target `taylor_positive` of slice SliceB, from installed rows. Paper place: sec5f_strip.tex l.52-57 (short v3.90). -/
 theorem cover_taylor_positive : ∀ (eta bound value initial e2 c4 tau : ℝ)
     (heta : 0 < eta) (hb : eta ≤ bound) (hi : 0 ≤ initial) (ht : 0 ≤ tau)
     (hc : bound ^ 2 * |c4| ≤ tau)
@@ -127,11 +127,11 @@ def ClaimS (p : ℝ) [Fact (1 ≤ ENNReal.ofReal p)] (P : RieszProjection p) : P
   (p ∈ Icc p0 (317 / 250 : ℝ) → ∀ lam ∈ Ioo (0 : ℝ) 1, 0 < h p lam) ∧
   (p ∈ Ico p0 (3 - Real.sqrt 3) → ∀ lam : ℝ, pencilNorm P lam = gk p lam)
 
-/-- Coverage link (renamed): the approved target `strip_endpoint_compare` of slice SliceB, from installed rows. Paper place: sec5f_strip.tex l.44-45 (short v3.70). -/
+/-- Coverage link (renamed): the approved target `strip_endpoint_compare` of slice SliceB, from installed rows. Paper place: sec5f_strip.tex l.44-45 (short v3.90). -/
 theorem cover_strip_endpoint_compare : 3 - Real.sqrt 3 < (317 / 250 : ℝ) :=
   @GKSharp.Paper.sec5_strip_endpoint
 
-/-- Coverage link (stronger): the approved target `obstacle_attained` of slice SliceB, from installed rows. Paper place: sec2_obstacle.tex l.57-60 (short v3.70). -/
+/-- Coverage link (stronger): the approved target `obstacle_attained` of slice SliceB, from installed rows. Paper place: sec2_obstacle.tex l.57-60 (short v3.90). -/
 theorem cover_obstacle_attained : ∀ (p C lam t : ℝ) (hp : 1 < p) (hC : max 1 |lam| < C),
     ∃ y : ℝ, gamma p C lam y t = obstacleAt p C lam t ∧
       ∀ x : ℝ, obstacleAt p C lam t ≤ gamma p C lam x t :=

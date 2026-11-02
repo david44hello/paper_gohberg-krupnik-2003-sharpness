@@ -1,12 +1,12 @@
 /- GKSharp/Defs/RealLine.lean - objects of the real-ratio sections: Re z^q, the criterion function D_C, the closed
-form of K, the Moebius map w (P019_paper.tex l.139, sec4a_criterion.tex l.39-42 and l.58, sec5_sharp_inequality.tex l.22).
+form of K, the Moebius map w (P019_paper.tex l.151, sec4a_criterion.tex l.39-42 and l.58, sec5_sharp_inequality.tex l.22).
 Copyright (C) Dave Goel 2026--now. -/
 import GKSharp.Defs.GK
 
 namespace GKSharp
 
 /-- `Re z^q = |z|^q cos(q arg z)` with the principal argument, and `0` at `z = 0` for `q > 0`
-(P019_paper.tex l.139). -/
+(P019_paper.tex l.151). -/
 noncomputable def reQPow (z : ℂ) (q : ℝ) : ℝ := ‖z‖ ^ q * Real.cos (q * Complex.arg z)
 
 /-- `𝒟_C(z) = C^p |1 + z|^p - |1 + λ z|^p - K Re z^q`, `q = p/2` (sec4a_criterion.tex l.58, display (*)). -/
