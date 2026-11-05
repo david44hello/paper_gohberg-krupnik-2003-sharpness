@@ -1,7 +1,7 @@
 {
-  "version": "1.30",
+  "version": "1.40",
   "author": "Dave Goel",
-  "created_utc": "2026-11-05T12:16:21.436420+00:00",
+  "created_utc": "2026-11-05T21:56:02.062916+00:00",
   "scope": "Every file outside lean/ and .github/ (the Lean proof has its own check, lean/check.sh); excludes this manifest.",
   "files": [
     {
@@ -26,8 +26,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 21,
-      "sha256": "a7ee1b41731bd0995441be37e54b27d08eca4ee306f1729c4dd71c7a5272da75"
+      "bytes": 666,
+      "sha256": "fb9e69ecff9eff24d27a56b5381dd09f38ad443f5690b05893064f2ea5be352f"
     },
     {
       "file": "illustration/README.md",
