@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 # omega_positive.py - Gohberg–Krupnik: second code for route A's 1-D facts: Omega' > 0 on [1.2336025, 1.2336027], Omega > 0 on [1.2336027, 1.268] [-route C]
 ## version 0.10 - route C 20261028_0136 ET - reuses gamma_series of omega_negative.py v0.10 (my Prop. F second code; Gamma = Omega);
 ##   derivative claim = enclosure of Omega' on each cell; positivity = centred form Omega(c) - |Omega'(cell)| h; adaptive bisection; 2 controls

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 # local_threshold.py - Gohberg–Krupnik Lemma P_c: F(p) = p p' - 4(1 + cos^2(pi/p)) is > 0 on (1, p_c) and < 0 on (p_c, 2), one simple root p_c [-route C]
 ## version 0.10 - route C 20261027_1606 ET - Arb cells on [1 + 1e-6, 3/2] + derivative sign near p_c; ends by hand (see note)
 # Hand ends: (1, 1 + 1e-6]: p p' >= 1/(p - 1) >= 1e6 > 8 >= 4(1 + cos^2).  [3/2, 2): with eta = 2 - p, F = eta^2/(p-1) - 4 sin^2(pi eta/(2p))

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 # omega_positive_independent.py - Gohberg–Krupnik strip (S-a): rigorous 1-D facts on Omega(p) near and above p_0 (Arb, centred forms) 
 ## version 0.10 - route A 20261027_2125 ET - Omega' > 0 on [P_A, P_B]; Omega > 0 on [P_B, P_END]; Omega(P_A) < 0; two controls that must fail
 #

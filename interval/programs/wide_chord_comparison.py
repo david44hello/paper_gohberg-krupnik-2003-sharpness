@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 # wide_chord_comparison.py - Gohberg–Krupnik: independent Arb check (my spline_certificate.py) of route A's wide-chord certificates [-route C]
 ## version 0.10 - route C 20261027_1548 ET - WC = 3-kink tent c = (0, 1, 0) at (-s, 0, s), s in [pi/p, pi]; parameters from
 ##   archived verification record (eps, y0, y1); s = rational near pi - eps (any s in [pi/p, pi] is valid)

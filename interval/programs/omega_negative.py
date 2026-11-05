@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 # omega_negative.py - Gohberg–Krupnik: independent Arb second code of route B's "Gamma(p) < 0 on [1.001, 1.2336025]" (Prop. F, p_0 edge) [-route C]
 ## version 0.10 - route C 20261027_1702 ET - centered form Gamma(c) + |Gamma'(cell)| h via arb_series; stable s*; adaptive bisection; control
 # Gamma(p) = p (A + s*)/(s*(1-s*))^q - 2^q s0^{p-2} c0^{1-q},  s0 = sin(pi(p-1)/p), c0 = cos(pi(p-1)/p), A = (1-s0)/(2 s0), q = p/2,

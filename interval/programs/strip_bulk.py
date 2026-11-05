@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 # strip_bulk.py - Gohberg–Krupnik strip (S-b): Arb proof that g(delta, p, s) > 0 on the strip p in [p_0, 1.268] AWAY from the corner [-route C]
 ## version 0.20 - route C 20261027_2131 ET - fix: the reported smallest lower bound tracks exact lower endpoints (ball '<' between
 ##   overlapping balls is False, so v0.10 reported a too-LARGE value; the certification test itself is unchanged); 'corner' choice main|reach

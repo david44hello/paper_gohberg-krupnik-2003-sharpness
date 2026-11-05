@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 # strip_bulk_independent.py - Gohberg–Krupnik strip (S-b), SECOND independent code: g > 0 off the corner, rigorous (Arb) 
 ## version 0.20 - route A 20261028_0207 ET - a ValueError of a ball evaluation (series division by a ball meeting 0 on a wide box) = "not certified", split
 ## version 0.10 - route A 20261028_0130 ET - F-form F = g (s(1-s))^q; closed-form kappa; rationalized (C-1)/delta; own series tails

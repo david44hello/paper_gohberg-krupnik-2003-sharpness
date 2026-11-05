@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 # pencil_search.py - Gohberg–Krupnik: independent LP for ||alpha P+ + beta P-||_p (= aI + bH, complex a, b) 
 # version 0.20 - route A 20261027_1552 ET - sweep bracket: lower end kept above max(|alpha|, |beta|) (v0.10 crashed at p = 3, lam = 0.9)
 # version 0.10 - route A 20261027_1135 ET - from my 018 earlier_projection_search.py v0.20: t over the FULL circle, y over all of R (no symmetry)

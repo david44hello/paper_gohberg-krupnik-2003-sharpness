@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 # omega_positive_alternate.py - Gohberg–Krupnik: independent 2nd code for the sign of Omega just above p_0 (Arb; centred form) 
 # version 0.10 - route B 20261028 (after 01:34 ET) - first version (route A's B2: Omega near p_0 had one code only)
 """

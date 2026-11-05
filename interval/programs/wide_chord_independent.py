@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 # wide_chord_independent.py - Gohberg–Krupnik: interval certificate for the WIDE-CHORD lower bound on the real line (beta = lam alpha) 
 # version 0.10 - route A 20261027_1555 ET - first version; gamma_iv / to_iv / rational reused from arch_search.py v0.30
 #

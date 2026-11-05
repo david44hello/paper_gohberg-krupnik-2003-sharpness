@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 # strip_corner_independent.py - Gohberg–Krupnik strip corner (S-c), SECOND code: g(delta, p, s) > 0 for p in [p_0, 1.2337027], 0 < delta <= 1/100 [-route C]
 ## version 0.10 - route C 20261027_2145 ET - second-order Taylor at (delta, s) = (0, s*(p)) + Hessian positive definite on window boxes
 ##   (mixed derivative from the two diagonal directions), mean value boxes outside the window, s-tails; independent of route B's even-form code

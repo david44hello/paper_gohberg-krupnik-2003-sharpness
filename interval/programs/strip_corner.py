@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 # strip_corner.py - Gohberg–Krupnik strip (S-c): rigorous corner lemma g > 0 near (delta, p) = (0, p_0) (Arb; even form + Taylor remainder)
 # version 0.30 - route B 20261027 (after 21:47 ET) - prints certified LOWER ends of the edge bounds (v0.20 printed "[+/- 1.49]": no digit, not a sign)
 # version 0.20 - route B 20261027 (after 21:30 ET) - Lagrange remainder from a REAL ball series (Cauchy circle was 7x too lossy; v0.10 refused)

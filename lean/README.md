@@ -23,4 +23,4 @@ PASS (final): project builds; source policy passes; the only gaps are the listed
 
 The Lean proof takes as given interval estimates, checked by the programs in [../interval/](../interval/), and theorems from papers that the paper cites; [AUDIT.md](AUDIT.md) and [AUDIT_NOTES.md](AUDIT_NOTES.md) name them.
 
-Copyright (C) Dave Goel 2026--now. All rights reserved.
+Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.

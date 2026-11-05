@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 """Compute the illustration-only values lambda_1(p): Figure 1 (p = 1.1) and the lower curve of Figure 2.
 
 Version 1.00 — release maintainer — 20261031 13:32 ET.
-Author: Dave Goel. Copyright (C) Dave Goel 2026--now. All rights reserved.
+Author: Dave Goel. Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 Requires mpmath (1.4.1 was used). Floating point at 20 digits: a picture, not a certificate. The proofs do not use it.
 
 For 1 < p < 2 and 0 < lambda < 1, with C = GK_p(lambda), q = p/2, s0 = sin(pi/p), c0 = -cos(pi/p):

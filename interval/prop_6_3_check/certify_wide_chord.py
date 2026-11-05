@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 """Verify the two printed wide-chord witnesses using Arb interval arithmetic.
 
 Version 0.20 — release maintainer — 20261030 05:40 ET — keys named after Proposition 6.3 of the expanded
 version; the second bound is now checked at its printed value S < -0.00074.
 Version 0.10 — release maintainer — 20261028 07:07 ET.
-Author: Dave Goel. Copyright (C) Dave Goel 2026--now. All rights reserved.
+Author: Dave Goel. Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 Requires python-flint 0.9.0; the fixed rational witnesses are printed in Proposition 6.3 of the expanded version.
 """
 

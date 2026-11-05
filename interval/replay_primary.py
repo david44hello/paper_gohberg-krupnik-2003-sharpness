@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 """Replay the primary Gohberg–Krupnik interval coverage with explicit evidence logs.
 
 Version 0.20 — release maintainer — 20261028 07:23 ET. Keep local compute policy in the outer launcher so the mathematical runner remains portable.
-Author: Dave Goel. Copyright (C) Dave Goel 2026--now. All rights reserved.
+Author: Dave Goel. Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 Original programs are immutable. A replay includes cheap tests before coverage.
 """
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 # corner_comparison.py - Gohberg–Krupnik strip (S-c): READ 1 checks of route B's strip_corner.py v0.30 (md5 c61003de) 
 ## version 0.10 - route A 20261027_2153 ET - (a) arb(mid, rad-ball) radius; (b) max tail radius R in exprel; (c) e2, c4 by my own mpmath g
 #

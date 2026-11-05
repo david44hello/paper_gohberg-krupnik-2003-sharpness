@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 # boundary_bulk.py - Gohberg–Krupnik (ii): rigorous Arb check that h(lam_loc(p), p) = m_GK(0) - K < 0 on p-cells (so lam_0(p) < lam_loc(p)) [-route C]
 ## version 0.20 - route C 20261027_1602 ET - cancellation-free forms (delta, lam = (1-delta)/(1+delta), s = sqrt(disc), ...) for p -> 1
 ## version 0.10 - route C 20261027_1557 ET - upper bound m_GK(0) <= (C^p - w^p)/(theta(1-theta))^q, w = lam + theta(1 - lam); adaptive cells

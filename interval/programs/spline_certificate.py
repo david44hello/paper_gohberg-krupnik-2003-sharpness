@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 # spline_certificate.py - Gohberg–Krupnik (A) T2: rigorous Arb check of a "norm > C" certificate for ||alpha P+ + beta P-||_p 
 ## version 0.10 - route C 20261027_1135 ET - q-trig spline certificate (kinks t_k, values c_k >= 0, points y_k); exact rational input
 # THEOREM USED (route A 11:22: norm <= C <=> some q-subtrigonometric phi <= m_C, q = p/2, m_C(t) = inf_y Gamma_C(y, t)).

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 # omega_negative_alternate.py - Gohberg–Krupnik Prop. F: rigorous sign of Gamma(p) on [P_LO, P_STOP] (Arb ball arithmetic) + enclosure of p_0
 # version 0.10 - route B 20261027 (after 16:52 ET) - first version
 """

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 # arch_search.py - Gohberg–Krupnik: second-code check of route C's single-arch lower bound for ||alpha P+ + beta P-||_p 
 # version 0.30 - route A 20261027_1155 ET - coarse-then-fine search (~20x cheaper, < 1 min total); m_and_argmin unused -> removed
 # version 0.20 - route A 20261027_1138 ET - float search in t-chunks (memory 16 MB per array, was ~640 MB); runs go through the gate

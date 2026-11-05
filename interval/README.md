@@ -1,9 +1,11 @@
 # Interval calculations
-Version 1.10 — October 31, 2026 — Dave Goel.
+Version 1.20 — November 5, 2026 — Dave Goel.
 
-Copyright (C) Dave Goel 2026--now. All rights reserved.
+Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 
 The programs verify the numerical inequalities used in the paper. `MANIFEST.json` and `SUPPLEMENTAL_MANIFEST.json` identify the release source bytes. `SOURCE_PROVENANCE.json` pairs their checksums with the original source checksums using neutral identifiers. `AST_EQUIVALENCE.json` records the exact source-equivalence check: mathematical expressions, numerical constants, domains and controls are unchanged outside the stated naming, path and metadata substitutions.
+
+On November 5, 2026 the copyright line in the file headers became the Apache License 2.0 line above; that line is the only change to the programs. `SOURCE_PROVENANCE.json` and the recorded replay give checksums from before that change; `../LICENSE_CHANGE.md` lists each old checksum next to the current one.
 
 Use Python 3.12.3 with the versions in `REPLAY_DEPENDENCIES.json`: python-flint 0.9.0 with FLINT 3.6.0, mpmath 1.4.1, NumPy 2.5.4 and SciPy 1.18.1. One way to install them: `python3.12 -m venv venv`, then `venv/bin/pip install python-flint==0.9.0 mpmath==1.4.1 numpy==2.5.4 scipy==1.18.1` (the python-flint wheel includes FLINT). The runner checks the actual versions and requires assertions enabled. From this directory, supply the full path of that environment's Python interpreter:
 

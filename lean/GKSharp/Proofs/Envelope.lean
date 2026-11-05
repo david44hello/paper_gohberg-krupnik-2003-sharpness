@@ -2,7 +2,7 @@
   GKSharp/Proofs/Envelope.lean
   - Demailly (4.24) on ℂ, PROVED: the upper regularization of the upper envelope of a locally
   uniformly bounded above family of subharmonic functions is subharmonic
-  Copyright (C) Dave Goel 2026--now. All rights reserved.
+  Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 
   Route: u = sup u_i, u⋆ = uscRegC u. (1) u⋆ ≠ ⊤ (local uniform bound) and u⋆ is usc. (2) For a usc
   T : ℂ → ℝ bounded below, z ↦ circleAverage T z r is usc: Fatou's lemma over the filter 𝓝 c (lintegral_liminf_le) for

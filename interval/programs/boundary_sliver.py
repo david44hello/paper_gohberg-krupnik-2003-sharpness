@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) Dave Goel 2026--now. All rights reserved.
+# Copyright (C) Dave Goel 2026--now. Licensed under the Apache License 2.0; see LICENSE.
 # boundary_sliver.py - Gohberg–Krupnik edge lam = lam_loc: Arb proof that h(lam_loc(p), p) < 0 for p in [1.2134, 1.2134904] (covers up to p_c) [-route C]
 ## version 0.10 - route C 20261027_1708 ET - h <= delta g(delta,p,s), g = [T1 + s phi(s delta)]/(s(1-s))^q - K/delta (rescaling of route B's
 ##   lampos Sec. 8), MY contact K, mean-value enclosures (delta = 0 allowed in a cell); plus 1 - lam_loc(p) <= DELTA_HI; two controls that must fail

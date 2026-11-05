@@ -1,113 +1,113 @@
 {
-  "version": "1.00",
+  "version": "1.10",
   "files": [
     {
       "file": "programs/arch_search.py",
-      "bytes": 7145,
-      "sha256": "c001c75423e8e2b91b01b6b2e047cb192238df194c0efc29041848be319102ab",
-      "md5": "d3891b308bd8846603990ffa64b37a9e"
+      "bytes": 7176,
+      "sha256": "f1925a10d22794bad60a0decbbe12125dfd5eeb272bf04498b96139037adf179",
+      "md5": "28d3b51c774ec1204f395caf4d5d9589"
     },
     {
       "file": "programs/corner_comparison.py",
-      "bytes": 4573,
-      "sha256": "605ff7191f5a98a0befbe801150e2fbe61b1d85e1e32a3b424884dc0e10b7e47",
-      "md5": "562bd05155cb55c83e11036dd074b062"
+      "bytes": 4604,
+      "sha256": "cf38788a11ef16051161c9d68badf2b68ed3fc2e929760dc5e7b93a759941e74",
+      "md5": "4a64f597a4a524c45bcaa431bae9ee39"
     },
     {
       "file": "programs/omega_positive_independent.py",
-      "bytes": 3879,
-      "sha256": "303655a20831a2582468f4c0088b8930f5573f592d4b6c1e5cc7a164e3f8bf26",
-      "md5": "9d4cf954c322c35dab16805fb64d6d2d"
+      "bytes": 3910,
+      "sha256": "8e3e5bc6d8d006a87cc98ea46bd21bad7007d9de5fd9b1ccefdb1a9504ddfdb3",
+      "md5": "267ec5d1282ae057107d59fc7f36ba2e"
     },
     {
       "file": "programs/pencil_search.py",
-      "bytes": 10403,
-      "sha256": "f48b3c38995ee329fc203492d59d869e4d78d336b475d02bf2a3896c56726531",
-      "md5": "97829d44682f3d67dc2ca12238808f39"
+      "bytes": 10434,
+      "sha256": "6a85149e3484d2fea51489af3d7691c43247623effcd8b9d35268cc6062eaa5e",
+      "md5": "c51dbb1d788e9ab011835ef9a3ff5dc9"
     },
     {
       "file": "programs/strip_bulk_independent.py",
-      "bytes": 14104,
-      "sha256": "8e21ed1fcb72b94f97077087e0b0d23fe326c3c37e9ef93ab58ae30e85e4229c",
-      "md5": "7c7b82b22f2296b14e8d74a7c63d8e0d"
+      "bytes": 14135,
+      "sha256": "d85c95c9694393c20ecbd8253c3c4671998fc5ca8f94b1070c8f3470185367a8",
+      "md5": "147f6b90790934135ddc158da4d752ca"
     },
     {
       "file": "programs/wide_chord_independent.py",
-      "bytes": 4305,
-      "sha256": "21c6d99e18be3f0bb735bbd3b473572988f92ac1450e9ece3c2bc4a430cb86cd",
-      "md5": "f89410151b2d651225d49aeba5a44514"
+      "bytes": 4336,
+      "sha256": "8d4a496d0199ac13bcfd92a3e09ec3457879481bf5ab281293c51e39c20323d6",
+      "md5": "02e3e5b4b950094e47e971a83b12de2c"
     },
     {
       "file": "programs/strip_corner.py",
-      "bytes": 10546,
-      "sha256": "dbf3c961b6d3ba33613f5e33b96f2a9a57aa513545f473eea82ce254bd4d1199",
-      "md5": "2c4a67da4c72de3232192d98977f5ba5"
+      "bytes": 10577,
+      "sha256": "9f3e71f87dcc14f9a67f8355e6ae407085cde7f2a35e87e184ac2a08b3489514",
+      "md5": "32c32744229a86a3f309412786d3432a"
     },
     {
       "file": "programs/omega_negative_alternate.py",
-      "bytes": 3029,
-      "sha256": "31e351bdbbf6f620483d2823936f5062d3deb1793f8cd76c9769613e2c423911",
-      "md5": "81c8a09164b7abc00645b13b7bffe947"
+      "bytes": 3060,
+      "sha256": "a44c44150c5cc6b77db6da8fa412b677694dce1d3cfe4a97c10a3c15722c81fa",
+      "md5": "a2892ea80144482d37d005331f6b49b1"
     },
     {
       "file": "programs/omega_positive_alternate.py",
-      "bytes": 4085,
-      "sha256": "975e1e536ba1fb39df1398bc3866311d0290673caa15f0a04755d2d8f089e383",
-      "md5": "69b475131dbefa741efb1a63fe1b45ff"
+      "bytes": 4116,
+      "sha256": "a082119375a6e5ae0b02171e7c9ec4baf7a474dc5f0692f14de7436f9e5dd719",
+      "md5": "ce9bfcd97aa8ae872d081f6b405ef534"
     },
     {
       "file": "programs/strip_corner_independent.py",
-      "bytes": 14744,
-      "sha256": "b78927622208ce050749a1104f3103094cc4f7fb9de50b7ec85b590979b3d549",
-      "md5": "d2702611c899704d6a37ec8c346e9ed0"
+      "bytes": 14775,
+      "sha256": "e2e14cb389ad24abc625a331869d567bdce2c6aebb54e3d6016a5f4072edeeb2",
+      "md5": "da18adbc89e0c1985c19478a882af4f4"
     },
     {
       "file": "programs/boundary_sliver.py",
-      "bytes": 5918,
-      "sha256": "238d1dd8a20ba406d41114826f5dfd4810c663efc9e60c0b528b45b1183047f3",
-      "md5": "0722de62419b386d5545935f00cd2aa7"
+      "bytes": 5949,
+      "sha256": "7b8c3e1bfbe6909dcd67b803d2078169660b319c4c90472665ceb8b5ec0497ba",
+      "md5": "c17160c1c01dfae4bed900e869b609fe"
     },
     {
       "file": "programs/omega_negative.py",
-      "bytes": 3616,
-      "sha256": "3062875f5de991f48932a7de27aa09519be640473f1892e6215b9c2bcb26ed7b",
-      "md5": "6d78c107dd07fe0d26efeb57ee3d06cf"
+      "bytes": 3647,
+      "sha256": "52d9fc08f515808be84100e382256c44860c59b6e81cfded72b4dd07c9caca72",
+      "md5": "1d58c0a944de93bec4831dd88e522871"
     },
     {
       "file": "programs/boundary_bulk_extended.py",
-      "bytes": 9819,
-      "sha256": "6f9c45efaadd6d566e5ab6d9c4e98bbc49cbc4732a1384b6fdaabb1027df744e",
-      "md5": "b9d6581ebad0caac53a6b5160aafe271"
+      "bytes": 9850,
+      "sha256": "c5449e9eb0e732928375e530aa267b2f597902b1972faf2af4f257b4ea71fed2",
+      "md5": "8842c34d9af1d74f17f59903c8285c5e"
     },
     {
       "file": "programs/omega_positive.py",
-      "bytes": 3589,
-      "sha256": "79616e8fb82d1cfb29baea485cf8268a36180ed89946e6fe8be0e11af58407bd",
-      "md5": "485984e3dcfcc21c00afb22793c8c5fd"
+      "bytes": 3620,
+      "sha256": "210a701014132bc588059b28dde3be53b54ec4b34cc189a28ae454cb3a35ae47",
+      "md5": "23041486f35db013622f0d850a401dc5"
     },
     {
       "file": "programs/local_threshold.py",
-      "bytes": 2938,
-      "sha256": "31d6481e269c040d6b56d258760574ad2c4d4b2e3dbd2b7ef284ef8353097d93",
-      "md5": "5471ade104a2ba4acfd1e9c18cd7d390"
+      "bytes": 2969,
+      "sha256": "6e86d1ce014a87c5c9689e47b4b0efcc512984c2149d64c0389ead4284b65b9c",
+      "md5": "0313c36d2485f778f6163447437b75ff"
     },
     {
       "file": "programs/spline_certificate.py",
-      "bytes": 7279,
-      "sha256": "ed3ea8a2ecea421918581d8021447c471683901fdbed5eb7c96954ce0ad635c8",
-      "md5": "b37e07a1cf27388588c7e9eacc8779e6"
+      "bytes": 7310,
+      "sha256": "3c68e47617d16d75ea9182dcffda68acb5340eac19714998b41a9034e6846f65",
+      "md5": "eda4735106acfb93ac1b198cbdaa2eb3"
     },
     {
       "file": "programs/strip_bulk.py",
-      "bytes": 14540,
-      "sha256": "a45015ce62fbe0da64d5ececd5d1d47b2fa0908d4882afe31db2c66f9b269f73",
-      "md5": "f46fe61366d9303e618874b44d223028"
+      "bytes": 14571,
+      "sha256": "c8e62b2e1bb4c92290e1bb409cdab7d36fc24fcc5e5e5e235b6e3f7e4b86ff75",
+      "md5": "341c0fbd36502e851167d3386f8eddfc"
     },
     {
       "file": "programs/wide_chord_comparison.py",
-      "bytes": 2539,
-      "sha256": "e2c860f776b614111ea6f0781f1092c04aad93d1a377184d5acf8a476b88c5ed",
-      "md5": "568f6d584a62168adf741578069e79c5"
+      "bytes": 2570,
+      "sha256": "0171a8974b25f7382f0fc138308b99d55675311061742aa41f82c92b40491221",
+      "md5": "f52d8fbfaa540c68e688dfce5b73f2ac"
     }
   ]
 }
